@@ -1,0 +1,87 @@
+nameOverride: ""
+fullnameOverride: ""
+
+namespaceOverride: "rag-thesis"
+
+commonLabels:
+  app.kubernetes.io/part-of: rag-k8s-thesis
+
+qdrant:
+  enabled: true
+  image: qdrant/qdrant:latest
+  replicaCount: 1
+  storageSize: 10Gi
+  service:
+    port: 6333
+  resources:
+    requests:
+      cpu: 500m
+      memory: 1Gi
+    limits:
+      cpu: "1"
+      memory: 2Gi
+
+ollama:
+  enabled: true
+  image: ollama/ollama:latest
+  replicaCount: 1
+  modelName: mistral:7b-instruct
+  storageSize: 30Gi
+  service:
+    port: 11434
+  resources:
+    requests:
+      cpu: 1000m
+      memory: 4Gi
+    limits:
+      cpu: 2000m
+      memory: 8Gi
+
+backend:
+  enabled: true
+  image: rag-k8s-thesis/backend:latest
+  replicaCount: 1
+  service:
+    port: 80
+    targetPort: 8000
+  ingress:
+    enabled: true
+    host: rag.local
+    path: /
+    pathType: Prefix
+  env:
+    qdrantCollection: thesis_docs
+    qdrantTopK: 4
+    embeddingModelName: sentence-transformers/all-MiniLM-L6-v2
+    ollamaModel: mistral:7b-instruct
+  resources:
+    requests:
+      cpu: 250m
+      memory: 512Mi
+    limits:
+      cpu: 1000m
+      memory: 1Gi
+
+ingestion:
+  enabled: true
+  image: rag-k8s-thesis/ingestion:latest
+  job:
+    enabled: true
+    backoffLimit: 2
+  cronjob:
+    enabled: false
+    schedule: "0 2 * * *"
+    failedJobsHistoryLimit: 2
+    successfulJobsHistoryLimit: 2
+  env:
+    qdrantCollection: thesis_docs
+    embeddingModelName: sentence-transformers/all-MiniLM-L6-v2
+    chunkSize: "800"
+    chunkOverlap: "100"
+  resources:
+    requests:
+      cpu: 250m
+      memory: 512Mi
+    limits:
+      cpu: 1000m
+      memory: 1Gi

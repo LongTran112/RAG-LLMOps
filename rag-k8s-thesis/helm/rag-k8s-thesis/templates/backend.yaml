@@ -1,0 +1,96 @@
+{{- if .Values.backend.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: rag-backend
+  namespace: {{ include "rag-k8s-thesis.namespace" . }}
+  labels:
+    app.kubernetes.io/name: rag-backend
+    {{- include "rag-k8s-thesis.labels" . | nindent 4 }}
+spec:
+  selector:
+    app.kubernetes.io/name: rag-backend
+  ports:
+    - name: http
+      port: {{ .Values.backend.service.port }}
+      targetPort: {{ .Values.backend.service.targetPort }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rag-backend
+  namespace: {{ include "rag-k8s-thesis.namespace" . }}
+  labels:
+    app.kubernetes.io/name: rag-backend
+    {{- include "rag-k8s-thesis.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.backend.replicaCount }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: rag-backend
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: rag-backend
+        {{- include "rag-k8s-thesis.labels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: rag-backend
+          image: {{ .Values.backend.image }}
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: {{ .Values.backend.service.targetPort }}
+              name: http
+          env:
+            - name: QDRANT_HOST
+              value: qdrant
+            - name: QDRANT_PORT
+              value: {{ .Values.qdrant.service.port | quote }}
+            - name: QDRANT_COLLECTION
+              value: {{ .Values.backend.env.qdrantCollection | quote }}
+            - name: QDRANT_TOP_K
+              value: {{ .Values.backend.env.qdrantTopK | quote }}
+            - name: EMBEDDING_MODEL_NAME
+              value: {{ .Values.backend.env.embeddingModelName | quote }}
+            - name: OLLAMA_BASE_URL
+              value: http://ollama:{{ .Values.ollama.service.port }}
+            - name: OLLAMA_MODEL
+              value: {{ .Values.backend.env.ollamaModel | quote }}
+          resources:
+            {{- toYaml .Values.backend.resources | nindent 12 }}
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: {{ .Values.backend.service.targetPort }}
+            initialDelaySeconds: 15
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: {{ .Values.backend.service.targetPort }}
+            initialDelaySeconds: 8
+            periodSeconds: 5
+{{- if .Values.backend.ingress.enabled }}
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: rag-backend
+  namespace: {{ include "rag-k8s-thesis.namespace" . }}
+  labels:
+    app.kubernetes.io/name: rag-backend
+    {{- include "rag-k8s-thesis.labels" . | nindent 4 }}
+spec:
+  rules:
+    - host: {{ .Values.backend.ingress.host }}
+      http:
+        paths:
+          - path: {{ .Values.backend.ingress.path }}
+            pathType: {{ .Values.backend.ingress.pathType }}
+            backend:
+              service:
+                name: rag-backend
+                port:
+                  number: {{ .Values.backend.service.port }}
+{{- end }}
+{{- end }}

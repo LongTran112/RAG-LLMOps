@@ -1,0 +1,6 @@
+apiVersion: v2
+name: rag-k8s-thesis
+description: Helm chart for RAG thesis PoC (FastAPI, Qdrant, Ollama, ingestion jobs)
+type: application
+version: 0.1.0
+appVersion: "0.1.0"

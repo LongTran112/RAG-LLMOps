@@ -137,3 +137,26 @@ After validating raw YAML behavior:
    - host/ingress config,
    - storage sizes.
 4. Keep raw YAML as baseline for maintainability comparison in thesis results.
+
+## Helm chart (implemented)
+
+A chart skeleton is available at `helm/rag-k8s-thesis/` and templates all core components:
+
+- Qdrant (PVC, Service, StatefulSet)
+- Ollama (PVC, Service, Deployment)
+- Backend (Service, Deployment, optional Ingress)
+- Ingestion (one-off Job and optional CronJob)
+
+Render and validate:
+
+```bash
+helm template rag-poc ./helm/rag-k8s-thesis --namespace rag-thesis
+```
+
+Install/upgrade:
+
+```bash
+helm upgrade --install rag-poc ./helm/rag-k8s-thesis --namespace rag-thesis --create-namespace
+```
+
+Tune runtime parameters via `helm/rag-k8s-thesis/values.yaml` (images, replicas, model name, resource limits, storage sizes, ingress settings, ingestion schedule).

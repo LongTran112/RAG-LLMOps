@@ -1,0 +1,81 @@
+{{- if .Values.qdrant.enabled }}
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: qdrant-pvc
+  namespace: {{ include "rag-k8s-thesis.namespace" . }}
+  labels:
+    app.kubernetes.io/name: qdrant
+    {{- include "rag-k8s-thesis.labels" . | nindent 4 }}
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: {{ .Values.qdrant.storageSize }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: qdrant
+  namespace: {{ include "rag-k8s-thesis.namespace" . }}
+  labels:
+    app.kubernetes.io/name: qdrant
+    {{- include "rag-k8s-thesis.labels" . | nindent 4 }}
+spec:
+  selector:
+    app.kubernetes.io/name: qdrant
+  ports:
+    - name: http
+      port: {{ .Values.qdrant.service.port }}
+      targetPort: {{ .Values.qdrant.service.port }}
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: qdrant
+  namespace: {{ include "rag-k8s-thesis.namespace" . }}
+  labels:
+    app.kubernetes.io/name: qdrant
+    {{- include "rag-k8s-thesis.labels" . | nindent 4 }}
+spec:
+  serviceName: qdrant
+  replicas: {{ .Values.qdrant.replicaCount }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: qdrant
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: qdrant
+        {{- include "rag-k8s-thesis.labels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: qdrant
+          image: {{ .Values.qdrant.image }}
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: {{ .Values.qdrant.service.port }}
+              name: http
+          resources:
+            {{- toYaml .Values.qdrant.resources | nindent 12 }}
+          volumeMounts:
+            - name: qdrant-storage
+              mountPath: /qdrant/storage
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: {{ .Values.qdrant.service.port }}
+            initialDelaySeconds: 20
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /readyz
+              port: {{ .Values.qdrant.service.port }}
+            initialDelaySeconds: 10
+            periodSeconds: 5
+      volumes:
+        - name: qdrant-storage
+          persistentVolumeClaim:
+            claimName: qdrant-pvc
+{{- end }}

@@ -1,0 +1,82 @@
+{{- if and .Values.ingestion.enabled .Values.ingestion.job.enabled }}
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: rag-ingestion-once
+  namespace: {{ include "rag-k8s-thesis.namespace" . }}
+  labels:
+    app.kubernetes.io/name: rag-ingestion
+    {{- include "rag-k8s-thesis.labels" . | nindent 4 }}
+spec:
+  backoffLimit: {{ .Values.ingestion.job.backoffLimit }}
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: rag-ingestion
+        {{- include "rag-k8s-thesis.labels" . | nindent 8 }}
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: rag-ingestion
+          image: {{ .Values.ingestion.image }}
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: QDRANT_HOST
+              value: qdrant
+            - name: QDRANT_PORT
+              value: {{ .Values.qdrant.service.port | quote }}
+            - name: QDRANT_COLLECTION
+              value: {{ .Values.ingestion.env.qdrantCollection | quote }}
+            - name: EMBEDDING_MODEL_NAME
+              value: {{ .Values.ingestion.env.embeddingModelName | quote }}
+            - name: CHUNK_SIZE
+              value: {{ .Values.ingestion.env.chunkSize | quote }}
+            - name: CHUNK_OVERLAP
+              value: {{ .Values.ingestion.env.chunkOverlap | quote }}
+          resources:
+            {{- toYaml .Values.ingestion.resources | nindent 12 }}
+{{- end }}
+{{- if and .Values.ingestion.enabled .Values.ingestion.cronjob.enabled }}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: rag-ingestion-nightly
+  namespace: {{ include "rag-k8s-thesis.namespace" . }}
+  labels:
+    app.kubernetes.io/name: rag-ingestion
+    {{- include "rag-k8s-thesis.labels" . | nindent 4 }}
+spec:
+  schedule: {{ .Values.ingestion.cronjob.schedule | quote }}
+  successfulJobsHistoryLimit: {{ .Values.ingestion.cronjob.successfulJobsHistoryLimit }}
+  failedJobsHistoryLimit: {{ .Values.ingestion.cronjob.failedJobsHistoryLimit }}
+  jobTemplate:
+    spec:
+      backoffLimit: {{ .Values.ingestion.job.backoffLimit }}
+      template:
+        metadata:
+          labels:
+            app.kubernetes.io/name: rag-ingestion
+            {{- include "rag-k8s-thesis.labels" . | nindent 12 }}
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: rag-ingestion
+              image: {{ .Values.ingestion.image }}
+              imagePullPolicy: IfNotPresent
+              env:
+                - name: QDRANT_HOST
+                  value: qdrant
+                - name: QDRANT_PORT
+                  value: {{ .Values.qdrant.service.port | quote }}
+                - name: QDRANT_COLLECTION
+                  value: {{ .Values.ingestion.env.qdrantCollection | quote }}
+                - name: EMBEDDING_MODEL_NAME
+                  value: {{ .Values.ingestion.env.embeddingModelName | quote }}
+                - name: CHUNK_SIZE
+                  value: {{ .Values.ingestion.env.chunkSize | quote }}
+                - name: CHUNK_OVERLAP
+                  value: {{ .Values.ingestion.env.chunkOverlap | quote }}
+              resources:
+                {{- toYaml .Values.ingestion.resources | nindent 16 }}
+{{- end }}
