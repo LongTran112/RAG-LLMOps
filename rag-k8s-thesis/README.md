@@ -124,6 +124,26 @@ Suggested tool: `k6` or `hey`.
 
 Current `k8s/` structure is intentionally directory-based for straightforward ArgoCD app definitions (single app-of-apps or per-component apps). No imperative steps are required in manifests.
 
+## ArgoCD Application (Helm)
+
+A starter ArgoCD `Application` is available at:
+
+- `k8s/argocd/application-helm.yaml`
+
+Before applying, update these fields:
+
+- `spec.source.repoURL` -> your Git repository URL
+- `spec.source.targetRevision` -> your branch/tag/commit
+- `spec.source.path` -> chart path in your repo (default is `rag-k8s-thesis/helm/rag-k8s-thesis`)
+
+Apply:
+
+```bash
+kubectl apply -f k8s/argocd/application-helm.yaml
+```
+
+This config enables automated sync with prune + self-heal and creates the destination namespace (`rag-thesis`) when missing.
+
 ## Helm transition path (next phase)
 
 After validating raw YAML behavior:

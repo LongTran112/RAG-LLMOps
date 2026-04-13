@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: rag-k8s-thesis
+  namespace: argocd
+  labels:
+    app.kubernetes.io/name: rag-k8s-thesis
+    app.kubernetes.io/part-of: rag-k8s-thesis
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/your-org/your-repo.git
+    targetRevision: main
+    path: rag-k8s-thesis/helm/rag-k8s-thesis
+    helm:
+      releaseName: rag-poc
+      valueFiles:
+        - values.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: rag-thesis
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
