@@ -1,0 +1,73 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rag-frontend
+  namespace: rag-thesis
+  labels:
+    app.kubernetes.io/name: rag-frontend
+    app.kubernetes.io/part-of: rag-k8s-thesis
+spec:
+  selector:
+    app.kubernetes.io/name: rag-frontend
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8501
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rag-frontend
+  namespace: rag-thesis
+  labels:
+    app.kubernetes.io/name: rag-frontend
+    app.kubernetes.io/part-of: rag-k8s-thesis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: rag-frontend
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: rag-frontend
+        app.kubernetes.io/part-of: rag-k8s-thesis
+    spec:
+      containers:
+        - name: rag-frontend
+          image: rag-k8s-thesis/frontend:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8501
+              name: http
+          env:
+            - name: RAG_BACKEND_URL
+              value: http://rag-backend
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "256Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: rag-frontend
+  namespace: rag-thesis
+  labels:
+    app.kubernetes.io/name: rag-frontend
+    app.kubernetes.io/part-of: rag-k8s-thesis
+spec:
+  rules:
+    - host: rag-ui.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: rag-frontend
+                port:
+                  number: 80

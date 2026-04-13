@@ -21,6 +21,10 @@ This repository contains a proof-of-concept (PoC) for a Retrieval-Augmented Gene
 
 ```text
 rag-k8s-thesis/
+├── frontend/
+│   ├── app.py
+│   ├── requirements.txt
+│   └── Dockerfile
 ├── backend/
 │   ├── app/
 │   │   ├── main.py
@@ -38,6 +42,7 @@ rag-k8s-thesis/
 │   ├── vector-db/
 │   ├── llm-inference/
 │   ├── backend/
+│   ├── frontend/
 │   └── ingestion/
 └── README.md
 ```
@@ -70,6 +75,7 @@ kubectl apply -f k8s/vector-db/qdrant.yaml
 kubectl apply -f k8s/llm-inference/ollama.yaml
 kubectl apply -f k8s/backend/backend.yaml
 kubectl apply -f k8s/ingestion/ingestion-job.yaml
+kubectl apply -f k8s/frontend/frontend.yaml
 ```
 
 Optional scheduled ingestion:
@@ -90,6 +96,48 @@ curl -X POST http://<backend-host>/query \
   -H "Content-Type: application/json" \
   -d '{"query":"What is this thesis PoC about?"}'
 ```
+
+## Frontend tester (LangChain + Streamlit)
+
+Run from `rag-k8s-thesis/frontend`:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+If backend is port-forwarded to `127.0.0.1:8000`, start UI directly:
+
+```bash
+streamlit run app.py
+```
+
+If backend is elsewhere:
+
+```bash
+RAG_BACKEND_URL=http://<backend-host>:<port> streamlit run app.py
+```
+
+Docker option:
+
+```bash
+docker build -t rag-k8s-thesis/frontend:latest ./frontend
+docker run --rm -p 8501:8501 -e RAG_BACKEND_URL=http://host.docker.internal:8000 rag-k8s-thesis/frontend:latest
+```
+
+Kubernetes option:
+
+```bash
+eval $(minikube docker-env)
+docker build -t rag-k8s-thesis/frontend:latest ./frontend
+eval $(minikube docker-env -u)
+
+kubectl apply -f k8s/frontend/frontend.yaml
+kubectl port-forward -n rag-thesis svc/rag-frontend 8501:80
+```
+
+Open `http://127.0.0.1:8501`.
 
 ## Experiment plan for thesis evaluation
 
