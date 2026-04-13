@@ -1,0 +1,93 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rag-backend
+  namespace: rag-thesis
+  labels:
+    app.kubernetes.io/name: rag-backend
+    app.kubernetes.io/part-of: rag-k8s-thesis
+spec:
+  selector:
+    app.kubernetes.io/name: rag-backend
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rag-backend
+  namespace: rag-thesis
+  labels:
+    app.kubernetes.io/name: rag-backend
+    app.kubernetes.io/part-of: rag-k8s-thesis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: rag-backend
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: rag-backend
+        app.kubernetes.io/part-of: rag-k8s-thesis
+    spec:
+      containers:
+        - name: rag-backend
+          image: rag-k8s-thesis/backend:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+              name: http
+          env:
+            - name: QDRANT_HOST
+              value: qdrant
+            - name: QDRANT_PORT
+              value: "6333"
+            - name: QDRANT_COLLECTION
+              value: thesis_docs
+            - name: OLLAMA_BASE_URL
+              value: http://ollama:11434
+            - name: OLLAMA_MODEL
+              value: mistral:7b-instruct
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "512Mi"
+            limits:
+              cpu: "1000m"
+              memory: "1Gi"
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 8000
+            initialDelaySeconds: 15
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: 8000
+            initialDelaySeconds: 8
+            periodSeconds: 5
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: rag-backend
+  namespace: rag-thesis
+  labels:
+    app.kubernetes.io/name: rag-backend
+    app.kubernetes.io/part-of: rag-k8s-thesis
+spec:
+  rules:
+    - host: rag.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: rag-backend
+                port:
+                  number: 80

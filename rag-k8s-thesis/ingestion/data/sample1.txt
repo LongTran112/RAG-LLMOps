@@ -1,0 +1,3 @@
+Retrieval-augmented generation (RAG) combines parametric language models with external knowledge retrieval.
+In this thesis PoC, documents are chunked, embedded with all-MiniLM-L6-v2, and stored in Qdrant.
+At query time, the backend retrieves top-k chunks and passes them as context to an in-cluster LLM served by Ollama.

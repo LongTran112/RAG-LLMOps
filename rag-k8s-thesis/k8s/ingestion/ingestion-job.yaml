@@ -1,0 +1,33 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: rag-ingestion-once
+  namespace: rag-thesis
+  labels:
+    app.kubernetes.io/name: rag-ingestion
+    app.kubernetes.io/part-of: rag-k8s-thesis
+spec:
+  backoffLimit: 2
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: rag-ingestion
+        app.kubernetes.io/part-of: rag-k8s-thesis
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: rag-ingestion
+          image: rag-k8s-thesis/ingestion:latest
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: QDRANT_HOST
+              value: qdrant
+            - name: QDRANT_PORT
+              value: "6333"
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "512Mi"
+            limits:
+              cpu: "1000m"
+              memory: "1Gi"
