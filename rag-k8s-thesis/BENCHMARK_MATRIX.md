@@ -23,8 +23,10 @@ Use this shell helper in terminal:
 switch_model () {
   MODEL="$1"
   kubectl exec -n rag-thesis deployment/ollama -- ollama pull "$MODEL"
-  kubectl set env deployment/rag-backend -n rag-thesis OLLAMA_MODEL="$MODEL"
-  kubectl rollout status deployment/rag-backend -n rag-thesis --timeout=600s
+  kubectl set env deployment/rag-backend -n rag-thesis \
+    OLLAMA_MODEL="$MODEL" \
+    REQUEST_TIMEOUT_SECONDS="${REQUEST_TIMEOUT_SECONDS:-1800}"
+  kubectl rollout status deployment/rag-backend -n rag-thesis --timeout=1200s
   echo "Switched to model: $MODEL"
 }
 ```
@@ -112,6 +114,8 @@ Record one row per run:
 - Keep ingestion and background heavy jobs stopped during benchmarking.
 - Keep model-specific context and temperature unchanged across runs.
 - If a model is too slow (for example `granite3.3:8b` on CPU), reduce concurrency to avoid queueing artifacts.
+- Large models on CPU can take **10–20+ minutes** for the first response after a cold start; set `REQUEST_TIMEOUT_SECONDS` high (for example `1800`) and use a matching `curl --max-time`.
+- If Ollama logs show the model barely fails to load, either give the `ollama` pod more memory or lower `OLLAMA_CONTEXT_LENGTH` (repo default is `2048` in `k8s/llm-inference/ollama.yaml`).
 
 ## 10) Automated script (CSV output)
 
@@ -126,7 +130,16 @@ Useful overrides:
 
 ```bash
 MODELS_CSV="phi3:mini,qwen2.5:3b" REPETITIONS=2 PROMPT_IDS_CSV="P1,P2" ./scripts/benchmark.sh
+REQUEST_TIMEOUT_SECONDS=1800 CURL_MAX_TIME=1800 MODELS_CSV="granite3.3:8b" PROMPT_IDS_CSV="P1" ./scripts/benchmark.sh
 ```
+
+The script defaults to **benchmark mode** (disables product latency caps) via:
+
+- `BENCHMARK_PRODUCT_LATENCY_MODE=false`
+- `BENCHMARK_OLLAMA_MAX_OUTPUT_TOKENS=0` (no `num_predict` cap)
+- `BENCHMARK_QDRANT_TOP_K=4`
+
+To measure the interactive/product configuration instead, run with `BENCHMARK_PRODUCT_LATENCY_MODE=true` and set `BENCHMARK_OLLAMA_MAX_OUTPUT_TOKENS=256`.
 
 Outputs are written to:
 

@@ -47,17 +47,31 @@ spec:
               value: "6333"
             - name: QDRANT_COLLECTION
               value: thesis_docs
+            - name: QDRANT_TOP_K
+              value: "4"
+            - name: QDRANT_TOP_K_PRODUCT
+              value: "3"
+            - name: PRODUCT_LATENCY_MODE
+              value: "true"
+            - name: OLLAMA_MAX_OUTPUT_TOKENS
+              value: "256"
+            - name: OLLAMA_TEMPERATURE
+              value: "0.1"
+            - name: WARMUP_OLLAMA_ON_STARTUP
+              value: "true"
             - name: OLLAMA_BASE_URL
               value: http://ollama:11434
             - name: OLLAMA_MODEL
-              value: mistral:7b-instruct
+              value: qwen2.5:3b
+            - name: REQUEST_TIMEOUT_SECONDS
+              value: "900"
           resources:
             requests:
-              cpu: "250m"
-              memory: "512Mi"
+              cpu: "500m"
+              memory: "1Gi"
             limits:
               cpu: "1000m"
-              memory: "1Gi"
+              memory: "3Gi"
           livenessProbe:
             httpGet:
               path: /healthz

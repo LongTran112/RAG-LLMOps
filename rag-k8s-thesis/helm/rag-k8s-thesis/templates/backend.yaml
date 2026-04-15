@@ -50,12 +50,24 @@ spec:
               value: {{ .Values.backend.env.qdrantCollection | quote }}
             - name: QDRANT_TOP_K
               value: {{ .Values.backend.env.qdrantTopK | quote }}
+            - name: QDRANT_TOP_K_PRODUCT
+              value: {{ .Values.backend.env.qdrantTopKProduct | quote }}
+            - name: PRODUCT_LATENCY_MODE
+              value: {{ .Values.backend.env.productLatencyMode | quote }}
+            - name: OLLAMA_MAX_OUTPUT_TOKENS
+              value: {{ .Values.backend.env.ollamaMaxOutputTokens | quote }}
+            - name: OLLAMA_TEMPERATURE
+              value: {{ .Values.backend.env.ollamaTemperature | quote }}
+            - name: WARMUP_OLLAMA_ON_STARTUP
+              value: {{ .Values.backend.env.warmupOllamaOnStartup | quote }}
             - name: EMBEDDING_MODEL_NAME
               value: {{ .Values.backend.env.embeddingModelName | quote }}
             - name: OLLAMA_BASE_URL
               value: http://ollama:{{ .Values.ollama.service.port }}
             - name: OLLAMA_MODEL
               value: {{ .Values.backend.env.ollamaModel | quote }}
+            - name: REQUEST_TIMEOUT_SECONDS
+              value: {{ .Values.backend.env.requestTimeoutSeconds | quote }}
           resources:
             {{- toYaml .Values.backend.resources | nindent 12 }}
           livenessProbe:

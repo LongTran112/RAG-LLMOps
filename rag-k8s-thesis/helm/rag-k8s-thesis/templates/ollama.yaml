@@ -56,6 +56,11 @@ spec:
           ports:
             - containerPort: {{ .Values.ollama.service.port }}
               name: http
+          env:
+            - name: OLLAMA_CONTEXT_LENGTH
+              value: {{ .Values.ollama.contextLength | quote }}
+            - name: OLLAMA_KEEP_ALIVE
+              value: {{ .Values.ollama.keepAlive | quote }}
           resources:
             {{- toYaml .Values.ollama.resources | nindent 12 }}
           volumeMounts:

@@ -9,7 +9,14 @@ REMOTE_PORT="${REMOTE_PORT:-80}"
 REPETITIONS="${REPETITIONS:-3}"
 MODELS_CSV="${MODELS_CSV:-phi3:mini,qwen2.5:3b,granite3.3:8b}"
 PROMPT_IDS_CSV="${PROMPT_IDS_CSV:-P1,P2,P3,P4,P5}"
-CURL_MAX_TIME="${CURL_MAX_TIME:-600}"
+CURL_MAX_TIME="${CURL_MAX_TIME:-1800}"
+CONNECT_TIMEOUT="${CONNECT_TIMEOUT:-10}"
+REQUEST_RETRIES="${REQUEST_RETRIES:-3}"
+RETRY_SLEEP_SECONDS="${RETRY_SLEEP_SECONDS:-5}"
+# For thesis benchmarks, disable product caps so latency/quality comparisons are not truncated.
+BENCHMARK_PRODUCT_LATENCY_MODE="${BENCHMARK_PRODUCT_LATENCY_MODE:-false}"
+BENCHMARK_OLLAMA_MAX_OUTPUT_TOKENS="${BENCHMARK_OLLAMA_MAX_OUTPUT_TOKENS:-0}"
+BENCHMARK_QDRANT_TOP_K="${BENCHMARK_QDRANT_TOP_K:-4}"
 
 RESULT_DIR="${RESULT_DIR:-benchmarks}"
 TIMESTAMP="$(date +%Y%m%d_%H%M%S)"
@@ -38,47 +45,100 @@ get_prompt() {
   esac
 }
 
+ensure_port_forward() {
+  if [ -n "${PF_PID:-}" ] && kill -0 "${PF_PID}" >/dev/null 2>&1; then
+    return
+  fi
+  kubectl port-forward -n "${NAMESPACE}" "svc/${BACKEND_SERVICE}" "${LOCAL_PORT}:${REMOTE_PORT}" >/dev/null 2>&1 &
+  PF_PID=$!
+  sleep 2
+}
+
+wait_backend_ready() {
+  local ready="000"
+  local attempt=1
+  while [ "${attempt}" -le 60 ]; do
+    ensure_port_forward
+    ready="$(
+      curl -s -o /dev/null -w "%{http_code}" \
+        --connect-timeout "${CONNECT_TIMEOUT}" \
+        --max-time "${CONNECT_TIMEOUT}" \
+        "http://127.0.0.1:${LOCAL_PORT}/healthz" || true
+    )"
+    if [ "${ready}" = "200" ]; then
+      return 0
+    fi
+    sleep 2
+    attempt=$((attempt + 1))
+  done
+  return 1
+}
+
+run_query_once() {
+  local prompt="$1"
+  local result
+  local attempt=1
+  while [ "${attempt}" -le "${REQUEST_RETRIES}" ]; do
+    ensure_port_forward
+    result="$(
+      curl -s -o /dev/null -w "%{http_code},%{time_total}" \
+        --connect-timeout "${CONNECT_TIMEOUT}" \
+        --max-time "${CURL_MAX_TIME}" \
+        -X POST "http://127.0.0.1:${LOCAL_PORT}/query" \
+        -H "Content-Type: application/json" \
+        -d "{\"query\":\"${prompt}\"}" || true
+    )"
+    if [ -z "${result}" ]; then
+      result="000,${CURL_MAX_TIME}"
+    fi
+    if [ "${result%%,*}" = "200" ] || [ "${attempt}" -eq "${REQUEST_RETRIES}" ]; then
+      printf "%s" "${result}"
+      return 0
+    fi
+    sleep "${RETRY_SLEEP_SECONDS}"
+    attempt=$((attempt + 1))
+  done
+}
+
 echo "timestamp,model,prompt_id,repetition,http_code,total_time_s" > "${RESULT_FILE}"
 
 echo "[$(date)] Starting benchmark run" | tee -a "${LOG_FILE}"
 echo "[$(date)] Result CSV: ${RESULT_FILE}" | tee -a "${LOG_FILE}"
+echo "[$(date)] Benchmark knobs: PRODUCT_LATENCY_MODE=${BENCHMARK_PRODUCT_LATENCY_MODE} OLLAMA_MAX_OUTPUT_TOKENS=${BENCHMARK_OLLAMA_MAX_OUTPUT_TOKENS} QDRANT_TOP_K=${BENCHMARK_QDRANT_TOP_K}" | tee -a "${LOG_FILE}"
 
 kubectl get pods -n "${NAMESPACE}" >/dev/null
 
-kubectl port-forward -n "${NAMESPACE}" "svc/${BACKEND_SERVICE}" "${LOCAL_PORT}:${REMOTE_PORT}" >/dev/null 2>&1 &
-PF_PID=$!
+PF_PID=""
 cleanup() {
-  kill "${PF_PID}" >/dev/null 2>&1 || true
+  if [ -n "${PF_PID}" ]; then
+    kill "${PF_PID}" >/dev/null 2>&1 || true
+  fi
 }
 trap cleanup EXIT
 
-sleep 2
+ensure_port_forward
 
 for model in "${MODELS[@]}"; do
   echo "[$(date)] Switching model to ${model}" | tee -a "${LOG_FILE}"
   kubectl exec -n "${NAMESPACE}" deployment/ollama -- ollama pull "${model}" >/dev/null
-  kubectl set env deployment/rag-backend -n "${NAMESPACE}" OLLAMA_MODEL="${model}" >/dev/null
-  kubectl rollout status deployment/rag-backend -n "${NAMESPACE}" --timeout=600s >/dev/null
+  kubectl set env deployment/rag-backend -n "${NAMESPACE}" \
+    OLLAMA_MODEL="${model}" \
+    REQUEST_TIMEOUT_SECONDS="${REQUEST_TIMEOUT_SECONDS:-1800}" \
+    PRODUCT_LATENCY_MODE="${BENCHMARK_PRODUCT_LATENCY_MODE}" \
+    OLLAMA_MAX_OUTPUT_TOKENS="${BENCHMARK_OLLAMA_MAX_OUTPUT_TOKENS}" \
+    QDRANT_TOP_K="${BENCHMARK_QDRANT_TOP_K}" >/dev/null
+  kubectl rollout status deployment/rag-backend -n "${NAMESPACE}" --timeout=1200s >/dev/null
+  if ! wait_backend_ready; then
+    echo "[$(date)] model=${model} backend_not_ready_after_switch" | tee -a "${LOG_FILE}"
+  fi
 
   warmup_prompt="$(get_prompt P1)"
-  curl -s -o /dev/null -X POST "http://127.0.0.1:${LOCAL_PORT}/query" \
-    --max-time "${CURL_MAX_TIME}" \
-    -H "Content-Type: application/json" \
-    -d "{\"query\":\"${warmup_prompt}\"}" || true
+  run_query_once "${warmup_prompt}" >/dev/null || true
 
   for prompt_id in "${PROMPT_IDS[@]}"; do
     prompt="$(get_prompt "${prompt_id}")"
     for rep in $(seq 1 "${REPETITIONS}"); do
-      result="$(
-        curl -s -o /dev/null -w "%{http_code},%{time_total}" \
-          --max-time "${CURL_MAX_TIME}" \
-          -X POST "http://127.0.0.1:${LOCAL_PORT}/query" \
-          -H "Content-Type: application/json" \
-          -d "{\"query\":\"${prompt}\"}" || true
-      )"
-      if [ -z "${result}" ]; then
-        result="000,${CURL_MAX_TIME}"
-      fi
+      result="$(run_query_once "${prompt}")"
       http_code="${result%%,*}"
       total_time="${result##*,}"
       echo "$(date +%Y-%m-%dT%H:%M:%S),${model},${prompt_id},${rep},${http_code},${total_time}" >> "${RESULT_FILE}"

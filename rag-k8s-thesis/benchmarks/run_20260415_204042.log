@@ -1,0 +1,8 @@
+[Wed Apr 15 20:40:42 CEST 2026] Starting benchmark run
+[Wed Apr 15 20:40:42 CEST 2026] Result CSV: benchmarks/results_20260415_204042.csv
+[Wed Apr 15 20:40:44 CEST 2026] Switching model to qwen2.5:3b
+[Wed Apr 15 20:44:32 CEST 2026] model=qwen2.5:3b prompt=P1 rep=1 code=200 time=200.726496s
+[Wed Apr 15 20:44:32 CEST 2026] Switching model to granite3.3:8b
+[Wed Apr 15 20:45:27 CEST 2026] model=granite3.3:8b prompt=P1 rep=1 code=000 time=0.017865s
+[Wed Apr 15 20:45:27 CEST 2026] Benchmark run complete
+[Wed Apr 15 20:45:27 CEST 2026] Output: benchmarks/results_20260415_204042.csv
