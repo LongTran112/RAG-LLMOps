@@ -1,0 +1,186 @@
+UNITED STATES
+
+SECURITIES AND EXCHANGE COMMISSION
+
+WASHINGTON, D.C. 20549
+
+FORM 10-K/A
+
+(Amendment No. 1)
+
+(Mark One)
+
+☒ ANNUAL
+REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+
+For the fiscal year ended June 30,2023
+
+OR
+
+☐ TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+
+For the transition period from to
+
+Commission file number: 001-39685
+
+INMED PHARMACEUTICALS INC.
+
+(Exact name of registrant as specified in its charter)
+
+  British Columbia, Canada                          98-1428279              
+  (State or other jurisdiction of                   (IRS employer           
+  Suite 310 – 815 W Hastings, Vancouver, B.C.,      V6C 1B4                 
+  (Address of principal executive office)           (Zip Code)              
+
+(604) 669-7207
+
+(Registrant’s telephone number, including area code)
+
+Securities registered pursuant to Section 12(b) of the Exchange
+Act:
+
+  Title of Each Class             Trading Symbol      Name of Each Exchange On   
+                                                      Which Registered           
+  Common Stock, no par value      INM                 The Nasdaq Capital Market  
+ ─────────────────────────────────────────────────────────────────────────────────
+
+Securities registered pursuant to Section 12(g) of the Act:
+None
+
+Indicate
+by check mark if the registrant is a well-known seasoned issuer, as defined in Rule 405 of the Securities Act. Yes ☐ No
+
+Indicate
+by check mark if the registrant is not required to file reports pursuant to Section 13 or Section 15(d) of the Exchange Act. Yes ☐ No
+
+Indicate
+by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange
+Act of 1934 during the preceding 12 months (or for such shorter period that the registrant was required to file such reports), and (2)
+has been subject to such filing requirements for the past 90 days. Yes
+
+Indicate
+by check mark whether the registrant has submitted electronically, every Interactive Data File required to be submitted pursuant to Rule
+405 of Regulation S-T during the preceding 12 months (or for such shorter period that the registrant was required to submit such files). Yes
+
+Indicate by check mark whether the registrant
+is a large accelerated filer, an accelerated filer, a non-accelerated filer, a smaller reporting company, or emerging growth company.
+See the definitions of “large accelerated filer,” “accelerated filer” and “smaller reporting company,”
+and “emerging growth company” in Rule 12b-2 of the Exchange Act.
+
+  Large accelerated filer      Accelerated filer          
+  Non-accelerated filer        Smaller reporting company  
+ ──────────────────────────────────────────────────────────
+                               Emerging growth company    
+
+I f
+an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying
+with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐
+
+Indicate
+by check mark whether the registrant has fi led a report on and attestation to its management’s assessment of the effectiveness
+of its internal control over financial reporting under Section 404(b) of the Sarbanes-Oxley Act (15 U.S.C. 7262(b)) by the registered
+public accounting fi rm that prepared or issued its audit report. ☐
+
+If
+securities are registered pursuant to Section 12(b) of the Act, indicate by check mark whether the financial statements of the registrant
+included in the filing reflect the correction of an error to previously issued financial statements. ☐
+
+Indicate
+by check mark whether any of those error corrections are restatements that required a recovery analysis of incentive-based compensation
+received by any of the registrant’s executive officers during the relevant recovery period pursuant to §240.10D-1(b). ☐
+
+Indicate
+by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act). Yes ☐ No ☒
+
+As
+of December 31, 2022, the last business day of the Registrant’s most recently completed second fiscal quarter, the aggregate market
+value of the Company’s voting and non-voting common equity held by non-affiliates of the Registrant was $ 3,180,248
+
+On
+September 29, 2023, there were 3,328,191on stock outstanding.
+
+DOCUMENTS INCORPORATED BY REFERENCE
+
+None.
+
+  Auditor Name:      Auditor Location:      Auditor Firm ID:  
+ ──────────────────────────────────────────────────────────────
+  Marcum LLP         New York, NY                        688  
+
+EXPLANATORY NOTE
+
+We are filing
+this Amendment No. 1 to our Annual Report on Form 10-K solely for the purpose of updating our auditor’s consent in Exhibit 23.1
+to include our Registration Statement on Form S-8 (File No. 333-268356).
+
+Outside of the change to the exhibit noted above
+and the updated certifications of the Chief Executive Officer and Chief Financial Officer, this Form 10-K/A does not otherwise amend,
+supplement, update or revise any portion of the original Form 10-K which remains unchanged since the date of its filing. Furthermore,
+this Form 10-K/A does not change any previously reported financial results, nor does it reflect events occurring after the date of the
+original Form 10-K. Information not affected by this Form 10-K/A remains unchanged and reflects the disclosures made at the time the original
+Form 10-K was filed.
+
+PART IV
+
+ITEM 15. EXHIBITS AND FINANCIAL STATEMENT SCHEDULES
+
+The following documents are being filed
+as part of this report:
+
+  (1)      Financial Statements                                                                                                    
+
+  (2)      Financial statement schedules have been omitted because of the absence of conditions under which they are required or because the required information is included in the financial statements or...  
+
+  (3)      A list of exhibits filed with this report is found below.  
+
+  EXHIBIT                                                                                                   
+  NUMBER         DESCRIPTION                                                                                
+  23.1           Consent of Marcum LLP.                                                                     
+  31.1           Certification Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002                    
+  31.2           Certification Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002                    
+  32.1           Certification Pursuant to Section 906 of the Sarbanes-Oxley Act of 2002                    
+  32.2           Certification Pursuant to Section 906 of the Sarbanes-Oxley Act of 2002                    
+  101. INS*      Inline XBRL Instance Document.                                                             
+  101. SCH*      Inline XBRL Taxonomy Extension Schema Document.                                            
+  101. CAL*      Inline XBRL Taxonomy Extension Calculation Linkbase Document.                              
+  101. DEF*      Inline XBRL Taxonomy Extension Definition Linkbase Document.                               
+  101. LAB*      Inline XBRL Taxonomy Extension Label Linkbase Document.                                    
+  101. PRE*      Inline XBRL Taxonomy Extension Presentation Linkbase Document.                             
+  104*           Cover Page Interactive Data File (formatted as Inline XBRL and contained in Exhibit 101).  
+
+  Previously filed.  
+
+ITEM 16. 10-K SUMMARY
+
+Not applicable.
+
+SIGNATURES
+
+Pursuant to the requirements of Section
+13 or 15(d) of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned,
+thereunto duly authorized.
+
+                         INMED PHARMACEUTICALS INC.                                        
+                         (Registrant)                                                      
+  December 21, 2023      By:                             /s/ Jonathan Tegge                
+                                                         Jonathan Tegge                    
+                                                         Interim Chief Financial Officer   
+
+Pursuant to the requirements of the Securities
+and Exchange Act of 1934, this report has been signed below by the following persons on behalf of the registrant and in the capacities
+and on the dates indicated.
+
+  Signature                Title                                                               Date               
+  /s/ Eric A. Adams        President, Chief Executive Officer and Director                     December 21, 2023  
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Eric A. Adams            (Principal Executive Officer)                                                          
+  /s/ Jonathan Tegge       Interim Chief Financial Officer                                     December 21, 2023  
+  Jonathan Tegge           (Principal Financial Officer and Principal Accounting Officer)                         
+  /s/ Andrew Hull          Director (Chairman to the Board of Directors)                       December 21, 2023  
+  Andrew Hull                                                                                                     
+  /s/ Janet Grove          Director                                                            December 21, 2023  
+  Janet Grove                                                                                                     
+  /s/ Bryan Baldasare      Director                                                            December 21, 2023  
+  Bryan Baldasare                                                                                                 
+  /s/ Nicole Lemerond      Director                                                            December 21, 2023  
+  Nicole Lemerond

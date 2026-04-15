@@ -1,0 +1,1115 @@
+UNITED STATES
+
+SECURITIES AND EXCHANGE COMMISSION
+
+Washington, D.C.20549
+
+FORM10-K
+
+  ANNUAL REPORT PURSUANT TO SECTION13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934  
+ ───────────────────────────────────────────────────────────────────────────────────────
+
+For the fiscal year endedSeptember 30, 2023
+
+  TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934  
+ ────────────────────────────────────────────────────────────────────────────────────────────
+
+For the transition period from ___________to___________
+
+Commission File No.333-261643
+
+  TANICO INC.                                             
+ ──────────────────────────────────────────────────────────
+  (Exact name of registrant as specified in its charter)  
+
+  Nevada                                        37-2002382              
+  (State or Other Jurisdiction of               (IRS Employer           
+  387 Whitby Shores Greenway, Whitby, ON        L1N 9R6 Canada          
+  (Address of principal executive offices)      (Zip Code)              
+
+Registrant’s telephone number, including area code: 1-775-404-0333
+
+Securities registered pursuant to Section 12(b) of the Act:
+
+  Title of each class      Trading Symbol(s)      Name of each exchange on  
+                                                                            
+                                                  which registered          
+ ────────────────────────────────────────────────────────────────────────────
+  Common                                                                    
+
+Indicate by checkmark whether the registrant is a well-known seasoned issuer, as defined in Rule 405 of the Securities Act. Yes ☐No☒
+
+Indicate by checkmark if the registrant is not required to file reports pursuant to Section 13 or Section 15(d) of the Act. Yes ☐No☒
+
+Indicate by checkmark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the registrant as required to file such reports), and (2) has been subject to such filing requirements for the past 90 days. Yes☒ No ☐
+
+Indicate by checkmark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (§232.405 of this chapter) during the preceding 12 months (or for such shorter period that the registrant was required to submit such files). Yes☒ No ☐
+
+Indicate by checkmark whether the registrant is a large accelerated filer, an accelerated filer, or a non-accelerated filer. See definition of "accelerated filer and large accelerated filer" in Rule 12b-2 of the Exchange Act. (Check one):
+
+  Large accelerated filer      Accelerated filer          
+  Non-accelerated filer        Smaller reporting company  
+ ──────────────────────────────────────────────────────────
+                               Emerging growth company    
+
+If an emerging growth company, indicate by checkmark if the registrant has elected not to use the extended transition period for completing with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐
+
+Indicate by checkmark whether the registrant is a shell company (as defined in Rule 12b-2 of the Act). Yes☐No ☒
+
+As of March 31, 2023 the last day of the registrant’s most recently completed second fiscal quarter, the aggregate market value of the registrant’s common stock, held by non-affiliates, computed by reference to the price at which the common equity was last sold prior to March 31, 2023, was $7,905.00.
+
+As of December 21, 2023, the registrant had7,825,000shares of common stock issued and outstanding.
+
+No market value has been computed based upon the fact that no active trading market has been established as of December 21, 2023.
+
+Table of Contents
+
+  PART I                                                                                                                                      3  
+                  Item 1. Business                                                                                                            3  
+                  Item 1A. Risk Factors.                                                                                                      5  
+                  Item 1B. Unresolved Staff Comments.                                                                                         5  
+                  Item 2. Properties.                                                                                                         5  
+                  Item 3. Legal Proceedings.                                                                                                  5  
+                  Item 4. Mine Safety Disclosures.                                                                                            5  
+  PART II                                                                                                                                     6  
+                  Item 5. Market for Registrant’s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities.       6  
+                  Item 6. Selected Financial Data.                                                                                            6  
+                  Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations.                              6  
+                  Item 7A. Quantitative and Qualitative Disclosures About Market Risk.                                                        9  
+                  Item 8. Financial Statements and Supplementary Data.                                                                        9  
+                  Item 9. Changes in and Disagreements with Accountants on Accounting and Financial Disclosure.                              10  
+                  Item 9A. Controls and Procedures.                                                                                          10  
+                  Item 9B. Other Information.                                                                                                10  
+                  Item 9C. Disclosure Regarding Foreign Jurisdictions that Prevent Inspections.                                              10  
+  PART III                                                                                                                                   11  
+                  Item 10. Directors, Executive Officers and Corporate Governance.                                                           11  
+                  Item 11. Executive Compensation.                                                                                           15  
+                  Item 12. Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters.                   16  
+                  Item 13. Certain Relationships and Related Transactions, and Director Independence.                                        16  
+                  Item 14. Principal Accounting Fees and Services.                                                                           17  
+  PART IV                                                                                                                                    17  
+                  Item 15. Exhibits, Financial Statement Schedules.                                                                          17  
+                  Item 16. Form 10-K Summary                                                                                                 17  
+  SIGNATURES                                                                                                                                 18  
+
+  2                  
+  Table of Contents  
+
+PART I
+
+Item 1. Business
+
+Overview
+
+TANICO INC. has been incorporated on May 3, 2021 in the State of Nevada. We have never been involved in any reclassification, merger, consolidation, purchase or sale of a significant amount of assets, nor have we ever declared bankruptcy, been in receivership, or been involved in any legal action or proceedings. Since incorporation, management has developed a detailed business plan to provide customers with unique and innovative solution for their needs.
+
+Products/Services
+
+Description of Product or Services
+
+TANICO INC. is a new company that develops children's games that can provide valuable feedback to parents about child psychological well-being and early detection of any potential problems of psychological development. In the modern world, parents do not have enough time and experience to identify potentially dangerous psychological deviation in child behavior on early-stage (during early years of child development) and address it adequately.
+
+The games we develop will generate specific situations and monitor the child's reaction. Multiple consecutive steps allow seeing some repeating patterns and trends. There are different types of games for each age, although by analyzing children's skills and intellectual abilities, the level of the games will adjust automatically. No personal data is stored on our gaming servers. Each account is only associated with parents’ email and/or with unique id number and password. Account is optional and
+is only necessary if parents would like to receive feedback. Parents will receive feedback regularly. In case of early problems, they will receive a recommendation to see a professional help for their child.
+
+With parents’ consent we can provide data to help professional child psychologists to conduct long-term monitoring of child behavior and receive more information about child mental development. The psychologists can provide their valuable input on what game scenarios can identify different behavior patterns.
+
+Target Market and Clients/potential Clients
+
+Our target market is any family with preschool children age 4 to 7 years old, also professional child psychologists who wants with parents’ permission to monitor child behavior on a long-term basis.
+
+During Phase 1 (initial stage) software development (online gaming, smart devices - smart phone, notepads etc.)
+
+In Phase 2 - deployment, google play, apple, hosting gaming website.
+
+Phase 3 business development.
+
+Source of revenue
+
+We have identified three main marketing client groups associated with the various streams of revenue:
+
+Source #1 - Parents, for small subscription fee they can insure those children grow healthy and happy
+
+Source #2 - Professional psychologists’ community, using our games for monitoring children with psychological deviations, for medical research.
+
+The main target customer group will be parents. Today several billion people use personal computers or other internet enabled devices. Capturing a small sector of this user population could allow us to sell our products at a very attractive and affordable price.
+
+  3                  
+
+Marketing Strategy
+
+Our marketing strategy is to use inexpensive and widely available advertising vehicles such as
+
+  The company website                                 
+  YouTube                                             
+  Social Networks (Facebook, LinkedIn, Twitter etc.)  
+
+If we can obtain more financial resources, we can include Google advertising offers.
+
+To increase customer interest in our products we can provide a free product trial for a fixed period of time.
+
+Another option is to provide light version of our application for free and to offer more security and functionality in a full edition version.
+
+The pricing of our products will be inexpensive allowing to penetration of a wider customer base.
+
+Sources and Availability of Products and Supplies
+
+We do not depend on any suppliers or specific products.
+
+Dependence on One or a Few Major Customers
+
+Our target market is mostly retail customers so we do not have any dependencies on one or a few major customers.
+
+Patent, Trademark, License & Franchise Restrictions and Contractual Obligations & Concessions
+
+There are no inherent factors or circumstances associated with this industry, or any of the products or services that we expect to be providing that would give rise to any patent, trademark or license infringements or violations. We have not entered into any franchise agreements or other contracts that have given, or could give rise to obligations or concessions.
+
+Out web domain and IP address as well as company information will be protected by our domain host.
+
+We do not own, either legally or beneficially, any patents or trademarks.
+
+Governmental and Industry Regulations
+
+The company upon implementing its business plan expects to be in compliance with U.S. federal laws, including the U.S. Privacy Act of 1974, Health Insurance Portability and Accountability Act of 1996, Children's Online Privacy Protection Act of 1998 (COPPA), 1999 Gramm-Leach Bliley Act that protects the rights and data of U.S. consumers, patients, minors and others.
+
+The Nevada state laws (Nevada Revised Statutes - NRS)
+
+CHAPTER 603A - SECURITY AND PRIVACY OF PERSONAL INFORMATION
+
+SECURITY OF INFORMATION MAINTAINED BY DATA COLLECTORS AND OTHER BUSINESSES
+
+State of Nevada Online Privacy Policy - Effective Date 11/25/02 | 3.03 B.
+
+We will also be subject to common business and tax rules and regulations pertaining to the normal business operations.
+
+Research and Development Activities and Costs
+
+We are capitalizing on prior scientific research and development that was done by our President and Director and have not yet spent any money on R&D. Once this offering is completed, we will have resource to continue our R&D program.
+
+Compliance with Environmental Laws
+
+Our operations are not subject to any environmental laws.
+
+Facilities
+
+We do not own or rent facilities of any kind. We conduct our operations from the facilities provided by Nikita Fenev free of charge.
+
+  4                  
+
+Employees
+
+We have only commenced limited operations and currently have no employees other than managing officers. Our President Mr. Anton Mikhalev spends approximately 20 hours per week on our business and our treasurer Ms. Maria Tomskaia devotes up to 12 hours per week to company’s operations.
+
+Description Of Property
+
+We do not currently own any real property of any kind.
+
+Item 1A. Risk Factors.
+
+Not applicable to smaller reporting companies.
+
+Item 1B. Unresolved Staff Comments.
+
+Not applicable.
+
+Item 2. Properties.
+
+We do not own any real estate or other properties.
+
+Item 3. Legal Proceedings.
+
+Management is not aware of any legal proceedings contemplated by any governmental authority or any other party involving us or our properties. As of the date of this Year-End Report, no director, officer or affiliate is (i) a party adverse to us in any legal proceeding, or (ii) has an adverse interest to us in any legal proceedings. Management is not aware of any other legal proceedings pending or that have been threatened against us or our properties.
+
+Item 4. Mine Safety Disclosures.
+
+Not applicable.
+
+  5                  
+
+PART II
+
+Item 5. Market for Registrant’s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities.
+
+Market Information
+
+There has been no market for our securities. Our common stock is not traded on any exchange or on the over-the-counter market. After the effective date of the registration statement relating to this prospectus, we hope to have a market maker file an application with the Financial Industry Regulatory Authority (“FINRA”) for our common stock to be eligible for trading on the OTCQB or another quotation board. We do not yet have a market maker who has agreed to file such application. There is no 
+assurance that a trading market will develop, or, if developed, that it will be sustained. Consequently, a purchaser of our common stock may find it difficult to resell the securities offered herein should the purchaser desire to do so when eligible for public resale. As of September 30, 2023, no shares of our common stock have traded.
+
+Number of Holders
+
+As of September 30, 2023, the 7,825,000 issued and outstanding shares of common stock were held by a total of 34 shareholders of record.
+
+Dividends
+
+No cash dividends were paid on our shares of common stock during the fiscal years ended September 30, 2023. We have not paid any cash dividends since our inception and do not foresee declaring any cash dividends on our common stock in the foreseeable future.
+
+Recent Sales of Unregistered Securities
+
+None.
+
+Purchase of our Equity Securities by Officers and Directors
+
+None.
+
+Other Stockholder Matters
+
+None.
+
+Item 6. Selected Financial Data.
+
+Not applicable.
+
+Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+
+You should read the following discussion and analysis of our financial condition and results of operations together with our consolidated financial statements and the related notes and other financial information included elsewhere in this Prospectus. Some of the information contained in this discussion and analysis or set forth elsewhere in this Prospectus, including information with respect to our plans and strategy for our business and related financing, includes forward-looking statements 
+that involve risks and uncertainties. You should review the “Risk Factors” section of this Prospectus for a discussion of important factors that could cause actual results to differ materially from the results described in or implied by the forward-looking statements contained in the following discussion and analysis.
+
+On June 20, 2023, a change of control of the Company occurred when Ms. Tatiana Fevena sold and transferred 5,000,000 of shares of common stock, representing 64% control of the Company, to Mr. Anton Mikhalev.
+
+On August 29, 2023, Ms. Feneva resigned as Officer and Director, and Anton Mikhalev was appointed as Director and Chief Executive Officer and Director. Please see our Form 8-K filed on August 30, 2023 for further detail.
+
+Our cash balance was $14,299 as of September 30, 2023. We believe our cash balance is not sufficient to fund our limited levels of operations for any period of time. We have been utilizing funds received from our President and Director from the purchase of shares. He has no commitment, arrangement or legal obligation to advance or loan funds to the company. In order to implement our plan of operations for the next twelve-month period, we require a minimum of $25,000 (approximately $15,000 of 
+which are legal and registration fees for a public company) of funding from this offering. Being a development stage company, we have very limited operating history. After twelve months period we may need additional financing, for which we currently don’t have any arrangements.
+
+  6                  
+
+Our independent registered public accountant has issued a going concern opinion. This means that there is substantial doubt that we can continue as an on-going business for the next twelve months unless we obtain additional capital to pay our bills. For the year ended September 30, 2023 we have incurred a loss of $19,022 with total accumulated deficit of $44,600; no significant revenue is anticipated until we complete our initial business development. There is no assurance we will ever reach 
+that stage.
+
+To meet our need for cash we are attempting to raise money from this offering. We believe that we will be able to raise enough money through this offering to expand our proposed operations, however there is no guarantee that we will stay in business after doing so. At the present time, we have not made any arrangements to raise additional cash, other than through this offering.
+
+We are an “emerging growth company” as defined in the JOBS Act, and we may take advantage of certain exemptions from various reporting requirements that are applicable to other public companies that are not “emerging growth companies” including, but not limited to: not required to comply with the auditor attestation requirements of Section 404 of the Sarbanes-Oxley Act; reduced disclosure obligations regarding executive compensation in our periodic reports and proxy statements; exemptions from 
+the requirements of holding an annual non-binding advisory vote on executive compensation and nonbinding stockholder approval of any golden parachute payments not previously approved. In addition, Section 107 of the JOBS Act also provides that an “emerging growth company” can take advantage of the extended transition period provided in Section 7(a)(2)(B) of the Securities Act for complying with new or revised accounting standards. In other words, an “emerging growth company” can delay the 
+adoption of certain accounting standards until those standards would otherwise apply to private companies. We are choosing to “opt out” of such extended transition period, and as a result, we will comply with new or revised accounting standards on the relevant dates on which adoption of such standards is required for non-emerging growth companies. Section 107 of the JOBS Act provides that our decision to opt out of the extended transition period for complying with new or revised accounting 
+standards is irrevocable.
+
+Results of Operations for the year ended September 30, 2023
+
+For fiscal year ended September 30, 2023, we have generated $5,000 in revenue. There was no revenue in prior fiscal year.
+
+For fiscal year ended September 30, 2023, our operating expenses were comprised of professional fees of $22,463 and general and administrative expenses of $1,559 as compared with $16,735 of professional fees and $1,438 in general and administrative expenses for the fiscal year ended September 30, 2022.
+
+For the year ended September 30, 2023, cash used in operations was $23,443 compared with $11,433 for the fiscal year ended September 30, 2022. Difference YoY due to lower accrued revenue in the current year.
+
+For the year ended September 30, 2022, cash used in investing activities was $961, associated with the purchase of computer equipment. There were no investing activating in the current year.
+
+For the year ended September 30, 2023, cash generated from financing activities was $4,448 compared with $29,561 for the year ended September 30, 2022. Difference YoY is primarily due to less proceeds from sale of common shares.
+
+To date we have sold 7,825,000 shares of common stock.
+
+  7                  
+
+Activities to Date
+
+A substantial portion of our activities to date focused on becoming a reporting public company to raise more capital to finance our business activities. The Company has developed the Plan of Operations. We have established the company office and provided services to one customer. We have designed a new game for our customer.
+
+Plan of Operations
+
+We expect that working capital requirements will continue to be funded through a combination of our existing funds and further issuances of securities. Our working capital requirements are expected to increase in line with the growth of our business.
+
+Existing working capital, further advances and debt instruments, and anticipated cash flow are expected to be adequate to fund our operations over the next six months. We have no lines of credit or other bank financing arrangements. Generally, we have financed operations to date through the proceeds of the private placement of equity and debt instruments. In connection with our business plan, management anticipates additional increases in operating expenses and capital expenditures relating to: 
+(i) acquisition of software; (ii) developmental expenses associated with a start-up business; and (iii) marketing expenses. We intend to finance these expenses with further issuances of securities, and debt issuances. Thereafter, we expect we will need to raise additional capital and generate revenues to meet long-term operating requirements. Additional issuances of equity or convertible debt securities will result in dilution to our current shareholders. Further, such securities might have 
+rights, preferences or privileges senior to our common stock. Additional financing may not be available upon acceptable terms, or at all. If adequate funds are not available or are not available on acceptable terms, we may not be able to take advantage of prospective new business endeavors or opportunities, which could significantly and materially restrict our business operations.
+
+Off Balance Sheet Arrangements
+
+We have no off-balance sheet arrangements that have or are reasonably likely to have a current or future effect on our financial condition, changes in financial condition, revenues or expenses, results of operations, liquidity, capital expenditures or capital resources.
+
+Material Commitments
+
+As of the date of this Annual Report, we do not have any material commitments.
+
+Purchase of Significant Equipment
+
+We do not intend to purchase any significant equipment during the next twelve months.
+
+  8                  
+
+Liquidity and Capital Resources
+
+As of September 30, 2023, the Company had $14,299 cash and current liabilities of $25,890 as compared with $33,294 of cash and $29,843 of current liabilities as of September 30, 2022. The net operating capital of the Company is not sufficient for the Company to remain operational long-term.
+
+To meet our need for cash we are attempting to raise money through this Offering. We believe that we will be able to raise enough money through this Offering to expand our operations; however, there is no guarantee that business sustains long term. At the present time, we have not made any arrangements to raise additional cash, other than through this Offering.
+
+We are an "emerging growth company" as defined in the JOBS Act, and we may take advantage of certain exemptions from various reporting requirements that are applicable to other public companies that are not “emerging growth companies” including, but not limited to: not required to comply with the auditor attestation requirements of Section 404 of the Sarbanes-Oxley Act; reduced disclosure obligations regarding executive compensation in our periodic reports and proxy statements; exemptions from 
+the requirements of holding an annual non-binding advisory vote on executive compensation and nonbinding stockholder approval of any golden parachute payments not previously approved. In addition, Section 107 of the JOBS Act also provides that an "emerging growth company" can take advantage of the extended transition period provided in Section 7(a)(2)(B) of the Securities Act for complying with new or revised accounting standards. In other words, an "emerging growth company" can delay the 
+adoption of certain accounting standards until those standards would otherwise apply to private companies. We have elected under this section of the JOBS Act to maintain our status as an "emerging growth company" and take advantage of the JOBS Act provisions relating to complying with new or revised accounting standards under Section 102(b)(1) of the JOBS Act.
+
+Going Concern Consideration
+
+Our auditors have issued a “going concern” opinion, meaning that there is substantial doubt if we can continue as an on-going business for the next twelve months unless we obtain additional capital. The Company’s cash position may not be sufficient to support its daily operations. No substantial revenues are anticipated until we have completed the financing from this offering and implemented our plan of operations. Our only source for cash at this time is investments by others in this offering. 
+We must raise cash to implement our strategy and stay in business. If we sell at least 25% of the shares in the offering we believe that we will have the resources to operate for the next 12 months, including for the costs associated with becoming a publicly reporting company. The company anticipates over the next 12 months the cost of being a reporting public company will be approximately $20,000.
+
+Limited operating history and need for additional capital
+
+There is no historical financial information about us upon which to base an evaluation of our performance. We are in start-up stage operations and have not generated any revenues. We cannot guarantee we will be successful in our business operations. Our business is subject to risks inherent in the establishment of a new business enterprise, including limited capital resources and possible cost overruns due to price and cost increases in services and products.
+
+Item 7A. Quantitative and Qualitative Disclosures About Market Risk.
+
+Not applicable to smaller reporting companies.
+
+Item 8. Financial Statements and Supplementary Data.
+
+  9                  
+
+  Tanico Inc.                        
+                                     
+  September 30, 2023                 
+                                     
+  Index to the Financial Statements  
+ ─────────────────────────────────────
+
+  Report of Independent Registered Public Accounting Firm                                             F-2  
+  Balance Sheets as of September 30, 2023 and 2022                                                    F-3  
+  Statements of Operations for the Year Ended September 30, 2023 and September 30,2022                F-4  
+  Statements of Cash Flows for the Year Ended September 30, 2023 and September 30, 2022               F-5  
+  Statement of Shareholder's Equity for The Year Ended September 30, 2023 and September 30, 2022      F-6  
+  Notes to The Financial Statements                                                                   F-7  
+
+  F-1                
+
+REPORT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM
+
+To: The Board of Directors and Stockholders of
+
+Tanico Inc.
+
+Opinion on the Financial Statements
+
+We have audited the accompanying balance sheets of Tanico Inc. (the Company) as of September 30, 2023 and 2022, and the related statements of operations, stockholders’ equity, and cash flows for the two-years in the period ended September 30, 2023 and 2022, and the related notes (collectively referred to as the financial statements). In our opinion, the financial statements present fairly, in all material respects, the financial position of the Company as of September 30, 2023 and 2022, and the 
+results of its operations and its cash flows for the two-years in the period ended September 30, 2023 and September 30, 2022, in conformity with accounting principles generally accepted in the United States of America.
+
+Explanatory Paragraph Regarding Going Concern
+
+The accompanying financial statements have been prepared assuming that the Company will continue as a going concern. As discussed in Note 3 to the financial statements, the Company is a start-up company and had incurred substantial losses during the year and limited working capital, which raises substantial doubt about its ability to continue as a going concern. Management’s plan in regards to these matters are described in Note 3. These financial statements do not include any adjustments that 
+might result from the outcome of this uncertainty.
+
+Basis for Opinion
+
+These financial statements are the responsibility of the Company’s management. Our responsibility is to express an opinion on the Company’s financial statements based on our audits. We are a public accounting firm registered with the Public Company Accounting Oversight Board (United States) (PCAOB) and are required to be independent with respect to the Company in accordance with the U.S. federal securities laws and the applicable rules and regulations of the Securities and Exchange Commission 
+and the PCAOB.
+
+We conducted our audits in accordance with the standards of the PCAOB. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether the financial statements are free of material misstatement, whether due to error or fraud. The Company is not required to have, nor were we engaged to perform, an audit of its internal control over financial reporting. As part of our audits, we are required to obtain an understanding of internal control over financial 
+reporting, but not for the purpose of expressing an opinion on the effectiveness of the Company’s internal control over financial reporting. Accordingly, we express no such opinion.
+
+Our audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks. Such procedures included examining, on a test basis, evidence regarding the amounts and disclosures in the financial statements. Our audits also included evaluating the accounting principles used and significant estimates made by management, as well as evaluating the overall presentation of the 
+financial statements. We believe that our audits provide a reasonable basis for our opinion.
+
+Critical Audit Matter
+
+The Critical Audit Matter communicated below is a matter arising from the current period audit of the financial statements that was communicated or required to be communicated to the audit committee and that: (1) relates to accounts or disclosures that are material to the financial statements and (2) involved our especially challenging, subjective, or complex judgments. The communication of critical audit matters does not alter in any way our opinion on the financial statements, taken as a 
+whole, and we are not, by communicating the critical audit matter below, providing a separate opinion on the critical audit matter or on the accounts or disclosures to which it relates. We determined that there are no critical audit matters.
+
+/s/ JLKZ CPA LLP
+
+We have served as the Company’s auditor since 2021.
+
+JLKZ CPA LLP. (PCAOB ID6519)
+
+Flushing, New York
+
+December 21, 2023
+
+  F-2                
+
+  Tanico Inc.                                                                                                                                                                                           
+  Balance Sheet                                                                                                                                                                                         
+                                                                                                                                                                                                        
+  As of September 30, 2023 and September 30, 2022                                                                                                                                                       
+                                                                                                                                          September 30,                    September 30,                
+                                                                                                                                                                                                        
+                                                                                                                                          2023                             2022                         
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ASSETS                                                                                                                                                                                                
+  Current Assets                                                                                                                                                                                        
+  Cash                                                                                                                                    $                    14,299      $                    33,294  
+  Total Current Assets                                                                                                                                         14,299                           33,294  
+  Non-Current Assets                                                                                                                                                                                    
+  Property, Plant & Equipment (net)                                                                                                                               241                              721  
+  Total Non-Current Assets                                                                                                                                        241                              721  
+  Total Assets                                                                                                                            $                    14,540      $                    34,015  
+  LIABILITIES AND STOCKHOLDERS’ EQUITY (DEFICIT)                                                                                                                                                        
+  Current Liabilities                                                                                                                                                                                   
+  Accrued Liabilities and Other Payable                                                                                                   $                     8,099      $                     8,000  
+  Deferred Revenue                                                                                                                                                  -                            5,000  
+  Due to Related Party                                                                                                                                         17,791                           16,843  
+  Total Current Liabilities                                                                                                                                    25,890                           29,843  
+  Total Liabilities                                                                                                                                            25,890                           29,843  
+  Commitments and contingencies                                                                                                                                     -                                -  
+  Stockholders’ Equity (Deficit)                                                                                                                                                                        
+  Common Stock, $ 0.001 par value, 75,000,000 shares authorized, 7,825,000 and 7,475,000 shares issued and outstanding, respectively                            7,825                            7,475  
+  Additional Paid-in Capital                                                                                                                                   25,425                           22,275  
+  Accumulated deficit                                                                                                                                        ( 44,600                         ( 25,578  
+  Total Stockholders’ Equity (Deficit)                                                                                                                       ( 11,350                            4,172  
+  Total Liabilities and Stockholders’ Equity                                                                                              $                    14,540      $                    34,015  
+
+The accompanying notes are an integral part of these financial statements.
+
+  F-3                
+
+  Tanico Inc.                                                                                                                       
+                                                                                                                                    
+  Statement of Operations                                                                                                           
+                                                                                                                                    
+  For the Year Ended September 30, 2023 and September 30, 2022                                                                      
+                                                                    September 30,                     September 30,                 
+                                                                                                                                    
+                                                                    2023                              2022                          
+  REVENUE                                                           $                      5,000      $                          -  
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  EXPENSES                                                                                                                          
+  General and Administrative                                                               1,559                             1,438  
+  Professional                                                                            22,463                            16,735  
+  Total Expenses                                                                          24,022                            18,173  
+  Loss from Operations                                                                  ( 19,022                          ( 18,173  
+  Income Tax Expense                                                                           -                                 -  
+  NET LOSS AFTER TAX                                                $                   ( 19,022      $                   ( 18,173  
+  Basic and Diluted Net Loss per Common Share                       $                       0.00      $                       0.00  
+  Weighted-Average Number of Common Shares Outstanding                                 7,888,397                         5,783,644  
+
+The accompanying notes are an integral part of these financial statements.
+
+  F-4                
+
+  Tanico Inc.                                                                                                                      
+                                                                                                                                   
+  Statement of Cash Flows                                                                                                          
+                                                                                                                                   
+  For the Year Ended September 30, 2023 and September 30, 2022                                                                     
+                                                                                        September 30,                              
+                                                                                                                                   
+                                                                                        2023                                       
+ ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  CASH FLOWS FROM OPERATING ACTIVITES:                                                                                             
+  Net loss                                                                              $                  ( 19,022      ( 18,173  
+  Adjustments to reconcile net income to net cash provided by operating activities                                                 
+  Depreciation                                                                                                  480           240  
+  Change in operating assets and liabilities:                                                                                      
+  Deferred revenue                                                                                          ( 5,000         5,000  
+  Accrued liabilities and other payable                                                                          99         1,500  
+  Net cash used in operating activities                                                                    ( 23,443      ( 11,433  
+  CASH FLOWS FROM INVESTING ACTIVITIES:                                                                                            
+  Purchase of equipment                                                                                           -         ( 961  
+  Net cash used in investing activities                                                                           -         ( 961  
+  CASH FLOWS FROM FINANCING ACTIVITIES:                                                                                            
+  Proceed from related party loan                                                                               948         4,811  
+  Proceeds from sale of common shares                                                                         3,500        24,750  
+  Net cash provided by financing activities                                                                   4,448        29,561  
+  Net increase (decrease) in cash                                                                          ( 18,995        17,167  
+  Cash, beginning of period                                                                                  33,294        16,127  
+  Cash, end of period                                                                   $                    14,299        33,294  
+  Supplemental disclosure of cash flow information                                                                                 
+  Cash paid for                                                                                                                    
+  Interest                                                                                                        -             -  
+  Income taxes                                                                                                    -             -  
+
+The accompanying notes are an integral part of these financial statements.
+
+  F-5                
+
+  Tanico Inc.                                                                                                                                                    
+                                                                                                                                                                 
+  Statements of Shareholders’ Equity (Deficit)                                                                                                                   
+                                                                                                                                                                 
+  For the Year Ended September 30, 2023 and September 30, 2022                                                                                                   
+                                                                                              Additional                                  Total                  
+                                                                                              Capital                                     Deficit                
+  Net Loss                                                                  -          -                            -      ( 19,022                    ( 19,022  
+ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Balance September 30, 2022                                        7,475,000      7,475      $                22,275      ( 25,578)      $               4,172  
+  Cancellation of Common Shares for Cash                            ( 180,000      ( 180                      ( 1,620      -                            ( 1,800  
+  Issuance of Common Shares for Cash                                  530,000        530                        4,770      -                              5,300  
+  Balance September 30, 2023                                        7,825,000      7,825      $                25,425      ( 44,600       $            ( 11,350  
+
+                                          Common Stock                                Additional      Accumulated      Total                        
+                                                                                                                                                    
+                                                                                      Paid-in                          Stockholders’                
+                                          Shares                                      Capital         Deficit          Deficit                      
+  Net Loss                                                          -          -      -                                                   ( 18,173  
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Balance September 30, 2021                                5,000,000      5,000      -               ( 7,405)         ( 2,405)                     
+  Issuance of Common Shares for Cash                        2,457,000      2,475                                                            24,750  
+  Balance September 30, 2022                                7,475,000      7,475      $                                $                     4,172  
+
+The accompanying notes are an integral part of these financial statements.
+
+  F-6                
+
+Tanico Inc.
+
+Notes to the Financial Statements
+
+September 30, 2023
+
+Note 1 - Organization and Operations
+
+Tanico Inc. was incorporated in the State of Nevada on May 3, 2021. Our offices are located at 387 Whitby Shores Greenway, Whitby, ON Canada. The company will develop new type of computer games for the children ages 4 to 7. These games will encourage child intellectual development and provide parents with feedback on the progress of a child mental development. Our aim is to develop Tanico Inc. in phases. The first phase of development will focus on design solutions. The second phase will be 
+further development of new gaming software solutions.
+
+Note 2 - Significant and Critical Accounting Policies and Practices
+
+The Management of the Company is responsible for the selection and use of appropriate accounting policies and the appropriateness of accounting policies and their application. Critical accounting policies and practices are those that are both most important to the portrayal of the Company’s financial condition and results and require management’s most difficult, subjective, or complex judgments, often as a result of the need to make estimates about the effects of matters that are inherently 
+uncertain. The Company’s significant and critical accounting policies and practices are disclosed below as required by generally accepted accounting principles.
+
+Basis of Presentation
+
+The financial statements present the balance sheet, statements of operations, stockholders’ equity (deficit) and cash flows of the Company. These financial statements are presented in the United States dollars and have been prepared in accordance with accounting principles generally accepted in the United States of America (“U.S. GAAP”).
+
+Use of Estimates and Assumptions and Critical Accounting Estimates and Assumptions
+
+The preparation of financial statements in conformity with accounting principles generally accepted in the United States of America requires management to make estimates and assumptions that affect the reported amounts of assets and liabilities and disclosure of contingent assets and liabilities at the date(s) of the financial statements and the reported amounts of revenues and expenses during the reporting period(s).
+
+  F-7                
+
+Critical accounting estimates are estimates for which (a) the nature of the estimate is material due to the levels of subjectivity and judgment necessary to account for highly uncertain matters or the susceptibility of such matters to change and (b) the impact of the estimate on financial condition or operating performance is material. The Company’s critical accounting estimate(s) and assumption(s) affecting the financial statements was (were):
+
+  (i)       Assumption as a going concern: Management assumes that the Company will continue as a going concern, which contemplates continuity of operations, realization of assets, and liquidation of liabi...  
+  (ii)      Valuation allowance for deferred tax assets: Management assumes that the realization of the Company’s net deferred tax assets resulting from its net operating loss (“NOL”) carry–forwards for Fe...  
+
+These significant accounting estimates or assumptions bear the risk of change due to the fact that there are uncertainties attached to these estimates or assumptions, and certain estimates or assumptions are difficult to measure or value.
+
+Management bases its estimates on historical experience and on various assumptions that are believed to be reasonable in relation to the financial statements taken as a whole under the circumstances, the results of which form the basis for making judgments about the carrying values of assets and liabilities that are not readily apparent from other sources.
+
+Management regularly evaluates the key factors and assumptions used to develop the estimates utilizing currently available information, changes in facts and circumstances, historical experience and reasonable assumptions. After such evaluations, if deemed appropriate, those estimates are adjusted accordingly.
+
+Actual results could differ from those estimates.
+
+Fair Value of Financial Instruments
+
+The Company follows paragraph 825-10-50-10 of the FASB Accounting Standards Codification for disclosures about fair value of its financial instruments and paragraph 820-10-35-37 of the FASB Accounting Standards Codification (“Paragraph 820-10-35-37”) to measure the fair value of its financial instruments.
+
+The carrying amounts of the Company’s financial assets and liabilities, such as cash and accrued expenses approximate their fair values because of the short maturity of these instruments.
+
+Fair Value Measurements
+
+The company adopted the provisions of ASC Topic 820, “Fair Value Measurements and Disclosures”, which defines fair value as used in numerous accounting pronouncements, establishes a framework for measuring fair value and expands disclosure of fair value measurements.
+
+The estimated fair value of certain financial instruments, including cash and cash equivalents are carried at historical cost basis, which approximates their fair values because of the short-term nature of these instruments.
+
+ASC 820 defines fair value as the exchange price that would be received for an asset or paid to transfer a liability (an exit price) in the principal or most advantageous market for the asset or liability in an orderly transaction between market participants on the measurement date. ASC 820 also establishes a fair value hierarchy, which requires an entity to maximize the use of observable inputs and minimize the use of unobservable inputs when measuring fair value. ASC 820 describes three levels
+of inputs that may be used to measure fair value:
+
+  F-8                
+
+Level 1 - quoted prices in active markets for identical assets or liabilities
+
+Level 2 - quoted prices for similar assets and liabilities in active markets or inputs that are observable
+
+Level 3 - inputs that are unobservable (for example cash flow modelling inputs based on assumptions)
+
+The Company has no assets or liabilities valued at fair value on a recurring basis.
+
+Cash Equivalents
+
+The Company considers all highly liquid investments with maturities of three months or less at the time of purchase to be cash equivalents. Cash is held on deposit with a federally regulated bank, where the first $100,000of the deposit funds are fully insured.
+
+Related Parties
+
+The Company follows subtopic 850-10 of the FASB Accounting Standards Codification for the identification of related parties and disclosure of related party transactions.
+
+Pursuant to Section 850-10-20 the related parties include (a) affiliates of the Company; (b) entities for which investments in their equity securities would be required, absent the election of the fair value option under the Fair Value Option Subsection of Section 825 - 10 - 15, to be accounted for by the equity method by the investing entity; (c) trusts for the benefit of employees, such as pension and profit-sharing trusts that are managed by or under the trusteeship of management; (d) 
+principal owners of the Company; (e) management of the Company; (f) other parties with which the Company may deal if one party controls or can significantly influence the management or operating policies of the other to an extent that one of the transacting parties might be prevented from fully pursuing its own separate interests; and (g) other parties that can significantly influence the management or operating policies of the transacting parties or that have an ownership interest in one of the
+transacting parties and can significantly influence the other to an extent that one or more of the transacting parties might be prevented from fully pursuing its own separate interests.
+
+The financial statements shall include disclosures of material related party transactions, other than compensation arrangements, expense allowances, and other similar items in the ordinary course of business. However, disclosure of transactions that are eliminated in the preparation of consolidated or combined financial statements is not required in those statements. The disclosures shall include: (a) the nature of the relationship(s) involved; (b) a description of the transactions, including 
+transactions to which no amounts or nominal amounts were ascribed, for each of the periods for which income statements are presented, and such other information deemed necessary to an understanding of the effects of the transactions on the financial statements; (c) the dollar amounts of transactions for each of the periods for which income statements are presented and the effects of any change in the method of establishing the terms from that used in the preceding period; and (d) amounts due 
+from or to related parties as of the date of each balance sheet presented and, if not otherwise apparent, the terms and manner of settlement.
+
+Commitment and Contingencies
+
+The Company follows subtopic 450-20 of the FASB Accounting Standards Codification to report accounting for contingencies. Certain conditions may exist as of the date the financial statements are issued, which may result in a loss to the Company but which will only be resolved when one or more future events occur or fail to occur. The Company assesses such contingent liabilities, and such assessment inherently involves an exercise of judgment. In assessing loss contingencies related to legal 
+proceedings that are pending against the Company or unasserted claims that may result in such proceedings, the Company evaluates the perceived merits of any legal proceedings or unasserted claims as well as the perceived merits of the amount of relief sought or expected to be sought therein.
+
+  F-9                
+
+If the assessment of a contingency indicates that it is probable that a material loss has been incurred and the amount of the liability can be estimated, then the estimated liability would be accrued in the Company’s financial statements. If the assessment indicates that a potential material loss contingency is not probable but is reasonably possible, or is probable but cannot be estimated, then the nature of the contingent liability, and an estimate of the range of possible losses, if 
+determinable and material, would be disclosed.
+
+Loss contingencies considered remote are generally not disclosed unless they involve guarantees, in which case the guarantees would be disclosed. Management does not believe, based upon information available at this time that these matters will have a material adverse effect on the Company’s financial position, results of operations or cash flows. However, there is no assurance that such matters will not materially and adversely affect the Company’s business, financial position, and results of 
+operations or cash flows.
+
+The Company did not have any commitments or contingencies as of September 30, 2023 and 2022.
+
+Revenue Recognition
+
+The Company adopted ASU 2014-09, Topic 606 on April 1, 2018, using the modified retrospective method. ASC 606 requires the use of a new five-step model to recognize revenue from customer contracts.
+
+The five-step model requires that the Company (i) identify the contract with the customer, (ii) identify the performance obligations in the contract, (iii) determine the transaction price, including variable consideration to the extent that it is probable that a significant future reversal will not occur, (iv) allocate the transaction price to the respective performance obligations in the contract, and (v) recognize revenue when (or as) the Company satisfies the performance obligation. The 
+company assesses these arrangements in accordance with Topic 606.
+
+License rights of use subscription
+
+The majority of the Company's revenue is expected to be generated from right of use access to gaming software for individual retail clients. The generic software product can be used by a wide range of retail customers.
+
+The performance obligation for retail clients is satisfied when the subscription period is expired. Therefore, revenue is recognized over time.
+
+Software modification
+
+The Company may also provide software design and modifications for commercial clients based on special requests and contracts. The performance obligation for commercial clients is satisfied when the final product is delivered to a customer.
+
+When the modifications are ordered by a commercial client, such product is specified by the customer. Should a commercial customer withdraw from the contract of a modified product, such product remains as the Company’s property.
+
+The product is not controlled by the buyer until it is fully completed in a usable stage, where the buyer does not simultaneously receive and consume the economic benefits of the product or services provided. Such a product could be potentially resold to another party in due course without limitations; however, the Company may need to incur some additional cost for the rework of the product or some revenue loss on the resale of the asset to another customer.
+
+The Company requires a 100% prepayment for commercial product modifications. The prepayment is recognized as a contract liability under deferred revenue. A partially completed project where the Company is at fault requires a full money repayment to the customer. When partially completed project is terminated at the discretion of customer where the Company is not at fault, no prepayment refund is issued.
+
+  F-10               
+
+Revenue for software modification and development for commercial clients is recognized at a point in time, coincides with the delivery of a final product to the customer.
+
+The contract specified the distinct performance obligation promises to the customer as follows:
+
+  90 hours of support free of charge is an additional service beyond the software development, design and modifications;                                                                    
+  the customer can choose to receive additional assistance beyond the initial 90 hours is distinct from the core software development, design and modifications at an hourly rate of $ 40;  
+  2 days training with respect to the operation of the software; this training is a separate service that adds value to the customer and can be considered a distinct promise.              
+
+During the fiscal year ended September 30, 2023, the Company sold one product, gaming software design, to Tal Sol Energy Ltd for $5,000.
+
+Income Tax Provision
+
+The Company accounts for income taxes under Section 740-10-30 of the FASB Accounting Standards Codification. Deferred income tax assets and liabilities are determined based upon differences between the financial reporting and tax bases of assets and liabilities and are measured using the enacted tax rates and laws that will be in effect when the differences are expected to reverse. Deferred tax assets are reduced by a valuation allowance to the extent management concludes it is more likely than 
+not that the assets will not be realized. Deferred tax assets and liabilities are measured using enacted tax rates expected to apply to taxable income in the years in which those temporary differences are expected to be recovered or settled. The effect on deferred tax assets and liabilities of a change in tax rates is recognized in the statements of operations in the period that includes the enactment date.
+
+The Company adopted section 740-10-25 of the FASB Accounting Standards Codification (“Section 740-10-25”). Section 740-10-25 addresses the determination of whether tax benefits claimed or expected to be claimed on a tax return should be recorded in the financial statements. Under Section 740-10-25, the Company may recognize the tax benefit from an uncertain tax position only if it is more likely than not that the tax position will be sustained on examination by the taxing authorities, based on 
+the technical merits of the position. The tax benefits recognized in the financial statements from such a position should be measured based on the largest benefit that has a greater than fifty percent (50%) likelihood of being realized upon ultimate settlement. Section 740-10-25 also provides guidance on de-recognition, classification, interest and penalties on income taxes, accounting in interim periods and requires increased disclosures.
+
+The estimated future tax effects of temporary differences between the tax basis of assets and liabilities are reported in the accompanying balance sheets, as well as tax credit carry-backs and carry-forwards. The Company periodically reviews the recoverability of deferred tax assets recorded on its balance sheets and provides valuation allowances as management deems necessary.
+
+Management makes judgments as to the interpretation of the tax laws that might be challenged upon an audit and cause changes to previous estimates of tax liability. In addition, the Company operates within multiple taxing jurisdictions and is subject to audit in these jurisdictions. In management’s opinion, adequate provisions for income taxes have been made for all years. If actual taxable income by tax jurisdiction varies from estimates, additional allowances or reversals of reserves may be 
+necessary.
+
+Uncertain Tax Positions
+
+The Company did not take any uncertain tax positions and had no adjustments to its income tax liabilities or benefits pursuant to the provisions of Section 740-10-25 for the year ended September 30, 2023.
+
+  F-11               
+
+Net Income (Loss) per Common Share
+
+Net income (loss) per common share is computed pursuant to section 260-10-45 of the FASB Accounting Standards Codification. Basic net income (loss) per common share is computed by dividing net income (loss) by the weighted average number of shares of common stock outstanding during the period. Diluted net income (loss) per common share is computed by dividing net income (loss) by the weighted average number of shares of common stock and potentially dilutive outstanding shares of common stock 
+during the period to reflect the potential dilution that could occur from common shares issuable through contingent share arrangements, stock options and warrants.
+
+There were no potentially dilutive common shares outstanding for the period from May 3, 2021 (inception) through September 30, 2023.
+
+Cash Flows Reporting
+
+The Company adopted paragraph 230-10-45-24 of the FASB Accounting Standards Codification for cash flows reporting, classifies cash receipts and payments according to whether they stem from operating, investing, or financing activities and provides definitions of each category, and uses the indirect or reconciliation method (“Indirect method”) as defined by paragraph 230-10-45-25 of the FASB Accounting Standards Codification to report net cash flow from operating activities by adjusting net 
+income to reconcile it to net cash flow from operating activities by removing the effects of (a) all deferrals of past operating cash receipts and payments and all accruals of expected future operating cash receipts and payments and (b) all items that are included in net income that do not affect operating cash receipts and payments. The Company reports the reporting currency equivalent of foreign currency cash flows, using the current exchange rate at the time of the cash flows and the effect 
+of exchange rate changes on cash held in foreign currencies is reported as a separate item in the reconciliation of beginning and ending balances of cash and cash equivalents and separately provides information about investing and financing activities not resulting in cash receipts or payments in the period pursuant to paragraph 830-230-45-1 of the FASB Accounting Standards Codification.
+
+Subsequent Events
+
+The Company follows the guidance in Section 855-10-50 of the FASB Accounting Standards Codification for the disclosure of subsequent events. The Company will evaluate subsequent events through the date when the financial statements were issued. Pursuant to ASU 2010-09 of the FASB Accounting Standards Codification, the Company as an SEC filer considers its financial statements issued when they are widely distributed to users, such as through filing them on EDGAR.
+
+Recent Accounting Pronouncements
+
+The Company’s management has evaluated all the recently issued, but not yet effective, accounting standards that have been issued or proposed by the FASB or other standards-setting bodies through the filing date of these financial statements and does not believe the future adoption of any such pronouncements will have a material effect on the Company’s financial position and results of operations.
+
+  F-12               
+
+Note 3 - Going Concern
+
+The financial statements have been prepared assuming that the Company will continue as a going concern, which contemplates continuity of operations, realization of assets, and liquidation of liabilities in the normal course of business.
+
+As reflected in the financial statements, the Company is in a startup mode; it had an accumulated deficit for the year ended September 30, 2023 of $44,600and a working capital deficit of $11,350at September 30, 2023. These factors raise substantial doubt about the Company’s ability to continue as a going concern.
+
+The Company is devoting substantially all of its current efforts to establish the business and its planned principal operations have not fully commenced. The Company is attempting to expand operations and generate sufficient revenue; however, the Company’s cash position may not be sufficient to support its daily operations. While the Company believes in the viability of its strategy to continue operations and generate sufficient revenue and in its ability to raise additional funds, there can be 
+no assurances to that effect. The ability of the Company to continue as a going concern is dependent upon its ability to further implement its business plan and generate sufficient revenue and its ability to raise additional funds by way of a public or private offering.
+
+The financial statements do not include any adjustments related to the recoverability and classification of recorded asset amounts or the amounts and classification of liabilities that might be necessary should the Company be unable to continue as a going concern.
+
+Note 4 - Stockholder's Equity
+
+Shares Authorized
+
+Upon formation the total number of shares of all classes of stock which the Company is authorized to issue is Seventy-Five Million (75,000,000) shares of which Seventy-Five Million (75,000,000) shares shall be Common Stock, par value $0.001per share.
+
+Common Stock
+
+For the period from October 1, 2022 to September 30, 2023 Company has sold an additional2,825,000shares of Common Stock, par value of $0.001per share, for the total aggregate proceeds of $28,250, at the selling price of $0.01per share.
+
+All shares were issued in accordance with the exemption from the registration provisions of the Securities Act of 1933, as amended, provided by Section 4(2) of such Act for issuances not involving any public offering and Rule 506 of Regulation D promulgated thereunder.
+
+For the year ended September 30, 2023, Company cancelled180,000shares for two shareholders. Both cancellations were made in a voluntary manner driven by the shareholders’ requests. Cash payout for these share cancellations were completed with no further amounts due and outstanding.
+
+As of September 30, 2023, there were7,825,000total shares issued and outstanding.
+
+  F-13               
+
+Note 5 - Related Party Transactions
+
+Change of Control
+
+A change of control of the Company occurred when the transactions below were completed:
+
+  On March 17, 2023, the Board of Directors appointed Mr. Anton Mikhalev as Secretary of the Company.                                                                                                  
+  On August 29, 2023, Ms. Tatiana Feneva resigned from the position of President of Tanico Inc. due to personal reasons.                                                                               
+  On August 30, 2023, Mr. Anton Mikhalev was appointed the President of the Company.                                                                                                                   
+  On August 28, 2023, Ms. Tatiana Feneva entered into an agreement to assign all the outstanding advanced balances owed to her to Nikita Fenev, who is a shareholder and child of Ms. Tatiana Feneva.  
+ ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  On June 14, 2023, Ms. Tatiana Feneva sold 5,000,000 shares of common stock to Mr. Anton Mikhalev.                                                                                                    
+
+Related Parties
+
+Related parties with whom the Company has transactions are:
+
+  Related Parties      Relationship                                                                                      
+  Anton Mikhalev       President, CEO, Chief Financial Officer, Secretary and director                                   
+  Nikita Fenev         Shareholder                                                                                       
+  Tatiana Feneva                                                                            Former officer and director  
+
+Related party loan
+
+On August 28, 2023, the outstanding advanced balances were assigned by Tatiana Feneva to Nikita Fenev, pursuant to an agreement.
+
+During the year ended September 30, 2023, Ms. Tatiana Feneva, the former President and a director of the Company, advanced the Company $948for working capital, received $0from the Company as repayments.
+
+As of September 30, 2023 and September 30, 2022, the outstanding balance payable to related party were $17,791and $16,843respectively. The advances are unsecured, non-interest bearing, and due on demand.
+
+Note 6 - Deferred Revenue
+
+As of September 30, 2023 and 2022, the deferred revenues were $nil and $5,000, respectively. The deferred revenues of $5,000was recognized as revenue for the year ended September 30, 2023 in accordance with ASC 606 which relates to the gaming software development.
+
+Note 7 - Concentrations, Risk and Uncertainties
+
+Geography:
+
+The Company maintains its head office in Canada and operating in Canada, thus representing a foreign business operation.
+
+Client Concentration:
+
+Our target market is mostly retail customers. Occasionally, the Company may provide consulting or project services to other companies and organizations.
+
+The Company has completed one project for one customer for the year ended September 30, 2023. We do not have any other pending contracts with this particular customer or any other customers.
+
+  F-14               
+
+Note 8 - Income Tax Provision
+
+Deferred Tax Assets
+
+At September 30, 2023, the Company had net operating loss (“NOL”) carry - forwards for Federal income tax purposes of $44,600that may be offset against future taxable income through 2039. No tax benefit has been recorded with respect to these net operating loss carry-forwards in the accompanying consolidated financial statements as the management of the Company believes that the realization of the Company’s net deferred tax assets of approximately $9,366was not considered more likely than not 
+and accordingly, the potential tax benefits of the net loss carry-forwards are offset by the full valuation allowance.
+
+Deferred tax assets consist primarily of the tax effect of NOL carry-forwards which was used to offset tax payable from prior year’s operations. The Company has provided a full valuation allowance on the deferred tax assets because of the uncertainty regarding its realization. The current valuation of tax allowance is n/a as of September 30, 2023.
+
+Components of deferred tax assets are as follows:
+
+                                                           September 30, 2023               
+ ────────────────────────────────────────────────────────────────────────────────────────────
+  Net deferred tax assets – Non-current:                                                    
+  Net operating income (loss) carry forward                $                        44,600  
+  Effective tax rate                                                                    21  
+  Expected income tax benefit from NOL carry-forwards                                9,366  
+  Less valuation allowance                                                         ( 9,366  
+  Deferred tax assets, net of valuation allowance          $                             -  
+
+Income Tax Provision in the Statement of Operations
+
+A reconciliation of the federal statutory income tax rate and the effective income tax rate as a percentage of income before income taxes is as follows:
+
+                                                                    For the year ended              
+                                                                                                    
+                                                                    September 30, 2023              
+ ────────────────────────────────────────────────────────────────────────────────────────────────────
+  Federal statutory income tax rate                                                           21.0  
+  Increase (reduction) in income tax provision resulting from:                                      
+  Net operating loss (“NOL”) carry-forwards                                                 ( 21.0  
+  Effective income tax rate                                                                    0.0  
+
+Tax Returns Remaining subject to IRS Audits
+
+The Company has filed its corporation income tax return for the fiscal year ended September 30, 2022, which will remain subject to examination by the Internal Revenue Service under the statute of limitations for a period of three (3) years from the date it is filed.
+
+Note 9 - Subsequent Events
+
+The Company evaluates subsequent events that have occurred after the balance sheet date but before the financial statements are issued. Subsequent to the date the financial statements were available to be issued there were no other subsequent events that would require disclosure to or adjustment to the financial statements other than those disclosed below.
+
+On October 19, 2023 the Company engaged a sponsoring market maker and submitted Form 211 application to FINRA.
+
+  F-15               
+
+Item 9. Changes in and Disagreements with Accountants on Accounting and Financial Disclosure.
+
+None
+
+Item 9A. Controls and Procedures.
+
+Evaluation of Disclosure Controls and Procedures.
+
+An evaluation was performed under the supervision and with the participation of our management, including the Chief Executive Officer and Chief Financial Officer, of the effectiveness of the design and operation of our disclosure controls and procedures (as defined in Rule 13a-15(e) under the Securities Exchange Act of 1934) as of September 30, 2023. Based on and as of the time of such evaluation, our management, including the Chief Executive Officer and Chief Financial Officer, concluded that 
+our disclosure controls and procedures were effective as of the end of the period covered by this report to ensure that information required to be disclosed by us in the reports that we file or submit is recorded, processed, summarized and reported within the time periods specified in the Securities and Exchange Commission's rules and forms. Disclosure controls and procedures include, without limitation, controls and procedures designed to ensure that information required to be disclosed by us 
+in the reports that we file or submit under the Securities Exchange Act of 1934 is accumulated and communicated to our management, including our Chief Executive Officer and Chief Financial Officer, as appropriate to allow timely decisions regarding required disclosure.
+
+Management's Report on Internal Control over Financial Reporting.
+
+Management is responsible for establishing and maintaining adequate internal control over financial reporting, as such term is defined in Exchange Act Rules 13a-15(f) and 15d-15(f). Under the supervision and with the participation of our management, including our Chief Executive Officer and Chief Financial Officer, we conducted an evaluation of the effectiveness of our internal control over financial reporting as of September 30, 2023, based on the framework in Internal Control -Integrated 
+Framework (2013) issued by the Committee of Sponsoring Organizations of the Treadway Commission. Based on that evaluation our management concluded that our internal control over financial reporting was effective as of September 30, 2023. JLKZ CPA LLP, an independent registered public accounting firm express no opinion on the effectiveness of the Company’s internal control over financial reporting.
+
+Changes in Internal Control over Financial Reporting.
+
+No changes in our internal control over financial reporting were identified as having occurred during the fiscal year ended September 30, 2023 that have materially affected, or are reasonably likely to materially affect, our internal control over financial reporting.
+
+Item 9B. Other Information.
+
+No report required.
+
+Item 9C. Disclosure Regarding Foreign Jurisdictions that Prevent Inspections.
+
+Not applicable.
+
+  10                 
+
+PART III
+
+Item 10. Directors, Executive Officers and Corporate Governance.
+
+The following are biographical summaries and a description of the business experience of those individuals who serve as executive officers and directors of Tanico Inc.
+
+  Name                Age      Position                                                                                                      
+ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Anton Mikhalev       27      President, Chief Financial Officer, Secretary, Chief Executive Officer and member of the Board of Directors.  
+  Maria Tomskaia       28      Treasurer                                                                                                     
+
+Biographical Information and Background of officer and director
+
+ANTON MIKHALEV - President, Chief Financial Officer, and Director
+
+Ms. Mikhalev is our President since August 29, 2023, and Secretary and a member of the Board of Directors since April 24, 2023.
+
+PROFESSIONAL EXPERIENCE AND ACCOMPLISHMENTS
+
+Rogers Communications
+
+March 2018 - present, Richmond Hill, ON
+
+Enterprise Account Executive
+
+  Conducts research for opportunities in Service Expansion - Prospect and research new construction builder accounts (MDU/SFU)                                                                          
+  Work collaboratively with regional partners, VARS and hardware/services providers to administer sales presentations; to identify and generate more opportunities in the commercial business lands...  
+  Assist the Corporate Reporting & External Reporting team with period-end deliverables and other ad-hoc reporting as required                                                                          
+  Recorded project details such as task progress, resources costs and allocated budgets to analyze performance, generate performance reports for key leaders and implement corrective measures          
+
+  11                 
+
+York University
+
+April 2019 - September 2020, North York, ON
+
+Winters College Orientation Director
+
+  Worked closely, on a weekly basis throughout the Summer, with the President and Treasurer, regarding all monetary transactions pertaining to Orientation, and to keep an accurate record of the same  
+  Created up to date schedules of all Winters Orientation Week events, and to distribute these schedules to all Winters First year students and any constituencies, offices or organizations requir...  
+  Responsible for formulating, with the guidance of the President, Assistant Orientation Chair, and the Treasurer, a budget for the Winters Orientation Week. Becoming familiar with the method by ...  
+
+Superkick’d Studios
+
+January 2015 - August 2020, TORONTO ON
+
+Social Media Coordinator/Marketing
+
+  Hosts pre-show talk show engaging with audience members live on camera, asking various questions and hyping up the audience while involving them with their favorite wrestler personalities           
+  In charge of handling, and maintaining all social media pages and engaging with the followers through various platforms such as Facebook, twitter, and Instagram providing updates about shows an...  
+  Ensure that ring set up for venue is done is an orderly fashion, while also making sure that all safety codes are upheld and the venue is reflecting                                                  
+
+EDUCATION
+
+Schulich School Of Business YorkUniversity - Bachelor of Business Administration BBA
+
+September 2015 - October 2020, NORTH YORK ON
+
+  Activities and societies: AIESEC York, LEAF mentor, SPP Mentor, Schulich Ambassador, Frosh Executive Team, Corporate Social Responsibility Society, JDCC Academics, Undergraduate Business Societ...  
+
+SKILLS:
+
+  Experienced in Power Bi reporting      
+  Experienced in Adobe Premier Products  
+  Fluent in English, French,             
+
+The specific experience, qualifications, attributes, and skills led to the appointment of Mr. Anton Mikhalev as our President.
+
+MARIA TOMSKAIA - Treasurer
+
+Ms. Maria Tomskaia has been our Treasurer since July 4, 2021.
+
+Ms. Tomskaia schedule currently allows her to spend up to 12 hours per week on company’s operations. He indicates willingness to devote more of her time and resources as our business grows.
+
+PROFESSIONAL EXPERIENCE
+
+Freelance graphic designer 2019 - present (https://mariatomski.carbonmade.com/)
+
+Shop Technician at MindWarpFX, Scarborough, Ontario Summer 2019
+
+  Makeup Fx technician & fabricator for various productions including: Amazon Prime's The Boys - Season 2 & Saw 9 - The Organ Donor  
+
+  12                 
+
+Freelance Prosthetic & Beauty Makeup Artist, Toronto, Ontario May 2017- present
+
+  Beauty makeup for short films              
+  Wedding & commercial makeup                
+  Custom creature makeups                    
+  Trauma prosthetics for individual clients  
+
+Animator and Brand Marketing for Treemarc, Toronto, Ontario May - August 2017
+
+  Lead developer of branding and advertising for a startup company  
+  Responsible for designing and animating digital storefront        
+  Created a series of 2D animations                                 
+
+EDUCATION AND QUALIFICATIONS
+
+  Bachelor of Animation at Sheridan College           2013-2017  
+ ─────────────────────────────────────────────────────────────────
+  Advanced Figure Drawing with Brian Hladin                2016  
+  Analytical Life Drawing at CGMA Online Academy           2015  
+  Animation 1 at Studio Technique Online Academy           2014  
+  Introduction to Zbrush                                   2014  
+  Art Fundamentals Diploma                                 2013  
+
+SKILLS
+
+  Stop motion set design                      
+  Digital sculpting techniques                
+  2D & 3D animation & digital compositing     
+  Stop-motion puppet fabrication & animation  
+  Extensive anatomical knowledge              
+
+ACHIEVMENTS
+
+  Completed solo short stop-motion film "Reflection" at Sheridan College                                                                              
+  "Reflection" screened at Ottawa International Animation Festival, Festival Stop Motion Montreal & Official Selection at Berlin Flash Film Festival  
+  Apprentice with Maxim Grunin, MFA                                                                                                                   
+
+  13                 
+
+During the past ten years, Mr. Anton Mikhalev and Ms. Maria Tomskaia have not been the subject of any the following events:
+
+  Any bankruptcy petition filed by or against any business of which either were a general partner or executive Officer either at the time of the bankruptcy or within two years prior to that time;     
+  Any conviction in a criminal proceeding or being subject to a pending criminal proceeding;                                                                                                            
+  An order, judgment, or decree, not subsequently reversed, suspended or vacated, or any court of competent jurisdiction, permanently or temporarily enjoining, barring, suspending or otherwise li...  
+  Found by a court of competent jurisdiction (in a civil action), the Securities and Exchange Commission or the Commodity Future Trading Commission to have violated a federal or state securities ...  
+
+Board of Directors
+
+Our Bylaws provide that the Board of Directors shall consist of at least one member, and that our shareholders shall determine the number of Directors from time to time. Each Director serves a term expiring at the next annual shareholders meeting and until his successor is elected and qualified, or until his resignation, removal from office, or death.
+
+Committees of the Board of Directors
+
+We do not presently have a separately constituted audit committee, compensation committee, nominating committee, executive committee or any other committees of our Board of Directors. Nor do we have an audit committee “financial expert.” As such, our entire Board of Directors acts as our audit committee and handles matters related to compensation and nominations of Directors.
+
+Potential Conflicts of Interest
+
+Since we do not have an audit or compensation committee comprised of independent Directors, such functions that would have been performed by such committees are performed by our President. Thus, there is an inherent conflict of interest.
+
+Director Independence
+
+As of September 30, 2023 we do not have any independent Directors.
+
+  14                 
+
+Significant Employees
+
+We have no significant employees other than the executive Officers described earlier.
+
+Audit Committee
+
+We do not presently have a separately constituted audit committee, compensation committee, nominating committee, executive committee or any other committees of our Board of Directors. Nor do we have an audit committee “financial expert.” As such, our entire Board of Directors acts as our audit committee and handles matters related to compensation and nominations of Directors.
+
+Item 11. Executive Compensation.
+
+The members of our Board of Directors are not compensated for their services. The Board has not implemented a plan to award options to any Directors. There are no contractual arrangements with any member of the Board of Directors. We have no Director's service contracts in place.
+
+Since our incorporation on May 3, 2021, we have not compensated and have no arrangements to compensate our President for his services. However, we anticipate that the President will receive compensation from the Company once cash flow that we generate from operations significantly exceeds our total expenses. We have not granted any stock options to our President; there are no retirement, pension, or profit-sharing plans for the benefit of the President. We have not entered into any employment or
+consulting agreements with our President. However, a President of the company has the power to set his own compensation.
+
+The following table sets forth the compensation paid by us for the fiscal year ended September 30, 2022 and 2023 and subsequent thereto, for our President and Treasurer. This information includes the dollar value of base salaries, bonus awards and number of stock options granted, and certain other compensation, if any. The compensation addresses all compensation awarded to, earned by, or paid to our named executive Officers.
+
+  Name and Principal Position      Year                                                  
+ ─────────────────────────────────────────────────────────────────────────────────────────
+  Anton Mikhalev (President)       2022       0       0       0       0       0       0  
+  Anton Mikhalev (President)       2023       0       0       0       0       0       0  
+  Maria Tomskaia (Treasurer)       2022       0       0       0       0       0       0  
+  Maria Tomskaia (Treasurer)       2023       0       0       0       0       0       0  
+
+Change of Control
+
+As of September 30, 2023, we had no pension plans or compensatory plans or other arrangements that provide compensation in the event of a termination of employment or a change in our control.
+
+  15                 
+
+Item 12. Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters.
+
+The following table provides certain information regarding the ownership of our common stock, as of September 30, 2023 and as of the date of the filing of this annual report by:
+
+  Each of our executive officers;                                                   
+  Each director;                                                                    
+  Each person known to us to own more than 5% of our outstanding common stock; and  
+  All of our executive officers and directors and as a group.                       
+
+  Title of Class      Name of                                           Amount and Nature of                  Percentage  
+                                                                                                                          
+                      Beneficial Owner                                  Beneficial Ownership                              
+  Common Stock        Anton Mikhalev (President, CFO and Director)      5,080,000 shares of common stock             67%  
+  Common Stock        Maria Tomskaia (Treasurer)                        100,000 shares of common stock             1.34%  
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+The percent of class is based on 7,825,000 shares of common stock issued and outstanding as of the date of this annual report.
+
+Item 13. Certain Relationships and Related Transactions, and Director Independence.
+
+During the year ended September 30, 2023, we had not entered into any transactions with our officer or director, or persons nominated for these positions, beneficial owners of 5% or more of our common stock, or family members of these persons wherein the amount involved in the transaction or a series of similar transactions exceeded the lesser of $120,000 or 1% of the average of our total assets for the last three fiscal years.
+
+Item 14. Principal Accounting Fees and Services.
+
+During fiscal year ended September 30, 2023, we incurred $15,500 in fees to our principal independent accountants for professional services rendered in connection with the audit and review of our financial statements and tax advisory services. Audit fees incurred during fiscal year 2023 were $13,500.
+
+  16                 
+
+PART IV
+
+Item 15. Exhibits, Financial Statement Schedules.
+
+(a) 1. Financial Statements
+
+The information concerning our financial statements, and Report of Independent Registered Public Accounting Firm required by this Item is incorporated by reference herein to the section of this Annual Report on Form 10-K in Item 8, entitled “Consolidated Financial Statements and Supplementary Data.”
+
+2. Financial Statement Schedules.
+
+All Financial Statement Schedules have been omitted since they are either not required, not applicable, or the information is otherwise included in this report.
+
+(b). Exhibits.
+
+The Exhibits listed in the Exhibit Index immediately preceding such Exhibits are filed as part of and incorporated by reference in this Form 10-K.
+
+Item 16. Form 10-K Summary
+
+None.
+
+EXHIBIT INDEX
+
+  Exhibit Number      Description of Exhibit                                                                                                                                                  
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  31.1                Certification of Chief Executive Officer pursuant to section 302 of the Sarbanes-Oxley act of 2002                                                                      
+  31.2                Certification of Chief Financial Officer Pursuant To 18 U.S.C. Section 1350 as Adopted Pursuant To Section 302 of the Sarbanes-Oxley Act Of 2002                        
+  32.1                Certification of Chief Executive Officer and Chief Financial Officer Pursuant Section 906 of the Sarbanes-Oxley Act                                                     
+  101. INS            Inline XBRL Instance Document (the instance document does not appear in the Interactive Data File because its XBRL tags are embedded within the Inline XBRL document).  
+  101. SCH            Inline XBRL Taxonomy Extension Schema Document.                                                                                                                         
+  101. CAL            Inline XBRL Taxonomy Extension Calculation Linkbase Document.                                                                                                           
+  101. DEF            Inline XBRL Taxonomy Extension Definition Linkbase Document.                                                                                                            
+  101. LAB            Inline XBRL Taxonomy Extension Labels Linkbase Document.                                                                                                                
+  101. PRE            Inline XBRL Taxonomy Extension Presentation Linkbase Document.                                                                                                          
+  104                 Cover Page Interactive Data File (formatted as inline XBRL and contained in Exhibit 101).                                                                               
+
+  17                 
+
+SIGNATURES
+
+Pursuant to the requirements of Section 13 or 15(d) of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized.
+
+  (Registrant)      TANICO INC.                            
+  By:               /s/ ANTON MIKHALEV                     
+                    Anton Mikhalev                         
+  Date              December 21, 2023                      
+
+  18

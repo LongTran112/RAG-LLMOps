@@ -1,0 +1,7 @@
+[Wed Apr 15 19:47:04 CEST 2026] Starting benchmark run
+[Wed Apr 15 19:47:04 CEST 2026] Result CSV: benchmarks/results_20260415_194704.csv
+[Wed Apr 15 19:47:06 CEST 2026] Switching model to phi3:mini
+[Wed Apr 15 19:48:33 CEST 2026] model=phi3:mini prompt=P1 rep=1 code=200 time=43.572997s
+[Wed Apr 15 19:49:13 CEST 2026] model=phi3:mini prompt=P1 rep=2 code=200 time=40.039246s
+[Wed Apr 15 19:49:46 CEST 2026] model=phi3:mini prompt=P1 rep=3 code=200 time=32.374704s
+[Wed Apr 15 19:54:28 CEST 2026] model=phi3:mini prompt=P2 rep=1 code=200 time=282.489944s

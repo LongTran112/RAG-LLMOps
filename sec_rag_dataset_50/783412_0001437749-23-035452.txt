@@ -1,0 +1,1323 @@
+UNITED STATES
+
+SECURITIES AND EXCHANGE COMMISSION
+
+Washington, D.C. 20549
+
+FORM 10-K
+
+(MARK ONE)
+
+  ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934  
+ ────────────────────────────────────────────────────────────────────────────────────────
+
+for the fiscal year ended September 30, 2023
+
+OR
+
+  TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934  
+ ────────────────────────────────────────────────────────────────────────────────────────────
+
+Commission File No. 0-14665
+
+DAILY JOURNAL CORPORATION
+
+(Exact name of registrant as specified in its charter)
+
+  South Carolina                                95-4133299           
+                                                                     
+  (State or other jurisdiction of               (IRS Employer        
+                                                                     
+  incorporation or organization)                Identification No.)  
+ ─────────────────────────────────────────────────────────────────────
+  915 East First Street                                              
+  Los Angeles, California                       90012                
+
+Registrant's telephone number, including area code: ( 213 229-5300
+
+Securities registered pursuant to Section 12(b) of the Act:
+
+  Title of each class      Trading Symbol(s)      Name of each exchange on which registered  
+  Common Stock             DJCO                   The Nasdaq Stock Market                    
+ ─────────────────────────────────────────────────────────────────────────────────────────────
+
+Securities registered pursuant to Section 12(g) of the Act: None.
+
+Indicate by check mark if the registrant is a well-known seasoned issuer, as defined in Rule 405 of the Securities Act. Yes  ☐No☑
+
+Indicate by check mark if the registrant is not required to file reports pursuant to Section 13 or Section 15(d) of the Act. Yes  ☐No☑
+
+Indicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days. Yes☑  No  ☐
+
+Indicate by check mark whether the registrant has submitted electronically, every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T during the preceding 12 months (or for such shorter period that the registrant was required to submit such files). Yes☑  No   ☐
+
+Indicate by check mark whether the registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, a smaller reporting company, or an emerging growth company. See the definitions of “large accelerated filer,” “accelerated filer,” “smaller reporting company,” and “emerging growth company” in Rule 12b-2 of the Exchange Act.
+
+(Check one):
+
+  Large accelerated filer ☐      Accelerated filer ☐          
+  Non-accelerated filer ☐        Smaller reporting company ☑  
+  Emerging growth company ☐                                   
+
+If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act.  ☐
+
+Indicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act): Yes☐No   ☑
+
+Indicate by check mark whether the registrant has filed a report on and attestation to its management's assessment of the effectiveness of its internal control over financial reporting under Section 404(b) of the Sarbanes-Oxley Act (15 U.S.C. 7262(b)) by the registered public accounting firm that prepared or issued its audit report.      Yes   ☐      No   ☑
+
+Errors:
+
+If securities are registered pursuant to Section 12(b) of the Act, indicate by check mark whether the financial statements of the registrant included in the filing reflect the correction of an error to previously issued financial statements. ☐
+
+Indicate by check mark whether any of those error corrections are restatements that required a recovery analysis of incentive-based compensation received by any of the registrant’s executive officers during the relevant recovery period pursuant to § 240.10D-1(b). ☐
+
+As of March 31, 2023, the aggregate market value of Daily Journal Corporation's voting stock held by non-affiliates was approximately $379,181,000.
+
+As of November 30, 2023, there were outstanding1,377,026shares of Common Stock.
+
+Disclosure Regarding Forward-Looking Statements
+
+This Annual Report on Form 10-K includes “forward-looking statements” within the meaning of Section 27A of the Securities Act of 1933, as amended, and Section 21E of the Securities Exchange Act of 1934, as amended. Certain statements contained in this document, including but not limited to those in “Management’s Discussion and Analysis of Financial Condition and Results of Operations,” are “forward-looking” statements that involve risks and uncertainties that may cause actual future events or 
+results to differ materially from those described in the forward-looking statements. Words such as “expects,” “intends,” “anticipates,” “should,” “believes,” “will,” “plans,” “estimates,” “may,” variations of such words and similar expressions are intended to identify such forward-looking statements. We disclaim any intention or obligation to revise any forward-looking statements whether as a result of new information, future developments, or otherwise. There are many factors that could cause 
+actual results to differ materially from those contained in the forward-looking statements. These factors include, among others: risks associated with software development and implementation efforts, and disruptive new technologies like artificial intelligence; Journal Technologies’ reliance on professional services engagements with justice agencies; material changes in the costs of postage and paper; additional possible changes in the law, particularly changes limiting or eliminating the 
+requirements for public notice advertising; possible loss of the adjudicated status of the Company’s newspapers and their legal authority to publish public notice advertising; the continuous effects of COVID-19 and the efforts to contain it on the Company’s customers, advertisers and subscribers; a further decline in subscriber revenues; possible security breaches of the Company’s software or websites; changes in accounting guidance; material weaknesses in the Company’s internal control over 
+financial reporting; and declines in the market prices of the securities owned by the Company. In addition, such statements could be affected by general industry and market conditions, general economic conditions (particularly in California) and other factors.  Although the Company believes that the expectations reflected in such forward-looking statements are reasonable, it can give no assurance that such expectations will prove to have been correct. Important factors that could cause actual 
+results to differ materially from those in the forward-looking statements are discussed in this Form 10-K, including in conjunction with the forward-looking statements themselves. Additional information concerning factors that could cause actual results to differ materially from those in the forward-looking statements is contained from time to time in documents filed by the Company with the Securities and Exchange Commission.
+
+- 2 -
+
+PART I
+
+  Item 1.      Business  
+ ─────────────────────────
+
+Daily Journal Corporation (the “Company”) publishes newspapers and websites reporting California and Arizona news and produces several specialized information publications. It also serves as a newspaper representative specializing in public notice advertising. This is sometimes referred to as the Company’s “Traditional Business”.
+
+Journal Technologies, Inc. (“Journal Technologies”), a wholly-owned subsidiary of the Company, supplies case management software systems and related products to courts, prosecutor and public defender offices, probation departments and other justice agencies, including administrative law organizations, city and county governments and bar associations. These organizations use the Journal Technologies family of products to help manage cases and information electronically, to interface with other 
+critical justice partners and to extend electronic services to the public, including e-filing and a website to pay traffic citations and fees online. These products are licensed or subscribed to in approximately 30 states, and internationally.
+
+Essentially all of the Company’s U.S. operations are based in California, Arizona and Utah. The Company also has a presence in Australia where Journal Technologies is working on three software installation projects. In August 2022, the Company established a new wholly-owned subsidiary, Journal Technologies (Canada) Inc., in Victoria BC, Canada. Financial information of the Company, including information about each of the Company’s reportable segments, is set forth in Item 8 (“Financial 
+Statements and Supplementary Data”).
+
+Products and Services
+
+The Traditional Business
+
+Newspapers and related online publications. The Company publishes 10 newspapers of general circulation. Each newspaper, in addition to news of interest to the general public, has a particular area of in-depth focus for its news coverage, attracting readers interested in obtaining specific information through a newspaper format.
+
+The publications are based in the following cities:
+
+  Newspaper publications           Base of publication        
+  Los Angeles Daily Journal        Los Angeles, California    
+  San Francisco Daily Journal      San Francisco, California  
+  Daily Commerce                   Los Angeles, California    
+  The Daily Recorder               Sacramento, California     
+  The Inter-City Express           Oakland, California        
+  San Jose Post-Record             San Jose, California       
+  Orange County Reporter           Santa Ana, California      
+  The Daily Transcript             San Diego, California      
+  Business Journal                 Riverside, California      
+  The Record Reporter              Phoenix, Arizona           
+
+The Daily Journals. The Los Angeles Daily Journal and the San Francisco Daily Journal (together, “The Daily Journals”) are each published every weekday except certain holidays and were established in 1888 and 1893, respectively. In addition to covering state and local news of general interest, these newspapers focus on law and its impact on society. Generally, The Daily Journals seek to be of special use to lawyers and judges.
+
+- 3 -
+
+The Daily Journals share much content. The Los Angeles Daily Journal is the largest newspaper published by the Company, both in terms of revenues and circulation. At September 30, 2023, the Los Angeles Daily Journal had approximately 3,591 paid subscribers and the San Francisco Daily Journal had approximately 2,062 paid subscribers as compared with total paid subscriptions for both of The Daily Journals of 5,640 at September 30, 2022. The Daily Journals carry commercial advertising (display and 
+classified) and public notice advertising required or permitted by law to be published in a newspaper of general circulation. The main source of commercial advertising revenue has been law firms and businesses wishing to reach the legal professional community. The gross revenues generated directly by The Daily Journals are attributable approximately 56% to subscriptions and 44% to the sale of advertising and other revenues. Revenues from The Daily Journals constituted approximately 11% of the 
+Company's total operating revenues in fiscal 2023 and 13% in fiscal 2022.
+
+The Daily Journals include the Daily Appellate Report, providing full text and case summaries of all opinions certified for publication by the California Supreme Court, the California Courts of Appeal, the U.S. Supreme Court, the U.S. Court of Appeals for the Ninth Circuit and the U.S. Bankruptcy Appellate Panel for the Ninth Circuit. The Daily Journals also include a monthly court directory in booklet form. This directory includes a comprehensive list of sitting judges in all California courts 
+as well as courtroom assignments, phone numbers and courthouse addresses, plus a list of judicial appointments, elevations, confirmations, resignations, retirements and deaths.
+
+The Daily Journals are distributed by mail and hand delivery. The regular yearly subscription rate for each of The Daily Journals is $887 plus tax.
+
+Most of the information published in The Daily Journals is available to subscribers online at www.dailyjournal.com.
+
+Daily Commerce. Published since 1917, the Daily Commerce is based in Los Angeles and covers news of general interest, columns of interest to real estate investors and brokers, and information on distressed properties in Los Angeles County. The nature of the news coverage enhances the effectiveness of public notice advertising by distributing information about foreclosures to potential buyers. Features include default listings and probate sale notices. The Daily Commerce carries both public 
+notice and commercial advertising. It is published each business day. A subscription includes online access to the Los Angeles County foreclosure listing and public record database.
+
+The Daily Recorder. The Daily Recorder, based in Sacramento, began operations in 1911. It is published each business day. In addition to general news items, it includes legal news and columns of interest to the Sacramento legal and real estate communities. It includes the Daily Appellate Report and carries commercial and public notice advertising. A subscription includes online access to the Sacramento County foreclosure listing and public record database.
+
+The Inter-City Express. The Inter-City Express (the “Express”) has been published since 1909. It covers general news of local interest and focuses its coverage on news about the real estate and legal communities in the Oakland/San Francisco area. The Express carries public notice advertising and is published each business day. A subscription includes online access to the Alameda County foreclosure listing and public record database.
+
+- 4 -
+
+San Jose Post-Record. The San Jose Post-Record (the “Post-Record”) has been published since 1910. In addition to general news of local interest, the Post-Record focuses on legal and real estate news. It is published every business day and carries public notice advertising. A subscription includes online access to the Santa Clara County foreclosure listing and public record database.
+
+Orange County Reporter. The Orange County Reporter (“Reporter”) has been an adjudicated newspaper of general circulation since 1922. In addition to general news of local interest, the Reporter publishes local and state legal, business and real estate news, and carries public notice advertising. The Reporter is published three days a week. A subscription includes online access to the Orange County foreclosure listing and public record database.
+
+The Daily Transcript. The Daily Transcript is based in San Diego and published each business day. It reports general news items and San Diego commercial real estate, business and construction news. It has been an adjudicated newspaper of general circulation since 1909. It carries commercial and public notice advertising. A subscription includes online access to the San Diego County foreclosure listing and public record database.
+
+Business Journal. The Business Journal, established in 1991, publishes news of general interest and provides coverage of the business and professional communities in Riverside County. It also carries public notice advertising and is published each business day. The subscription includes online access to the Riverside/San Bernardino County foreclosure listing and public record database.
+
+The Record Reporter (Arizona). The Record Reporter has been in existence since 1914. In addition to general news of local interest, The Record Reporter, which is published three days a week, focuses on legal news and public record information and carries primarily public notice advertising. The subscription includes online access to the Maricopa and Pinal County public record database.
+
+Information Services. The specialized information services offered by the Company have grown out of its newspaper operations or have evolved in response to requests of its newspaper subscribers.
+
+The Company has several court rules services, including multi-volume, loose-leaf sets for certain state and federal courts in California. The Northern California set consists of nine volumes. The Southern California set has eight volumes. The Company updates these court rules on a monthly basis. In addition, the Company publishes single-volume rules for Los Angeles and San Diego counties. The single volumes are replaced when there are rule changes.
+
+The Judicial Profiles service contains information concerning nearly all active judges in California. The Judicial Profiles include an interview-based article previously published in The Daily Journals, biographical data and information supplied by participating judges on courtroom procedures and policies. Subscribers may purchase the ten-volume set for Southern California, the eight-volume set for Northern California or individual profiles online.
+
+Advertising and Newspaper Representative. The Company's publications carry commercial advertising and public notice advertising. Commercial advertising consists of display and classified advertising and constituted about 4% of the Company’s total operating revenues in both fiscal 2023 and 2022.
+
+- 5 -
+
+Public notice advertising consists of many different types of legal notices required by law to be published in an adjudicated newspaper of general circulation, including notices of death, fictitious business names, trustee sale notices and notices of governmental hearings. The major types of public notice advertisers are real estate-related businesses and trustees, governmental agencies, attorneys, and businesses or individuals filing fictitious business name statements. Many government agencies
+use the Company’s Internet-based advertising system to produce and send their notices to the Company for publication. A fictitious business name website enables individuals to send their statements to the Company for filing and publication, and another website enables attorneys and individuals to send probate, civil, corporate, public sale and other types of public notices to the Company.  California Newspaper Service Bureau (“CNSB”), a division of the Company, is a statewide newspaper 
+representative (commission-earning selling agent) specializing since 1934 in public notice advertising. CNSB places public notices and other forms of advertising with adjudicated newspapers of general circulation, most of which are not owned by the Company, and produces a legal advertising page for some other newspapers.
+
+Public notice advertising revenues and related advertising and other service fees, including trustee sales legal advertising revenues, constituted about 14% of the Company's total operating revenues in fiscal 2023 and about 17% in fiscal 2022. Most of these revenues were generated by (i) notices published in the Company’s newspapers, (ii) commissions and similar fees received from other publications in which the advertising was placed, and (iii) service fees to file notices with government 
+agencies.
+
+Recently, the California legislature passed a bill (AB542) to be effective January 1, 2024 that will almost certainly result in a decline in legal advertising revenue by reducing the number of publication days in a newspaper for self-service storage facility lien sales. The existing requirement is to publish the notice once per week for two consecutive weeks. The bill now allows the notice to be published either once per week for two consecutive weeks in a newspaper or once in a newspaper and 
+once on an internet website that customarily conducts or advertises online auctions or sales. Another bill (AB721) relative to school budget hearing notices, was also passed. Effective January 1, 2027 these notices are to be moved to posting on the school district’s website in lieu of being published in a newspaper.
+
+For several years, trustee sales legal advertising revenues were driven by the large number of foreclosures in California and Arizona, for which public notice advertising is required by law. Those revenues declined significantly in more recent years due to an improved economy and then to the COVID-related foreclosure moratoriums. Because those moratoriums were generally lifted during 2023, trustee sales legal advertising revenues represented about 4% of the Company’s total operating revenues in 
+fiscal 2023 as compared to 2% in fiscal 2022.
+
+Other revenues are attributable to fees from attorneys taking continuing legal education tests published in The Daily Journals and online, and other miscellaneous fees including reprint services of articles published in The Daily Journals.
+
+Journal Technologies
+
+Journal Technologies provides case management software and related services to courts and other justice agencies. Its operations constituted about 76% of the Company’s total operating revenues in fiscal 2023 and 71% in fiscal 2022. Journal Technologies earns revenues from license, maintenance and support fees paid by customers to use its software products; consulting fees paid by customers for installation, implementation and training services; and fees generated by the use of secure websites 
+through which the general public can pay traffic citations and e-file cases.  Journal Technologies has the following product solutions based on the Company’s core eSeries Framework™ technology:
+
+- 6 -
+
+eCourt®, eProsecutor™, eDefender™ and eSupervision™ (formerly eProbation)™ ― browser-based case processing systems that can be used by courts and other justice agencies for all case types because the screens, data elements, business rules, work queues, searches and alerts are highly configurable.
+
+Journal Technologies offers other, complementary products including:
+
+eFile-it™ ― a browser-based interface that allows attorneys and the general public to electronically file documents with the court.
+
+ePay-it™ ― a service primarily for the online payment of traffic citations.  Users can pay traffic citations by credit card and get information on traffic school.
+
+Almost all of Journal Technologies’ customers are government agencies, and most new software installation and licensing projects are subject to competitive bidding procedures. Accordingly, the ability of Journal Technologies to get new customers is highly unpredictable. In addition, budget constraints, especially during stressful economic times, could force governmental agencies to defer or forgo consulting services or even to stop paying their annual software maintenance fees. As a 
+technology-based company, Journal Technologies’ success depends on the continued improvement of its products, which is why the costs to update and upgrade them consistently constitute such a significant portion of the Company’s expenses.
+
+The Company’s revenues from Journal Technologies’ foreign customers were approximately $3,293,000 in fiscal 2023 and $4,638,000 in fiscal 2022. The remainder of the Company’s other revenues in those years were attributable to the United States.
+
+Journal Technologies (Canada)
+
+Journal Technologies (Canada) Inc. was founded in August 2022 as a service company to provide management and advisory services related to corporate leadership, financial management, strategic planning, operational guidance, human resources, project management, software development, professional services, and various other services required by Daily Journal Corporation and Journal Technologies.
+
+Materials and Postage
+
+After personnel costs (included in “Salaries and employee benefits” and in “Outside services” in the accompanying consolidated statements of comprehensive income (loss)), postage and paper costs are typically the next two largest expenses forThe Traditional Business. Paper and postage accounted for approximately 5% of the Traditional Business' operating costs in fiscal 2023 and 4% in fiscal 2022.
+
+An adequate supply of newsprint and other paper is important to the Company's operations. The Company currently does not have a contract with any paper supplier. The Company has always been able to obtain sufficient newsprint for its operations, although past shortages of newsprint have sometimes resulted in higher prices. During fiscal 2023, the price of newsprint did not increase significantly.
+
+- 7 -
+
+We use the U.S. Postal Service for distribution of roughly 36% of our newspapers. During the past several years, the Company has instituted changes in an attempt to mitigate higher postage costs. These changes have included contracting for hand delivery in urban areas of San Francisco, Santa Clara, Alameda, San Diego, Riverside, Orange and Los Angeles counties, delivering pre-sorted newspapers to the post office on pallets, which facilitates delivery and improves service, and bundling newspapers
+to reduce per-piece charges. In addition, the Company has an ink jet labeler which eliminates paper labels and enables the Company to receive bar code discounts from the postal service on some of its newspapers.
+
+Postal rates are dependent on the operating efficiency of the U.S. Postal Service and on legislative mandates imposed upon the U.S. Postal Service. During the past several years, the U.S. Postal Service has increased postal rates. During fiscal 2023, postage increased slightly by $32,000 (7%) to $472,000 from $440,000.
+
+Marketing
+
+The Company actively promotes its individual newspapers and its multiple newspaper network as well as its other publications. The specialization of each publication creates both target subscribers and target advertisers. Subscribers are likely to be attracted because of the nature of the information carried by the particular publication, and likely advertisers are those interested in reaching such consumer groups. In marketing products, the Company also focuses on its ancillary products which 
+can be of service to subscribers, such as its specialized information services.
+
+The Company receives, on a non-exclusive basis, public notice advertising from a number of service providers. Such agencies ordinarily receive a commission of 15% to 25% on their sales of advertising in Company and other publications. Commercial advertising agencies also place advertising (including nearly 100% of display advertising) in Company publications and receive commissions for advertising sales.
+
+Journal Technologies’ staff includes employees who are focused on marketing with the intention of growing market share over time, via additional consulting projects and licensing of products. Most of Journal Technologies’ new projects come from a competitive bidding process, but it is nonetheless important to communicate the Company's offerings to potential customers at trade shows and other channels; understanding what is possible can inform requirements and build confidence over the buying 
+process.
+
+Competition
+
+Competition for readers and advertisers is very intense, both by established publications and by new entries into the market. The Daily Journals face aggressive competition in Los Angeles and San Francisco. All of the Company's publications and products face strong competition from other publications and service companies. Readers of specialized newspapers focus on the amount and quality of general and specialized news, amount and type of advertising, timely delivery and price. The Company 
+designs its newspapers to fill niches in the news marketplace that are not covered as well by major metropolitan dailies. The in-depth news coverage which the Company's newspapers provide, along with general news coverage, attracts readers who, for personal or professional reasons, desire to keep abreast of topics to which a major newspaper cannot devote significant news space. Other newspapers do provide some of the same subject coverage as does the Company, but the Company believes its 
+coverage, particularly that of The Daily Journals, is more complete. The Company believes that The Daily Journals are the most important newspapers serving California lawyers on a daily basis.
+
+- 8 -
+
+The Company's court rules publications face competition from case management systems and the courts themselves. Subscriptions to the single and multi-volume court rules continued to decline during fiscal 2023. The Company's Judicial Profile services have indirect competition because some of the same information is available through other sources, including the courts.
+
+The newspaper industry is experiencing significant secular decline, and the Company’s Traditional Business is no exception. The steady decline in recent years in the number of subscriptions to The Daily Journals and court rule publications is likely to continue and will certainly impact the Company’s future revenues.
+
+In attracting commercial advertisers, the Company competes with other newspapers and magazines, television, radio and other media, including electronic and online systems for employment-related classified advertising. Factors which may affect competition for advertisers are the cost for such advertising compared with other media, and the size and characteristics of the readership of the Company's publications. Internet sites devoted to personnel recruitment have become significant competitors of
+our newspapers and websites for classified advertising.
+
+In addition, there has been a steady consolidation of companies serving the legal marketplace, resulting in an ever-smaller group of companies placing display advertising. Consequently, retaining advertising revenues remains a challenge. To reduce costs, the Company has contracted with an outside advertising agency to conduct sales of its display advertising.
+
+The Company competes with at least one serious competitor for public notice advertising revenue in each of its markets. Large metropolitan general interest newspapers normally do not carry a significant amount of legal advertising, although recently they too have solicited certain types of public notice advertising. CNSB, the Company’s commission-earning selling agent, faces competition from a number of companies based in California, some of which specialize in placing certain types of notices.
+
+There is significant competition among a limited number of companies to provide services and software to the courts and other justice agencies, and some of these companies are much larger and have greater access to capital and other resources than Journal Technologies. Others provide services for a limited number of customers, or in specialized niches. As part of the competitive bidding process, many customers will express a preference for, or even require, larger vendors or specific domain 
+specialization.
+
+Many customers desire externally-hosted Software-as-a-Service (SaaS) solutions to facilitate electronic filing, interface with other justice partners and the public, publish certain information from case management systems, and simplify provision of these services. Certain Journal Technologies’ product lines now provide versions of these services, but there are many uncertainties in the process of courts and other agencies migrating to a SaaS pattern. The Company competes on a variety of 
+factors, including price, technological capabilities, and services to accommodate the individual requirements of each customer.
+
+Remaining competitive requires periodic investment in technology to ensure modern patterns are followed; Journal Technologies is currently embarking on developing next-generation technology and addressing certain technical debt that exists within current generation offerings.
+
+- 9 -
+
+Employees
+
+The Company had approximately 350 full-time employees and contractors and about 10 part-time employees as of September 30, 2023, including about 243 employees and contractors at Journal Technologies and 12 employees and contractors at Journal Technologies (Canada). The Company is not a party to any collective bargaining agreements. Certain benefits, including medical insurance, are provided to all full-time employees. Management considers its employee relations to be good.
+
+Working Capital
+
+The Company owns marketable securities with dividends and significant appreciation, providing the Company with working capital in addition to its cash flow from operations, subject, of course, to the normal risks associated with owning securities. To a considerable extent, the Company also benefits from the fact that subscriptions and some licenses, maintenance and customer support are paid in advance. In fiscal 2013, the Company borrowed $14 million from its investment margin account to 
+purchase all of the outstanding stock of New Dawn Technologies, Inc., and another $15.5 million to acquire substantially all of the operating assets and liabilities of ISD Technologies, Inc., in each case pledging its marketable securities to obtain favorable financing. In addition, there were subsequent borrowings of $45.5 million to purchase additional marketable securities bringing the margin loan balance up to $75 million as of September 30, 2023.
+
+The Company believes it has sufficient cash and marketable securities for the foreseeable future. If the Company’s overall cash needs exceed cash flow and its current working capital, the Company may still have the ability to borrow against its marketable securities on favorable terms, or it may attempt to secure additional financing which may or may not be available on acceptable terms.
+
+The Company extends unsecured credit to most of its advertising customers and some government agencies. The Company maintains a reserve account for estimated losses resulting from the inability of these customers to make required payments, but if the financial conditions of these customers were to deteriorate or the Company’s judgments about their abilities to pay are incorrect, additional allowances might be required, and the Company’s cash flows and results of operations could be materially 
+affected.
+
+Inflation
+
+The effects of inflation are not significantly any more or less adverse on the Company's businesses than they are on other publishing and software companies. The Company has experienced the effects of inflation primarily through increases in costs of personnel. These costs have generally been offset by increased license, maintenance and support fees, which often contain a periodic cost-of-living adjustment.
+
+Also, the Company's investment margin account has an interest rate that fluctuates based on the Federal Funds Rate plus 50 basis points with interest only payable monthly. The interest rate as of September 30, 2023 was 6%, and the outstanding balance was $75 million. Because the Federal Reserve has increased interest rates to help combat inflation and may continue to do so, the Company’s interest expense on the margin account has increased and could increase more in the future.
+
+- 10 -
+
+Access to Our Information
+
+The Company files annual, quarterly and current reports, proxy statements and other information with the Securities and Exchange Commission (“SEC”). These filings are not available on our website, www.dailyjournal.com, which is generally dedicated to the content of our publications and services. We will, however, provide these filings in electronic or paper format free of charge upon request addressed to our Secretary at our principal executive offices. Our SEC filings are also available to the 
+public over the Internet at the SEC’s website at www.sec.gov.
+
+  Item 1A.      Risk Factors  
+ ──────────────────────────────
+
+The foregoing business discussion and the other information included in this Form 10-K should be read in conjunction with the following risks, trends and uncertainties, any of which, either individually or in the aggregate, could materially and adversely affect our business, operating results or financial condition.
+
+Risks Associated with a Public Health Event
+
+The Company’ s business is likely to be materially and adversely affected by the emergence or resurgence of an epidemic or pandemic such as COVID-19, or by a similar event or the fear of such an event, and the measures that governmental authorities implement to address it.
+
+As COVID-19 spread in early 2020, governmental authorities and health officials implemented numerous unprecedented measures to contain the virus, including “stay at home” orders for non-essential workers, travel restrictions, quarantines and business shutdowns. Most of Journal Technologies’ customers, which are primarily courts and governmental agencies in the United States, Canada and Australia, either closed or significantly scaled back their activities. Similarly, many law firms and companies
+from which the Traditional Business derives advertising and subscription revenues also curtailed their operations and spending.
+
+The impact on economic activity of a new crisis or a serious mutation of COVID-19 could again threaten the Traditional Business’ advertising and subscription revenues. Most people again working from home and using on-line services would likely to put additional pressure on the newspaper business by impacting circulation numbers that may not be replaced by on-line revenues. Actions restricting travel, requiring non-essential workers to “stay at home” or causing courts and justice agencies to 
+close or cut back operations can impact the ability of Journal Technologies to complete certain projects that are typically done in-person (and for which payment is usually received upon completion), reduce e-filing revenues, affect procurement processes and result in overall payment delays. In addition, the Company relies on its portfolio of marketable securities for dividend income and balance sheet support, and the value of the portfolio can be materially affected by declines in stock prices,
+particularly among the common stocks of the three U.S. financial institutions and one foreign manufacturer that make up a substantial portion of the portfolio.
+
+Due to the uncertainties associated with the duration and severity of an event like COVID-19, the efforts to contain it, and the changes in business operations and personal behaviors that are likely to follow from it, it is difficult to estimate the magnitude of its impact on the Company’s business in future periods, but it could materially affect the Company’s operations, staffing levels, financial condition, liquidity and cash flows going forward. Also, with new norms established, the majority
+of Journal Technologies employees continue working from home most days, and the long-term downsides of these new norms on innovation and productivity are still being determined.
+
+- 11 -
+
+Risks Associated with the Maturation of Artificial Intelligence (AI) Technologies
+
+The Company’s business may be materially affected - either positively or negatively--by the emergence of disruptive new technologies or approaches enabled by the rapid pace of innovation unfolding in the artificial intelligence space.
+
+Worthwhile new technologies capitalize on eliminating old inefficiencies. Just as the emergence and maturation of the Internet and smartphone technologies had profound implications across many industries, AI has the potential to significantly change key factors related to the Traditional Business, Journal Technologies, and companies in the Company’s holdings of marketable securities.
+
+For the Traditional Business, there may be opportunities to automate or reduce the cost of content creation, or perhaps allow monetization of existing and/or historic content in new ways. Likewise, AI may negatively impact the business in ways that will prove difficult to circumvent.
+
+For Journal Technologies, AI may fundamentally alter or automate key customer workflows over time, obviating the need for its technology. AI will likely also create new and better ways for customers to achieve their mandates. We are allocating certain resources to ensure we have the capacity to recognize and pursue these opportunities, whether through in-house engineering, partnership, or mergers and acquisitions, but whether we will be successful is uncertain.
+
+The process and approach to engineering software itself may change in notable ways, and this could impact the business model of Journal Technologies.  Monitoring potential impacts of AI on companies in our holdings of marketable securities will also require attention.
+
+Mitigating risk and capitalizing on potential opportunity requires active engagement.  The Company’s challenge is to find and exploit opportunities to ensure change precipitated by AI provides tailwinds and not headwinds, and to do so in a way that is neither too slow, nor premature.
+
+Risks Associated with the Traditional Business
+
+Changes in the legal requirement to publish public notice advertising or in the legal ability of our newspapers to publish those notices would have a significant adverse impact on The Traditional Business.
+
+From time to time, the legislatures in California and Arizona (and elsewhere) have considered various proposals that would result in the elimination or reduction of the amount of public notice advertising in printed newspapers required by statute, and Arizona approved one such proposal for a particular notice type in fiscal 2017.  These proposals typically focus on the availability of alternative means of providing public notices, such as via the Internet.  Some proposals also question the need 
+for public notices at all.  To the extent these proposals become law, particularly in California and Arizona, they could materially affect the revenues of the Traditional Business.
+
+For example, the California legislature recently passed a bill (AB542) to be effective January 1, 2024 that will almost certainly result in a decline in legal advertising revenue by reducing the number of publication days in a newspaper for self-service storage facility lien sales.  The existing requirement is to publish the notice once per week for two consecutive weeks.  The bill now allows the notice to be published either once per week for two consecutive weeks in a newspaper or once in a 
+newspaper and once on an internet website that customarily conducts or advertises online auctions or sales. In time, this has the potential to reduce annual earnings by approximately $150,000 to $200,000 per year. Another bill (AB721) relative to school budget hearing notices, was also passed. Effective January 1, 2027 these notices are to be moved to posting on the school district’s website in lieu of being published in a newspaper.
+
+- 12 -
+
+In addition, if the adjudication, which is what gives publishers the legal ability to publish public notice advertising, of one or more of the Company’s newspapers were challenged and revoked, those newspapers would no longer be eligible to publish public notice advertising, and it could materially affect the revenues of the Traditional Business.
+
+The Traditional Business faces strong competition in each of its markets.
+
+Competition for readers and advertisers is very intense, both from established publications and from new entrants into the market. The Daily Journals face aggressive competition. The Company’s court rules publications face competition in both Northern and Southern California from document management programs, online court rules services, and the courts themselves. The steady decline in recent years in the number of subscriptions to The Daily Journals and the court rule publications is likely to 
+continue and adversely impact the Traditional Business’ future revenues.
+
+The Traditional Business also competes with serious competitors for public notice advertising in all of its markets. As the amount of this advertising has decreased due to the reduction in the number of foreclosures discussed above, the competition to publish the remaining public notices has intensified and may result in a further decline in the Traditional Business’ public notice advertising revenues.
+
+The Traditional Business continues to experience challenges in maintaining its commercial advertising and circulation revenues, particularly due to the growth of Internet sites.
+
+Internet sites devoted to recruitment have become significant competitors of our newspapers and websites for classified advertising. In addition, there has been a steady consolidation of companies serving the legal marketplace, resulting in an ever-smaller group of companies placing display advertising. Furthermore, newspapers like ours have been struggling to compete for display advertising generally, given the many other forums (including Internet sites) that compete for advertising dollars. 
+These trends are expected to continue and would adversely affect the Traditional Business.
+
+During fiscal 2023, we had a slight increase of $9,000 in circulation revenues primarily resulting from some promotional sale efforts which we will continue. However, overall industry-wide circulation revenues have continued to decline as more and more information has become available online. Law firm mergers have also reduced the number of firms that purchase multiple subscriptions of our newspapers. It is not practical to assume that we will be able to offset the decline in subscriptions with 
+increases in the subscription rate, and we cannot anticipate that our circulation revenues will continue to increase.
+
+- 13 -
+
+The Traditional Business is exposed to risks associated with fluctuations in postage and paper costs.
+
+After personnel costs, postage and paper costs are typically the Company’s next two largest expenses. An adequate supply of newsprint and other paper is important to the operations of the Traditional Business. The Company currently does not have a contract with any paper supplier, and in the past, shortages of newsprint have sometimes resulted in higher prices. Recently, there have been consolidations of newsprint suppliers, and paper prices may fluctuate substantially in the future.
+
+The Traditional Business uses the U.S. Postal Service for distribution of a majority of its newspapers and products. Postal rates are dependent on the operating efficiency of the U.S. Postal Service and on legislative mandates imposed upon the U.S. Postal Service. During the past several years, postal rates have increased. Postal rates and fees may increase more in the future. Further, we may not be able to pass on increases in paper and postage costs to our customers.
+
+We expect the Traditional Business to continue to suffer from significant secular decline.
+
+The newspaper business has been experiencing significant secular decline for some time, and the Company’s Traditional Business has been no exception. The Company expects its Traditional Business to continue to decline in the years ahead, which could have a material negative impact upon the Company’s revenue, income and future prospects.
+
+Risks Associated with Journal Technologies
+
+The success of Journal Technologies depends in large part on the technological update and upgrade of its software products.
+
+Journal Technologies’ success depends on the continued improvement of its products, and the costs to update and upgrade those products consistently represent a large portion of Journal Technologies’ expenses. There are many uncertainties in the process of courts and other justice agencies migrating to newer case management systems, including whether Journal Technologies’ versions of these systems will find general acceptance and whether the modification of such systems can be done in a 
+cost-effective manner. The costs to update and upgrade Journal Technologies’ products are expensed as incurred and will impact earnings at least through the foreseeable future. To build out next-generation technology there is up-front investment required, which is now underway. Likewise, investment is required to improve existing technology to simplify the process of configuring, managing and updating systems. These investments are being made to both improve win rates and maximize the efficiency
+(ergo reduce costs, and increase margins) of building and deploying customer systems. The intention is to improve profitability, but if this development is not done effectively, it may not yield the expected competitive advantages or intended efficiencies.
+
+Journal Technologies faces significant competition from other case management software vendors.
+
+There is significant competition among a limited number of companies to provide services and software to courts and other justice agencies, and some of these companies are much larger and have greater access to capital and other resources than Journal Technologies. Normally, the vendor is selected through a bidding process, and often the customers will express a preference for, or even require, larger vendors. An inability to successfully compete in this difficult market could materially affect 
+the earnings of Journal Technologies. Likewise, specialized vendors in specific vertical markets may develop or continue to enhance specific solutions for certain customer types that are sufficiently focused and turnkey that Journal Technologies will struggle to compete with them.
+
+- 14 -
+
+The customers of Journal Technologies are public sector entities, which create special issues and risks.
+
+Almost all of the customers of Journal Technologies are courts, justice agencies, and other government entities. Accordingly, we face special risks associated with governmental budget constraints, especially during stressful economic times, which could force government entities to defer or forego consulting services or even stop paying their annual software license and maintenance fees. In addition, we encounter risks related to a longer and more complicated sales cycle than exists for 
+commercial customers, political issues related to resource allocation, administration turnover and preferences for internal case management solutions or for a particular vendor, complicated bidding procedures, and fluctuations in the demand for information technology products and services.
+
+Journal Technologies generally recognizes revenues for software installations only upon completion of the applicable services and customer acceptance of the software system.
+
+In most cases, installation fees are not due until the customer has indicated its satisfaction with the installed system, and it has “gone live”. Accordingly, we do not recognize revenues for installation services or for most other consulting services until after the services have been performed and accepted. There are significant risks associated with our ability to complete our services to the satisfaction of our customers and to fulfill the requirements that entitle us to be paid. An 
+inability to realize payment for services performed could materially affect the earnings of Journal Technologies. Additional costs may not be recoverable for historic projects with flexible scopes or scopes that are subject to interpretation, or projects that require adjustments due to technology changes that occur due to the passage of time.
+
+The end-of-life process for legacy products and customer transitions to new products must be handled effectively.
+
+Disruptions that affect long-standing customer relationships can have negative reputational implications for Journal Technologies and that can affect its earnings.
+
+Risks Associated with Our Holdings of Marketable Securities
+
+A large portion of the Company’ s assets is held in publicly traded securities, and the prices of those securities may decline.
+
+As of September 30, 2023, the Company held marketable securities worth approximately $303,128,000, with an unrealized gain for financial statement purposes of $137,716,000. While this portfolio has enabled the Company to borrow on favorable terms for acquisitions and to better compete for case management software opportunities that are usually limited to “large” firms, it is unusual for a public company to invest a significant amount of its available cash in the marketable securities of other 
+public companies. The value of these securities could decline, which would adversely affect net income and shareholders’ equity.
+
+Also, as of September 30, 2023, the Company’s holdings of marketable securities were concentrated in just eight companies. Accordingly, a significant decline in the market value of one or more of the Company’s holdings may not be offset by hypothetically better performance of other holdings. This concentration of risk may result in a more pronounced effect on net income and shareholders’ equity.
+
+- 15 -
+
+The irreplaceable manager of our marketable securities portfolio passed away in November 2023.
+
+Charles T. Munger, the legendary investor of Berkshire Hathaway fame, has been a director of the Company for many decades, and has long managed the Company’s holdings of marketable securities. Mr. Munger passed away on November 28, 2023. Although the Board will work to ensure that the portfolio remains well-managed, it’s impossible to ever replace Mr. Munger.  Given the loss of Mr. Munger, the Company does not expect the future financial performance of its marketable securities portfolio to 
+rival its past performance.
+
+The Company is required to recognize losses in a particular security for financial statement purposes even though the Company has not actually sold the security.
+
+Under accounting rules that became effective in fiscal 2019, changes in the unrealized gains and losses on marketable securities are included in the Company’s reported net income (loss), even though the Company has not actually realized any gain or loss by selling such marketable securities. Accordingly, changes in the market prices of the Company’s marketable securities can have a significant impact on the Company’s reported results for a particular period, even though those changes do not bear
+on the performance of the Company’s operating businesses.
+
+The Company may be subject to fluctuations in foreign currency rates for marketable securities that are not denominated in the United States Dollar.
+
+At times, the Company may hold marketable securities denominated in currencies other than the United States Dollar. When it does, the Company may be at risk for significant fluctuations in the applicable foreign currency exchange rates, which would affect the profitability of such marketable securities. The Company currently owns one such investment that is denominated in Hong Kong Dollars.
+
+General Corporate Risks
+
+Changes in accounting guidance could have a significant effect on the Company’ s reported financial results.
+
+Preparing consolidated financial statements requires the Company’s management to make estimates and assumptions that affect the reported amount of assets, liabilities, revenues and expenses. These estimates and assumptions are affected by management’s application of accounting policies and the prevailing accounting guidance. The Company considers fair value measurement and disclosures, revenue recognition, accounting for software costs and income taxes to be critical accounting policies and 
+estimates. A change in the accounting guidance with respect to one or more of these areas could materially affect the Company’s reported financial results.
+
+As noted above, beginning in fiscal 2019, changes in unrealized gains (losses) on marketable securities are included in the Company’s net income (loss) and thus may have a significant impact on the Company’s reported results depending on the fluctuations of the prices of the marketable securities owned by the Company.
+
+- 16 -
+
+We cannot be sure that customer information and systems are fully protected against security breaches.
+
+Journal Technologies’ software processes and stores customer information in the conduct of its business, including in some cases by utilizing cloud-based systems supplied by third-party vendors.  Despite our efforts to maintain up-to-date security controls, it is possible that our system could be improperly used to access or misappropriate customer systems or information, including personally identifiable or other confidential information.  A material security breach of this nature could harm 
+our reputation, cause us to lose current and potential customers, require us to allocate more resources to information security, or subject us or our customers to liability, resulting in increased costs, loss of revenue, or both.  The Traditional Business also operates certain websites that process and, in certain cases, store customer information.  Minor security breaches were discovered on websites operated by the Traditional Business in early fiscal 2015 and again in November 2023, and 
+although both incidents were remediated without loss of data or revenue, there can be no assurance that there will not be more material breaches in the future.  Also, our insurance may not cover all of the costs that we may incur as a result of a material security breach.
+
+The Company has identified material weaknesses in its internal control over financial reporting.
+
+The Company has identified material weaknesses in its internal control over financial reporting. The Company’s internal control over financial reporting has been designed to provide management and the Board of Directors with reasonable assurance regarding the preparation and fair presentation of the Company’s consolidated financial statements. As a small company, we are not able to segregate duties to the extent we could if we had more people, and we have not sufficiently designed controls that 
+support an effective assessment of our internal controls relating to the prevention of fraud and possible management override of controls. Further, the Company does not have an internal audit group, and has not engaged an outside firm to complete the documentation of its internal control assessment to the level required by the applicable criteria.
+
+We believe that our overall internal control environment is sufficient for a company of our size. However, the existence of material weaknesses means that there is a reasonable possibility that a material misstatement of our financial statements will not be prevented or detected on a timely basis. If we are not able to correct material weaknesses or deficiencies in internal controls in a timely way, our ability to record, process, summarize and report financial information accurately and within 
+the time periods specified in the SEC’s rules and forms will be adversely affected. Such a result could negatively impact the market price and trading liquidity of our stock, weaken investor confidence in our reported financial information, subject us to civil and criminal investigations and penalties, and generally materially and adversely affect our business and financial condition.
+
+  Item 1B.      Unresolved Staff Comments  
+ ───────────────────────────────────────────
+
+None.
+
+  Item 1C.      Cybersecurity  
+ ───────────────────────────────
+
+Not applicable.
+
+  Item 2.      Properties  
+ ───────────────────────────
+
+The main Los Angeles property is comprised of a two-story, 34,000 square foot building constructed in 1990, which is fully occupied by the Company. Approximately 75% of the building is devoted to office space and the remainder to printing and production equipment and facilities. In 2003, the Company finished building an adjacent 37,000 square foot building and parking facilities on properties it acquired in 1996 and 1998. This building provides additional office, production and storage space. 
+Since a majority of Journal Technologies employees are working remotely from home post-COVID or at clients’ sites, the Company intends to consolidate the two offices into one and will seek to either sell or lease out the adjacent building in 2024.
+
+- 17 -
+
+In November 2015, the Company purchased a 30,700 square foot office building constructed in 1998 on about 3.6 acres in Logan, Utah that had been previously leased for Journal Technologies. This office is also currently underutilized and, therefore, a lease to a third party or other approach may be considered at some point in the future.
+
+  Item 3.      Legal Proceedings  
+ ──────────────────────────────────
+
+From time to time, the Company is subject to litigation arising in the normal course of its business. While it is not possible to predict the results of such litigation, management does not believe the ultimate outcome of these types of matters will have a material adverse effect on the Company’s financial position or results of operations or cash flows.
+
+  Item 4.      Mine Safety Disclosures  
+ ────────────────────────────────────────
+
+Not applicable.
+
+- 18 -
+
+Part II
+
+  Item 5.      Market for Registrant ’ s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities  
+ ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+The following table sets forth the sales prices of the Company’s common stock for the periods indicated. Quotations are as reported by the NASDAQ Capital Market.
+
+                                        High                  Low              
+  Fiscal 2023                                                                  
+  Quarter ended December 31, 2022       $         311.39      $        245.54  
+  Quarter ended March 31, 2023                    315.23               258.00  
+  Quarter ended June 30, 2023                     297.75               270.05  
+  Quarter ended September 30, 2023                315.50               282.50  
+  Fiscal 2022                                                                  
+  Quarter ended December 31, 2021       $         415.66      $        334.92  
+  Quarter ended March 31, 2022                    389.90               242.11  
+  Quarter ended June 30, 2022                     292.00               242.00  
+  Quarter ended September 30, 2022                286.04               236.01  
+
+As of December 26, 2023, there were approximately 317 holders of record of the Company’s common stock, and the last trade was at $349.97 per share.
+
+The Company did not declare or pay any dividends during fiscal 2023 or 2022. A determination by the Company whether or not to pay dividends in the future will depend on numerous factors, including the Company’s earnings, cash flow, financial condition, capital requirements, future prospects, acquisition opportunities, and other relevant factors. The Board of Directors does not expect that the Company will pay any dividends or other distributions to shareholders in the foreseeable future.
+
+The Company does not have any equity compensation plans, and it did not sell any securities, whether or not registered under the Securities Act of 1933, during the past two fiscal years.
+
+From time to time, the Company has repurchased shares of its common stock and may do so in the future. The Company maintains a common stock repurchase program that was implemented in 1987 in combination with the Company’s Management Incentive Plan. See Note 2 of Notes to Consolidated Financial Statements for more information. The Company’s stock repurchase program remains in effect, but the Company did not repurchase any shares during fiscal 2023 and 2022.
+
+  Item 6.      [Reserved]  
+ ───────────────────────────
+
+- 19 -
+
+  Item 7.      Management's Discussion and Analysis of Financial Condition and Results of Operations  
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Results of Operations
+
+The Company continues to operate as two different businesses: (1) The Traditional Business, being the business of newspaper publishing and related services that the Company had before 1999 when it purchased a software development company, and (2) Journal Technologies, Inc. (“Journal Technologies”), a wholly-owned subsidiary which supplies case management software systems and related products to courts, prosecutor and public defender offices, probation departments and other justice agencies, 
+including administrative law organizations, city and county governments and bar associations. These organizations use the Journal Technologies family of products to help manage cases and information electronically, to interface with other critical justice partners and to extend electronic services to the public, including e-filing and a website to pay traffic citations and fees online. These products are licensed or subscribed in approximately 30 states and internationally.
+
+Impact of the COVID-19 Pandemic
+
+On March 13, 2020, the United States declared the outbreak of COVID-19 to be a national emergency, and several states and municipalities also declared public health emergencies. Unprecedented actions were taken by public health and other governmental authorities to contain and combat the spread of COVID-19, including “stay-at-home” orders and similar mandates that restricted the daily activities of individuals and limited the operation of businesses that were deemed “non-essential”. In addition,
+most of Journal Technologies’ customers, which are primarily courts and governmental agencies in the United States, Canada and Australia, were either closed or significantly scaled back their activities. Similarly, many law firms and companies from which the Traditional Business derives advertising and subscription revenues also curtailed their in-person operations and spending.
+
+Although the World Health Organization has declared an end to the COVID-19 emergency, enduring changes in society resulting from efforts to contain the COVID-19 pandemic are likely to have continuing effects on the Company’s business. For example, for Journal Technologies, there have been several delays or cancellations in government procurement processes. Also, although we were able to complete many existing projects remotely, we were delayed in finishing certain implementations and trainings 
+because of our inability to work with clients in-person. Given that we are typically paid for implementation services upon “go-live” of a system, recognition of those revenues has been delayed. This can also create a risk of contract cancellations of in-progress projects, which has not been a common issue to date (although there were two in the past year), and Journal Technologies is working to minimize additional cancellations.
+
+- 20 -
+
+Reportable Segments
+
+The Company’s Traditional Business is one reportable segment and the other is Journal Technologies which includes Journal Technologies, Inc. and Journal Technologies (Canada) Inc. All inter-segment transactions were eliminated. Additional detail about each of the reportable segments and the Company's corporate income and expenses is set forth below:
+
+  Overall Financial Results (000)                                                                                                                                      
+  For the twelve months ended September 30                                                                                                                             
+  Revenues                                                                                                                                                             
+  Advertising                                                                    8,955       ---         ---         ---          ---             8,955         8,591  
+  Circulation                                                                    4,403       ---         ---         ---          ---             4,403         4,394  
+  Advertising service fees and other                                             2,895       ---         ---         ---          ---             2,895         2,937  
+  Licensing and maintenance fees                                                 ---         23,503      19,192      ---          ---            23,503        19,192  
+  Consulting fees                                                                ---         19,776      11,865      ---          ---            19,776        11,865  
+  Other public service fees                                                      ---         8,177       7,030       ---          ---             8,177         7,030  
+  Total operating revenues                                                       16,253      51,456      38,087      ---          ---            67,709        54,009  
+  Operating expenses                                                                                                                                                   
+  Salaries and employee benefits                                                 10,416      33,034      26,862      ---          ---            43,450        36,480  
+  (Decrease) increase to the long-term Supplemental compensation accrual         (470        175         115         ---          ---              (295         1,245  
+  Others                                                                         3,923       13,979      9,823       ---          ---            17,902        14,295  
+  Total operating expenses                                                       13,869      47,188      36,800      ---          ---            61,057        52,020  
+  Income from operations                                                         2,384       4,268       1,287       ---          ---             6,652         1,989  
+  Dividends and interest income                                                  ---         ---         ---         8,336        5,451           8,336         5,451  
+  Gains on sale of land                                                          ---         ---         ---         ---          272               ---           272  
+  Interest expenses on note payable collateralized by real estate and other      ---         ---         ---         (77          (83               (77           (83  
+  Interest expense on margin loans                                               ---         ---         ---         (4,255       (1,026         (4,255        (1,026  
+  Gains on sales of marketable securities, net                                   ---         ---         ---         422          14,249            422        14,249  
+  Net unrealized gains (losses) on marketable securities                         ---         ---         ---         17,024       (123,401       17,024      (123,401  
+  Pretax income (loss)                                                           2,384       4,268       1,287       21,450       (104,538       28,102      (102,549  
+  Income tax (expense) benefit                                                   (520        (1,450      (205        (4,680       27,315         (6,650        26,925  
+  Net income (loss)                                                              1,864       2,818       1,082       16,770       (77,223        21,452       (75,624  
+  Total assets                                                                   18,744      33,100      27,868      303,016      268,500       354,860       319,111  
+  Capital expenditures                                                           70          16          33          ---          ---                86            36  
+
+During fiscal 2023 and 2022, the Traditional Business had total operating revenues of $16,253,000 and $15,922,000 of which $11,850,000 and $11,528,000, respectively, were recognized after services were provided while $4,403,000 and $4,394,000, respectively, were recognized ratably over the subscription terms. Total operating revenues for the Company’s software business were $51,456,000 and $38,087,000, of which $28,209,000 and $19,459,000, respectively, were recognized upon completion of 
+services while $23,247,000 and $18,628,000, respectively, were recognized ratably over the subscription periods.
+
+- 21 -
+
+Fiscal 2023 compared with fiscal 2022
+
+Consolidated Financial Comparison
+
+Consolidated revenues were $67,709,000 and $54,009,000 for fiscal 2023 and 2022, respectively. This increase of $13,700,000 (25%) was primarily from increases in (i) Journal Technologies’ consulting fees of $7,911,000, license and maintenance fees of $4,311,000 and other public service fees of $1,147,000, and (ii) the Traditional Business’ advertising revenues of $364,000, partially offset by a decrease in the Traditional Business’ advertising service fees and other of $42,000.
+
+Approximately 76% of the Company’s revenues during fiscal 2023 were derived from Journal Technologies, as compared with 71% in the prior fiscal year. In addition, the Company’s revenues have been primarily from the United States, with approximately $3,293,000 (5%) from foreign countries. Almost all of Journal Technologies’ revenues are from governmental agencies.
+
+Consolidated operating expenses increased by $9,037,000 (17%) to $61,057,000 from $52,020,000. Total salaries and employee benefits increased by $6,970,000 (19%) to $43,450,000 from $36,480,000 primarily due to the annual salary adjustments and the hiring of additional staff members to strengthen operational efficiencies, product development, and bolster the teams working on the company’s installation projects. Outside services increased by $2,312,000 (52%) to $6,768,000 from $4,456,000 mainly 
+because of additional contractor services and increased third-party hosting fees which were billed to clients. Equipment maintenance and software increased by $286,000 (28%) to $1,315,000 from $1,029,000 mainly resulting from increased maintenance costs and additional miscellaneous office and enterprise software license purchases. Other general and administrative expenses increased by $518,000 (15%) to $3,876,000 from $3,358,000 mainly because there were increased business travel expenses as 
+compared to the prior fiscal year period.
+
+The Company’s non-operating income, net of expenses, increased by $125,988,000 to $21,450,000 from a loss of $104,538,000 in the prior fiscal year primarily because of (i) the recording of net unrealized gains on marketable securities of $17,024,000 as compared with net unrealized losses of $123,401,000 in the prior fiscal year, and (ii) increases in dividends and interest income of $2,885,000 (53%) to $8,356,000 from $5,451,000. These increases were partially offset by (i) the recording of 
+realized net gains on sales of marketable securities of $422,000 during fiscal 2023 as compared with $14,249,000 in the prior fiscal year, (ii) increases in interest expenses of $3,229,000 (315%) to $4,255,000 from $1,026,000 primarily due to the federal interest rate increases, and (iii) gains of $272,000 on a partial land sale associated with the City of Logan’s street widening project during fiscal 2022.
+
+During fiscal 2023, the Company’s consolidated pretax income was $28,102,000, as compared to pretax loss of $102,549,000 in the prior fiscal year. There was consolidated net income of $21,452,000 ($15.58 per share) for fiscal 2023, as compared with consolidated net loss of $75,624,000 (-$54.81 per share) in the prior fiscal year.
+
+At September 30, 2023, the aggregate fair market value of the Company’s marketable securities was $303,128,000. These securities had approximately $137,716,000 of net unrealized gains before taxes of $36,260,000. They generated approximately $8,336,000 in dividends and interest income during fiscal 2023, as compared with $5,451,000 in the prior fiscal year. Most of the unrealized gains were in the common stocks of three U.S. financial institutions and one foreign manufacturer.
+
+- 22 -
+
+Taxes
+
+During fiscal 2023, the Company recorded an income tax provision of $6,650,000 on pretax income of $28,102,000.   The income tax provisions consisted of tax provisions of $110,000 on the realized gains on marketable securities, $4,140,000 on the unrealized gain on marketable securities, and $2,803,000 on operating income, partially offset by a tax benefit of $403,000 for the dividends received deduction and other permanent differences.  Consequently, the overall effective tax rate for fiscal 
+2023 was 23.7%, after including the taxes on the realized and unrealized gains on marketable securities.
+
+During fiscal 2022, the Company recorded an income tax benefit of $26,925,000 on the pretax loss of $102,549,000.   The income tax benefit consisted of a tax benefit of $32,840,000 on the unrealized losses on marketable securities and a benefit of $340,000 for the dividends received deduction and other permanent book and tax differences, offset by tax provisions of $3,790,000 on the realized gains on marketable securities, $1,735,000 on income from operations, and $730,000 for the effect of a 
+change in state apportionment on the beginning of the year’s deferred tax liability.  Consequently, the overall effective tax rate for fiscal 2022 was 26.3%, after including the taxes on the realized gains and unrealized losses on marketable securities.
+
+The Company files consolidated federal income tax returns in the United States and with various state jurisdictions and is no longer subject to examinations for fiscal years before fiscal 2019 with regard to federal income taxes and fiscal 2018 for state income taxes.
+
+The Traditional Business
+
+The Traditional Business’ pretax income increased by $1,682,000 (240%) to $2,384,000 from $702,000 in the prior fiscal year, primarily due to a reduced long-term supplemental compensation accrual of $1,600,000 (142%) to a reduction of $470,000 from an addition of $1,130,000 in the prior fiscal year, partially offset by increased personnel costs of $798,000 to $10,416,000 from $9,618,000.
+
+During fiscal 2023, the Traditional Business had total operating revenues of $16,253,000, as compared with $15,922,000 in the prior fiscal year. Advertising revenues increased by $364,000 (4%) to $8,955,000 from $8,591,000, primarily resulting from increased trustee sale notice advertising revenues of $207,000 (mainly because of the lifting of COVID-related foreclosure moratoriums on lenders), legal notice advertising revenues of $53,000, government notice advertising revenues of $44,000 and 
+commercial advertising revenues of $60,000.
+
+Trustee sale notices are very much dependent on the number of California and Arizona foreclosures for which public notice advertising is required by law. The number of foreclosure notices published by the Company increased by 22% during fiscal 2023 as compared to the prior fiscal year. The Company’s smaller newspapers, those other than the Los Angeles and San Francisco Daily Journals (“The Daily Journals”), accounted for about 88% of the total public notice advertising revenues during fiscal 
+2023. Public notice advertising revenues and related advertising and other service fees, including trustee sales legal advertising revenues, constituted about 14% of the Company's total operating revenues for fiscal 2023 and 17% for fiscal 2022.
+
+- 23 -
+
+The Daily Journals accounted for about 93% of the Traditional Business’ total circulation revenues, which increased by $9,000 to $4,403,000 from $4,394,000. The court rule and judicial profile services generated about 5% of the total circulation revenues, with the other newspapers and services accounting for the balance. Advertising service fees and other are Traditional Business segment revenues, which include primarily (i) agency commissions received from outside newspapers in which the 
+advertising is placed, and (ii) fees generated when filing notices with government agencies.
+
+The Traditional Business segment operating expenses, excluding the adjustments to the long-term supplemental compensation accrual, increased by $249,000 (2%) to $14,339,000 from $14,090,000, primarily resulting from the annual salary adjustments.
+
+Journal Technologies
+
+During fiscal 2023, Journal Technologies’ business segment pretax income increased by $2,981,000 (232%) to $4,268,000 from $1,287,000 in the prior fiscal year primarily resulting from increased revenues of $13,369,000, partially offset by increased operating expenses of $10,388,000.
+
+Revenues increased by $13,369,000 (35%) to $51,456,000 from $38,087,000 in the prior fiscal year. Licensing and maintenance fees increased by $4,311,000 (22%) to $23,503,000 from $19,192,000. Consulting fees increased by $7,911,000 (67%) to $19,776,000 from $11,865,000 mainly resulting from more project go-lives (i.e. signoffs by the clients). Other public service fees increased by $1,147,000 (16%) to $8,177,000 from $7,030,000 primarily because of increased e-filing fee revenues.
+
+Deferred consulting fees primarily represent advances from customers of Journal Technologies for installation services and are recognized upon final project go-lives. Deferred revenues on license and maintenance contracts represent prepayments of annual license and maintenance fees and are recognized ratably over the maintenance periods.
+
+Operating expenses increased by $10,388,000 (28%) to $47,188,000 from $36,800,000 primarily because of (i) increased personnel costs because of salary adjustments due to recent inflation in the compensation market for talent, (ii) additional contractor services and the hiring of additional staff members to strengthen operational efficiencies, product development, and bolster the teams working on thecompany’s installation projects, (iii) increased third-party hosting fees which were billed to 
+clients and (iv) increased business travel expenses.
+
+Journal Technologies continues to update and upgrade its software products. These costs are expensed as incurred and will impact earnings at least through the foreseeable future.
+
+Liquidity and Capital Resources
+
+During fiscal 2023, the Company’s cash and cash equivalents, restricted cash, and marketable security positions increased by $35,269,000, after the sales of marketable securities of approximately $2,826,000, and the recording of net pretax unrealized gains on marketable securities of $17,024,000. Cash, cash equivalents, and the proceeds from the sales of marketable securities were primarily used to purchase additional marketable securities of $10,001,000.
+
+The investments in marketable securities, which had an adjusted cost basis of approximately $165,412,000 and a market value of about $303,128,000 at September 30, 2023, generated approximately $8,336,000 in dividends and interest income during fiscal 2023. These securities had approximately $137,716,000 of net unrealized gains before estimated taxes of $36,260,000 which will become due only when we sell securities in which there is unrealized appreciation. The balance on the Company's margin 
+loan secured by the securities portfolio was $75,000,000 at both September 30, 2023 and September 30, 2022.
+
+- 24 -
+
+Cash flows from operating activities increased by $20,345,000 during fiscal 2023, as compared to the prior fiscal year, primarily due to (i) decreases in the Company’s accounts receivable of $5,651,000 mainly resulting from more collections, its income tax receivable of $2,038,000 and its deferred tax benefit of $36,144,000 and (ii) increases in net accounts payable and accrued liabilities of $230,000 (because of the timing difference in remitting e-filing fees to the courts), deferred revenues 
+of $1,434,000 and income tax payable of $7,313,000. This was partially offset by decreases in net income of $32,228,000, excluding the increases in unrealized gains on marketable securities of $140,425,000; decreases in realized net gains on sales of marketable securities of $13,827,000; additional stock dividends of $2,978,000; and prior year’s gains of $272,00 on land sale associated with Logan City’s street widening project.
+
+As of September 30, 2023, the Company had working capital of $303,207,000, including the liabilities for deferred subscriptions, deferred consulting fees and deferred maintenance agreements and others of $25,539,000.
+
+The Company believes that it will be able to fund its operations for the foreseeable future through its cash flows from operations and its current working capital and expects that any such cash flows will be invested in its businesses. The Company may or may not have the ability to borrow additional amounts against its marketable securities and, among other possibilities, it may be required to consider selling some of those securities to generate cash if needed to fund ongoing operations. The 
+amount available for borrowing is based on the market value of the Company’s investment portfolio and fluctuates depending on the value of the underlying securities.  In addition, the Company could be subject to margin calls should the balance of the investment decrease significantly.
+
+The Company is not a smaller version of Berkshire Hathaway Inc.  Indeed, given the passing of Mr. Munger, the Company does not expect its holdings of marketable securities to generate gains in the future consistent with the past. The Company’s goal is simply to continue to develop a successful and profitable software business, while continuing to enjoy the benefit of its Traditional Business for as long as possible.
+
+- 25 -
+
+Critical Accounting Policies and Estimates
+
+The Company’s financial statements and accompanying notes are prepared in accordance with U.S. generally accepted accounting principles. Preparing financial statements requires management to make estimates and assumptions that affect the reported amounts of assets, liabilities, revenues and expenses. These estimates and assumptions are affected by management’s application of accounting policies. Management believes that revenue recognition, accounting for software costs, fair value measurement 
+and disclosures (including the long-term Incentive Plan liabilities) and income taxes are critical accounting policies and estimates.
+
+The Company recognizes revenues in accordance with the provisions of ASU No. 2014-09, Revenue from Contracts with Customers (ASC Topic 606).
+
+For the Traditional Business, proceeds from the sale of subscriptions for newspapers, court rule books and other publications and other services are recorded as deferred revenue and are included in earned revenue only when the services are provided, generally over the subscription term. Advertising revenues are recognized when advertisements are published.
+
+Journal Technologies' contracts may include several products and services, which are generally distinct and include separate transaction pricing and performance obligations. Most are one-transaction contracts. These current subscription-type contract revenues include (i) implementation consulting fees to configure the system to go-live, (ii) subscription software license, maintenance (including updates and upgrades) and support fees, and (iii) third-party hosting fees when used. Revenues for 
+consulting are generally recognized at point of delivery (go-live) upon completion of services. These contracts include assurance warranty provisions for limited periods and do not include financing terms. For some contracts, the Company acts as a principal with respect to certain services, such as data conversion, interfaces and hosting that are provided by third-parties, and recognizes such revenues on a gross basis. For legacy contracts with perpetual license arrangements, licenses and 
+consulting services are recognized at point of delivery (go-live), and maintenance revenues are recognized ratably after the go-live. Other public service fees are earned and recognized as revenues when the Company processes credit card payments on behalf of the courts via its websites through which the public can e-file cases and pay traffic citations and other fees.
+
+ASC 985-20, Accounting for the Costs of Computer Software to be Sold, Leased, or Otherwise Marketed, provides that costs related to the research and development of a new software product are to be expensed as incurred until the technological feasibility of the product is established. Accordingly, costs related to the development of new software products are expensed as incurred until technological feasibility has been established, at which time such costs are capitalized, subject to expected 
+recoverability. In general, “technological feasibility” is achieved when the developer has established the necessary skills, hardware and technology to produce a product and a detailed program design has been (i) completed, (ii) traced to the product specifications and (iii) reviewed for high-risk development issues. The Company believes its process for developing software is essentially completed concurrent with the establishment of technological feasibility, and accordingly, no software 
+development costs have been capitalized to date.
+
+- 26 -
+
+ASC 820, Fair Value Measurement and Disclosures, requires the Company to (i) disclose the amounts of transfers in and out of Level 1 and Level 2 fair value measurements and the reasons for the transfers and (ii) present separately information about purchases, sales, issuances and settlements in the reconciliation of Level 3 measurements. This guidance also provides clarification of existing disclosures requiring the Company to determine each class of its investments based on risk and to disclose
+the valuation techniques and inputs used to measure fair value for both Level 2 and Level 3 measurements. The Company made no transfers in and out of Level 1 and Level 2 measurements in fiscal years 2023 and 2022. During that time all of the Company’s investments have been quoted on public markets and, therefore, all fair value calculations have been based on Level 1 measurements. The estimated Incentive Plan’s future commitment is calculated using Level 3 inputs, based on an average of the 
+prior fiscal year (fiscal 2022) and the current year’s pretax earnings before certain items, discounted to the present value at 6% since each granted Incentive Plan Unit will expire over its remaining life term of up to 10 years.
+
+ASC 740, Income Taxes, establishes financial accounting and reporting standards for the effect of income taxes. The objectives of accounting for income taxes are to recognize the amount of taxes payable or refundable for the current year and the deferred tax liabilities and assets for the future tax consequences of events that have been recognized in the financial statements or tax returns. This accounting guidance also prescribes recognition thresholds and measurement attributes for the 
+financial statement recognition and measurement of a tax position taken or expected to be taken in a tax return. Judgment is required in assessing the future tax consequences of events that have been recognized in the Company’s financial statements or tax returns. Fluctuations in the actual outcome of these future tax consequences could materially impact the Company’s financial position or its results of operations and its deferred tax liabilities related to the unrealized net gains on 
+investments. See Note 3 of Notes to Consolidated Financial Statements for further discussion.
+
+ASC 280-10, Segment Reporting, defines an operating segment as a component of a public entity that has discrete financial information that is evaluated regularly by the Company’s Chief Executive Officer to decide how to allocate resources and to assess performance. In accordance with ASC 280-10, the Company has two reportable business segments which are: (i) the Traditional Business and (ii) Journal Technologies and Journal Technologies (Canada).
+
+The above discussion and analysis should be read in conjunction with the consolidated financial statements and the notes thereto included in this report.
+
+- 27 -
+
+  Item 8.      Financial Statements and Supplementary Data  
+ ────────────────────────────────────────────────────────────
+
+Report of Independent Registered Public Accounting Firm
+
+To The Board of Directors and Shareholders of Daily Journal Corporation
+
+Opinion on the Financial Statements
+
+We have audited the accompanying consolidated balance sheets of Daily Journal Corporation (the "Company") as of September 30, 2023 and 2022, the related consolidated statements of comprehensive income (loss), shareholders' equity, and cash flows, for the years then ended, and the related notes to the consolidated financial statements (collectively, the financial statements). In our opinion, the financial statements present fairly, in all material respects, the financial position of the Company 
+as of September 30, 2023 and 2022, and the results of its operations and its cash flows for the years then ended, in conformity with accounting principles generally accepted in the United States of America.
+
+Basis for Opinion
+
+These consolidated financial statements are the responsibility of the Company's management. Our responsibility is to express an opinion on the Company's consolidated financial statements based on our audits. We are a public accounting firm registered with the Public Company Accounting Oversight Board (United States) ("PCAOB") and are required to be independent with respect to the Company in accordance with the U.S. federal securities laws and the applicable rules and regulations of the 
+Securities and Exchange Commission and the PCAOB.
+
+We conducted our audits in accordance with the standards of the PCAOB. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether the consolidated financial statements are free of material misstatement, whether due to error or fraud. The Company is not required to have, nor were we engaged to perform, an audit of its internal control over financial reporting. As part of our audits we are required to obtain an understanding of internal control over 
+financial reporting but not for the purpose of expressing an opinion on the effectiveness of the Company's internal control over financial reporting. Accordingly, we express no such opinion.
+
+Our audits included performing procedures to assess the risks of material misstatement of the consolidated financial statements, whether due to error or fraud, and performing procedures that respond to those risks. Such procedures included examining, on a test basis, evidence regarding the amounts and disclosures in the consolidated financial statements. Our audits also included evaluating the accounting principles used and significant estimates made by management, as well as evaluating the 
+overall presentation of the consolidated financial statements. We believe that our audits provide a reasonable basis for our opinion.
+
+Critical Audit Matter
+
+The critical audit matter communicated below is a matter arising from the current period audit of the financial statements that was communicated or required to be communicated to the audit committee and that: (1) relates to accounts or disclosures that are material to the financial statements and (2) involved our especially challenging, subjective, or complex judgments. The communication of critical audit matters does not alter in any way our opinion on the financial statements, taken as a 
+whole, and we are not, by communicating the critical audit matter below, providing separate opinions on the critical audit matter or on the accounts or disclosures to which it relates.
+
+- 28 -
+
+Software Revenue Recognition
+
+As discussed in Note 2 to the consolidated financial statements, the Company generates revenue from the sale of products that include software licenses, maintenance, support fees, and services. The Company’s contracts with customers often include promises to transfer multiple products and services to a customer related to the Journal Technologies segment. Arrangements with customers can involve multiple performance obligations and rights. The Company recognized $23.5 million of licensing and 
+maintenance fees for the year ended September 30, 2023.
+
+We identified the evaluation of the Company’s analysis of terms and conditions in significant software and license contracts with customers and their effect on revenue recognition as a critical audit matter. Complex auditor judgment was required to assess the Company’s determination of the performance obligations and allocation of the transaction price.
+
+The primary procedures we performed to address this critical audit matter included:
+
+  Obtaining an understanding of the Company’s revenue recognition policy and evaluated for appropriateness.  
+
+  Evaluating the design and implementation of certain internal controls related to the Company’s revenue recognition process, including controls related to the Company’s analysis of terms and con...  
+
+  Inquiring of personnel outside of the accounting function to corroborate our understanding of certain terms and conditions for a selection of revenue transactions.  
+
+  Testing a sample of software and license transactions by inspecting the underlying customer agreements and invoices, and evaluating the Company’s recognition in accordance with revenue recognit...  
+
+/s/Baker Tilly US, LLP
+
+We have served as the Company's auditor since 2016.
+
+Los Angeles, California
+
+December 27, 2023
+
+ID: 23
+
+- 29 -
+
+DAILY JOURNAL CORPORATION
+
+CONSOLIDATED BALANCE SHEETS
+
+                                                                                                                                                             September 30                        September 30                   
+                                                                                                                                                             2023                                2022                           
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ASSETS                                                                                                                                                                                                                        
+  Current assets                                                                                                                                                                                                                
+  Cash and cash equivalents                                                                                                                                  $                   21,038,000      $                  13,423,000  
+  Restricted cash                                                                                                                                                                 2,100,000                          2,045,000  
+  Marketable securities at fair value -- common stocks                                                                                                                          303,128,000                        275,529,000  
+  Accounts receivable, less allowance for doubtful accounts of $ 250,000 at September 30, 2023 and 2022                                                                          18,687,000                         16,931,000  
+  Inventories                                                                                                                                                                        72,000                             56,000  
+  Prepaid expenses and other current assets                                                                                                                                         380,000                            451,000  
+  Income tax receivable                                                                                                                                                                 ---                          1,019,000  
+  Total current assets                                                                                                                                                          345,405,000                        309,454,000  
+  Property, plant and equipment, at cost                                                                                                                                                                                        
+  Land, buildings and improvements                                                                                                                                               16,400,000                         16,330,000  
+  Furniture, office equipment and computer software                                                                                                                               1,703,000                          1,688,000  
+  Machinery and equipment                                                                                                                                                         1,521,000                          1,521,000  
+                                                                                                                                                                                 19,624,000                         19,539,000  
+  Less accumulated depreciation                                                                                                                                                ( 10,264,000                        ( 9,986,000  
+                                                                                                                                                                                  9,360,000                          9,553,000  
+  Operating lease right-of-use assets                                                                                                                                                95,000                            104,000  
+                                                                                                                                                             $                  354,860,000      $                 319,111,000  
+  LIABILITIES AND SHAREHOLDERS' EQUITY                                                                                                                                                                                          
+  Current liabilities                                                                                                                                                                                                           
+  Accounts payable                                                                                                                                           $                    6,643,000      $                   5,062,000  
+  Accrued liabilities                                                                                                                                                             8,789,000                          7,066,000  
+  Income tax payable                                                                                                                                                              1,069,000                                ---  
+  Note payable collateralized by real estate                                                                                                                                        158,000                            146,000  
+  Deferred subscriptions                                                                                                                                                          2,678,000                          2,679,000  
+  Deferred consulting fees                                                                                                                                                        5,828,000                          6,394,000  
+  Deferred maintenance agreements and others                                                                                                                                     17,033,000                         12,272,000  
+  Total current liabilities                                                                                                                                                      42,198,000                         33,619,000  
+  Long term liabilities                                                                                                                                                                                                         
+  Investment margin account borrowings                                                                                                                                           75,000,000                         75,000,000  
+  Note payable collateralized by real estate                                                                                                                                      1,120,000                          1,285,000  
+  Deferred maintenance agreements                                                                                                                                                 1,000,000                            370,000  
+  Accrued liabilities                                                                                                                                                             4,474,000                          4,547,000  
+  Deferred income taxes                                                                                                                                                          30,599,000                         25,273,000  
+  Total long-term liabilities                                                                                                                                                   112,193,000                        106,475,000  
+  Commitments and contingencies (Notes 4 and 5)                                                                                                                                                                                 
+  Shareholders' equity                                                                                                                                                                                                          
+  Preferred stock, $.01 par value, 5,000,000 shares authorized and no shares issued                                                                                                     ---                                ---  
+  Common stock, $.01 par value, 5,000,000 shares authorized; 1,805,053 shares issued, including 428,027 treasury shares, at September 30, 2023 and 2022                              14,000                             14,000  
+  Additional paid-in capital                                                                                                                                                      1,755,000                          1,755,000  
+  Retained earnings                                                                                                                                                             198,700,000                        177,248,000  
+  Total shareholders' equity                                                                                                                                                    200,469,000                        179,017,000  
+                                                                                                                                                             $                  354,860,000      $                 319,111,000  
+
+See accompanying Notes to Consolidated Financial Statements
+
+- 30 -
+
+DAILY JOURNAL CORPORATION
+
+CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS)
+
+                                                                                        2023               2022  
+ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Revenues                                                                                                       
+  Advertising                                                                     $8,955,000         $8,591,000  
+  Circulation                                                                      4,403,000          4,394,000  
+  Advertising service fees and other                                               2,895,000          2,937,000  
+  Licensing and maintenance fees                                                  23,503,000         19,192,000  
+  Consulting fees                                                                 19,776,000         11,865,000  
+  Other public service fees                                                        8,177,000          7,030,000  
+                                                                                  67,709,000         54,009,000  
+  Costs and expenses                                                                                             
+  Salaries and employee benefits                                                  43,450,000         36,480,000  
+  (Decrease) increase to the long-term supplemental compensation accrual           ( 295,000          1,245,000  
+  Agency commissions                                                               1,018,000            905,000  
+  Outside services                                                                 6,768,000          4,456,000  
+  Postage and delivery expenses                                                      684,000            668,000  
+  Newsprint and printing expenses                                                    795,000            739,000  
+  Depreciation and amortization                                                      279,000            379,000  
+  Equipment maintenance and software                                               1,315,000          1,029,000  
+  Credit card merchant discount fees                                               1,938,000          1,679,000  
+  Rent expenses                                                                      289,000            249,000  
+  Accounting and legal fees                                                          940,000            833,000  
+  Other general and administrative expenses                                        3,876,000          3,358,000  
+                                                                                  61,057,000         52,020,000  
+  Income from operations                                                           6,652,000          1,989,000  
+  Other income (expenses)                                                                                        
+  Dividends and interest income                                                    8,336,000          5,451,000  
+  Net unrealized gains (losses) on investments                                    17,024,000      ( 123,401,000  
+  Interest expense on note payable collateralized by real estate and others         ( 77,000           ( 83,000  
+  Interest expense on margin loans                                               ( 4,255,000        ( 1,026,000  
+  Gains on land sale                                                                     ---            272,000  
+  Gains on sales of marketable securities, net                                       422,000         14,249,000  
+  Income (loss) before taxes                                                      28,102,000      ( 102,549,000  
+  (Provision) benefit for income taxes                                           ( 6,650,000         26,925,000  
+  Net income (loss)                                                              $21,452,000      $( 75,624,000  
+  Weighted average number of common shares outstanding – basic and diluted         1,377,026          1,379,655  
+  Basic and diluted net income (loss) per share                                       $15.58           $( 54.81  
+
+See accompanying Notes to Consolidated Financial Statements
+
+- 31 -
+
+DAILY JOURNAL CORPORATION
+
+CONSOLIDATED STATEMENTS OF SHAREHOLDERS’EQUITY
+
+  Balance at September 30, 2021          1,805,053      18,000      ( 424,307      ( 4,000      1,755,000       252,872,000       254,641,000  
+  Receipt of donated treasury stock      ---            ---         ( 3,720        ---          ---                     ---               ---  
+  Net loss                               ---            ---         ---            ---          ---            ( 75,624,000      ( 75,624,000  
+  Balance at September 30, 2022          1,805,053      18,000      ( 428,027      ( 4,000      1,755,000       177,248,000       179,017,000  
+  Net income                             ---            ---         ---            ---          ---              21,452,000        21,452,000  
+  Balance at September 30, 2023          1,805,053      18,000      ( 428,027      ( 4,000      1,755,000       198,700,000       200,469,000  
+
+See accompanying Notes to Consolidated Financial Statements
+
+- 32 -
+
+DAILY JOURNAL CORPORATION
+
+CONSOLIDATED STATEMENTS OF CASH FLOWS
+
+                                                                                                         2023                        2022                     
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Cash flows from operating activities                                                                                                                        
+  Net income (loss)                                                                                      $           21,452,000      $          ( 75,624,000  
+  Adjustments to reconcile net income (loss) to net cash provided by (used in) operating activities                                                           
+  Depreciation and amortization                                                                                         279,000                      379,000  
+  Unrealized (gains) losses on marketable securities                                                               ( 17,024,000                  123,401,000  
+  Gains on sales of marketable securities, net                                                                        ( 422,000                 ( 14,249,000  
+  Gains on sale of land                                                                                                     ---                    ( 272,000  
+  Stock dividends                                                                                                   ( 2,978,000                          ---  
+  Deferred income taxes                                                                                               5,326,000                 ( 30,821,000  
+  Changes in assets and liabilities                                                                                                                           
+  (Increase) decrease in current assets                                                                                                                       
+  Accounts receivable, net                                                                                          ( 1,756,000                  ( 7,407,000  
+  Inventories                                                                                                          ( 16,000                     ( 13,000  
+  Prepaid expenses and other assets                                                                                      80,000                      217,000  
+  Income tax receivable                                                                                               1,019,000                  ( 1,019,000  
+  Increase (decrease) in liabilities                                                                                                                          
+  Accounts payable                                                                                                    1,581,000                      823,000  
+  Accrued liabilities                                                                                                 1,650,000                    2,178,000  
+  Income tax payable                                                                                                  1,069,000                  ( 6,244,000  
+  Deferred subscriptions                                                                                                ( 1,000                     ( 15,000  
+  Deferred consulting fees                                                                                            ( 566,000                      896,000  
+  Deferred maintenance agreements and others                                                                          5,391,000                    2,509,000  
+  Net cash provided by (used in) operating activities                                                                15,084,000                  ( 5,261,000  
+  Cash flows from investing activities                                                                                                                        
+  Sales of marketable securities                                                                                      2,826,000                   80,570,000  
+  Purchases of marketable securities                                                                               ( 10,001,000                ( 117,678,000  
+  Sale of land                                                                                                              ---                      381,000  
+  Purchases of property, plant and equipment, net                                                                      ( 86,000                     ( 36,000  
+  Net cash used in investing activities                                                                             ( 7,261,000                 ( 36,763,000  
+  Cash flows from financing activities                                                                                                                        
+  Proceeds from margin loan borrowing                                                                                 6,011,000                   43,014,000  
+  Payment to margin loan borrowing                                                                                  ( 6,011,000                     ( 14,000  
+  Payment of real estate loan principal                                                                               ( 153,000                    ( 147,000  
+  Net cash (used in) provided by financing activities                                                                 ( 153,000                   42,853,000  
+  Increase in cash and cash equivalents and restricted cash                                                           7,670,000                      829,000  
+  Cash and cash equivalents and restricted cash                                                                                                               
+  Beginning of year                                                                                                  15,468,000                   14,639,000  
+  End of year                                                                                            $           23,138,000      $            15,468,000  
+  Interest paid during year                                                                              $            4,269,000      $             1,053,000  
+  Income taxes paid during year                                                                          $              806,000      $            11,140,000  
+
+See accompanying Notes to Consolidated Financial Statements
+
+- 33 -
+
+DAILY JOURNAL CORPORATION
+
+NOTES TO CONSOLIDATED FINANCIAL STATEMENTS
+
+1. THE COMPANY AND OPERATIONS
+
+Daily Journal Corporation (“The Company”) publishes newspapers and websites covering California and Arizona and produces several specialized information services. It also serves as a newspaper representative specializing in public notice advertising. This is sometimes referred to as the Company’s “Traditional Business”.
+
+Journal Technologies, Inc. (“Journal Technologies”), a wholly-owned subsidiary of Daily Journal, supplies case management software systems and related products to courts, prosecutor and public defender offices, probation departments and other justice agencies, including administrative law organizations, city and county governments and bar associations. These organizations use the Journal Technologies family of products to help manage cases and information electronically, to interface with other 
+critical justice partners and to extend electronic services to the public, including e-filing and a website to pay traffic citations and fees online. These products are licensed or subscribed to in approximately 30 states, and internationally.
+
+Essentially all of the Company’s U.S. operations are based in California, Arizona and Utah. The Company also has a presence in Australia where Journal Technologies is working on three software installation projects and in British Columbia, Canada, where the Company established a new wholly-owned subsidiary, Journal Technologies (Canada) Inc., in August 2022.
+
+2. SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES
+
+Basis of Presentation: The consolidated financial statements include the accounts of the Company. All intercompany accounts and transactions have been eliminated in consolidation.
+
+Certain reclassifications of previously reported amounts have been made to conform to the current year’s presentation.
+
+Concentrations of Credit Risk: The Company extends unsecured credit to most of its advertising customers. The Company recognizes that extending credit and setting appropriate reserves for receivables is largely a subjective decision based on knowledge of the customer and the industry. Credit limits, setting and maintaining credit standards, and managing the overall quality of the credit portfolio is largely centralized. The level of credit is influenced by the customer’s credit and payment 
+history which the Company monitors when establishing a reserve.
+
+The Company maintains the reserve account for estimated losses resulting from the inability of its customers to make required payments. If the financial condition of its customers were to deteriorate or its judgments about their abilities to pay are incorrect, additional allowances might be required and its results of operations could be materially affected.
+
+Cash Equivalents:
+The Company considers all highly liquid investments with original maturities of three months or less to be cash equivalents.
+
+Restricted Cash:
+The Company considers cash to be restricted when withdrawal or general use is legally restricted. Restricted cash of $
+2,100,000
+and $
+2,045,000
+at September 30, 2023 and 2022, respectively, represents cash held to secure two letters of credit issued by a bank for a software installation contract in Australia.
+
+Fair Value of Financial Instruments: The carrying amounts of cash, accounts receivable and accounts payable approximate fair value because of their short maturities. In addition, the Company has investments in marketable securities, all categorized as “available-for-sale” and stated at fair market value. In fiscal 2019, the Company adopted Accounting Standards Update (“ASU”) No. 2016-01, Financial Instruments - Overall (Subtopic 825-10): Recognition and Measurement of Financial Assets and 
+Financial Liabilities. This ASU requires an entity that holds financial assets or owes financial liabilities to, among other things, measure equity investments at fair value and recognize unrealized gains (losses) through net income (loss). Accordingly, the Company’s net income of $21,452,000for fiscal 2023, included net unrealized gains on marketable securities of $17,024,000. In fiscal 2022, the Company’s net loss of $75,624,000included net unrealized losses on marketable securities of 
+$123,401,000. The Company uses quoted prices in active markets for identical assets (consistent with the Level 1 definition in the fair value hierarchy) to measure the fair value of its marketable securities on a recurring basis pursuant to Accounting Standards Codification (“ASC”)
+Topic 820, Fair Value Measurement and Disclosures. At September 30, 2023, the aggregate fair market value of the Company’s marketable securities was $303,128,000. These marketable securities had approximately $137,716,000of net unrealized gains before taxes of $36,260,000. Most of the unrealized net gains were in the common stocks of three U.S. financial institutions and one foreign manufacturer. At September 30, 2022, the Company had marketable securities at fair market value of approximately 
+$275,529,000, including approximately $120,692,000of unrealized net gains before taxes of $32,120,000.
+
+All marketable securities are classified as “Current assets” because they are available for sale at any time.
+
+During fiscal 2023, the Company sold part of its marketable securities for approximately $2,826,000, realizing a total net gain of approximately $422,000, and simultaneously bought some additional marketable securities for an aggregated cost of approximately $10,001,000with additional borrowings of $6,011,000from the margin loan account. The Company subsequently repaid that $6,011,000, and the balance of the margin loan at year-end was $75,000,000. In addition, the Company received stock 
+dividends in March 2023 worth approximately $2,978,000from one of the companies in which it holds marketable securities. During the prior fiscal year, the Company sold part of its marketable securities for approximately $80,570,000, realizing a total net gain of approximately $14,249,000, and simultaneously bought some other companies’ marketable securities for an aggregated cost of approximately $117,678,000with additional borrowings of $43,014,000from the margin loan account.
+
+Investment in Financial Instruments
+
+                             September 30, 2023                                                                            September 30, 2022                                                       
+                             Aggregate                                Amortized/Adjusted      Pretax unrealized gains      Aggregate               Amortized/Adjusted      Pretax unrealized gains  
+                                                                                                                                                                                                    
+                             fair value                               cost basis                                           fair value              cost basis                                       
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Marketable securities                                                                                                                                                                             
+  Common stocks              $                       303,128,000      $                       $                            $                       $                       $                        
+
+Inventories:
+Inventories, comprised of newsprint and paper, are stated at cost, on a first-in, first-out basis, which does not exceed current net realizable value.
+
+Property, plant and equipment: Property, plant and equipment are carried on the basis of cost or fair value for assets acquired in business combinations. Depreciation of assets is provided in amounts sufficient to depreciate the cost of related assets over their estimated useful lives ranging from3 - 39years. At September 30, 2023, the estimated useful lives were (i)5 - 39years for building and improvements, (ii)3 - 5years for furniture, office equipment and software, and (iii)3 - 10years for 
+machinery and equipment. Leasehold improvements are amortized over the term of the related leases or the useful life of the assets, whichever is shorter. Assets are depreciated using the straight-line method for financial statements and accelerated method for tax purposes. Depreciation and amortization expenses were $279,000and $379,000for fiscal 2023 and 2022, respectively.
+
+Significant expenditures which extend the useful lives of existing assets are capitalized. Maintenance and repair costs are expensed as incurred. Gains or losses on dispositions of assets are reflected in current earnings.
+
+Impairment of Long-Lived Assets:
+The Company evaluates long-lived assets for impairment whenever events or changes in circumstances indicate that the carrying value of an asset may not be recoverable. There were no such impairments identified during fiscal 2023 and 2022.
+
+Journal Technologies’Software Development Costs: Development costs related to software products for sale or licensing are expensed as incurred until the technological feasibility of the product has been established. Thereafter, until the product is released for sale, software development costs are capitalized and reported at the lower of unamortized cost or net realizable value of the related product. The establishment of technological feasibility and the ongoing assessment of recoverability of 
+costs require considerable judgment by the Company with respect to certain internal and external factors, including, but not limited to, anticipated future product revenue, estimated economic life and changes in hardware and software technology.
+
+The Company believes its process for developing software is essentially completed concurrent with the establishment of technological feasibility, and accordingly, no software development costs have been capitalized to date.
+
+Revenue Recognition:
+
+The Company recognizes revenues in accordance with the provisions of ASU No. 2014-09, Revenue from Contracts with Customers (ASC Topic 606).
+
+For the Traditional Business, proceeds from the sale of subscriptions for newspapers, court rule books and other publications and other services are recorded as deferred revenue and are included in earned revenue only when the services are provided, generally over the subscription term. Advertising revenues are recognized when advertisements are published.
+
+Journal Technologies contracts may include several products and services, which are generally distinct and include separate transaction pricing and performance obligations. Most are one-transaction contracts. These current subscription-type contract revenues include (i) implementation consulting fees to configure the system to go-live, (ii) subscription software license, maintenance (including updates and upgrades) and support fees, and (iii) third-party hosting fees when used. Revenues for 
+consulting are recognized at point of delivery (go-live) upon completion of services. These contracts include assurance warranty provisions for limited periods and do not include financing terms. For some contracts, the Company acts as a principal with respect to certain services, such as data conversion, interfaces and hosting that are provided by third-parties, and recognizes such revenues on a gross basis. For legacy contracts with perpetual license arrangements, licenses and consulting 
+services are recognized at point of delivery (go-live), and maintenance revenues are recognized ratably after the go-live. Other public service fees are earned and recognized as revenues when the Company processes credit card payments on behalf of the courts via its websites through which the public can e-file cases and pay traffic citations and other fees.
+
+The adoption of ASC 606 also requires the capitalization of certain costs of obtaining contracts, specifically sales commissions which are to be amortized over the expected term of the contracts. For its software contracts, the Company incurs an immaterial amount of sales commission costs which have no significant impact on the Company’s financial condition and results of operations. In addition, the Company’s implementation and fulfillment costs do not meet all criteria required for 
+capitalization.
+
+Since the Company recognizes revenues when it can invoice the customer pursuant to the contract for the value of completed performance, as a practical expedient and because reliable estimates cannot be made, it has elected not to include the transaction price allocated to unsatisfied performance obligations. Furthermore, there are no fulfillment costs to be capitalized for the software contracts because these costs do not generate or enhance resources that will be used in satisfying future 
+performance obligations.
+
+Approximately76% and71% of the Company’s revenues in fiscal 2023 and 2022, respectively, were derived from sales of software licenses, annual software licenses, maintenance and support agreements and consulting services that typically include implementation and training.
+
+The change in allowance for doubtful accounts is as follows:
+
+Allowance for Doubtful Accounts
+
+  Description                          Balance at                   Additions                   Accounts                               
+  Fiscal 2023                                                                                                                          
+  Allowance for doubtful accounts      $               250,000      $                8,000      $                ( 8,000      250,000  
+  Fiscal 2022                                                                                                                          
+  Allowance for doubtful accounts      $               250,000      $               18,000      $               ( 18,000      250,000  
+
+Management Incentive Plan: In fiscal 1987, the Company implemented a Management Incentive Plan (the “Incentive Plan”) that entitles a participant to participate in pretax earnings before adjustment for certain items of the Company for tenyears. Because this plan was expanded in February 2022 to include the participation of all Journal Technologies employees, management subsequently realized in 2023 there would be an inadvertent future diluting effect on the shareholders’ interest when additional
+staff is hired as the Company grows. Therefore, the Company decided to put a pause on any new grants under the Incentive Plan in fiscal 2023 after making grants to about 14 new Journal Technologies employees (net of terminations and expirations of outstanding Certificates after 10 years). Management intends to propose a replacement plan based on a model where additional employees are only dilutive relative to a specific percentage of profits allocated to the program.
+
+Certificate interests entitled participants to receive4.71% and5.15% (amounting to $388,450and $474,300, respectively) of Daily Journal non-consolidated income before taxes, workers’ compensation, supplemental compensation and certain other items,22.2% and21.7% (amounting to $1,491,840and $455,700, respectively) for Journal Technologies and8.86% and11.69% (amounting to $1,260,800and $1,295,540, respectively) for Daily Journal consolidated in fiscal 2023 and 2022, respectively. The Company 
+accrued $4,230,000and $4,525,000as of September 30, 2023 and 2022, respectively, for the Incentive Plan’s future commitment for those who will still have Certificates at the age of 65. This future commitment included a decrease in the accrual in fiscal 2023 of $295,000(or -$. 21per outstanding share on a pretax basis), primarily due to no new grants of Certificates or replacement of expired Certificates under this Incentive Plan because of the pause mentioned above, as compared with an increase 
+in fiscal 2022 of $1,245,000(or $. 90per outstanding share). The estimated Incentive Plan's future commitment is calculated based on an average of the past year and the current year pretax earnings before certain items, discounted to the present value at6% because each granted Certificate will expire over its remaining life term of up to 10 years.
+
+Income taxes: The Company accounts for income taxes using an asset and liability approach which requires the recognition of deferred tax liabilities and assets for the expected future consequences of temporary differences between the carrying amounts for financial reporting purposes and the tax basis of the assets and liabilities. The Company accounts for uncertainty in income taxes under ASC 740-10 which prescribes a recognition threshold and measurement methodology to recognize and measure an 
+income tax position taken, or expected to be taken, in a tax return. The evaluation of a tax position is based on a two-step approach. The first step requires an entity to evaluate whether the tax position would “more likely than not” be sustained upon examination by the appropriate taxing authority. The second step requires the tax position be measured at the largest amount of tax benefit that is greater than 50% likely of being realized upon ultimate settlement. In addition, previously 
+recognized benefits from tax positions that no longer meet the new criteria would be derecognized.
+
+Treasury stock and net income (loss) per common share:
+
+In June 2022, the Company received from Charles T. Munger3,720shares of Daily Journal common stock as his gracious personal gift (worth approximately $1million on the date of the gift) for the purpose of establishing a new senior management equity incentive plan, which is still under consideration and has yet to be established. These donated shares were considered treasury stock, and the Company accounted for them using the par method which resulted in an immaterial effected amount on Treasury 
+Stock and Additional Paid-in Capital. In addition, the number of outstanding shares of the Company was reduced by these3,720shares to reflect the actual number of outstanding shares of1,377,026at September 30, 2022. The net income (loss) per common share is based on the weighted average number of shares outstanding during each year. The shares used in the calculation were1,377,026and1,379,655for fiscal 2023 and 2022, respectively. The Company does not have any common stock equivalents, and 
+therefore basic and diluted net income per share is the same.
+
+Use of Estimates: The presentation of the Company’s financial statements in conformity with accounting principles generally accepted in the United States requires management to make estimates and assumptions that affect the reported amounts of assets and liabilities and disclosure of contingent assets and liabilities at the date of the financial statements and the reported amounts of revenues and expenses during the reporting period.
+
+Right-of-Use (ROU) Asset: At the beginning of fiscal 2020, the Company adopted ASU 2016-02, Leases (Topic 842)which requires that all leases be recognized by lessees on the balance sheet through a right-of-use (ROU) asset and corresponding lease liability, including today’s operating leases. There has been no significant impact on the Company’s financial condition, results of operations or disclosures. At September 30, 2023, the Company recorded a ROU asset and lease liability of approximately 
+$95,000for its operating office and equipment leases, including approximately $44,000beyond one year. (In the prior fiscal year, there were ROU asset and lease liability of $104,000with $22,000beyond one year.) Operating office and equipment leases are included in operating lease ROU assets, current accrued liabilities and long-term accrued liabilities in the Company’s accompanying Consolidated Balance Sheets.
+
+Accrued Liabilities: Accrued liabilities primarily consisted of accrued payroll at September 30, 2023 and 2022.
+
+New Accounting Pronouncement:
+
+In June 2016, the Financial Accounting Standards Board issued a new Accounting Standards Codification (“ASU”) requiring financial assets measured at amortized cost be presented at the net amount expected to be collected, through an allowance for credit losses that is deducted from the amortized cost basis. The ASU eliminates the threshold for initial recognition in current U.S. GAAP and reflects an entity’s current estimate of all expected credit losses. The measurement of expected credit losses
+is based on historical experience, current conditions, and reasonable and supportable forecasts that affect the collectability of the financial assets. The ASU is effective for the Company beginning in the first quarter of fiscal 2024. The adoption of this guidance is not expected to have a material effect on the Company’s consolidated financial statements.
+
+No other new accounting pronouncement issued or effective has had, or is expected to have, a material impact on the Company’s consolidated financial statements.
+
+3. INCOME TAXES
+
+The provision (benefit) from income taxes consists of the following:
+
+                 2023                     2022                    
+ ──────────────────────────────────────────────────────────────────
+  Current:                                                        
+  Federal        $         1,275,000      $            2,688,000  
+  State                       49,000                   1,208,000  
+                           1,324,000                   3,896,000  
+  Deferred:                                                       
+  Federal                  3,940,000                ( 23,200,000  
+  State                    1,386,000                 ( 7,621,000  
+                           5,326,000                ( 30,821,000  
+                 $         6,650,000      $         ( 26,925,000  
+
+The difference between the statutory federal income tax rate and the Company’s effective rate is summarized below:
+
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────
+  Statutory federal income tax rate                                                  21.0       21.0  
+  State franchise taxes (net of federal tax benefit)                                  5.0        5.7  
+  Effect of state rate change on beginning balance of deferred tax liabilities      ( 1.0      ( 0.7  
+  Dividends received deduction                                                      ( 1.6        0.4  
+  Others                                                                              0.3      ( 0.1  
+  Effective tax rate                                                                 23.7       26.3  
+
+The Company’s deferred income tax assets and liabilities were comprised of the following:
+
+                                                                                         2023                        2022                    
+ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Deferred tax assets attributable to:                                                                                                       
+  Accrued liabilities, including supplemental compensation and vacation pay accrual      $            1,990,000      $            1,792,000  
+  Impairment losses on marketable securities                                                          ( 306,000                   ( 182,000  
+  Bad debt reserves not yet deductible                                                                   55,000                      56,000  
+  Depreciation and amortization                                                                       2,206,000                   2,686,000  
+  Deferred revenues                                                                                   1,068,000                   1,316,000  
+  Goodwill                                                                                              370,000                     451,000  
+  Net operating losses                                                                                  281,000                     657,000  
+  Credits and other                                                                                     ( 3,000                      71,000  
+  Total deferred tax assets                                                                           5,661,000                   6,847,000  
+  Deferred tax liabilities attributable to:                                                                                                  
+  Unrealized gains on marketable securities                                                        ( 36,260,000                ( 32,120,000  
+  Net deferred income taxes                                                              $         ( 30,599,000      $         ( 25,273,000  
+
+During fiscal 2023, the Company recorded an income tax provision of $6,650,000on pretax income of $28,102,000. The income tax provision consisted of tax provisions of $110,000on the realized gains on marketable securities, $4,140,000on the unrealized gain on marketable securities, and $2,803,000on operating income, partially offset by a tax benefit of $403,000for the dividends received deduction and other permanent differences. Consequently, the overall effective tax rate for fiscal 2023 
+was23.7%, after including the taxes on the realized and unrealized gains on marketable securities.
+
+During fiscal 2022, the Company recorded an income tax benefit of $26,925,000on the pretax loss of $102,549,000. The income tax benefit consisted of a tax benefit of $32,840,000on the unrealized losses on marketable securities and a benefit of $340,000for the dividends received deduction and other permanent book and tax differences, offset by tax provisions of $3,790,000on the realized gains on marketable securities, $1,735,000on income from operations, and $730,000for the effect of a change in 
+state apportionment on the beginning of the year’s deferred tax liability. Consequently, the overall effective tax rate for fiscal 2022 was26.3%, after including the taxes on the realized gains and unrealized losses on marketable securities.
+
+The Company files consolidated federal income tax returns in the United States and with various state jurisdictions and is no longer subject to examinations for fiscal years before fiscal2019with regard to federal income taxes and fiscal2018for state income taxes.
+
+During fiscal 2021, the Company utilized all of its federal and certain state net operating losses (NOL). California suspended the use of NOLs for fiscal years beginning in 2020 and 2021. During fiscal 2022, the Company utilized $4.2million of $5.5million California NOLs. The remaining $1.3million of California NOLs expire in fiscal years 2038 and 2039. The Company also has NOLs in other states, expiring as follows:
+
+  Fiscal Year ended (in million)                     California NOLs               Other State NOLs           
+  September 30, 2029 through September 30, 2036      $                    ---      $                     . 2  
+  September 30, 2037                                                      ---                            . 1  
+  September 30, 2038                                                      . 9                            . 2  
+  September 30, 2039                                                      . 4                            . 1  
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  No expiration                                                           ---                            2.0  
+  Total                                              $                    1.3      $                     2.6  
+
+4. DEBTS AND COMMITMENTS
+
+During fiscal 2013, the Company borrowed from its investment margin account the aggregate purchase price of $29.5million for two acquisitions, in each case pledging its marketable securities as collateral. In addition, there were subsequent borrowings of $45.5million to purchase additional marketable securities bringing the margin loan balance up to $75million as of September 30, 2023.
+
+The interest rate for these investment margin account borrowings fluctuates based on the Federal Funds Rate plus50basis points with interest only payable monthly. The interest rate as of September 30, 2023 was6%, and it may increase in the future, particularly if the Federal Reserve continues to increase interest rates to help combat inflation. These investment margin account borrowings do not mature.
+
+In November 2015, the Company purchased a30,700square foot office building constructed in 1998 on about3.6acres in Logan, Utah that had been previously leased for Journal Technologies. The Company paid $1.24million and financed the balance with a real estate bank loan of $2.26million which had a fixed interest rate of4.66%. This loan is secured by the Logan facility and can be paid off at any time without prepayment penalty. In October 2020, the Company executed an amendment to lower the 
+interest rate of this loan to a fixed rate of3.33% for the remaining10years. This real estate loan had a balance of approximately $1.28million as of September 30, 2023. Each monthly installment payment is approximately $16,700. In April 2022, the Company sold approximately17,564square feet of the land along the front of its Logan building to the City of Logan for approximately $381,000in connection with the City of Logan’s street widening project. (In October 2022, the Company again amended this
+real estate loan contract as the bank transferred its index to Secured Overnight Financing Rate from London Interbank Offered Rate which was ceased by the Federal Reserve and the Alternative Reference Rates Committee in the United States. The term of the loan, including the interest rate and the balance, remains unchanged.)
+
+The Company also owns its facilities in Los Angeles and leases space for its other offices under operating leases which expire at various dates through October 2025.
+
+The Company is responsible for a portion of maintenance, insurance and property tax expenses relating to the leased properties. Rental expenses, inclusive of these expenses, for fiscal years 2023 and 2022 were $289,000and $249,000, respectively.
+
+Effective January 1, 2023, the Company began sponsoring a 401(k) retirement plan and a 409(A) non-qualified deferred compensation plan for its employees. As of September 30, 2023, there were deferred compensation liabilities of approximately $200,000of which $162,000were held under a trust account for the 409(A) plan.
+
+The following table represents the Company’s future obligations:
+
+  Real estate loan                                     158,000        164,000      169,000      175,000      181,000      431,000      1,278,000  
+  Obligations under operating leases                   107,000         37,000        3,000      ---          ---          ---            147,000  
+  Non-qualified deferred compensation 409(A) plan      ---            200,000          ---      ---          ---          ---            200,000  
+  Long-term accrued liabilities*                       ---          1,747,000      758,000      746,000      426,000      553,000      4,230,000  
+                                                       265,000      2,148,000      930,000      921,000      607,000      984,000      5,855,000  
+
+*The long-term accrued liabilities for the Management Incentive Plan are discounted to the present value using a discount rate of 6
+
+5. CONTINGENCIES
+
+From time to time, the Company is subject to litigation arising in the normal course of its business. While it is not possible to predict the results of such litigation, management does not believe the ultimate outcome of these matters will have a material adverse effect on the Company’s financial position, results of operations or cash flows.
+
+6. REPORTABLE SEGMENTS
+
+An operating segment is defined as a component of an enterprise which has discrete financial information that is evaluated regularly by the Company’s Chief Executive Officer to decide how to allocate resources and to assess performance.
+
+In accordance with ASC 280-10, Segment Reporting, the Company has two segments of business. The Company’s reportable segments are: (i) the Traditional Business and (ii) Journal Technologies which includes Journal Technologies, Inc. and Journal Technologies (Canada) Inc. All inter-segment transactions were eliminated.
+
+Additional detail about each of the reportable segments and its corporate income and expenses is set forth below:
+
+  Overall Financial Results (000)                                                                                                                                         
+  For the twelve months ended September 30                                                                                                                                
+  Revenues                                                                                                                                                                
+  Advertising                                                                    8,955       ---          ---         ---          ---              8,955          8,591  
+  Circulation                                                                    4,403       ---          ---         ---          ---              4,403          4,394  
+  Advertising service fees and other                                             2,895       ---          ---         ---          ---              2,895          2,937  
+  Licensing and maintenance fees                                                 ---         23,503       19,192      ---          ---             23,503         19,192  
+  Consulting fees                                                                ---         19,776       11,865      ---          ---             19,776         11,865  
+  Other public service fees                                                      ---         8,177        7,030       ---          ---              8,177          7,030  
+  Total operating revenues                                                       16,253      51,456       38,087      ---          ---             67,709         54,009  
+  Operating expenses                                                                                                                                                      
+  Salaries and employee benefits                                                 10,416      33,034       26,862      ---          ---             43,450         36,480  
+  (Decrease) increase to the long-term Supplemental compensation accrual         ( 470       175          115         ---          ---              ( 295          1,245  
+  Others                                                                         3,923       13,979       9,823       ---          ---             17,902         14,295  
+  Total operating expenses                                                       13,869      47,188       36,800      ---          ---             61,057         52,020  
+  Income from operations                                                         2,384       4,268        1,287       ---          ---              6,652          1,989  
+  Dividends and interest income                                                  ---         ---          ---         8,336        5,451            8,336          5,451  
+  Gains on sale of land                                                          ---         ---          ---         ---          272                ---            272  
+  Interest expenses on note payable collateralized by real estate and other      ---         ---          ---         ( 77         ( 83              ( 77           ( 83  
+  Interest expense on margin loans                                               ---         ---          ---         ( 4,255      ( 1,026        ( 4,255        ( 1,026  
+  Gains on sales of marketable securities, net                                   ---         ---          ---         422          14,249             422         14,249  
+  Net unrealized gains (losses) on marketable securities                         ---         ---          ---         17,024       ( 123,401       17,024      ( 123,401  
+  Pretax income (loss)                                                           2,384       4,268        1,287       21,450       ( 104,538       28,102      ( 102,549  
+  Income tax (expense) benefit                                                   ( 520       ( 1,450      ( 205       ( 4,680      27,315         ( 6,650         26,925  
+  Net income (loss)                                                              1,864       2,818        1,082       16,770       ( 77,223        21,452       ( 75,624  
+  Total assets                                                                   18,744      33,100       27,868      303,016      268,500        354,860        319,111  
+  Capital expenditures                                                           70          16           33          ---          ---                 86             36  
+
+During fiscal 2023 and 2022, the Traditional Business had total operating revenues of $16,253,000and $15,922,000of which $11,850,000and $11,528,000, respectively, were recognized after services were provided while $4,403,000and $4,394,000, respectively, were recognized ratably over the subscription terms. Total operating revenues for the Company’s software business were $51,456,000and $38,087,000, of which $28,209,000and $19,459,000, respectively, were recognized upon completion of services 
+while $23,247,000and $18,628,000, respectively, were recognized ratably over the subscription periods.
+
+7. SUBSEQUENT EVENTS
+
+The Company has completed an evaluation of all subsequent events through the issuance date of these financial statements and concluded that no additional subsequent events occurred that required recognition in the financial statements or disclosures in the Notes to Consolidated Financial Statements, except for the adoptions of a Clawback policy with whichExecutiveOfficers will be required to repay or returnErroneouslyAwardedCompensation to Daily Journal Corporation and an Inside Trade Policy 
+with respect to transactions in the securities of Daily Journal Corporation effective October 1, 2023.
+
+- 45 -
+
+  Item 9.      Changes in and Disagreements with Accountants on Accounting and Financial Disclosure  
+ ─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+None.
+
+  Item 9A.      Controls and Procedures  
+ ─────────────────────────────────────────
+
+An evaluation was performed under the supervision and with the participation of the Company’s management, including Steven Myhill-Jones, its Chief Executive Officer (“CEO”) and Tu To, its Chief Financial Officer (“CFO”), of the effectiveness of the design and operation of the Company’s disclosure controls and procedures as of September 30, 2023.  Based on that evaluation, management concluded that its disclosure controls and procedures were not effective as of September 30, 2023. There exist 
+material weaknesses in its internal control over financial reporting because the Company does not segregate duties to the extent it could if it had more people and the Company does not have sufficient controls to support an effective management assessment of internal control over financial reporting.
+
+Management’ s Report on Internal Control over Financial Reporting
+
+The Company’s management is responsible for establishing and maintaining adequate internal control over financial reporting, as such term is defined in Rule 13a-15(f) under the Securities Exchange Act of 1934. The Company’s internal control over financial reporting has been designed to provide reasonable assurance to the Company’s management and Board of Directors regarding the preparation and fair presentation of the Company’s consolidated financial statements. All internal controls, no matter 
+how well designed, have inherent limitations, and sometimes they can have one or more material weaknesses. A material weakness is a deficiency, or combination of deficiencies, in internal control over financial reporting, such that there is a reasonable possibility that a material misstatement of the company's annual or interim consolidated financial statements will not be prevented or detected on a timely basis.
+
+Each year, management is required by SEC rules to evaluate the effectiveness of the Company’s internal control over financial reporting. If management identifies any material weaknesses in the course of the evaluation, the rules do not allow us to conclude that our internal control over financial reporting is effective. That evaluation is conducted under the supervision and with the participation of Steven Myhill-Jones and Tu To, and is based on criteria established in Internal Control - 
+Integrated Frameworkissued by the Committee of Sponsoring Organizations of the Treadway Commission (COSO) in 2013. Based on the evaluation under that framework and applicable SEC rules, management has identified the following deficiencies that constitute material weaknesses in the Company’s internal control over financial reporting:
+
+Segregation of duties: As a small company, we have one long-time knowledgeable manager overseeing both our advertising and subscription departments, ten experienced employees in the accounting department and three in the IT department. Accordingly, we are not able to segregate duties to the extent we could if we had more people. Although the Company has remediated some of the issues associated with administrative access to specific systems, these steps have not fully remediated the control 
+issue.
+
+- 46 -
+
+Insufficient Accounting Resources: The Company does not have an internal audit group due to the small size of its accounting department, and we have not sufficiently designed controls that support an effective assessment of our internal controls relating to the prevention of fraud and possible management override of controls. Hiring an outside firm would certainly help complete the documentation of the internal control assessment to the level required by the COSO framework and ensure we have a 
+proper control environment, but the Company questions whether that would be a wise use of shareholders’ money.
+
+Recognizing our deficiencies, we use mitigating controls, including a variety of internal procedures to check and double-check the areas where one person is responsible for multiple duties. Among other things, the Company’s monitoring activities include monthly review and comparative analysis of financial, production and public information with prior periods by the Company’s department supervisors, the CEO, the CFO and the Board of Directors. We will continue to review our compensating controls 
+and procedures in our efforts to mitigate or remediate the above-mentioned material weaknesses.
+
+In addition, we believe our most important internal control is our hiring and retention of honest and capable people, whom we trust to do their jobs well. Accordingly, we believe our overall internal control environment is sufficient for a company of our size.
+
+In the context of the COSO 2013 Framework, however, we believe that the above-mentioned control deficiencies constitute material weaknesses, and therefore we must conclude that our internal control over financial reporting was not effective as of September 30, 2023.
+
+- 47 -
+
+Changes in Internal Control over Financial Reporting
+
+Except as described above under Management’s Report on Internal Control over Financial Reporting, there were no other changes in our internal control over financial reporting that occurred during the quarter ended September 30, 2023 that have materially affected, or are reasonably likely to materially affect, our internal control over financial reporting.
+
+  Item 9B.      Other Information  
+ ───────────────────────────────────
+
+(a) None.
+
+(b) None.
+
+  Item 9C.      Disclosure Regarding Foreign Jurisdictions that Prevent Inspections  
+ ─────────────────────────────────────────────────────────────────────────────────────
+
+Not applicable.
+
+- 48 -
+
+PART III
+
+  Item10.      Directors, Executive Officers and Corporate Governance  
+ ───────────────────────────────────────────────────────────────────────
+
+The information set forth in the tables, the notes thereto, and the paragraphs under the captions “Election of Directors”, “Corporate Governance” and “Delinquent Section 16(a) Reports” in the Company's definitive Proxy Statement for the Annual Meeting of Shareholders to be held in February 2024 (the “Proxy Statement”), which Proxy Statement will be filed with the SEC within 120 days after September 30, 2023, is incorporated herein by reference.
+
+The Company has adopted a Code of Ethics that applies to all directors, officers and employees of the Company, including the Chief Executive Officer, and Chief Financial Officer. The Company’s Code of Ethics was filed as Exhibit 14 to the fiscal 2020 Form 10-K.
+
+  Item11.      Executive Compensation  
+ ───────────────────────────────────────
+
+The information set forth under the captions “Executive Compensation” and “Corporate Governance” in the Proxy Statement is incorporated herein by reference.
+
+  Item12.      Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters  
+ ───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+The information set forth under the caption “Security Ownership of Certain Beneficial Owners and Management” in the Proxy Statement is incorporated herein by reference.
+
+  Item 13.      Certain Relationships and Related Transactions, and Director Independence  
+ ───────────────────────────────────────────────────────────────────────────────────────────
+
+The information set forth under the caption “Corporate Governance” in the Proxy Statement is incorporated herein by reference.
+
+  Item 14.      Principal Accounting Fees and Services  
+ ────────────────────────────────────────────────────────
+
+The information set forth under the caption “Other Matters Regarding Independent Registered Public Accounting Firm” in the Proxy Statement is incorporated herein by reference.
+
+- 49 -
+
+PART IV
+
+  Item 15.      Exhibits, Financial Statement Schedules  
+ ─────────────────────────────────────────────────────────
+
+The following documents are filed as part of this Report:
+
+  (1)           Consolidated Financial Statements:                                                                                                                                                                    
+                Report of Independent Registered Public Accounting Firm (PCAOB ID 23)                                                                                                                                 
+                Consolidated Balance Sheets at September 30, 2023 and 2022                                                                                                                                            
+                Consolidated Statements of Comprehensive Income (Loss) for the years ended September 30, 2023 and 2022                                                                                                
+                Consolidated Statements of Shareholders’ Equity for the years ended September 30, 2023 and 2022                                                                                                       
+                Consolidated Statements of Cash Flows for the years ended September 30, 2023 and 2022                                                                                                                 
+                Notes to Consolidated Financial Statements                                                                                                                                                            
+  (2)           Exhibits                                                                                                                                                                                              
+  3.1           Articles of Incorporation of Daily Journal Corporation, as amended (*)                                                                                                                                
+  3.2           Amended and Restated Bylaws of Daily Journal Corporation (*)                                                                                                                                          
+  4.1           Description of Common Stock of Daily Journal Corporation (~)                                                                                                                                          
+  10.1          Form of Non-Negotiable Certificate Representing an Employee Participant Interest in the Daily Journal Corporation (“DJC”) Plan for Supplemental Compensation to an Employee as long as that Emplo...  
+  14            Daily Journal Corporation Code of Ethics (*)                                                                                                                                                          
+  21            Daily Journal Corporation’s List of Subsidiaries                                                                                                                                                      
+  31            Certification by Chief Executive Officer and Chief Financial Officer pursuant to Section 302 of the Sarbanes-Oxley Act of 2002                                                                        
+  32            Certification by Chief Executive Officer and Chief Financial Officer pursuant to Section 906 of the Sarbanes-Oxley Act of 2002                                                                        
+  97            Daily Journal Corporation Policy Regarding Erroneously Awarded Compensation                                                                                                                           
+  101. INS      Inline XBRL Instance                                                                                                                                                                                  
+  101. SCH      Inline XBRL Taxonomy Extension Schema                                                                                                                                                                 
+  101. CAL      Inline XBRL Taxonomy Extension Calculation                                                                                                                                                            
+  101. DEF      Inline XBRL Taxonomy Extension Definition                                                                                                                                                             
+  101. LAB      Inline XBRL Taxonomy Extension Labels                                                                                                                                                                 
+  101. PRE      Inline XBRL Taxonomy Extension Presentation                                                                                                                                                           
+  104           Cover Page Interactive Date File (formatted as Inline XBRL and contained in Exhibit 101)                                                                                                              
+  (*)           Filed as an Exhibit to the Company’s 2020 Annual Report on Form 10-K, field with the Securities and Exchange Commission on December 16, 2020                                                          
+  (~)           Filed as an Exhibit to the Company’s 2019 Annual Report on Form 10-K, filed with the Securities and Exchange Commission on December 12, 2019                                                          
+  (‡)           Management Compensatory Plan                                                                                                                                                                          
+
+  Item 16.      Form 10-K Summary  
+ ───────────────────────────────────
+
+None.
+
+- 50 -
+
+SIGNATURES
+
+Pursuant to the requirements of Section 13 or 15(d) of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized.
+
+  DAILY JOURNAL CORPORATION                                 
+                                 /s/ Steven Myhill-Jones    
+  By:                                                       
+                                 Chairman of the Board and  
+                                 Chief Executive Officer    
+
+Date:         December 27, 2023
+
+Pursuant to the requirements of the Securities Exchange Act of 1934, this report has been signed below by the following persons on behalf of the registrant and in the capacities and on the dates indicated.
+
+  Signature                    Title                                 Date               
+  /s/ Steven Myhill-Jones      Chairman of the Board and             December 27, 2023  
+                                                                                        
+                               Chief Executive Officer                                  
+ ────────────────────────────────────────────────────────────────────────────────────────
+  Steven Myhill-Jones                                                                   
+  /s/ Tu To                    Chief Financial Officer,              December 27, 2023  
+  Tu To                                                                                 
+  /s/ Mary Conlin              Director                              December 27, 2023  
+  Mary Conlin                                                                           
+  /s/ John Frank               Director                              December 27, 2023  
+  John Frank                                                                            
+
+- 51 -

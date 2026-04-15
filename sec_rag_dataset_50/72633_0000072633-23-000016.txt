@@ -1,0 +1,1600 @@
+UNITED STATES SECURITIES AND EXCHANGE COMMISSIONWashington, D.C. 20549
+
+FORM 10-K
+
+[X]ANNUAL REPORT
+PURSUANT TO SECTION 13 OR 15(d) OF THE
+
+SECURITIES EXCHANGE ACT OF 1934
+
+For the fiscal year endedOctober 31, 2023or
+
+[ ]TRANSITION
+REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE
+
+SECURITIES EXCHANGE ACT OF 1934
+
+For the transition period fromto.
+
+Commission file number1-8245
+
+NORTH EUROPEAN OIL
+ROYALTY TRUST
+
+(Exact Name of Registrant
+as Specified in Its Charter)
+
+Delaware 22-2084119
+
+State
+or Other Jurisdiction of
+I.R.S. Employer Identification No.
+
+of Incorporation
+or Organization
+
+5 N. Lincoln Street, Keene, N.H. 03431
+
+Address of Principal Executive Offices
+Zip Code
+
+(732) 741-4008
+
+(Registrant's telephone
+number, including area code)
+
+Securities registered pursuant to Section 12(b) of the
+Act:
+
+Title of each
+class Trading Symbol(s) Name of each exchange on which
+registered
+
+Units
+of Beneficial Interest NRT
+New York Stock Exchange
+
+Indicate by check mark if the registrant is a well-known seasoned issuer,
+as defined in Rule 405 of the Securities Act.
+YesNoX
+
+Indicate by check mark if the
+registrant is not required to file reports pursuant to Section 13 or 15(d)
+of the Act. YesNoX
+
+Indicate by check mark whether
+the registrant (1) has filed all reports required to be filed by Section 13
+or 15(d) of the Securities Exchange Act of 1934 during the preceding 12
+months (or for such shorter period that the registrant was required to
+file such reports), and (2) has been subject to such filing requirements
+for the past 90 days. YesXNo ___
+
+Indicate by check mark whether
+the registrant has submitted electronically every Interactive Data File
+required to be submitted pursuant to Rule 405 of Regulation S-T
+(Section 232.405 of this chapter) during the preceding 12 months (or for
+such shorter period that the registrant was required to submit such files).
+YesXNo ___
+
+Indicate by check mark whether
+the registrant is a large accelerated filer, an accelerated filer, a
+non-accelerated filer, a smaller reporting company or an emerging growth
+company. See the definitions of "large accelerated filer," "accelerated
+filer," "smaller reporting company," and "emerging growth company" in
+Rule 12b-2 of the Exchange Act.
+
+  Large accelerated filerAccelerated filer             
+  Non-accelerated filer X Smaller reporting company X  
+  Emerging growth company                              
+
+If an emerging growth company,
+indicate by check mark if the registrant has elected not to use the
+extended transition period for complying with any new or revised
+financial accounting standards provided pursuant to Section 13(a) of
+the Exchange Act
+
+Indicate by check mark whether the registrant has
+filed a report on and attestation to its management's assessment of
+the effectiveness of its internal controls over financial reporting
+under Section 404(b) of the Sarbanes-Oxley Act (15 U.S.C. 7262(b))
+by the registered public accounting firm that prepared or issued
+its audit report.
+
+If securities are registered pursuant to
+Section 12(b) of the Act, indicate by check mark whether the
+financial statements of the registrant included in the filing
+reflect the correction of an error to previously issued financial
+statements.
+
+Indicate by check mark whether any of those error
+corrections are restatements that required a recovery analysis of
+incentive-based compensation received by any of the registrant's
+executive officers during the relevant recovery period pursuant
+to Section 240.10D-1(b).
+
+Indicate by check mark whether the registrant is
+a shell company (as defined in Rule 12b-2 of the Exchange Act).
+Yes ___ NoX
+
+On April 28, 2023, the aggregate market value of the
+voting and non-voting common equity held by non-affiliates computed by
+reference to the price at which the common equity was last sold was
+$125,538,547.
+
+As of December 29, 2023, there were 9,190,590 units
+of beneficial interest ("units") of the registrant outstanding.
+
+DOCUMENTS INCORPORATED BY REFERENCE
+
+Items 10, 11 12, 13 and 14 of Part III have been partially
+or wholly omitted from this report and the information required to be
+contained therein is incorporated by reference from the registrant's
+definitive proxy statement for the 2023 Annual Meeting to be held on
+February 21, 2024.
+
+_______________________________________
+
+Table of Contents
+
+                                                                                              Page  
+                     PART I                                                                         
+  Item 1.            Business                                                                    1  
+  Items 1A.          Risk Factors                                                                4  
+  Item 1B.           Unresolved Staff Comments                                                   4  
+  Item 2.            Properties                                                                  4  
+  Item 3.            Legal Proceedings                                                           7  
+  Item 4.            Mine Safety Disclosures                                                     7  
+                     PART II                                                                        
+  Item 5.            Market for                                                                  8  
+  Item 6.            [Reserved]                                                                  8  
+  Item 7.            Management's Discussion and Analysis of                                     8  
+  Items 7A.          Quantitative and Qualitative                                               14  
+  Item 8.            Financial Statements and                                                   15  
+  Item 9.            Changes in                                                                 25  
+  Item 9A.           Controls and Procedures                                                    25  
+  Item 9B.           Other Information                                                          26  
+  Item 9C.           Disclosure Regarding                                                       26  
+                     PART III                                                                       
+  Item 10.           Directors, Executive                                                       26  
+  Item 11.           Executive Compensation                                                     26  
+  Item 12.           Security                                                                   27  
+  Item 13.           Certain                                                                    27  
+  Item 14.           Principal Accountant Fees                                                  27  
+                     PART IV                                                                        
+  Item 15            Exhibits and Financial                                                     28  
+  Item 16.           Form 10-K Summary                                                          28  
+  Signatures                                                                                    29  
+  Exhibit Index                                                                                 30  
+
+PART I
+
+Item 1. Business.
+
+(a)General Development
+of Business. North European Oil Royalty Trust (the
+"Trust") is a grantor trust which, on behalf of the owners of
+units of beneficial interest in the Trust (the "unit owners"), holds
+overriding royalty rights covering gas and oil production in certain
+concessions or leases in the Federal Republic of Germany. The rights
+are held under contracts with local German exploration and development
+subsidiaries of ExxonMobil Corp. ("ExxonMobil") and the Royal
+Dutch/Shell Group of Companies ("Royal Dutch/Shell Group"). Under
+these contracts, the Trust receives various percentage royalties on
+the proceeds of the sales of certain products from the areas involved.
+At the present time, royalties are received for sales of gas well
+gas, oil well gas, crude oil, condensate and sulfur. See Item 2 of
+this annual report on Form 10-K (this "Report") for descriptions of the
+relationships of these companies and certain of these contracts.
+
+The royalty rights were
+received by the Trust from North European Oil Company (the "Company")
+upon dissolution of the Company in September 1975. The Company was
+organized in 1957 as the successor to North European Oil Corporation
+(the "Corporation"). The Trust is administered by trustees (the
+"Trustees") under an Agreement of Trust dated September 10, 1975, as
+amended (the "Trust Agreement").
+
+Neither the Trust nor the
+Trustees on behalf of the Trust conduct any active business activities
+or operations. The function of the Trustees is to monitor, verify,
+collect, hold, invest and distribute the royalty payments made to the
+Trust. Under the Trust Agreement, the Trustees make quarterly
+distributions of the net funds received by the Trust on behalf of
+the unit owners, after making provisions to cover future anticipated
+expenses. Funds temporarily held by the Trust prior to their
+distribution are invested in an interest bearing money market account.
+
+There has been no significant
+change in the principal operation or purpose of the Trust during the
+past fiscal year.
+
+As part of the Sarbanes-Oxley
+Act of 2002 ("SOX"), the Securities and Exchange Commission (the "SEC")
+adopted rules implementing legislation concerning governance matters
+for publicly held entities. The Trust is complying with the
+requirements of the SEC and SOX and, at this time, the Trustees have
+chosen not to request any relief from those provisions based on the
+passive nature of the Trust but may do so in the future. Accordingly,
+the Trustees have directed that certain of the additional
+statements and disclosures set forth or incorporated by reference in
+this Report, which the SEC requires of corporations, be made even
+though such statements and disclosures might not now or in
+the future be required to be made by the Trust.
+
+In addition, the New York
+Stock Exchange (the "NYSE"), where units of beneficial interest of
+the Trust are listed for trading, has additional corporate governance
+rules as set forth in Section 303A of the NYSE Listed Company Manual.
+Most of the governance requirements promulgated by the NYSE are not
+applicable to the Trust, which is a passive entity acting as a
+royalty trust and holding only overriding royalty rights. The Trustees
+have, however, chosen to constitute an Audit Committee and a
+Compensation Committee but may not necessarily continue to do so in
+the future.
+
+(b)Narrative
+Description of Business. Under the Trust Agreement,
+the Trust conducts no active business operations and is restricted
+to collection of income from royalty rights and distribution to unit
+owners of the net income after payment of administrative and
+related expenses.
+
+The overriding royalty
+rights held by the Trust are derived from contracts and agreements
+originally entered into by German subsidiaries of the predecessor
+Corporation during the early 1930s. The Trust's primary royalty
+rights are based on a government granted concession and remain in
+effect as long as there are continued production activities and/or
+exploration efforts within the concession. It is generally
+anticipated that production activities will continue as long as
+they remain economically profitable. The Trust holds other royalty
+rights, which are based on
+leases which have passed their original expiration dates. These
+leases remain in effect as long as there is continued production or
+the lessor does not cancel the lease. Individual lessors will
+normally not seek termination of the rights originally granted
+because the leases provide for royalty payments to the lessors if
+sales of oil or gas result from discoveries made on the leased
+land. Additionally, termination by individual lessors would result
+in the escheat of mineral rights to the applicable state.
+
+Royalties are paid to the
+Trust on sales from production under these leases and concessions on a
+regular monthly or quarterly basis pursuant to the royalty agreements.
+The Trust receives the royalty payments exclusively in Euros. After
+the royalties have been deposited in the Trust's account with
+Deutsche Bank in Germany, sufficient funds are reserved to handle any
+outstanding or anticipated expenses and maintain a minimal balance of
+12,000 Euros. The Trust then converts the remainder of Euro
+denominated funds into United States ("U.S.") dollars based upon the
+available exchange rates. Following this
+conversion to U.S. dollars, the royalties are transferred
+to the Trust's bank account in the U.S. The Trust does not engage in
+activities to hedge against currency risk, and the fluctuations in the
+conversion rate impact its financial results. Since the
+actual royalty deposits are held as Euros for such a limited time, the
+market risk with respect to these deposits is small. The Trust has not
+experienced any difficulty in effecting the conversion of Euros into
+U.S. dollars.
+
+As the holder of overriding
+royalty rights, the Trust has no legal ability, whether by contract or
+operation of law, to compel production or exploration. Moreover, if
+an operator should determine to terminate production in any concession
+or lease area and to surrender the concession or lease, the royalty
+rights for that area would thereby be terminated. Under certain
+royalty agreements, it is a requirement that the Trust be advised of
+any intention to surrender lease or concession rights. While the
+Trust itself is precluded from undertaking any production activities,
+possible residual rights might permit the Trust to take up a
+surrendered concession or lease and attempt to retain a third-party
+operator to develop such concession or lease. There is no assurance
+that the Trust could find such a third party.
+
+The exploration for and the
+production of gas and oil is a speculative business. The Trust has no
+means of ensuring continued income from its royalty rights at either
+their present levels or otherwise. The Trust has no role in any of
+the operating companies' decision-making processes, such as gas
+pricing, gas sales or exploration, which can impact royalty income.
+In addition, fluctuations in prices and supplies of gas and oil and
+the effect these fluctuations might have on royalty income to the
+Trust and on reserves net to the Trust cannot be accurately
+projected. Finally, natural gas and crude oil are wasting assets.
+While known reserves may increase as additional development adds
+quantities to the reserve amount, the amount of known and unknown
+reserves is finite and will decline over time.
+
+While Germany has laws
+relating to environmental protection, the Trustees do not
+have detailed information concerning the present or possible effect
+of such laws on operations in areas where the Trust holds royalty
+rights on production and sale of products from those areas. The
+Trustees were informed by the Trust's German consultant that on
+July 8, 2016, a hydraulic fracturing ("fracking") law was passed in
+Germany permitting fracking in sandstone at any depth. The law
+requires that an environmental impact study be performed and that
+permission by the relevant water authority be granted in order to
+ensure the protection of drinking water supplies. Based upon an
+analysis of the details of this law, the Trust's German consultant
+has informed the Trust that fracking will be permitted in all
+current productive zones within the Oldenburg concession (as
+defined below) both due
+to the depths involved and the nature of the productive zones.
+However, the operating companies would still have to comply with
+all regulatory requirements governing the use of fracking. The
+failure by the operating companies to comply with all regulatory
+requirements could affect the volume of gas, sulfur and oil
+production by the operating companies and could adversely affect
+the royalties paid to the Trust.
+
+The Trust, in cooperation
+with a parallel royalty owner (Unitarian Universalist Congregation
+at Shelter Rock)("UUCSR")), arranges for periodic examinations of
+the books and records of the operating companies to verify
+compliance with the computation provisions of the applicable
+agreements. As a cost savings measure, the royalty examination is
+conducted on a biennial basis. From time to time, these
+examinations disclose computational errors or errors from
+inappropriate application of existing agreements and appropriate
+adjustments are requested to be made. As a result of the
+amendments to the Trust's royalty agreements which effect pricing
+simplification (see Item 7 of this Report), examinations by the
+Trust's German accountants have been simplified since these
+examinations are primarily limited to the verification of the gas
+quantities sold. Although these periodic examinations may also
+disclose other matters that are subject to dispute between the
+parties, these disputes have historically been resolved through
+negotiations without the need for litigation. The Trust's
+accountants in Germany began their examination of the
+operating companies for calendar years 2021 and 2022 in October
+2023 when the final sales figures and the German Border Import
+gas Prices (see Item 7 of this Report) were both available.
+
+(c)Financial
+Information about Geographic Areas. In Item 2 of this
+Report, there is a schedule (by product, geographic area, and
+operating company) showing the royalty income received by the Trust
+during the fiscal year ended October 31, 2023.
+
+(d)Information
+about our Trustees and Executive Officers. As
+specified in the Trust Agreement, the affairs of the Trust are
+managed by not more than five individual Trustees who receive
+compensation determined under that same agreement.
+
+One Trustee
+is designated as Managing Trustee. Nancy J. Floyd Prue has served
+in a non-executive capacity as Managing Trustee since March 13, 2023.
+Ahron H. Haspel is independent and has been determined to be a
+financial expert (both as defined in the SEC rules). Mr. Haspel
+serves as Chairman for the Audit and Compensation Committees.
+Lawrence A. Kobrin serves as Clerk to the Trustees. For these
+services, each of these three individuals receives additional
+compensation. Willard B. Taylor is the fourth Trustee.
+
+Day-to-day matters are
+handled by the Managing Director, John R. Van Kirk, who also serves
+as CEO and CFO. Mr. Van Kirk has held the position of
+Managing Director of the Trust since November 1990. In addition
+to the Managing Director, the Trust has one administrative employee
+in the U.S., whose title is Administrator. The number of total
+employees of the Trust is two, and the number of full-time employees
+is two.
+
+The Trust and UUCSR have
+retained the services of a consultant, an accounting firm
+and a legal firm in Germany. The consultant has broad experience in
+the petroleum industry and provides reports on a regular basis. The
+accounting firm and the legal firm advise and represent as needed.
+The Trust and the co-royalty holder share the costs of these services
+in Germany.
+
+(e)Available
+Information. The Trust maintains a website at
+http://www.neort.com. The Trust's Annual Reports, Form 10-K annual
+reports, Form 10-Q quarterly reports and the Definitive Proxy
+Statements are available through the Trust's website as soon as
+reasonably practicable after such reports are filed with or furnished
+to the SEC. Press releases and tax letters are available through the
+website as soon as practicable after release. The North European
+Oil Royalty Trust Agreement (as amended), the Trust's Code of
+Conduct and Business Ethics, the Trustees' Regulations and the
+Trust's Audit Committee Charter are also available through the
+Trust's website. The Trust's website and the information contained
+in it and connected to it shall not be deemed incorporated by
+reference into this Report.
+
+Item 1A. Risk Factors.
+
+Not applicable.
+
+Item 1B. Unresolved Staff Comments
+
+None
+
+Item 2. Properties
+
+The properties of the Trust,
+which the Trust and Trustees hold pursuant to the Trust Agreement on
+behalf of the unit owners, are overriding royalty rights on sales of
+gas, sulfur and oil under a concession in the Federal Republic of
+Germany (the "Oldenburg concession"). The Oldenburg concession covers
+approximately 1,386,000 acres, is located in the German federal state
+of Lower Saxony, and is the area from which natural gas, sulfur and oil
+are extracted. The Oldenburg concession currently provides 100%
+of all the royalties received by the Trust. The Oldenburg concession
+is held by Mobil Erdgas-Erdol GmbH ("Mobil Erdgas"), a German operating
+subsidiary of ExxonMobil, and by Oldenburgische Erdolgesellschaft
+("OEG"). As a result of direct and indirect ownership, ExxonMobil owns
+two-thirds of OEG and the Royal Dutch/Shell Group of Companies owns
+one-third of OEG. BEB Erdgas und Erdol GmbH ("BEB"), a joint venture
+in which ExxonMobil and the Royal Dutch/Shell Group each own 50%,
+administers the concession held by OEG.
+
+In 2002, Mobil Erdgas and
+BEB formed ExxonMobil Production Deutschland GmbH ("EMPG") to carry
+out all exploration, drilling and production activities. All sales
+activities upon which the calculation of royalties is based are still
+handled by either Mobil Erdgas or BEB (the "operating companies").
+
+Under one set of rights
+covering the western part of the Oldenburg concession (approximately
+662,000 acres), the Trust receives a royalty payment of 4% on gross
+receipts from sales by Mobil Erdgas of gas well gas, oil well gas,
+crude oil and condensate (the "Mobil Agreement"). Under the Mobil
+Agreement there is no deduction of costs prior to the calculation of
+royalties from gas well gas and oil well gas, which together account
+for approximately 100% of all the royalties under said agreement.
+Historically, the Trust has received significantly greater royalty
+payments under the Mobil Agreement (as compared to the OEG Agreement
+described below) due to the higher royalty rate specified by that
+agreement.
+
+Under another set of rights
+covering the entire Oldenburg concession and pursuant to the agreement
+with OEG, the Trust receives royalties at the rate of 0.6667% on gross
+receipts from sales by BEB of gas well gas, oil well gas, crude oil,
+condensate and sulfur (removed during the processing of sour gas) less
+a certain allowed deduction of costs (the "OEG Agreement"). Under the
+OEG Agreement, 50% of the field handling and treatment costs as
+reported for state royalty purposes are deducted from the gross sales
+receipts prior to the calculation of the royalty to be paid to the
+Trust.
+
+The Trust is also entitled
+under an agreement with Mobil Erdgas to receive a 2% royalty on gross
+receipts of sales of sulfur obtained as a by-product of sour gas
+produced from the western part of Oldenburg (the "Mobil Sulfur
+Agreement"). The payment of the sulfur royalty is conditioned upon
+sales of sulfur by Mobil Erdgas at a selling price above an agreed-upon
+base price. This base price is adjusted annually by an inflation index.
+When the average quarterly selling price falls below the indexed base
+price, no sulfur royalties are paid by Mobil Erdgas. Sulfur royalties
+paid under the Mobil Agreement totaled $34,586 and $316,527 during
+fiscal 2023 and 2022, respectively.
+
+There are two types of
+natural gas found within the Oldenburg concession, sweet gas and sour
+gas. Sweet gas has little or no contaminants and needs very minor
+treatment before it can be sold. Sour gas, in comparison, must be
+processed at the Grossenkneten desulfurization plant which commenced
+operations in 1972. The desulfurization process removes hydrogen
+sulfide and other contaminants before the clean gas can be sold. The
+hydrogen sulfide in gaseous form is converted to sulfur in a solid
+form and sold separately.
+
+EMPG decommissioned one of
+the remaining two sulfur processing units ("trains"). The
+decommissioning was conducted during May-July 2023. For a period of
+twenty-four days beginning on June 25, 2023, there was no through-put
+at the plant while the shutdown of one train and the refurbishment and
+maintenance of the remaining train were completed. The cost of this
+work was approximately 50 million Euros. The plant is subject to an
+ongoing schedule of inspections which may result in shutdowns while
+required repairs are conducted. Full operation of the remaining train
+is approximately 200 million cubic feet ("MMcf") per day following the
+shutdown. It is expected that the single train will be sufficient to
+handle sour gas production through-put from the concession. It is also
+expected that operating expenses in the future may be reduced by this
+measure. Since sour gas accounts for 71% of overall gas sales and 97%
+of western gas sales, any future shutdown of the remaining train could
+significantly impact royalty income. The Trust has insufficient data to
+predict whether, when and to what extent any future shutdown may occur.
+
+The following is a schedule
+of royalty income for the fiscal year ended October 31, 2023 by product,
+geographic area and operating company:
+
+  Product                                              Royalty  
+  Gas Well and Oil Well Gas                        $21,740,519  
+  Sulfur                                              $187,563  
+  Oil                                                  $88,021  
+  By Geographic                                                 
+  Area                                                 Royalty  
+  Western Oldenburg                                $16,192,614  
+  Eastern Oldenburg                                 $5,823,489  
+  Non-Oldenburg Areas                                       $0  
+  By Operating                                                  
+  Company                                       Royalty Income  
+  Mobil Erdgas (under the Mobil Agreement)         $13,951,199  
+  BEB (under the OEG Agreement)                     $8,064,904  
+
+Exhibit 99.1 to this Report
+is a report entitled Calculation of Cost Depletion Percentage for
+the 2023 Calendar Year Based on the Estimate of Remaining Proved
+Producing Reserves in the Northwest Basin of the Federal Republic of
+Germany as of October 1, 2023 (the "Cost Depletion Report"). The
+Cost Depletion Report, dated November 27, 2023, was prepared by
+Graves & Co. Consulting, LLC, 1800 West Loop South, Suite 750,
+Houston, Texas 77027 ("Graves & Co."). Graves & Co. is an
+independent petroleum and natural gas consulting organization
+specialized in analyzing hydrocarbon reserves.
+
+The Cost Depletion Report
+provides documentation supporting the calculation of the cost
+depletion percentage for the 2023 calendar year based on the use of
+certain production data and the estimated net proved producing
+reserves as of October 1, 2023 for the primary area in which the
+Trust holds overriding royalty rights. In order to permit timely
+filing of the Cost Depletion Report and consistent with the practice
+of the Trust in prior years, the information has been prepared for
+the 12-month period ended September 30, 2023. While this is one
+month prior to the end of the fiscal year of the Trust, the
+information available for production and sales through the end of
+September is the most complete information available at a date
+early enough to permit the timely preparation of the various
+reports required. Unit owners are referred to the full text of the
+Cost Depletion Report contained herein for further details.
+
+The cost depletion percentage
+is prepared by Graves & Co. for the Trust's unit owners for tax
+reporting purposes. The cost depletion percentage in that report for
+calendar 2023 is 8.8130%. Specific details relative to the Trust's
+income and expenses and cost depletion percentage as they apply to
+the calculation of taxable income for the 2023 calendar year are
+included on removable pages in the 2023 Annual Report. Additionally,
+the tax reporting information for 2023 is available on the Trust's
+website, http://www.neort.com/tax-letters.html.
+
+The primary purpose of the
+Cost Depletion Report is the preparation of the cost depletion
+percentage for use by unit owners in their own tax reporting. The
+only information provided to the Trust that can be utilized in the
+calculation of the cost depletion percentage is current and
+historical production and sales of proved producing reserves. For
+the western half of the Oldenburg concession, the Trust receives
+quarterly production and sales information on a well-by-well basis.
+For the eastern half of the Oldenburg concession, the Trust receives
+cumulative quarterly production and sales information on two general
+areas. These general areas encompass numerous fields with varying
+numbers of wells. Pursuant to the arrangements under which the
+Trust holds royalty rights and the fact that the Trust is not
+considered an operating company within Germany, the Trust has no
+access to the operating companies' proprietary information
+concerning producing field reservoir data. The Trustees have been
+advised by their German counsel that publication of such information
+is not required under applicable law in Germany and that the royalty
+rights do not grant the Trust the right to require or compel the
+release of such information. Efforts to obtain such
+information from the operating companies have not been successful.
+The information made available to the Trust by the operating
+companies does not include any of the following: reserve estimates,
+capitalized costs, production cost estimates, revenue projections,
+producing field reservoir data (including pressure data, permeability,
+porosity and thickness of producing zone) or other similar
+information. While the limited information available to the Trust
+permits the calculation of the cost depletion percentage, it does not
+change the uncertainty with respect to the estimate of proved
+producing reserves. In addition, it is impossible for the Trust or
+its consultant to make estimates of proved undeveloped or probable
+future net recoverable oil and gas by appropriate geographic
+areas.
+
+The Trust has the
+authority to examine, but only for certain limited purposes, the
+operating companies' sales and production from the royalty areas.
+Both Graves & Co. and the Trustees believe the use of the material
+available is appropriate and suitable for preparation of the cost
+depletion percentage and the estimates described in the Cost Depletion
+Report. The Trustees and Graves & Co. believe this report and these
+estimates to be reasonable and appropriate but assume that these
+estimates may vary from statistical estimates which could be made
+if complete reservoir production information were available. The
+limited information available makes it inappropriate to make
+projections or estimates of proved or probable reserves of any
+category or class other than the estimated net proved producing
+reserves described in the Cost Depletion Report.
+
+Attachment A of the Cost
+Depletion Report shows a schedule of estimated net proved producing
+reserves of the Trust's royalty properties, computed as of
+October 1, 2023 and a five-year schedule of gas, sulfur and oil
+sales for the twelve months ended September 30, 2023, 2022, 2021,
+2020 and 2019 computed from quarterly sales reports of operating
+companies received by the Trust during such periods.
+
+Item 3. Legal
+Proceedings
+
+The Trust is not a party
+to, and no Trust property is the subject of, any pending legal
+proceedings.
+
+Item 4. Mine
+Safety Disclosures
+
+Not Applicable.
+
+PART II
+
+Item 5. Market
+for Registrant's Common Equity, Related Stockholder Matters, and Issuer Purchases of Equity Securities
+
+None.
+
+Item 6. [Reserved].
+
+Item 7. Management's Discussion and Analysis of Financial Condition and
+Results of Operations.
+
+Executive Summary
+
+The Trust is a passive fixed
+investment trust which holds overriding royalty rights, receives
+income under those rights from certain operating companies, pays
+its expenses and distributes the remaining net funds to its unit
+owners. As mandated by the Trust Agreement, distributions of income
+are made on a quarterly basis. These distributions, as determined
+by the Trustees, constitute substantially all the funds on hand
+after provision is made for Trust expenses then anticipated.
+
+The Trust does not engage in
+any business or extractive operations of any kind in the areas over
+which it holds royalty rights and is precluded from engaging in such
+activities by the Trust Agreement. There are no requirements,
+therefore, for capital resources with which to make capital
+expenditures or investments in order to continue the receipt of
+royalty revenues by the Trust.
+
+The properties of the Trust
+are described in Item 2. Properties of this Report. Of particular
+importance with respect to royalty income are the two royalty
+agreements, the Mobil Agreement and the OEG Agreement. The Mobil
+Agreement covers gas sales from the western part of the Oldenburg
+concession. The Trust has traditionally received the majority of its
+royalty income under the Mobil Agreement due to the higher
+royalty rate of 4%. The OEG Agreement covers gas sales from
+the entire Oldenburg concession but the royalty rate of 0.6667% is
+significantly lower and gas royalties have been correspondingly
+lower.
+
+The operating companies pay
+royalties to the Trust based on their sales of natural gas,
+sulfur and oil. Of these three products, natural gas provided
+approximately 99% of the total royalties in fiscal 2023. The amount
+of royalties paid to the Trust is primarily based on four factors:
+the amount of gas sold, the price of that gas, the area from which
+the gas is produced and the exchange rate. For purposes of the royalty
+calculations, the determination of the gas price is explained in
+detail in the following three paragraphs.
+
+On August 26, 2016, the
+Mobil and OEG Agreements were amended to establish a new base to
+determine gas prices for the calculation of the Trust's royalties.
+This new base is set as the state assessment base for natural gas
+used by the operating companies in their calculation of royalties
+payable to the State of Lower Saxony. This change reflects a shift
+to the prices calculated for the German Border Import gas Price
+("GBIP"). The average combined totals of the GBIP for the relevant
+three-month period are used to provide an average gas price for the
+quarter. This average gas price is increased by 1% and 3% per the
+terms of the Mobil and OEG Royalty Agreements and is used by the
+operators to calculate the royalties payable to the Trust for a
+given quarter.
+
+The change to the GBIP has
+reduced the scope and cost of the accounting examination, eliminated
+ongoing disputes with OEG and Mobil regarding sales to related
+parties, and reduced prior year adjustments to the normally
+scheduled year-end reconciliation. The pricing basis has also
+eliminated certain costs that were previously deductible prior to
+the royalty calculation under the OEG Agreement.
+
+On approximately the 25th
+of the months of January, April, July and October, the operating
+companies calculate the volume of gas sold during the previous
+calendar quarter. This volume of gas sold is then multiplied by
+the average adjusted GBIP available at that time. The respective
+royalty amount is divided into thirds and forms the monthly royalty
+payments to the Trust for the Trust's upcoming fiscal quarter. When
+the operating companies determine the actual amount of royalties that
+were payable for the prior calendar quarter, they also look at the
+actual amount of royalties that were paid to the Trust for that
+period and calculate the difference between what was paid and what
+was payable. Positive adjustments are paid immediately and any
+negative adjustments are deducted from the next royalty payment.
+In September of the succeeding calendar year, the operating
+companies make the final determination of any necessary royalty
+adjustments for the prior calendar year with a positive or negative
+adjustment made accordingly.
+
+For unit owners, changes in
+the U.S. dollar value of the Euro have an immediate impact. This
+impact occurs at the time the royalties, which are paid to the
+Trust in Euros, are converted into U.S. dollars at the applicable
+exchange rate and transferred from Germany to the Trust's bank
+account in the U.S. In relation to the U.S. dollar, a
+stronger Euro would yield more U.S. dollars and a weaker Euro would
+yield fewer U.S. dollars.
+
+Seasonal demand factors
+affect the income from the Trust's royalty rights insofar as they
+relate to energy demands and increases or decreases in prices, but
+on average they are generally not material to the annual income
+received under the Trust's royalty rights.
+
+The Trust has no means of
+ensuring continued income from overriding royalty rights at their
+present level or otherwise. The assets of the Trust are depleting
+assets and, if the operators developing the concession do not perform
+additional development projects, the assets may deplete faster than
+expected. Eventually, the assets of the Trust will cease to produce
+in commercial quantities and the Trust will cease to receive proceeds
+from such assets.
+
+The Trust's consultant in
+Germany provides general information to the Trust on the German and
+European economies and energy markets as well as monitoring the
+continuing impact of the war in Ukraine and ongoing efforts by the
+European governments to respond to the economic impacts of the war.
+This information provides a context in which to evaluate the actions
+of the operating companies. The Trust's consultant receives reports
+from EMPG with respect to current and planned drilling and exploration
+efforts. However, EMPG and the operating companies continue to limit
+the information flow to that which is required by German law, and the
+Trust is not able to confirm the accuracy of any of the information
+supplied by EMPG or the operating companies.
+
+The low level of
+administrative expenses of the Trust limits the effect of inflation on
+costs. Sustained price inflation would be reflected in sales prices.
+Sales prices along with sales volumes form the basis on which the
+royalties paid to the Trust are computed.
+
+Results: Fiscal 2023 versus Fiscal
+2022
+
+Russia's current war against
+Ukraine derailed the European energy system, with Germany hit
+particularly hard. With Russian gas making up such a large portion of
+Germany's energy needs, Germany took steps to rebuild its reserves for
+the following winter and ensure a steady source of future supply. As
+a result of the increase in demand for alternative sources of gas, in
+August 2022 the GBIP spiked 645% year over year. These high gas
+prices resulted in the destruction of some industrial demand and a
+general reduction in consumer demand. However, the increase in gas
+prices was short lived and following a warm winter with further
+reduced demand, the GBIP continued to decline through the end of the
+year.
+
+Beginning at the end of the
+second quarter of fiscal 2023, large negative adjustments dictated by
+the Trust's royalty agreements were accrued and
+subsequently applied against royalty income in the following quarter.
+The ongoing price decline in conjunction with the accrued negative
+adjustments continued to occur in the third and fourth quarters of fiscal
+2023. The distribution of $0.21 per unit in the third quarter of
+fiscal 2023 represented an 80% decline from the second quarter's
+distribution of $1.05 per unit. There was no distribution for the
+fourth quarter of fiscal 2023.
+
+For fiscal 2023, the Trust's
+gross royalty income increased 23.7% to $22,016,103 from $17,800,119
+in fiscal 2022. The total distribution for fiscal 2023 was $2.26 per
+unit compared to $1.83 per unit for fiscal 2022. Gas prices under
+both royalty agreements were higher while gas sales and average
+exchange rates were down. The royalty income received under the
+Mobil Agreement in fiscal 2023 increased by $2,664,909 as compared to
+fiscal 2022. Royalty income received under the OEG Agreement in
+fiscal 2023 increased by $1,549,381 as compared to fiscal 2022.
+
+The Trust receives
+adjustments from the operating companies based on their final
+calculations of royalties payable during the previous periods.
+During fiscal 2023, the adjustments based on royalties payable for
+2022 would have decreased royalty income by Euros 228,631. However,
+because there was no royalty income received to offset, this negative
+amount will carry over into the first quarter of fiscal 2024. During
+fiscal 2022, the adjustments based on royalties payable for 2021
+increased royalty income by $1,550,020. In fiscal 2023 and 2022,
+Mobil sulfur royalties totaled $34,586 and $316,527, respectively.
+
+Gas sales under the Mobil
+Agreement decreased 16.4% to 12.439 Billion cubic feet ("Bcf") in
+fiscal 2023 from 14.874 Bcf in fiscal 2022. Given the lack of drilling
+by the operating companies during 2023 and the renovation work on
+Grossenkneten, the Trust's consultant in Germany believes the decline
+in gas production is due to the combination of the temporary shutdown
+of processing at Grossenkneten and the normal reduction in well pressure
+that is experienced over time.
+
+  Fiscal Quarter         2023 Gas Sales      2022 Gas Sales      Percentage change  
+ ────────────────────────────────────────────────────────────────────────────────────
+  First                           3.519               4.105                -14.28%  
+  Second                          3.451               3.605                 -4.27%  
+  Third                           2.957               3.665                -19.32%  
+  Fourth                          2.512               3.499                -28.21%  
+  Fiscal Year Total              12.439              14.874                -16.37%  
+
+Average prices for gas
+sold under the Mobil Agreement increased 49.5% to 8.3231 Euro
+cents per kilowatt hour ("Ecents/kWh") in fiscal 2023 from 5.5665
+Ecents/kWh in fiscal 2022.
+
+  Fiscal Quarter           2023 Average      2022 Average      Percentage change  
+                             Gas Prices        Gas Prices                         
+ ──────────────────────────────────────────────────────────────────────────────────
+  First                         14.1664            3.0604               +362.89%  
+  Second                         9.1043            5.1442                +76.98%  
+  Third                          4.7294            6.1535                -23.14%  
+  Fourth                         3.2970            8.3302                -60.42%  
+  Fiscal Year Average            8.3231            5.5665                +49.52%  
+
+Converting gas prices into more
+familiar terms, using the average exchange rate, yielded a price of
+$23.54 per thousand cubic feet ("Mcf"), an increase of 42.1% from fiscal
+2022's average price of $16.56/Mcf. For fiscal 2023, royalties paid
+under the Mobil Agreement were converted and transferred at an average
+Euro/U.S. dollar exchange rate of 0.9900, a decrease of 4.9% from the
+average Euro/U.S. dollar exchange rate of 1.0405 for fiscal 2022.
+
+  Fiscal Quarter                                                                      2023 Average Euro Exchange Rate      2022 Average Euro Exchange Rate      Percentage change  
+ ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  First                                                                                                        1.0706                               1.1256                 -4.89%  
+  Second                                                                                                       1.0698                               1.0883                 -1.70%  
+  Third                                                                                                        1.1099                               1.0236                 +8.43%  
+  Fourth                                                                                                     0.0000 1                               0.9864               -100.00%  
+  Fiscal Year Average                                                                                          0.9900                               1.0405                 -4.85%  
+  1. No royalty income was deposited into the Trust's account at                                                                                                                   
+
+Excluding the effects of
+differences in prices and average exchange rates, the combination of
+royalty rates on gas sold from western Oldenburg results in an effective
+royalty rate approximately seven times higher than the royalty rate on
+gas sold from eastern Oldenburg. This is of particular significance to
+the Trust since gas sold from western Oldenburg provides the bulk of
+royalties paid to the Trust. For fiscal 2023, the volume of gas sold from
+western Oldenburg accounted for only 27.7% of the volume of all gas sales.
+However, western Oldenburg gas royalties provided approximately 73.8% or
+$16,041,589 out of a total of $21,740,519 in overall Oldenburg gas royalties.
+
+Gas sales under the OEG Agreement
+decreased 15.8% to 44.944 Bcf in fiscal 2023 from 53.385 Bcf in fiscal
+2022. Given the lack of drilling by the operating companies during 2023
+and the maintenance work on Grossenkneten, the Trust's consultant in Germany
+believes the decline in gas production is due to the combination of the
+temporary shutdown of processing at Grossenkneten and the normal reduction
+in well pressure that is experienced over time.
+
+  Fiscal Quarter         2023 Gas Sales      2022 Gas Sales      Percentage change  
+ ────────────────────────────────────────────────────────────────────────────────────
+  First                          12.881              13.970                 -7.80%  
+  Second                         12.242              13.123                 -6.71%  
+  Third                          10.503              13.341                -21.27%  
+  Fourth                          9.318              12.951                -28.05%  
+  Fiscal Year Total              44.944              53.385                -15.81%  
+
+Average gas prices for
+gas sold under the OEG Agreement increased 48.2% to 8.4965 Ecents/kWh
+in fiscal 2023 from 5.7342 Ecents/kWh in fiscal 2022.
+
+  Fiscal Quarter           2023 Average Gas Prices      2022 Average Gas Prices      Percentage change  
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────
+  First                                    14.4469                       3.1210               +362.89%  
+  Second                                    9.2846                       5.2460                +76.98%  
+  Third                                     4.8230                       6.2753                -23.14%  
+  Fourth                                    3.3623                       8.4951                -60.42%  
+  Fiscal Year Average                       8.4965                       5.7342                +48.17%  
+
+Converting gas prices into
+more familiar terms, using the average exchange rate, yielded a price
+of $23.85/Mcf, an increase of 43.7% from fiscal 2022's average price
+of $16.60/Mcf. For fiscal 2023, royalties paid under the OEG Agreement
+were converted and transferred at an average Euro/U.S. dollar exchange
+rate of 1.0069, a decrease of 3.0% from the average Euro/U.S. dollar
+exchange rate of 1.0375 for fiscal 2022.
+
+  Fiscal Quarter                                                                            2023 Average       2022 Average      Percentage change  
+                                                                                      Euro Exchange Rate      Euro Exchange                         
+                                                                                                                       Rate                         
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  First                                                                                           1.0700             1.1255                 -4.93%  
+  Second                                                                                          1.0698             1.0867                 -1.56%  
+  Third                                                                                           1.1170             1.0236                 +9.12%  
+  Fourth                                                                                        0.0000 1             0.9868               -100.00%  
+  Fiscal                                                                                          1.0069             1.0375                 -2.95%  
+  1. No royalty income was deposited into the Trust's account at                                                                                    
+
+Interest income for fiscal
+2023 of $125,003 increased from interest income of $2,244 for fiscal
+2022 due to the higher amount of royalties received and higher interest
+rates. Trust expenses increased $253,674, or 35.5%, to $967,591 in fiscal
+2023 from $713,917 in fiscal 2022 due to higher Trustees' fees as
+specified in the provisions of the Trust Agreement and higher legal expenses.
+
+Report on Drilling and Geophysical Work
+
+The Trust's German consultant
+periodically contacts the representatives of the operating companies to
+inquire about their planned and proposed drilling and geophysical work
+and other general matters. The following represents a summary of the
+most recent information the Trust's German consultant received from
+representatives of EMPG in December 2023. The Trust is not able to
+confirm the accuracy of any of the information supplied by the
+operating companies. In addition, the operating companies are not
+required to take any of the actions outlined and, if they change their
+plans with respect to any such actions, they are not obligated to
+inform the Trust.
+
+The Trust's German consultant has advised the Trust
+that EMPG has not planned any new wells for calendar 2024 and no major
+work has been initiated on the exploration side.
+
+Maintenance work, including well cleanup jobs and foam
+jobs to de-water weak wells, will be continuing to ensure the wells are
+operating at maximum efficiency and production levels.
+
+Critical Accounting Estimates
+
+The financial statements,
+appearing subsequently in this Report, present financial statement
+balances and financial results on a modified cash basis of accounting,
+which is a comprehensive basis of accounting other than accounting
+principles generally accepted in the U.S. ("GAAP basis").
+Cash basis accounting is an accepted accounting method for royalty
+trusts such as the Trust. GAAP basis financial statements disclose
+income as earned and expenses as incurred, without regard to receipts
+or payments. The use of GAAP would require the Trust to accrue for
+expected royalty payments. This is exceedingly difficult since the
+Trust has very limited information on such payments until they are
+received and cannot accurately project such amounts. The Trust's
+cash basis financial statements disclose revenue when cash is
+received and expenses when cash is paid. The one modification of
+the cash basis of accounting is that the Trust accrues for
+distributions to be paid to unit owners (those distributions
+approved by the Trustees for the Trust). The Trust's distributable
+income represents royalty income received by the Trust during the
+period plus interest income less any expenses incurred by the Trust,
+all on a cash basis. In the opinion of the Trustees, the use of the
+modified cash basis provides a more meaningful presentation to unit
+owners of the results of operations of the Trust and presents to the
+unit owners a more accurate calculation of income and expenses for
+tax reporting purposes.
+
+Off-Balance Sheet Arrangements
+
+The Trust has no off-balance
+sheet arrangements.
+
+This Report on Form 10-K may
+contain forward-looking statements intended to qualify for the safe
+harbor from liability established by the Private Securities Litigation
+Reform Act of 1995. All statements other than statements of historical
+fact are forward-looking. Such statements address future expectations
+and events or conditions concerning the Trust. You can identify many
+forward-looking statements by words such as "may," "will," "would,"
+"should," "could," "expects," "aim," "anticipates," "believes,"
+"estimates," "intends," "plan," "predict," "project," "seek,"
+"potential," "opportunities" and other similar expressions and the
+negatives of such expressions. However, not all forward-looking
+statements contain these words. Many of these statements are based on
+information provided to the Trust by the operating companies or by
+consultants using public information sources. These statements are
+subject to certain risks and uncertainties that could cause actual
+results to differ materially from those anticipated in any
+forward-looking statements. These include:
+
+• the fact that the assets
+of the Trust are depleting assets and, if the operators developing the
+concession do not perform additional development projects, the assets
+may deplete faster than expected;
+
+• risks and uncertainties
+concerning levels of gas production and gas sale prices, general
+economic conditions and currency exchange rates;
+
+• the ability or willingness of the
+operating companies to perform under their contractual
+obligations with the Trust;
+
+• potential disputes with the
+operating companies and the resolution thereof; and
+
+• political and economic
+uncertainty arising from Russia's invasion of Ukraine.
+
+All such factors are difficult
+to predict, contain uncertainties that may materially affect actual
+results, and are generally beyond the control of the Trust. New
+factors emerge from time to time and it is not possible for the Trust
+to predict all such factors or to assess the impact of each such factor
+on the Trust. Any forward-looking statement speaks only as of the date
+on which such statement is made, and the Trust does not undertake any
+obligation to update any forward-looking statement to reflect events or
+circumstances after the date on which such statement is made.
+
+Item 7A. Quantitative and Qualitative Disclosures about Market Risk.
+
+The Trust does not engage in
+any trading activities with respect to possible foreign exchange
+fluctuations. The Trust does not use any financial instruments to
+hedge against possible risks related to foreign exchange
+fluctuations. The market risk with respect to funds held in the
+Trust's bank account in Germany is negligible because standing
+instructions at the Trust's German bank require the bank to process
+conversions and transfers of royalty payments as soon as possible
+following their receipt. The Trust does not engage in any trading
+activities with respect to commodity price fluctuations.
+
+Item 8. Financial Statements and Supplementary Data.
+
+NORTH EUROPEAN OIL ROYALTY TRUST
+
+INDEX TO FINANCIAL STATEMENTS
+
+                                                            Page Number  
+  Report of Independent Registered Public Accounting        F-1 - F-2    
+  Financial Statements:                                                  
+  Statements of Assets, Liabilities and                     F-3          
+  Statements of Revenue Collected and                       F-4          
+  Statements of Undistributed Earnings                      F-5          
+  Statements of Changes in Cash and                         F-6          
+  Notes to Financial Statements                             F-7 - F-9    
+
+REPORT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING
+FIRM
+
+To the Board of Trustees and the Unit Owners of
+North European Oil Royalty Trust
+
+Opinion on the Financial
+Statements
+
+We have audited the accompanying statements of assets,
+liabilities and trust corpus of North European Oil Royalty Trust (the
+"Trust") as of October 31, 2023 and 2022, and the related statements of
+revenue collected and expenses paid, undistributed earnings, and changes in
+cash and cash equivalents for each of the two years in the period ended
+October 31, 2023, and the related notes (collectively referred to as the
+"financial statements"). In our opinion, the financial statements present
+fairly, in all material respects, the assets, liabilities and trust corpus
+of the Trust as of October 31, 2023 and 2022, and its revenue collected and
+expenses paid, undistributed earnings and changes in its cash and cash
+equivalents for each of the two years in the period ended October 31, 2023,
+in conformity with the modified cash basis of accounting described in
+Note 1.
+
+Basis for Opinion
+
+These financial statements are the responsibility of the
+Trust's management. Our responsibility is to express an opinion on the Trust's
+financial statements based on our audits. We are a public accounting firm
+registered with the Public Company Accounting Oversight Board (United States)
+("PCAOB") and are required to be independent with respect to the Trust in
+accordance with the U.S. federal securities laws and the applicable rules and
+regulations of the Securities and Exchange Commission and the PCAOB.
+
+We conducted our audits in accordance with the standards of the
+PCAOB. Those standards require that we plan and perform the audit to obtain
+reasonable assurance about whether the financial statements are free of material
+misstatement, whether due to error or fraud. The Trust is not required to have,
+nor were we engaged to perform, an audit of its internal control over financial
+reporting. As part of our audits, we are required to obtain an understanding of
+internal control over financial reporting, but not for the purpose of expressing
+an opinion on the effectiveness of the Trust's internal control over financial
+reporting. Accordingly, we express no such opinion.
+
+Our audits included performing procedures to assess the risks of
+material misstatement of the financial statements, whether due to error or fraud,
+and performing procedures that respond to those risks. Such procedures included
+examining, on a test basis, evidence regarding the amounts and disclosures in the
+financial statements. Our audits also included evaluating the accounting principles
+used and significant estimates made by management, as well as evaluating the overall
+presentation of the financial statements. We believe that our audits provide a
+reasonable basis for our opinion.
+
+Basis of Accounting
+
+As described in Note 1, these financial statements have been
+prepared on the modified cash basis of accounting, which is a comprehensive basis
+of accounting other than accounting principles generally accepted in the United
+States of America.
+
+F-1
+
+Critical Audit Matters
+
+Critical audit matters are matters arising from the current period
+audit of the financial statements that were communicated or required to be
+communicated to the audit committee and that: (1) relate to accounts or disclosures
+that are material to the financial statements and (2) involved our especially
+challenging, subjective, or complex judgments. We determined that there are no
+critical audit matters.
+
+/s/ Mazars USA LLP
+
+We have served as the Trust's auditor since 2006
+Iselin, NJ
+December 29, 2023
+
+F-2
+
+                                                   2023                       2022  
+ ────────────────────────────────────────────────────────────────────────────────────
+  ASSETS                                                                            
+  Current assets --                            $795,201                 $7,193,457  
+  Producing gas and oil royalty rights,               1                          1  
+  Total Assets                                 $795,202                 $7,173,458  
+                                                   2023                       2022  
+  LIABILITIES AND TRUST CORPUS                                                      
+  Current liabilities -- Distributions               $0                 $6,801,037  
+  Trust corpus (Notes 1 and 2)                        1                          1  
+  Undistributed earnings                        795,201                    392,420  
+  $795,202                                   $7,193,458      Total Liabilities and  
+
+The accompanying notes are an integral part
+of these financial statements.
+
+F-3
+
+                                                     2023             2022  
+ ────────────────────────────────────────────────────────────────────────────
+  Gas, sulfur and oil royalties received      $22,016,103      $17,800,119  
+  Interest income                                 125,003            2,244  
+  Trust Income                                $22,141,106      $17,802,363  
+  Operating Expenses                           ($957,067)       ($695,071)  
+  Related party expenses (Note 3)                (10,524)         (18,846)  
+  Trust Expenses                               ($967,591)       ($713,917)  
+  Net Income                                  $21,173,515      $17,088,446  
+  Net income per unit                               $2.30            $1.86  
+  Distributions per unit paid or                    $2.26            $1.83  
+
+The accompanying notes are an integral part
+of these financial statements.
+
+F-4
+
+                                          2023            2022  
+ ────────────────────────────────────────────────────────────────
+  Balance, beginning of period        $392,420        $122,754  
+  Net income                        21,173,515      17,088,446  
+                                    21,565,935      17,211,200  
+  Less:                                                         
+  Current year distributions        20,770,734      16,818,780  
+  Balance, end of period              $795,201        $392,420  
+
+The accompanying notes are an integral part
+of these financial statements.
+
+F-5
+
+                                                     2023             2022  
+ ────────────────────────────────────────────────────────────────────────────
+  Sources of Cash and Cash                                                  
+  Gas, sulfur and oil royalties received      $22,016,103      $17,800,119  
+  Interest income                                 125,003            2,244  
+                                              $22,141,106      $17,802,363  
+  Uses of Cash and Cash                                                     
+  Payment of Trust expenses                      $967,591         $713,917  
+  Distributions paid                           27,571,771       11,304,426  
+                                              $28,539,362      $12,018,343  
+  Net increase (decrease) in cash and         (6,398,256)        5,784,020  
+  Cash and cash equivalents,                    7,193,457        1,409,437  
+  Cash and cash equivalents,                     $795,201       $7,193,457  
+
+The accompanying notes are an integral part
+of these financial statements.
+
+F-6
+
+NORTH EUROPEAN OIL
+ROYALTY TRUST
+
+NOTES TO FINANCIAL
+STATEMENTS
+
+OCTOBER 31, 2023 AND 2022
+
+(1) Summary of significant accounting
+policies:
+
+Basis of accounting
+-
+
+The accompanying financial
+statements of North European Oil Royalty Trust (the "Trust") are prepared
+in accordance with the rules and regulations of the SEC. Financial
+statement balances and financial results are presented on a modified
+cash basis of accounting, which is a comprehensive basis of accounting
+other than accounting principles generally accepted in the United
+States ("GAAP basis"). In the opinion of management, all adjustments
+that are considered necessary for a fair presentation of these
+financial statements, including adjustments of a normal, recurring
+nature, have been included.
+
+On a modified cash basis,
+revenue is earned when cash is received and expenses are incurred when
+cash is paid. GAAP basis financial statements disclose revenue as
+earned and expenses as incurred, without regard to receipts or
+payments. The modified cash basis of accounting is utilized to permit
+the accrual for distributions to be paid to unit owners (those
+distributions approved by the Trustees for the Trust).
+The Trust's distributable income represents royalty income received by
+the Trust during the period plus interest income less any expenses
+incurred by the Trust, all on a cash basis. In the opinion of the
+Trustees, the use of the modified cash basis of accounting provides a
+more meaningful presentation to unit owners of the results of
+operations of the Trust.
+
+The Trust receives
+adjustments from the operating companies based on their final
+calculations of royalties payable during the prior periods, including
+the immediately preceding calendar quarter. Negative adjustments are
+carried over to the succeeding quarter.
+
+Producing gas and oil
+royalty rights -
+
+The rights to certain gas
+and oil royalties in Germany were transferred to the Trust at their
+net book value by North European Oil Company (the "Company") (see
+Note 2). The net book value of the royalty rights has been reduced to
+one dollar ($1) since the remaining net book value
+of royalty rights is de minimis relative to annual royalties received
+and distributed by the Trust and does not bear any meaningful
+relationship to the fair value of such rights or the actual amount of
+proved producing reserves.
+
+Federal and state
+income taxes -
+
+The Trust, as a grantor trust
+and additionally under a private letter ruling issued by the Internal
+Revenue Service, is exempt from federal income taxes. The Trust has no
+state income tax obligations.
+
+F-7
+
+Cash and cash equivalents -
+
+Cash and cash equivalents are
+defined as amounts deposited in bank accounts and amounts invested in
+certificates of deposit and U. S. Treasury bills with original
+maturities generally of three months or less from the date of purchase.
+The investment options available to the Trust are limited in accordance
+with specific provisions of the Trust Agreement. As of October 31, 2023,
+the uninsured amounts held in the Trust's U.S. bank accounts were
+$538,163. In addition, the Trust held Euros 6,659, the equivalent of
+$7,038, in its German bank account at October 31, 2023.
+
+Net income per unit -
+
+Net income per unit is based
+upon the number of units outstanding at the end of the period. As of
+October 31, 2023 and 2022, there were 9,190,590 units of beneficial
+interest outstanding.
+
+New accounting
+pronouncements -
+
+The Trust is not aware of
+any recently issued, but not yet effective, accounting standards that
+would be expected to have a significant impact on the Trust's
+financial position or results of operations.
+
+(2)Formation of the Trust:
+
+The Trust was formed on
+September 10, 1975. As of September 30, 1975, the Company was
+liquidated and the remaining assets and liabilities of the Company,
+including its royalty rights, were transferred to the Trust. The
+Trust, on behalf of the owners of beneficial interest in the Trust,
+holds overriding royalty rights covering gas and oil production in
+certain concessions or leases in the Federal Republic of Germany.
+These rights are held under contracts with local German exploration
+and development subsidiaries of ExxonMobil Corp. and the Royal
+Dutch/Shell Group of Companies. Under these contracts, the Trust
+receives various percentage royalties on the proceeds of the sales of
+certain products from the areas involved. At the present time,
+royalties are received for sales of gas well gas, oil well gas,
+crude oil, condensate and sulfur.
+
+(3)Related party transactions:
+
+John R. Van Kirk, the
+Managing Director of the Trust, provides office services to the Trust
+at cost. For such office services, the Trust reimbursed the Managing
+Director $10,524 and $5,256 in fiscal 2023 and 2022, respectively.
+
+(4)Employee benefit plan:
+
+The Trust has established a
+savings incentive match plan for employees (SIMPLE IRA) that is
+available to both employees of the Trust, one of whom is the Managing
+Director. The Trustees authorized the making of contributions by the
+Trust to the accounts of employees, on a matching basis,
+of up to 3% of cash compensation paid to each such employee for
+the 2023 and 2022 calendar years.
+
+F-8
+
+(5)Quarterly results (unaudited):
+
+The tables below summarize
+the quarterly results and distributions of the Trust for the fiscal
+years ended October 31, 2023 and 2022:
+
+Fiscal 2023 by Quarter and Year
+
+                                                                               First          Second           Third      Fourth                   Year  
+ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Royalties received                                                      $9,765,883      $9,760,018      $2,490,778      ($576) 1          $22,016,103  
+  Net income                                                              $9,536,014      $9,504,566      $2,290,894      ($157,959) 2      $21,173,515  
+  Net Income per unit                                                          $1.04           $1.03           $0.25      ($0.02)                 $2.30  
+  Distribution paid                                                       $9,190,590      $9,650,120      $1,930,024      $0                $20,770,734  
+  Distribution per unit                                                        $1.00           $1.05           $0.21      $0.00                   $2.26  
+  1. At the end                                                                                                                                          
+  2. The negative net income is comprised of the                                                                                                         
+
+Fiscal 2022 by Quarter and Year
+
+                                  First          Second           Third          Fourth             Year  
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Royalties received         $2,546,539      $3,773,568      $4,442,665      $7,037,347      $17,800,119  
+  Net income                 $2,351,819      $3,559,968      $4,292,607      $6,884,050      $17,088,466  
+  Net Income per unit             $0.26           $0.39           $0.47           $0.75            $1.86  
+  Distribution paid          $2,297,647      $3,492,424      $4,227,671      $6,801,037      $16,818,779  
+  Distribution per unit           $0.25           $0.38           $0.46           $0.74            $1.83  
+
+F-9
+
+Item 9. Changes in and
+Disagreements with Accountants on Accounting and Financial Disclosure.
+
+None.
+
+Item 9A. Controls
+and Procedures.
+
+Disclosure Controls and Procedures
+
+The Trust maintains disclosure
+controls and procedures that are designed to ensure that information
+required to be disclosed by the Trust is recorded, processed,
+summarized, accumulated and communicated to its management, which
+consists of the Managing Director, to allow timely decisions regarding
+required disclosure, and reported within the time periods specified in
+the Securities and Exchange Commission's rules and forms. The Managing
+Director has performed an evaluation of the effectiveness of the design
+and operation of the Trust's disclosure controls and procedures as of
+October 31, 2023. Based on that evaluation, the Managing Director
+concluded that the Trust's disclosure controls and procedures were
+effective as of October 31, 2023.
+
+Internal Control over Financial Reporting
+
+Part A. Management's
+Report on Internal Control over Financial Reporting
+
+The Trust's management is
+responsible for establishing and maintaining adequate internal control
+over financial reporting (as such term is defined in Exchange Act Rule
+13a-15(f)) for the Trust. There are inherent limitations in the
+effectiveness of any internal control, including the possibility of
+human error and the circumvention or overriding of controls.
+Accordingly, even effective internal controls can provide only
+reasonable assurance with respect to financial statement preparation.
+Further, because of changes in conditions, the effectiveness of
+internal control may vary over time. Management has evaluated the
+Trust's internal control over financial reporting as of October 31,
+2023. This assessment was based on criteria for effective
+internal control over financial reporting described in the standards
+promulgated by the Public Company Accounting Oversight Board and in
+theInternal Control-Integrated Framework (2013)issued by
+the Committee of Sponsoring Organizations of the Treadway Commission
+(COSO). Based on this evaluation, management concluded that the
+Trust's internal control over financial reporting was effective as
+of October 31, 2023.
+
+Part B. Attestation
+Report of Independent Registered Public Accounting Firm
+
+Not applicable
+
+Part C. Changes
+in Internal Control over Financial Reporting
+
+There have been no changes in
+the Trust's internal control over financial reporting that occurred
+during the fourth quarter of fiscal 2023 that have materially affected,
+or are reasonably likely to materially affect, the Trust's internal
+control over financial reporting.
+
+Item 9B. Other
+Information
+
+None.
+
+Item 9C. Disclosure
+Regarding Foreign Jurisdictions that Prevent Inspections
+
+Not applicable.
+
+PART III
+
+Item 10. Directors,
+Executive Officers and Corporate Governance
+
+Except as set forth below, the
+information required by this item will be contained in the Trust's
+definitive Proxy Statement for its Annual Meeting of Unit Owners to be
+held on February 21, 2024, to be filed pursuant to Section 14 of the
+Securities Exchange Act of 1934, and is incorporated herein by
+reference.
+
+Code of Ethics
+
+The Trustees adopted
+a Code of Conduct and Business Ethics (the "Code") beginning in 2004
+for the Trust's Trustees and employees, including the Managing
+Director. The Managing Director serves the roles of chief
+executive officer and chief financial and accounting officer.
+A copy of the Code is available without charge on request by writing
+to the Managing Director at the office of the Trust. The Code is also
+available on the Trust's website, www.neort.com.
+
+All Trustees and employees
+of the Trust are required to read and sign a copy of the Code
+annually. No waivers or exceptions to the Code have been granted since
+the adoption of the Code. Any amendments or waivers to the Code, to
+the extent required, will be disclosed in a Form 8-K filing of the
+Trust after such amendment or waiver.
+
+Item 11. Executive
+Compensation
+
+The information required by
+this item will be contained in the Trust's definitive Proxy Statement
+for its Annual Meeting of Unit Owners to be held on February 21, 2024,
+to be filed pursuant to Section 14 of the Securities Exchange Act of
+1934, and is incorporated herein by reference.
+
+Item 12. Security Ownership
+of Certain Beneficial Owners and Management and
+Related
+Stockholder Matters.
+
+The information required by
+this item will be contained in the Trust's definitive Proxy Statement
+for its Annual Meeting of Unit Owners to be held on February 21, 2024,
+to be filed pursuant to Section 14 of the Securities Exchange Act of
+1934, and is incorporated herein by reference.
+
+Item 13. Certain Relationships
+and Related Transactions, and Director Independence.
+
+The information required by
+this item will be contained in the Trust's definitive Proxy Statement
+for its Annual Meeting of Unit Owners to be held on February 21, 2024,
+to be filed pursuant to Section 14 of the Securities Exchange Act of
+1934, and is incorporated herein by reference.
+
+Item 14. Principal Accountant
+Fees and Services.
+
+The information required by
+this item will be contained in the Trust's definitive Proxy Statement
+for its Annual Meeting of Unit Owners to be held on February 21, 2024,
+to be filed pursuant to Section 14 of the Securities Exchange Act of
+1934, and is incorporated herein by reference.
+
+PART IV
+
+Item 15. Exhibits and Financial
+Statement Schedules.
+
+(a) The following is a
+list of the documents filed as part of this Report:
+
+1. Financial Statements
+
+Index to Financial Statements for the Fiscal
+Years Ended October 31, 2023
+and 2022
+
+Report of Independent
+Registered Public Accounting Firm
+
+Statements of Assets,
+Liabilities and Trust Corpus as of October 31, 2023
+and 2022
+
+Statements of Revenue
+Collected and Expenses Paid for the Fiscal Years
+Ended October
+31, 2023 and 2022
+
+Statements of
+Undistributed Earnings for the Fiscal Years Ended October 31,
+2023
+and 2022
+
+Statements of Changes
+in Cash and Cash Equivalents for the Fiscal Years
+Ended October 31,
+2023 and 2022
+
+Notes to Financial
+Statements
+
+2. Exhibits
+
+The Exhibit
+Index following the signature page lists all exhibits filed with
+this
+Report or incorporated by reference.
+
+Item 16. Form 10-K
+Summary.
+
+None.
+
+SIGNATURES
+
+Pursuant to the requirements
+of Section 13 or 15(d) of the Securities Exchange Act of 1934, the
+Trust has duly caused this Report to be signed on its behalf by the
+undersigned, thereunto duly authorized.
+
+NORTH EUROPEAN OIL ROYALTY TRUST
+
+  Dated: December 29, 2023      /s/John R. Van Kirk          
+ ─────────────────────────────────────────────────────────────
+                                John R. Van Kirk, Managing   
+                                and Chief Financial Officer  
+
+Pursuant to the requirements
+of the Securities Exchange Act of 1934, this Report has been signed
+below by the following persons on behalf of the Registrant and in the
+capacities and on the dates indicated.
+
+  Dated: December 29, 2023      /s/Nancy J. Floyd Prue                 
+ ───────────────────────────────────────────────────────────────────────
+                                Nancy J. Floyd Prue, Managing Trustee  
+  Dated: December 29, 2023      /s/Ahron H.Haspel                      
+                                Ahron H. Haspel, Trustee               
+  Dated: December 29, 2023      /s/Lawrence A. Kobrin                  
+                                Lawrence A. Kobrin, Trustee            
+  Dated: December 29, 2023      /s/Willard B. Taylor                   
+                                Willard B. Taylor, Trustee             
+  Dated: December 29, 2023      /s/John R. Van Kirk                    
+                                John R. Van Kirk, Managing Director    
+                                and Chief Financial Officer            
+
+EXHIBIT INDEX
+
+  Exhibit      Page                                                                              
+    (3.1)      North European Oil Royalty Trust Agreement, dated September 10, 1975,             
+    (3.2)      Amended and Restated Trustees' Regulations, amended and restated as of            
+    (4.1)      Description of Securities                                                         
+   (10.1)      Agreement with                                                                    
+   (10.2)      Agreement with Mobil                                                              
+   (10.3)      English language translation of Amendment Agreement dated                         
+   (10.4)      English language translation of Amendment Agreement dated                         
+     (21)      There are no subsidiaries of the Trust.                                           
+     (31)      Certification                                                                 33  
+     (32)      Certification                                                                 35  
+     (97)      Policy for the                                                                36  
+   (99.1)      Calculation                                                                   41  
+   (99.2)      Order Approving Settlement signed by Vice Chancellor Jack Jacobs of the

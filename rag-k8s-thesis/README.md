@@ -49,7 +49,7 @@ rag-k8s-thesis/
 
 ## Runtime flow
 
-1. `ingestion/ingest_data.py` loads and chunks text files from `ingestion/data`.
+1. `ingestion/ingest_data.py` loads and chunks text files from `DATA_DIR` (default: `/data/sec_rag_dataset_50`).
 2. Chunks are embedded using `all-MiniLM-L6-v2`.
 3. Vectors and metadata are upserted into Qdrant collection `thesis_docs`.
 4. API `/query` retrieves top-k chunks from Qdrant.
@@ -83,6 +83,38 @@ Optional scheduled ingestion:
 ```bash
 kubectl apply -f k8s/ingestion/ingestion-cronjob.yaml
 ```
+
+### SEC dataset mount for ingestion
+
+The ingestion Job/CronJob is configured to mount this host dataset path:
+
+- `/Users/longtran/Projects/MasterThesis/sec_rag_dataset_50`
+
+inside the container at:
+
+- `/data/sec_rag_dataset_50`
+
+and sets:
+
+- `DATA_DIR=/data/sec_rag_dataset_50`
+
+If your dataset path is different, update:
+
+- `k8s/ingestion/ingestion-job.yaml`
+- `k8s/ingestion/ingestion-cronjob.yaml`
+- `helm/rag-k8s-thesis/values.yaml` (`ingestion.dataset.hostPath`)
+
+Rerun ingestion after dataset or config changes:
+
+```bash
+kubectl delete job -n rag-thesis rag-ingestion-once --ignore-not-found
+kubectl apply -f k8s/ingestion/ingestion-job.yaml
+kubectl logs -n rag-thesis job/rag-ingestion-once --follow
+```
+
+Expected success log contains:
+
+- `Ingested <N> chunks into 'thesis_docs'.`
 
 ## API contract
 

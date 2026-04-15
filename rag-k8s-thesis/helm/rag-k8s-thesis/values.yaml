@@ -65,6 +65,11 @@ backend:
 ingestion:
   enabled: true
   image: rag-k8s-thesis/ingestion:latest
+  dataset:
+    enabled: true
+    hostPath: /host/MasterThesis/sec_rag_dataset_50
+    mountPath: /data/sec_rag_dataset_50
+    dataDir: /data/sec_rag_dataset_50
   job:
     enabled: true
     backoffLimit: 2
@@ -78,6 +83,8 @@ ingestion:
     embeddingModelName: sentence-transformers/all-MiniLM-L6-v2
     chunkSize: "800"
     chunkOverlap: "100"
+    embeddingBatchSize: "64"
+    maxDocs: "0"
   resources:
     requests:
       cpu: 250m

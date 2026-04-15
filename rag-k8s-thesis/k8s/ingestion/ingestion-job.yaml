@@ -24,6 +24,16 @@ spec:
               value: qdrant
             - name: QDRANT_PORT
               value: "6333"
+            - name: DATA_DIR
+              value: /data/sec_rag_dataset_50
+            - name: EMBEDDING_BATCH_SIZE
+              value: "64"
+            - name: MAX_DOCS
+              value: "0"
+          volumeMounts:
+            - name: sec-rag-dataset
+              mountPath: /data/sec_rag_dataset_50
+              readOnly: true
           resources:
             requests:
               cpu: "250m"
@@ -31,3 +41,8 @@ spec:
             limits:
               cpu: "1000m"
               memory: "1Gi"
+      volumes:
+        - name: sec-rag-dataset
+          hostPath:
+            path: /host/MasterThesis/sec_rag_dataset_50
+            type: Directory

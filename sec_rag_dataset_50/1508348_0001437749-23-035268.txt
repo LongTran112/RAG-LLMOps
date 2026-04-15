@@ -1,0 +1,1488 @@
+UNITED STATES
+
+SECURITIES AND EXCHANGE COMMISSION
+
+Washington, D.C. 20549
+
+FORM 10-K
+
+  ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934  
+ ────────────────────────────────────────────────────────────────────────────────────────
+
+  For the fiscal year ended September 30, 2023  
+ ────────────────────────────────────────────────
+
+  TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934  
+ ────────────────────────────────────────────────────────────────────────────────────────────
+
+For the transition period from                         to
+
+Commission file number: 000-54231
+
+AMERICANN, INC.
+
+(Exact name of registrant as specified in its charter)
+
+  Colorado                          27-4336843        
+  (State or other jurisdiction      (I.R.S. Employer  
+  incorporation or                                    
+
+  1555 Blake Street, Unit 502 Denver, CO 80202                     
+  (Address of Issuer's Principal Executive Offices, Zip Code)      
+  Issuer’s telephone number, including area code: ( 303) 862-9000  
+
+Securities registered pursuant to Section 12(b) of the Act:
+
+  Title of each class      Trading Symbol      Name of each      
+                                                                 
+                                               exchange on       
+                                                                 
+                                               which registered  
+  N/A                      N/A                 N/A               
+ ─────────────────────────────────────────────────────────────────
+
+Securities registered under Section 12(g) of the Exchange Act: Common Stock, ($0.001 Par Value)
+
+Indicate by check mark if the registrant is a well-known seasoned issuer, as defined in Rule 405 of the Securities Act.
+
+Yes ☐No☒
+
+Indicate by check mark if the registrant is not required to file reports pursuant to Section 13 or 15(d) of the Exchange Act.   Yes ☐No☒
+
+Indicate by check mark whether the registrant (1) has filed all reports to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days. Yes☒     No ☐
+
+Indicate by check mark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (§232.405 of this chapter) during the preceding 12 months (or for such shorter period that the registrant was required to submit such files). Yes☒     No ☐
+
+1
+
+Indicate by check mark if disclosure of delinquent filers pursuant to Item 405 of Regulation S-K is not contained herein,  and will not be contained,  to the best of Registrant's  knowledge,  in definitive proxy or information  statements incorporated by reference in Part III of this Form 10-K or any amendment to this Form 10-K.   ☒
+
+Indicate by check mark whether the registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, smaller reporting company, or an emerging growth company. See the definitions of “large accelerated filer,” “accelerated filer,” “smaller reporting company,” and “emerging growth company” in Rule 12b-2 of the Exchange Act.
+
+  Large accelerated filer      Accelerated filer          
+  Non-accelerated filer        Smaller reporting company  
+ ──────────────────────────────────────────────────────────
+                               Emerging growth company    
+
+If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐
+
+Indicate by check mark whether the registrant has filed a report on and attestation to its management's assessment of the effectiveness of its internal control over financial reporting under Section 404(b) of the Sarbanes-Oxley Act (15 U.S.C. 7262(b)) by the registered public accounting firm that prepared or issued its audit report. ☐
+
+If securities are registered pursuant to Section 12(b) of the Act, indicate by check mark whether the financial statements of the registrant included in the filing reflect the correction of an error to previously issued financial statements. ☐
+
+Indicate by check mark whether any of those error corrections are restatements that required a recovery analysis of incentive-based compensation received by any of the registrant’s executive officers during the relevant recovery period pursuant to §240.10D-1(b). ☐
+
+Indicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange).  Yes☐No ☒
+
+The aggregate market value of the voting stock held by non-affiliates of the registrant, based upon the closing sale price of the registrant’s common stock on March 31, 2023, was approximately $3,256,000.
+
+As of December 6, 2023, the registrant had24,391,961outstanding shares of common stock.
+
+2
+
+PART I
+
+Forward-Looking Statements
+
+This report contains or incorporates by reference forward-looking statements, concerning our financial condition, results of operations and business.  These statements include, among others:
+
+●    statements concerning the benefits that we expect will result from the business activities that we contemplate; and
+
+●    statements of our expectations, beliefs, future plans and strategies, anticipated developments and other matters that are not historical facts.
+
+You can find many of these statements by looking for words such as “believes”, “expects”, “anticipates”, “estimates” or similar expressions used in this report.
+
+These forward-looking statements are subject to numerous assumptions, risks and uncertainties that may cause our actual results to be materially different from any future results expressed or implied in those statements.  Because the statements are subject to risks and uncertainties, actual results may differ materially from those expressed or implied.  We caution you not to put undue reliance on these statements which speak only as of the date of this report.
+
+  ITEM 1.      BUSINESS.  
+ ──────────────────────────
+
+AmeriCann, Inc. (“AmeriCann”) designs, develops, leases and operates state-of-the-art cannabis cultivation, processing and manufacturing facilities. Our business plan is based on the continued growth of the regulated marijuana market in the United States.
+
+AmeriCann’s team includes board members, consultants, engineers and architects who specialize in real estate development, traditional horticulture, lean manufacturing, medical research, facility construction, regulatory compliance, security, marijuana cultivation and genetics, extraction processes, and infused product development.
+
+AmeriCann uses greenhouse technology which is superior to the current industry standard of growing cannabis in warehouse facilities under artificial lights. According to industry experts, by capturing natural sunlight, greenhouses use 25 percent fewer lights, and utility bills are up to 75 percent less than in typical warehouse cultivation facilities. As such, AmeriCann’s Canopy System enables cannabis to be produced with a greatly reduced carbon footprint, making the final product less 
+expensive. Additionally, greenhouse construction costs can be nearly half of warehouse construction costs. AmeriCann’s business is committed to sustainable, clean cultivation of cannabis and to social and environmental ethics, transparency and accountability.
+
+AmeriCann’s flagship project is the Massachusetts Cannabis Center. The Massachusetts Cannabis Center (“MCC”) is being developed on a 52-acre parcel located in southeastern Massachusetts. AmeriCann’s MCC project is permitted for over 800,000 sq. ft. of cannabis cultivation and processing infrastructure which is being developed in phases to support both the existing medical cannabis and the newly emerging adult-use cannabis marketplace.
+
+The first phase of the million square foot project, Building 1, a 30,000 square foot cultivation and processing facility, is fully-operational and is currently 100% leased by a vertically-integrated Massachusetts cannabis company. AmeriCann generates revenue through lease arrangements with the operators that includes base rent and turnover rent (i.e., a revenue participation fee).
+
+AmeriCann, through a 100% owned subsidiary, AmeriCann Brands, Inc., has received two licenses from the Massachusetts Cannabis Control Commission to cultivate cannabis and provide extraction and product manufacturing support to the entire MCC project, as well as to other licensed cannabis farmers throughout regulated markets. AmeriCann Brands plans to operate in Building 2 at the MCC. In addition to large-scale extraction of cannabis plant material, AmeriCann Brands plans to produce branded 
+consumer packaged goods including cannabis beverages, vaporizer products, edible products, non-edible products and concentrates at the state-of-the-art facility.
+
+AmeriCann may replicate the brands, technology and innovations developed at its MCC project to additional markets.
+
+See “Massachusetts Cannabis Center” below for more information.
+
+Massachusetts Cannabis Center
+
+On October 17, 2016, we closed on the acquisition of the 52.6-acre parcel of undeveloped land in Freetown, Massachusetts. The property is located approximately 47 miles southeast of Boston. We are developing the property as the Massachusetts Cannabis Center (“MCC”).
+
+As part of a simultaneous transaction, we assigned the property rights to Massachusetts Medical Properties, LLC (“MMP”) for a nominal fee and entered a lease agreement pursuant to which MMP agreed to lease the property to us for an initial term of fifty (50) years. We have the option to extend the term of the lease for four (4) additional ten (10) year periods. The lease is a triple net lease. We pay all real estate taxes, repairs, maintenance and insurance. A portion of these expenses are 
+reimbursed by the tenant.
+
+The lease payments are the greater of (a) $30,000 per month; (b) $0.38 per square foot per month of any structure built on the property; or (c) 1.5% of all gross monthly sales of products sold by the Company, any assignee of the Company, or any subtenant of the Company. The lease payments will be adjusted up (but not down) every five (5) years by any increase in the Consumer Price Index.
+
+3
+
+Plans for the MCC include the construction of sustainable greenhouse cultivation and processing facilities that will be leased to Registered Marijuana Dispensaries under the Massachusetts Medical Marijuana and Adult Use Programs
+
+The Town of Freetown Planning Board has approved our site plan application for the MCC, which includes 824,449 square feet of infrastructure for cannabis cultivation, processing, product manufacturing and associated administration in Freetown's Industrial Park.
+
+We are developing MCC in phases that will consist of eight different building sites. The buildings have been approved for the following approximate sizes:
+
+  Building 1:      30,862 square feet  
+
+  Building 2:      64,941 square feet  
+
+  Building 3:      172,800 square feet  
+
+  Building 4:      162,200 square feet  
+
+  Building 5:      162,200 square feet  
+
+  Building 6:      162,200 square feet  
+
+  Building 7:      59,246 square feet  
+
+  Building 8:      10,000 square feet.  
+
+Building 1 is a fully-constructed and operational, state-of-the-art greenhouse cultivation and product manufacturing facility.
+
+On July 26, 2019 we entered into a Triple Net Lease for Building 1 with BASK, Inc. ("BASK"). Building 1, an Adult-Use and Medical cannabis cultivation and processing facility, is the first phase of the MCC. BASK commenced operations in Building 1 in February of 2020 and is licensed by the Massachusetts Cannabis Control Commission to cultivate, process and sell cannabis.
+
+The 15-year lease for Building 1 with BASK provides, in addition to a monthly Base Rent, a Revenue Participation Fee whereby we will receive 15% of all gross monthly sales of cannabis, cannabis-infused products and non-cannabis products produced at Building 1.
+
+Building 2 is the next phase of the MCC development where we plan to occupy space for cannabis cultivation and product manufacturing. Designs for Building 2 include 64,941 square feet of GMP certified product manufacturing and extraction capabilities.
+
+On November 19, 2020, AmeriCann received two licenses from the Massachusetts Cannabis Control Commission. The licenses are for Cannabis Cultivation and a license for Cannabis Product Manufacturing. The Cannabis Product Manufacturing licenses awarded to AmeriCann are designated to be operated in Building 2 of the MCC. The Cannabis Cultivation license awarded to AmeriCann are designed to be operated in Building 3 of the MCC.
+
+For the remainder of the project, we intend to enter into agreements with other licensed cannabis businesses in Massachusetts to occupy space in the MCC. We will generate revenue through lease arrangements with the operators that include base rents and revenue participation fee payments up to 15% of gross revenue generated from products produced at the MCC. We plan to replicate the brands, technology and innovations developed at the MCC to new markets.
+
+Market Conditions
+
+While the industry is growing rapidly, the cannabis industry faces several major obstacles that challenge its growth and profitability. First, the cultivation of cannabis is a very capital-intensive enterprise. Many cannabis entrepreneurs do not have access to the capital required to build the infrastructure required to meet growing demand and sales projections. Traditional sources of financing, such as banks, are not available currently to cannabis producers and retailers in the United States. 
+Second, there is a significant shortage of knowledge related to virtually all areas of the cannabis business. When new states are added to the list of regulated cannabis markets, there is a scarcity of experience and expertise to serve the needs of cultivators, processors and retailers in these states. As explained below, marijuana is illegal under federal law. These obstacles to the cannabis industry require financial resources, expertise and dedicated advocacy to change regulations on the 
+state level.
+
+Government Regulation
+
+Marijuana is a Schedule-I controlled substance and is illegal under federal law.  Even in those states in which the use of marijuana has been legalized, its use remains a violation of federal law.
+
+A Schedule I controlled substance is defined as a substance that has no currently accepted medical use in the United States, a lack of safety for use under medical supervision and a high potential for abuse.  The Department of Justice defines Schedule 1 controlled substances as “the most dangerous drugs of all the drug schedules with potentially severe psychological or physical dependence.”  If the federal government decides to enforce the Controlled Substances Act with respect to marijuana, 
+persons that are charged with distributing, possessing with intent to distribute, or growing marijuana could be subject to fines and terms of imprisonment, the maximum being life imprisonment and a $50 million fine.
+
+4
+
+Although many states have legalized cannabis for medical and recreational use by adults, the state laws are in conflict with the federal Controlled Substances Act, which makes marijuana use and possession illegal on a national level. Although previous administrations have indicated that they are not opposed to the legalization of marijuana any change in the federal government’s enforcement of current federal laws could cause significant financial damage to us and our shareholders.
+
+Competition
+
+Currently, there are a number of other companies that are involved in the cannabis industry, many of which we consider to be our competition. Many of these companies provide services similar to those which we provide or plan to provide.  We expect that other companies will recognize the value of serving the cannabis industry and become our competitors.
+
+General
+
+We were incorporated in Delaware on June 25, 2010. The Company changed its corporate domicile to Colorado in 2022.
+
+Our offices are located at 1555 Blake Street, Unit 502, Denver, CO 80202. We lease this space on a month-to-month basis at a rate of $2,500 per month.
+
+As of November 30, 2023, we had three full time employees, that being Timothy Keogh, our Chief Executive Officer, Benjamin Barton, Chief Financial Officer and our Office Manager.  As of November 30, 2023, Mr. Keogh was spending approximately 90% of his time on our business and Mr. Barton was spending approximately 95% of his time on our business.
+
+COVID-19 Pandemic
+
+The Company believes that the COVID- 19 pandemic has had certain impacts on its business, but management does not believe there has been a material long-term impact from the effects of the pandemic on the Company’s business and operations, results of operations, financial condition, cash flows, liquidity or capital and financial resources.
+
+  ITEM 1A.      RISK FACTORS  
+ ──────────────────────────────
+
+We are a smaller reporting company as defined by Rule 12b-2 of the Securities Exchange Act of 1934 and are not required to provide the information under this item. However, our activities are subject to significant risks and uncertainties including failure to secure funding to properly fund our business plan.
+
+  ITEM 1B.      UNRESOLVED STAFF COMMENTS  
+ ───────────────────────────────────────────
+
+Not applicable.
+
+  ITEM 2.      PROPERTIES.  
+ ────────────────────────────
+
+See Item 1. Business.
+
+  ITEM 3.      LEGAL PROCEEDINGS.  
+ ───────────────────────────────────
+
+None
+
+  ITEM 4.      MINE SAFETY DISCLOSURES.  
+ ─────────────────────────────────────────
+
+Not applicable
+
+5
+
+PART II
+
+  ITEM 5.      MARKET FOR REGISTRANT'S COMMON EQUITY, RELATED STOCKHOLDER MATTERS AND ISSUER PURCHASES OF EQUITY SECURITIES.  
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Our common stock is quoted on the OTCQB under the trading symbol “ACAN”. Shown below is the range of high and low closing prices for our common stock as reported by the OTCQB for the periods presented:
+
+  Quarter Ended            High        Low  
+ ────────────────────────────────────────────
+  December 31, 2021       $0.74      $0.44  
+  March 31, 2022          $0.74      $0.38  
+  June 30, 2022           $0.55      $0.31  
+  September 30, 2022      $0.45      $0.28  
+  December 31, 2022       $0.32      $0.09  
+  March 31, 2023          $0.29      $0.09  
+  June 30, 2023           $0.24      $0.16  
+  September 30, 2023      $0.34      $0.18  
+
+Holders of our common stock are entitled to receive dividends as may be declared by the Board of Directors.  Our Board of Directors is not restricted from paying any dividends but is not obligated to declare a dividend.  No cash dividends have ever been declared and it is not anticipated that cash dividends will ever be paid.  We currently intend to retain any future earnings to finance future growth.  Any future determination to pay dividends will be at the discretion of our directors and will 
+depend on our financial condition, results of operations, capital requirements and other factors the board of directors considers relevant.
+
+Our Articles of Incorporation authorize the Board of Directors to issue up to 20,000,000 shares of preferred stock.  The provisions in the Articles of Incorporation relating to the preferred stock allow our directors to issue preferred stock with multiple votes per share and dividend rights, which would have priority over any dividends paid to the holders of our common stock.  The issuance of preferred stock with these rights may make the removal of management difficult even if the removal would
+be considered beneficial to shareholders generally, and will have the effect of limiting shareholder participation in certain transactions such as mergers or tender offers if these transactions are not favored by management.
+
+As of November 30, 2023, we had approximately 120 shareholders of record and 24,391,961 outstanding shares of common stock.
+
+  ITEM 6.      SELECTED FINANCIAL DATA.  
+ ─────────────────────────────────────────
+
+Not applicable.
+
+6
+
+  ITEM 7.      MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS.  
+ ───────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Results of Operations
+
+Year Ended September 30, 2023 compared to the Year Ended September 30, 2022
+
+Total Revenues
+
+During the year ended September 30, 2023, we generated $2,552,200 in revenue, as compared to $2,927,819 for the year ended September 30, 2022. The $375,619 decrease in revenue is primarily due to supply chain disruptions for packaging and non-cannabis inputs for packaged goods produced at the MCC during the 4th quarter of the year ended September 30, 2023. The Massachusetts market has experienced pricing compression for flower products during the year ended September 30, 2023 which also 
+contributed to the decrease in revenue.
+
+Cost of Revenues
+
+During the year ended September 30, 2023, we incurred $16,170 of costs of revenue, as compared to $45,950 for the year ended September 30, 2022. The decrease in cost is due to the conclusion of a facilities maintenance agreement.
+
+Advertising and Marketing Expenses
+
+Advertising and marketing expenses were $9,743 for the year ended September 30, 2023, as compared to $37,731 for the year ended September 30, 2022. The decrease is due to a decrease in marketing and social media costs.
+
+Professional Fees
+
+Professional fees were $359,669 for the year ended September 30, 2023, as compared to $343,829 for the year ended September 30, 2022. The increase in professional fees is primarily due to an increase in accounting and auditing and consulting fees.
+
+General and Administrative Expenses
+
+General and administrative expenses were $1,554,948 for the year ended September 30, 2023, as compared to $2,017,582 for the year ended September 30, 2022.  The decrease is primarily a result of a decrease in stock compensation costs.
+
+Interest Income
+
+Interest income was $3,440 for the year ended September 30, 2023, as compared to $11,504 for the year ended September 30, 2022.
+
+Interest Expense
+
+Interest expense was $709,865 for the year ended September 30, 2023, as compared to $667,475 for the year ended September 30, 2022. The increase is primarily attributable to amortization of debt discounts.
+
+7
+
+Net Loss
+
+We had a net loss of $94,755 for the year ended September 30, 2023, as compared to a net loss of $173,244 for the year ended September 30, 2022. The decrease in net loss is primarily the result of a decrease in stock compensation expense offset by a decrease in revenues.
+
+LIQUIDITY AND CAPITAL RESOURCES
+
+Loans
+
+On August 2, 2019 we secured a $4,000,000 loan from an unrelated third party. The loan was evidenced by a note which bears interest at the rate of 11% per year. On December 4, 2020, the loan was increased by $500,000 and the maturity date was extended from August 2, 2022 to August 1, 2023. In July 2023, the maturity date was further extended to December 1, 2023 while all other provisions of the original loan remained the same. On November 30, 2023, the maturity date was extended to January 31, 
+2024 while all other provisions of the original loan remained the same. The loan is secured by a first lien on Building 1 at the MCC.
+
+The note holder also received a warrant which allows the holder to purchase 600,000 shares of the Company’s common stock at a price of $1.50 per share. The warrant will expire on the earlier of (i) August 2, 2024 or (ii) twenty days after written notice to the holder that the daily Volume Weighted Average Price of the Company’s common stock was at least $4.00 for twenty consecutive trading days and the average daily volume of trades of the Company’s common stock during the twenty trading days 
+was at least 150,000 shares.
+
+Sale of Common Stock and Warrants
+
+Currently the company has 2,148,000 warrants issued and outstanding with exercise prices ranging from $1.25 to $1.50 and expiration dates ranging from August 2, 2024 to December 31, 2024 associated with transactions prior to October 1, 2019.
+
+During the year ended September 30, 2023, we did not issue any stock for services.
+
+During the year ended September 30, 2022, we issued 195,651 shares of stock for services valued $90,000.
+
+Contractual obligations
+
+The Company leases land under an operating lease commencing October 17, 2016, for an initial term of fifty (50) years. We have the option to extend the term of the lease for four (4) additional ten (10) year periods. The lease is a triple net lease, with the Company paying all real estate taxes, repairs, maintenance and insurance. The lease payments are the greater of (a) $30,000 per month; (b) $0.38 per square foot per month of any structure built on the property; or (c) 1.5% of all gross 
+monthly sales of products sold by the Company, any assignee of the Company, or any subtenant of the Company. The Company received a credit for the $925,000 paid towards the purchase price of the land in the form of discounted lease payments. For the initial fifty (50) year term of the lease, the lease payments are reduced by $1,542 each month.
+
+Analysis of Cash Flows
+
+During the year ended September 30, 2023, cash flows provided by operations were $579,860 as compared to net cash flows provided by operations of $848,738 for the year ended September 30, 2022. The decrease is primarily due to a decrease in stock-based compensation and timing of working capital payments.
+
+Cash flows used in investing activities were $635,981 for the year ended September 30, 2023, consisting primarily of a new note receivable, additions to property and equipment and construction in progress, offset by payments received on notes receivable. Cash flows used in investing activities was $204,013 for the year ended September 30, 2022, consisting primarily of additions to construction in progress.
+
+Cash flows used in financing activities were $150,000 for the year ended September 30, 2023, consisting of payments on note payable. Cash flows provided by financing activities was $0 for the year ended September 30, 2022.
+
+Going concern
+
+The accompanying consolidated financial statements have been prepared assuming the Company will continue as a going concern, which contemplates, among other things, the realization of assets and satisfaction of liabilities in the normal course of business. The Company had an accumulated deficit of $19,853,444 and $19,758,689 at September 30, 2023 and 2022, respectively, and had a net loss of $94,755 for the year ended September 30, 2023.
+
+Management believes that the actions presently being taken to further implement the Company’s business plan and generate additional revenues provide the opportunity for the Company to continue as a going concern. While the Company believes in the viability of its strategy to generate additional revenues and in its ability to raise additional funds, there can be no assurances to that effect. The ability of the Company to continue as a going concern is dependent upon the Company's ability to 
+further implement its business plan and generate additional revenues. The consolidated financial statements do not include any adjustments that might be necessary if the Company is unable to continue as a going concern.
+
+8
+
+Trends
+
+The factors that will most significantly affect our future operating results, liquidity and capital resources will be:
+
+  Government regulation of the cannabis industry;                                       
+  Revision of Federal banking regulations for the cannabis industry; and                
+  Legalization of the use of cannabis for medical or recreational use in other states.  
+
+Other than the foregoing, we do not know of any trends, events or uncertainties that have had, or are reasonably expected to have, a material impact on:
+
+  revenues or expenses;                               
+  any material increase or decrease in liquidity; or  
+  expected sources and uses of cash.                  
+
+RECENT ACCOUNTING PRONOUNCEMENTS
+
+Recent accounting pronouncements which may be applicable to us are described in Note 1 to the Consolidated Financial Statements included as part of this report.
+
+SIGNIFICANT ACCOUNTING POLICIES
+
+Our significant accounting policies are set forth below. We have consistently applied these policies in all material respects.
+
+Use of Estimates
+
+The preparation of consolidated financial statements in conformity with U.S. generally accepted accounting principles requires management to make estimates and assumptions that affect the reported amounts of assets and liabilities and disclosure of contingent assets and liabilities at the date of the consolidated financial statements and the reported amounts of revenues and expenses during the reporting period. The more significant estimates and assumptions made by management are valuation of 
+equity instruments, deferred tax asset valuation and allowance and collectability of accounts receivable and long-lived assets. Actual results could differ from those estimates as the current economic environment has increased the degree of uncertainty inherent in these estimates and assumptions.
+
+Cash and Cash Equivalents
+
+Cash and cash equivalents include cash on hand, demand deposit accounts and temporary cash investments with maturities of ninety days or less at the date of purchase.
+
+Income Taxes
+
+The Company follows FASB Codification Topic 740-10-25 (ASC 740-10-25) for recording the provision for income taxes. Deferred tax assets and liabilities are computed based upon the difference between the financial statement and income tax basis of assets and liabilities using the enacted marginal tax rate applicable when the related asset or liability is expected to be realized or settled. Deferred income tax expenses or benefits are based on the changes in the asset or liability each period. If 
+available evidence suggests that it is more likely than not that some portion or all of the deferred tax assets will not be realized, a valuation allowance is required to reduce the deferred tax assets to the amount that is more likely than not to be realized. Future changes in such valuation allowance are included in the provision for deferred income taxes in the period of change.
+
+We expect to recognize the financial statement benefit of an uncertain tax position only after considering the probability that a tax authority would sustain the position in an examination. For tax positions meeting a "more-likely-than-not" threshold, the amount to be recognized in the consolidated financial statements will be the benefit expected to be realized upon settlement with the tax authority. For tax positions not meeting the threshold, no financial statement benefit is recognized. As 
+of September 30, 2023 and 2022, we had no uncertain tax positions. We recognize interest and penalties, if any, related to uncertain tax positions as general and administrative expenses. We currently have no federal or state tax examinations nor have we had any federal or state examinations since our inception. To date, we have not incurred any interest or tax penalties.
+
+For federal tax purposes, our 2020 through 2022 tax years remain open for examination by the tax authorities under the normal three-year statute of limitations.
+
+9
+
+Concentration of Credit Risks and Significant Customers
+
+Financial instruments that potentially subject us to concentrations of credit risk consist principally of cash, notes receivables, deposits, and tenant receivables. We place our cash with high credit quality financial institutions. As of September 30, 2023, we had outstanding notes receivable of $400,000 and a tenant receivable of $103,450 with a customer, previously a related party.
+
+Financial Instruments and Fair Value of Financial Instruments
+
+We adopted ASC Topic 820, Fair Value Measurements, for assets and liabilities measured at fair value on a recurring basis. ASC Topic 820 requires the use of fair value measurements, establishes a framework for measuring fair value and expands disclosure concerning such fair value measurements.
+
+ASC Topic 820 defines fair value as the price that would be received upon the sale of an asset or paid to transfer a liability in an orderly transaction between market participants at the measurement date. Additionally, ASC Topic 820 requires the use of valuation techniques that maximize the use of observable inputs and minimize the use of unobservable inputs. These inputs are prioritized below:
+
+  Level 1:      Observable inputs such as quoted market prices in active markets for identical assets or liabilities                               
+  Level 2:      Observable market-based inputs or unobservable inputs that are corroborated by market data                                         
+  Level 3:      Unobservable inputs for which there is little or no market data, which require the use of the reporting entity’s own assumptions.  
+
+The carrying value of financial assets and liabilities recorded at fair value is measured on a recurring or nonrecurring basis. Financial assets and liabilities measured on a non-recurring basis are those that are adjusted to fair value when a significant event occurs. We had no financial assets or liabilities carried and measured on a nonrecurring basis during the reporting periods. Financial assets and liabilities measured on a recurring basis are those that are adjusted to fair value each 
+time a financial statement is prepared. We had no financial assets or liabilities carried and measured on a recurring basis during the reporting periods. The carrying value of short-term financial instruments, including cash, tenant and notes receivable, accounts payable and accrued expenses, and short-term borrowings approximate fair value due to the relatively short period to maturity for these instruments. The long-term borrowings approximate fair value since the related rates of interest 
+approximates current market rates.
+
+Derivative Liabilities
+
+We evaluate stock options, stock warrants or other contracts to determine if those contracts or embedded components of those contracts qualify as derivatives to be separately accounted for under the relevant sections of ASC Topic 815-40, Derivative Instruments and Hedging: Contracts in Entity’s Own Equity. The result of this accounting treatment could be that the fair value of a financial instrument is classified as a derivative instrument and is marked-to-market at each consolidated balance 
+sheet date and recorded as a liability. In the event that the fair value is recorded as a liability, the change in fair value is recorded in the consolidated statement of operations as other income or other expense. Upon conversion or exercise of a derivative instrument, the instrument is marked to fair value at the conversion date and then that fair value is reclassified to equity. Financial instruments that are initially classified as equity that become subject to reclassification under ASC 
+Topic 815-40 are reclassified to a liability account at the fair value of the instrument on the reclassification date. We determined that none of our financial instruments meet the criteria for derivative accounting as of September 30, 2023 and 2022.
+
+Operating leases
+
+Effective October 1, 2019, we adopted ASC 842 Lease Accounting using the effective date method. Under the method, periods prior to adoption remain unchanged. We determine if an arrangement is a lease at inception.
+
+Right of Use (“ROU”) assets represent our right to use an underlying asset for the lease term and lease liabilities represent our obligation to make lease payments arising from the lease. Operating lease ROU assets and liabilities are recognized at commencement date based on the present value of lease payments over the lease term. Variable lease payments are not included in the calculation of the right-of-use asset and lease liability due to uncertainty of the payment amount and are recorded as 
+lease expense in the period incurred. As most of our leases do not provide an implicit rate, we use our incremental borrowing rate based on the information available at commencement date in determining the present value of lease payments. We use the implicit rate when readily determinable. Our lease terms may include options to extend or terminate the lease when it is reasonably certain that we will exercise that option. Lease expense for lease payments is recognized on a straight-line basis 
+over the lease term.
+
+Under the available practical expedient, we account for the lease and non-lease components as a single lease component for all classes of underlying assets as both a lessee and lessor. Further, we elected a short-term lease exception policy on all classes of underlying assets, permitting us to not apply the recognition requirements of this standard to short-term leases (i.e. leases with terms of 12 months or less).
+
+10
+
+Long-lived assets
+
+Our long-lived assets consist of property and equipment and are reviewed for impairment in accordance with the guidance of the Topic ASC Topic 360, Property, Plant, and Equipment. We test for impairment losses on long-lived assets used in operations whenever events or changes in circumstances indicate that the carrying amount of the asset may not be recoverable. Recoverability of an asset to be held and used is measured by a comparison of the carrying amount of an asset to the future 
+undiscounted cash flows expected to be generated by the asset. If such asset is considered to be impaired, the impairment to be recognized is measured by the amount by which the carrying amount of the asset exceeds its fair value. Impairment evaluations involve management's estimates on asset useful lives and future cash flows. Actual useful lives and cash flows could be different from those estimated by management which could have a material effect on our reporting results and financial 
+positions. Fair value is determined through various valuation techniques including discounted cash flow models, quoted market values and third-party independent appraisals, as considered necessary. There were no impairment losses recognized for the years ended September 30, 2023 and 2022.
+
+Property, Plant and Equipment
+
+Property, plant and equipment are stated at cost. Depreciation of property, plant and equipment begins in the month following the month when the asset is placed into service and is provided using the straight-line method for financial reporting purposes at rates based on the estimated useful lives of the assets. Estimated useful lives range from three to twenty years.
+
+Non-Cash Equity Transactions
+
+Shares of equity instruments issued for noncash consideration are recorded at the estimated fair market value of the consideration granted based on the estimated fair market value of the equity instrument, or at the estimated fair market value of the goods or services received, whichever is more readily determinable.
+
+Stock-Based Compensation
+
+We account for share-based awards to employees in accordance with ASC Topic 718, Stock Compensation. Under this guidance, stock compensation expense is measured at the grant date, based on the fair value of the award, and is recognized as an expense over the estimated service period (generally the vesting period) on the straight-line attribute method. Share-based awards to non-employees are accounted for in accordance with ASU 2018-07 Compensation - Stock Compensation (Topic 718): Improvements 
+to Nonemployee Share-based Payment Accounting, which aligns the accounting for nonemployee share-based payments with accounting of share-based payments to employees.
+
+Related Parties
+
+A party is considered to be related to us if the party directly or indirectly or through one or more intermediaries, controls, is controlled by, or is under common control with us. Related parties also include our principal owners, our management, members of the immediate families of our principal owners and our management and other parties with which we may deal if one party controls or can significantly influence the management or operating policies of the other to an extent that one of the 
+transacting parties might be prevented from fully pursuing its own separate interests. A party which can significantly influence the management or operating policies of the transacting parties, or if it has an ownership interest in one of the transacting parties and can significantly influence the other to an extent that one or more of the transacting parties might be prevented from fully pursuing its own separate interests, is also a related party.
+
+Revenue Recognition
+
+Property lease revenue is earned through annual leases for facilities used in agricultural/manufacturing activities and the Company records revenues on a straight-line basis over the term of these leases.  Property lease revenues from these sources are recurring on an annual basis.  Unearned property lease revenues were $0 at both September 30, 2023 and 2022.
+
+The Company also receives a revenue participation fee which is considered a variable payment and thus is recorded in the period earned in accordance with ASC 842.
+
+Advertising Expense
+
+Advertising, promotional and selling expenses consist of sales and marketing expenses, and promotional activity expenses. Expenses are recognized when incurred.
+
+General and Administrative Expense
+
+General and administrative expenses consist of professional service fees, rent and utility expenses, meals, travel and entertainment expenses, and other general and administrative overhead costs. Expenses are recognized when incurred.
+
+11
+
+Loss per Share
+
+We compute net loss per share in accordance with the ASC Topic 260. The ASC specifies the computation, presentation and disclosure requirements for loss per share for entities with publicly held common stock.
+
+Basic loss per share amounts is computed by dividing the net loss by the weighted average number of common shares outstanding. Shares issuable upon the exercise of equity instruments such as warrants and options were not included in the loss per share calculations for 2023 and 2022 because the inclusion would have been anti-dilutive.
+
+OFF-BALANCE SHEET ARRANGEMENTS
+
+As of September 30, 2023, we did not have any off-consolidated balance sheet arrangements.
+
+  ITEM 8.      FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA.  
+ ─────────────────────────────────────────────────────────────
+
+Attached.
+
+  ITEM 9.      CHANGES IN AND DISAGREEMENTS WITH ACCOUNTANTS ON ACCOUNTING AND FINANCIAL DISCLOSURE.  
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────
+
+None.
+
+  ITEM 9A.      CONTROLS AND PROCEDURES.  
+ ──────────────────────────────────────────
+
+Disclosure Controls and Procedures
+
+An evaluation was carried out under the supervision and with the participation of our management, including our Principal Executive Officer and Principal Financial Officer, of the effectiveness of our disclosure controls and procedures as of the end of the period covered by this report on Form 10-K.  Disclosure controls and procedures are procedures designed with the objective of ensuring that information required to be disclosed in our reports filed under the Securities Exchange Act of 1934, 
+such as this Form 10-K, is recorded, processed, summarized and reported within the time period specified in the Securities and Exchange Commission’s rules and forms, and that such information is accumulated and is communicated to our management, including our Principal Executive Officer and Principal Financial Officer, or persons performing similar functions, as appropriate, to allow timely decisions regarding required disclosure.  Based on that evaluation, our management concluded that, as of 
+September 30, 2023, our disclosure controls and procedures were not effective for the same reasons that our internal control over financial reporting was not adequate.
+
+Management’ s Report on Internal Control Over Financial Reporting
+
+Our management is responsible for establishing and maintaining adequate internal control over financial reporting as required by Sarbanes-Oxley Act, Section 404. A. Our internal control over financial reporting is a process designed to provide reasonable assurance regarding the reliability of financial reporting and the preparation of consolidated financial statements in accordance with generally accepted accounting principles in the United States and includes those policies and procedures that:
+
+  (1)      Pertain to the maintenance of records that in reasonable detail accurately and fairly reflect the transactions and dispositions of assets;                                                            
+  (2)      Provide reasonable assurance that transactions are recorded as necessary to permit preparation of financial statements in accordance with generally accepted accounting principles, and that rece...  
+  (3)      Provide reasonable assurance regarding prevention or timely detection of unauthorized acquisition, use or disposition of the issuer's assets that could have a material effect on the issuer’s fi...  
+
+We carried out an evaluation under the supervision and with the participation of management, including our Principal Executive Officer and Principal Financial Officer, of the effectiveness of the design and operation of our internal control over financial reporting as of September 30, 2023. In making this evaluation, management used the criteria set forth by the Committee of Sponsoring Organizations of the Treadway Commission (COSO) inInternal Control - Integrated Framework, published in 2013. 
+Based on that evaluation, our Principal Executive Officer and Principal Financial Officer concluded that our internal control over financial reporting was not effective as of September 30, 2023 at the reasonable assurance level, as a result of material weaknesses related to a lack of a sufficient number of personnel with appropriate training and experience in accounting principles generally accepted in the United States of America, or GAAP, limited or no segregation of duties, and lack of 
+independent directors. As a result, we did not adequately document or test whether our financial activity level controls or our information technology general controls were operating sufficiently to identify a deficiency, or combination of deficiencies, that may result in a reasonable possibility that a material misstatement of the consolidated financial statements would not be prevented or detected on a timely basis. While management has reviewed the consolidated financial statements and 
+underlying information included in this Annual Report on Form 10-K in detail and believes the procedures performed are adequate to fairly present our financial position, results of operations and cash flows for the periods presented in all material respects, the material weaknesses that existed in fiscal 2023 could have led to an error in the original accounting of the estimated fair market value of certain equity instruments.
+
+12
+
+Remediation of Material Weaknesses
+
+A material weakness is a control deficiency (within the meaning of the Public Company Accounting Oversight Board (“PCAOB”) Auditing Standard No. 2201), or combination of control deficiencies, that result in more than a remote likelihood that a material misstatement of the annual or interim consolidated financial statements will not be prevented or detected. While management believes that the Company’s consolidated financial statements previously filed in the Company’s SEC reports have been 
+properly recorded and disclosed in accordance with US GAAP, we have designed and plan to implement, or in some cases have already implemented, the specific remediation initiatives described below:
+
+We plan to obtain and hire additional accounting personnel, and continue to enhance our internal finance and accounting organizational structure.
+
+We have hired a third-party consultant who has the required background and experience in accounting principles generally accepted in the United States of America and with SEC rules and regulations.
+
+We are in the process of further enhancing the supervisory procedures to include additional levels of analysis and quality control reviews within the accounting and financial reporting functions.
+
+We are in the process of strengthening our internal policies and ensuring that the consistent validation of our conclusions regarding significant accounting policies and their application to our business transactions are carried out by personnel with an appropriate level of accounting knowledge, experience and training.
+
+While we have not yet remediated these material weaknesses, we will continue our remediation efforts during fiscal 2024.
+
+This Annual Report does not include an attestation report of our independent registered public accounting firm regarding internal control over financial reporting. Management’s report was not subject to such attestation pursuant to rules of the Securities and Exchange Commission that permits us to provide only management’s report in this Annual Report.
+
+Changes in Internal Control over Financial Reporting
+
+No changes in our internal control over financial reporting have come to management's attention during our last fiscal quarter that have materially affected, or are likely to materially affect, our internal control over financial reporting.
+
+  ITEM 9B.      OTHER INFORMATION.  
+ ────────────────────────────────────
+
+None.
+
+PART III
+
+  ITEM 10.      DIRECTORS, EXECUTIVE OFFICERS AND CORPORATE GOVERNANCE.  
+ ─────────────────────────────────────────────────────────────────────────
+
+  Name                    Age      Position                                               
+ ──────────────────────────────────────────────────────────────────────────────────────────
+  Timothy Keogh            44      Chief Executive Officer and a Director                 
+  Benjamin J. Barton       59      Chief Financial and Accounting Officer and a Director  
+  J. Tyler Opel            35      Director                                               
+
+The following is a brief summary of the background of each officer and director including their principal occupations during the past several years.  All directors will serve until their successors are elected and qualified or until they are removed.
+
+Timothy Keogh was appointed our Chief Executive Officer and a director on March 25, 2014. As our Chief Executive Officer, Mr. Keogh has developed sustainable practices and traditional horticultural approaches to the production of cannabis to benefit patients and adults (21+) in regulated markets. Prior to joining AmeriCann, Mr. Keogh was the Chief Executive Officer and a director of Bask, Inc (f/k/a Coastal Compassion, Inc.), a non-profit corporation that has entered the medical marijuana 
+business in Massachusetts. BASKS’s efforts began in September of 2012 and was formalized under Massachusetts G.L. Chapter 180 in August of 2013.  Under the direction of Mr. Keogh, Bask, Inc. received a limited number Final Certificates for cultivation, processing and dispensing of cannabis in Massachusetts.
+
+13
+
+Between November 2010 and November 2013 Mr. Keogh owned and managed Dock Promotions, LLC, a company which provided consulting services to waterfront developments and marinas in the areas of design, construction, and operations.  Between 2003 and 2010, Mr. Keogh was the Director of Business Services for Marina Management Services, Inc., a corporation which provided management and consulting solutions to waterfront developments, marinas and boatyards throughout the Americas and the Caribbean.
+
+Mr. Keogh was recognized by Marijuana Business Daily as one of the top entrepreneurs in the cannabis industry and continues to be an invited speaker at investment and cannabis industry events throughout the United States.  Mr. Keogh holds a Bachelor of Science in Business Administration from Mount St. Mary’s College.
+
+Ben Barton was appointed a director on January 14, 2014 and Chief Financial Officer on January 22, 2014. Since 1986, Mr. Barton has been active in all aspects of venture capital and public stock offerings. Since 2005, Mr. Barton has been the Managing Director of Strategic Capital Partners, LLC, a private investment company specializing in emerging companies. Mr. Barton was one of the founders of SRC Energy, Inc., an energy company that traded on the NYSE. Prior to earning an MBA in Finance from 
+UCLA, Mr. Barton received his Bachelor of Science degree in Political Science from Arizona State University.
+
+J. Tyler Opel was appointed a director in January of 2019. Prior to joining AmeriCann, Mr. Opel received his business administration degree from the University of Missouri. After working as a financial analyst in the bulk commodity industry, Mr. Opel received his Juris Doctorate from the Southern Illinois School of Law with a specialization in Business and Transactional Law. Mr. Opel is licensed to practice law in Colorado and Missouri and has represented clients in various real estate, 
+construction, administrative, and transactional proceedings.
+
+In March 25, 2014, we entered into an employment agreement with Mr. Keogh.  The agreement with Mr. Keogh has since expired. Pursuant to the employment agreement, Strategic Capital Partners, LLC, our largest shareholder, sold 1,200,000 shares of our common stock to Mr. Keogh at a price of $0.001 per share.
+
+See Item 12 of this report for information concerning options granted to Mr. Keogh.
+
+Our directors serve until the next annual meeting of our shareholders and until their successors have been duly elected and qualified.  Our officers serve at the discretion of our directors.
+
+We believe our directors are qualified to act as such for the following reasons:
+
+Timothy Keogh - experience in cannabis industry
+
+Benjamin J. Barton - experience in the capital markets
+
+J. Tyler Opel - experience in business and transaction law
+
+Timothy Keogh and Benjamin J. Barton are not independent as that term is defined in Section 803 of the NYSE American Company Guide.
+
+We do not have a financial expert as that term is defined by the Securities and Exchange Commission.
+
+Our Board of Directors does not have standing audit, nominating or compensation committees, committees performing similar functions, or charters for such committees. Instead, the functions that might be delegated to such committees are carried out by our Board of Directors, to the extent required. Our Board of Directors believes that these committees are not needed since we only have three directors.
+
+Our Board of Directors believes that its current members have sufficient knowledge and experience to fulfill the duties and obligations of an audit committee. None of the current Board members is an “audit committee financial expert” within the meaning of the rules and regulations of the Securities and Exchange Commission. The Board has determined that each of its members is able to read and understand fundamental consolidated financial statements and has substantial business experience that 
+results in that member’s financial sophistication.
+
+Our Board of Directors does not have a “leadership structure” since each board member is free to introduce any resolution at any meeting of our directors and is entitled to one vote at any meeting.
+
+Holders of our common stock may send written communications to our entire board of directors, or to one or more board members, by addressing the communication to “the Board of Directors” or to one or more directors, specifying the director or directors by name, and sending the communication to our offices in Denver, Colorado.  Communications addressed to the Board of Directors as whole will be delivered to each board member.  Communications addressed to a specific director (or directors) will be
+delivered to the director (or directors) specified.
+
+Security holder communications not sent to the Board of Directors as a whole or to specified board members will not be relayed to other board members.
+
+14
+
+The Company’s directors received the following compensation during the years ended September 30, 2023 and September 30, 2022:
+
+                                            Stock                   Options      All Other     
+                                                                                               
+                                            Awards                  Awards                     
+ ───────────────────────────────────────────────────────────────────────────────────────────────
+  Name                    Paid in Cash      (1)                     (2)          Compensation  
+  2023                                                                                         
+  Timothy Keogh           $                 $           -           $            $             
+  Benjamin J. Barton      $                 $           -           $            $             
+  J. Tyler Opel           $                 $           -           $            $             
+  2022                                                                                         
+  Timothy Keogh           $                 $           30,000      $            $             
+  Benjamin J. Barton      $                 $           30,000      $            $             
+  J. Tyler Opel           $                 $           30,000      $            $             
+
+  (1)      The fair value of stock issued for services computed on the date of grant.  
+
+  (2)      The fair value of options granted computed on the date of grant.  
+
+15
+
+  ITEM 11.      EXECUTIVE COMPENSATION.  
+ ─────────────────────────────────────────
+
+During the years ended September 30, 2023 and 2022 the following amounts were earned by our officers:
+
+  Name                         Year      Salary      Bonus      Stock       Option         All Other  
+                                                                                                      
+                                                                Awards      Awards      Compensation  
+                                                                                                      
+                                                                (1)                              (2)  
+  Timothy Keogh                2023      $           $          $           $               $180,000  
+  Chief Executive Officer      2022      $           $          $           $               $210,000  
+  Benjamin J. Barton           2023      $           $          $           $               $180,000  
+  Chief Financial Officer      2022      $           $          $           $               $210,000  
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  (1)      The value of all stock awarded during the periods covered by the table calculated according to ASC 718-10-30-3, which represented the grant date fair value.  
+
+  (2)      Consulting fees earned by Strategic Capital Partners, LLC, an entity controlled by Mr. Barton.  
+
+16
+
+The following shows the amounts we expect to pay to our officers during the year ended September 30, 2024 and the amount of time these persons expect to devote to our business.
+
+  Name                       Projected               Percentage of          
+                                                     time                   
+                          Compensation                                      
+                                                     to be devoted          
+                                                     to the                 
+                                                                            
+                                                     Company's              
+                                                     business               
+ ────────────────────────────────────────────────────────────────────────────
+  Timothy Keogh               $180,000                                  90  
+  Benjamin J. Barton          $180,000      (1)                         95  
+
+(1) represents amounts to be paid to Strategic Capital Partners, LLC, as consulting fees
+
+Our executive officers are compensated through the following three components:
+
+  base salary;  
+
+  long-term incentives (stock options and/or grants of stock); and  
+
+  benefits.  
+
+These components provide a balanced mix of base compensation and compensation that is contingent upon the executive officer’s individual performance. A goal of the compensation program is to provide executive officers with a reasonable level of security through base salary and benefits. We want to ensure that our compensation program is appropriately designed to encourage executive officer retention and motivation to create shareholder value. Salaries generally have been targeted to be 
+competitive when compared to the salary levels of persons holding similar positions in other publicly traded companies of comparable size. The executive officer’s responsibilities, experience, expertise and individual performance are also considered.
+
+The Company has a Stock Incentive Plan (“the plan”) that provides for the grant of Incentive Stock Options, Non-Qualified Stock Options or Stock Bonuses to persons who are employees of the Company, employees of subsidiaries of the Company, directors, officers, and consultants. Under the plan, the Company may grant stock bonuses or options (up to a combined maximum of 2,500,000 shares or options). Each option allows for the purchase of one share of common stock, subject to an exercise price and 
+vesting schedule to be established by the board of directors at the time of the grant.
+
+The Plan is administered by our Board of Directors which has the authority to determine the number of shares to be issued as a stock bonus, and the number of shares issuable upon the exercise of options, the exercise price and expiration date of options, and when, and upon what conditions options granted under the Plan will vest or otherwise be subject to forfeiture and cancellation.
+
+The following table shows the weighted average exercise price of the outstanding options granted pursuant to the Company’s Stock Incentive Plan as of September 30, 2023, the Company’s recently completed fiscal year:
+
+  Plan                      Total Shares                     Number of                         Weighted-                     Number of Securities  
+                                                             Securities to                                                                         
+                            Reserved                                                           Average                       Remaining Available   
+                                                             be Issued                                                       for                   
+                            Under the                                                          Exercise Price                                      
+                                                             Upon                              of                            Future Issuances      
+                            Plan                             Exercise                                                        Under                 
+                                                                                               Outstanding                                         
+                                                             of                                Options                       Equity                
+                                                                                                                             Compensation          
+                                                             Outstanding                                                                           
+                                                             Options                                                         Plans (Excluding      
+                                                                                                                                                   
+                                                                                                                             Securities Reflected  
+                                                                                                                             in                    
+                                                                                                                                                   
+                                                                                                                             Column (a))           
+                                                             (a)                               (b)                           (c)                   
+ ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Stock Incentive Plan                        2,500,000                         1,700,000                          1.94                            
+
+The Company’s Stock Incentive Plan has not been approved by the Company’s shareholders.
+
+17
+
+The following shows certain information as of November 30, 2023 concerning the stock options and stock bonuses granted pursuant to the Stock Incentive Plan. Each option represents the right to purchase one share of our common stock.
+
+  Total Shares      Shares Reserved for                     Shares Issued As Stock      Remaining                          
+                                                                                                                           
+      Reserved      Outstanding Options                     Bonus                       Options/Shares Under               
+                                                                                                                           
+     Under the                                                                          the Plan                           
+                                                                                                                           
+          Plan                                                                                                             
+ ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+     2,500,000                               1,700,000                                                            800,000  
+
+  ITEM 12.      SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT AND RELATED STOCKHOLDER MATTERS.  
+ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+The following table shows the ownership, as of November 30, 2023, of those persons owning beneficially 5% or more of our common stock and the number and percentage of outstanding shares owned by each of our directors and officers and by all officers and directors as a group.  Each owner has sole voting and investment power over their shares of common stock.
+
+  Name                                                                             
+  Timothy Keogh                                               1,365,625       5.6  
+  Benjamin J. Barton                                            160,625       0.7  
+  J. Tyler Opel                                                 160,625       0.7  
+  Strategic Capital Partners, LLC (1)                         8,966,665      36.8  
+  All officers and directors as a group (three persons)      10,653,540      43.8  
+
+  (1)      Strategic Capital Partners, LLC is controlled by Mr. Barton.  
+
+  (2)      Does not include shares issuable upon the exercise of the warrants and options listed below, all of which were exercisable as of November 30, 2023.  
+
+18
+
+  Name                                     Date of                       Exercise      Expiration  
+                                           Issuance                         Price      Date        
+  Strategic Capital Partners, LLC (1)      9/30/2019      1,500,000         $1.25      12/31/2024  
+  Timothy Keogh                            9/30/2019        300,000         $1.50      8/2/2024    
+                                           9/30/2020        250,000         $1.50      9/30/2025   
+                                           9/30/2020        250,000         $3.00      9/30/2025   
+  Ben Barton                               9/30/2019        300,000         $1.50      8/2/2024    
+                                           9/30/2020        250,000         $1.50      9/30/2025   
+                                           9/30/2020        250,000         $3.00      9/30/2025   
+ ───────────────────────────────────────────────────────────────────────────────────────────────────
+
+  (1)      Strategic Capital Partners, LLC, is controlled by Mr. Barton.  
+
+  ITEM 13.      CERTAIN RELATIONSHIPS AND RELATED TRANSACTIONS.  
+ ─────────────────────────────────────────────────────────────────
+
+On September 30, 2019, we amended and modified two notes payable due to Strategic Capital Partners, LLC a company controlled by Benjamin J. Barton, one of our officers and directors with balances of $1,000,000 and $756,646, into one note, in the principal amount of $1,756,646, bearing interest of 9% per year and maturing on December 31, 2022.  Additionally, the conversion option in the first note was eliminated.  As additional consideration for the modification of the notes we issued SCP 
+warrants to purchase 1,500,000 shares of our common stock.  The warrants are exercisable at a price of $1.25 per share at any time on or before December 31, 2024.
+
+On April 7, 2016, we signed agreements with BASK (formerly Coastal Companion, Inc). BASK is one of a limited number of organizations that has received a provisional or final registration to cultivate, process and sell medical cannabis by the Massachusetts Cannabis Control Commission.
+
+Pursuant to the agreements, we provided BASK with financing for construction and working capital required for BASK’s approved dispensary and cultivation center in Fairhaven, MA.
+
+On August 15, 2018, the Company combined the construction and working capital advances of $129,634 and accrued interest of $44,517 into a new loan with payments over 5 years with 18% interest. As of September 30, 2023, the outstanding loan balance was $0.
+
+BASK has entered into a 15-Year NNN lease of Building 1 of the MCC. The lease commenced on September 1, 2019 and includes a base rent and a revenue participation fee. As of September 30, 2023, the BASK tenant receivable balance was $103,450.
+
+Tim Keogh, our Chief Executive Officer, was a Board Member of BASK between August 2013 and November 2021. Effective December 1, 2021, BASK was no longer classified as a related party.
+
+  ITEM 14.      PRINCIPAL ACCOUNTING FEES AND SERVICES.  
+ ─────────────────────────────────────────────────────────
+
+For the years ended September 30, 2023 and 2022, MaloneBailey, LLP served as our independent registered public accounting firm.
+
+The following table sets forth the aggregate fees paid or accrued for professional services rendered by our independent accountants for the audit of our annual consolidated financial statements for the years ended September 30, 2023 and 2022, and the aggregate fees paid or accrued for audit-related services and all other services rendered by our independent accountants for those years.
+
+                  Year Ended September 30,                                    
+                  2023                                      2022              
+ ──────────────────────────────────────────────────────────────────────────────
+  Audit fees      $                             88,310      $         67,000  
+  Tax fees                                      -                     -       
+  Other                                         -                     -       
+  Total           $                             88,310      $         67,000  
+
+The category of “Audit fees” includes fees for our annual audit, quarterly reviews of our 10-Q reports, and services rendered in connection with statutory or regulatory filings with the SEC.
+
+Our Board of Directors, which serves as our audit committee, pre-approves the scope and estimated costs of all services rendered by our Principal Accountants.
+
+19
+
+PART IV
+
+  ITEM 15.      EXHIBITS AND FINANCIAL STATEMENT SCHEDULES.  
+ ─────────────────────────────────────────────────────────────
+
+Consolidated Financial Statements
+
+  Report of Independent Registered Public Accounting Firm (PCAOB ID 206)      F-1  
+  Consolidated Balance Sheets                                                 F-2  
+  Consolidated Statements of Operations                                       F-3  
+  Consolidated Statement of Changes in Stockholders' Equity                   F-4  
+  Consolidated Statements of Cash Flows                                       F-5  
+  Notes to the Consolidated Financial Statements                              F-6  
+
+  Item 16.      Exhibits and Financial Statement Schedules  
+ ────────────────────────────────────────────────────────────
+
+The following exhibits are filed with this Report:
+
+  3.1.1      Certificate of Incorporation (1)                                                                                             
+  3.1.2      Certificate of Ownership and Merger (name change to AmeriCann) (2)                                                           
+    3.2      Bylaws (2)                                                                                                                   
+    4.1      Form of Series I Warrant (2)                                                                                                 
+    4.2      Form of Series II Warrant (2)                                                                                                
+    4.3      Form of Series III Warrant (2)                                                                                               
+    4.4      Form of Series IV Warrant. See Exhibit 10.4                                                                                  
+    4.5      Form of Series V Warrant (2)                                                                                                 
+    4.6      Form of Series VI Warrant (2)                                                                                                
+    4.7      Form of Series VII Warrant (2)                                                                                               
+    4.8      Form of Series VIII Warrant (3)                                                                                              
+    4.9      Form of Series IX Warrant (4)                                                                                                
+   4.10      Form of Series X Warrant (4)                                                                                                 
+   4.11      Form of Series XI Warrant (5)                                                                                                
+   4.12      Form of Series XII Warrant (5)                                                                                               
+   10.1      Agreements with Wellness Group Pharms (2)                                                                                    
+   10.2      Loan Modification Agreement with Strategic Capital Partners, LLC, together with Warrants and Promissory Notes (2)            
+   10.3      Agreements with Coastal Compassion, Inc. (2)                                                                                 
+   10.4      Share Purchase Agreement with Massachusetts Medical Properties, LLC, together with Warrant (Series IV) and Ground Lease (2)  
+   10.5      Investment Agreement with Mountain States Capital, LLC (2)                                                                   
+   10.6      First Amendment to Ground Lease (2)                                                                                          
+   10.7      Loan Agreement, including form of warrant (Series CL) ($800,000) (2)                                                         
+   10.8      Loan Agreement ($128,000) (2)                                                                                                
+   10.9      Loan Agreement ($68,000) (2)                                                                                                 
+  10.10      Form of Convertible Note (December 2017 financing) (2)                                                                       
+  10.11      Form of Convertible Note (February 2018 financing) (3)                                                                       
+  10.12      Second Amendment to Ground Lease (3)                                                                                         
+  10.13      Third Amendment to Ground Lease (3)                                                                                          
+  10.14      Promissory Note (5)                                                                                                          
+  10.15      Mortgage and Security Agreement (5)                                                                                          
+   31.1      Rule 13a-14(a) Certifications                                                                                                
+   31.2      Rule 13a-14(a) Certifications                                                                                                
+     32      Section 1350 Certifications                                                                                                  
+
+  101. INS      Inline XBRL Instance Document.                                                             
+  101. SCH      Inline XBRL Taxonomy Extension Schema Document.                                            
+  101. CAL      Inline XBRL Taxonomy Extension Calculation Linkbase Document.                              
+  101. DEF      Inline XBRL Taxonomy Extension Definition Linkbase Document.                               
+  101. LAB      Inline XBRL Taxonomy Extension Label Linkbase Document.                                    
+  101. PRE      Inline XBRL Taxonomy Extension Presentation Linkbase Document.                             
+  104           Cover Page Interactive Data File (formatted as Inline XBRL and contained in Exhibit 101).  
+
+  (1)      Incorporated by reference to Exhibit 3.1 filed with the Company’s Registration Statement on Form 10.  
+
+  (2)      Incorporated by reference to same exhibit filed with Amendment No. 1 to the Company’s Registration Statement on Form S-1 (File #333-222207).  
+
+  (3)      Incorporated by reference to same exhibit filed with the Company’s Registration Statement on Form S-1 (File #333-224256).  
+
+  (4)      Incorporated by reference to the same exhibit filed with the Company’s Registration Statement on Form S-1 (File #333-227388).  
+
+  (5)      Incorporated by reference to the same exhibit filed with the Company’s Registration Statement on Form S-1 (File # 333-233981).  
+
+20
+
+REPORT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM
+
+To the Shareholders and Board of Directors of
+
+AmeriCann, Inc.
+
+Denver, CO
+
+Opinion on the Financial Statements
+
+We have audited the accompanying consolidated balance sheets of AmeriCann, Inc. and its subsidiaries (collectively, the “Company”) as of September 30, 2023 and 2022, and the related consolidated statements of operations, stockholders’ equity, and cash flows for the years then ended, and the related notes (collectively referred to as the “financial statements”). In our opinion, the financial statements present fairly, in all material respects, the financial position of the Company as of September
+30, 2023 and 2022, and the results of their operations and their cash flows for the years then ended, in conformity with accounting principles generally accepted in the United States of America.
+
+Going Concern Matter
+
+The accompanying financial statements have been prepared assuming that the Company will continue as a going concern. As discussed in Note 2 to the financial statements, the Company has suffered recurring losses from operations and has a net capital deficiency that raises substantial doubt about its ability to continue as a going concern. Management's plans in regard to these matters are also described in Note 2. The financial statements do not include any adjustments that might result from the 
+outcome of this uncertainty.
+
+Basis for Opinion
+
+These financial statements are the responsibility of the Company’s management. Our responsibility is to express an opinion on the Company’s financial statements based on our audits. We are a public accounting firm registered with the Public Company Accounting Oversight Board (United States) ("PCAOB") and are required to be independent with respect to the Company in accordance with the U.S. federal securities laws and the applicable rules and regulations of the Securities and Exchange Commission 
+and the PCAOB.
+
+We conducted our audits in accordance with the standards of the PCAOB. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether the financial statements are free of material misstatement, whether due to error or fraud. The Company is not required to have, nor were we engaged to perform, an audit of its internal control over financial reporting. As part of our audits we are required to obtain an understanding of internal control over financial 
+reporting but not for the purpose of expressing an opinion on the effectiveness of the Company's internal control over financial reporting. Accordingly, we express no such opinion.
+
+Our audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks. Such procedures included examining, on a test basis, evidence regarding the amounts and disclosures in the financial statements. Our audits also included evaluating the accounting principles used and significant estimates made by management, as well as evaluating the overall presentation of the 
+financial statements. We believe that our audits provide a reasonable basis for our opinion.
+
+Critical Audit Matters
+
+The critical audit matters are matters arising from the current period audit of the financial statements that were communicated or required to be communicated to the audit committee and that: (1) relate to accounts or disclosures that are material to the financial statements and (2) involved our especially challenging, subjective, or complex judgments. We determined that there are no critical audit matters.
+
+/s/ MaloneBailey, LLP
+
+www.malonebailey.com
+
+We have served as the Company's auditor since 2016.
+
+Houston, Texas
+
+December 22, 2023
+
+F-1
+
+AMERICANN, INC.
+
+CONSOLIDATED BALANCE SHEETS
+
+                                                                                                                                                   September 30, 2023                        September 30, 2022                    
+ ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Assets                                                                                                                                                                                                                           
+  Current Assets:                                                                                                                                                                                                                  
+  Cash and cash equivalents                                                                                                                        $                          1,135,006      $                          1,341,127  
+  Restricted cash                                                                                                                                                                 9,967                                     9,967  
+  Tenant receivable                                                                                                                                                             103,450                                   251,462  
+  Prepaid expenses and other current assets                                                                                                                                      23,415                                    62,766  
+  Current potion of note receivable                                                                                                                                              62,116                                    43,185  
+  Total current assets                                                                                                                                                        1,333,954                                 1,708,507  
+  Note receivable                                                                                                                                                               337,884                                         -  
+  Construction in progress                                                                                                                                                      371,682                                   338,977  
+  Property and Equipment, net                                                                                                                                                 6,402,531                                 6,611,961  
+  Operating lease - right-of-use asset                                                                                                                                        6,708,843                                 6,778,085  
+  Total assets                                                                                                                                     $                         15,154,894      $                         15,437,530  
+  Liabilities and Stockholders' Equity                                                                                                                                                                                             
+  Current Liabilities:                                                                                                                                                                                                             
+  Accounts payable and accrued expenses                                                                                                            $                             87,247      $                            193,170  
+  Accounts payable - related party                                                                                                                                               15,000                                    82,500  
+  Interest payable (including $ 0 and $ 4,303 to related parties)                                                                                                                40,686                                    53,964  
+  Other payables                                                                                                                                                                  6,365                                     8,612  
+  Operating lease liability, short term                                                                                                                                          12,204                                    11,283  
+  Notes payable                                                                                                                                                                       -                                   150,000  
+  Note payable - related party                                                                                                                                                  581,646                                         -  
+  Notes payable (net of unamortized discounts of $0)                                                                                                                          4,500,000                                         -  
+  Total current liabilities                                                                                                                                                   5,243,148                                   499,529  
+  Notes payable (net of unamortized discounts of $ 0 and $ 162,353)                                                                                                                   -                                 4,337,647  
+  Note payable - related party                                                                                                                                                        -                                   581,646  
+  Operating lease liability, long term                                                                                                                                        4,204,389                                 4,216,596  
+  Total liabilities                                                                                                                                                           9,447,537                                 9,635,418  
+  Commitments and contingencies - see Note 10                                                                                                                                                                                      
+  Stockholders' Equity:                                                                                                                                                                                                            
+  Preferred stock, $ 0.0001 par value; 20,000,000 shares authorized; no shares issued and outstanding                                                                                 -                                         -  
+  Common stock, $ 0.0001 par value; 100,000,000 shares authorized; 24,391,961 shares issued and outstanding as of September 30, 2023 and 2022                                     2,439                                     2,439  
+  Additional paid in capital                                                                                                                                                 25,558,362                                25,558,362  
+  Accumulated deficit                                                                                                                                                      ( 19,853,444                              ( 19,758,689  
+  Total stockholders' equity                                                                                                                                                  5,707,357                                 5,802,112  
+  Total liabilities and stockholders' equity                                                                                                       $                         15,154,894      $                         15,437,530  
+
+See accompanying notes to consolidated financial statements.
+
+F-2
+
+AMERICANN, INC.
+
+CONSOLIDATED STATEMENTS OF OPERATIONS
+
+                                                  Year Ended September 30,                                            
+                                                  2023                                          2022                  
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Rental income                                   $                              2,552,200                 2,520,555  
+  Rental income - related party                                                          -                   407,264  
+  Cost of revenues                                                                  16,170                    45,950  
+  Gross profit                                                                   2,536,030                 2,881,869  
+  Operating expenses:                                                                                                 
+  Advertising and marketing                                                          9,743                    37,731  
+  Professional fees                                                                359,669                   343,829  
+  General and administrative expenses                                            1,554,948                 2,017,582  
+  Total operating expenses                                                       1,924,360                 2,399,142  
+  Income from operations                                                           611,670                   482,727  
+  Other income (expense):                                                                                             
+  Interest income                                                                    3,440                    11,504  
+  Interest expense                                                               ( 657,517                 ( 615,127  
+  Interest expense - related party                                                ( 52,348                  ( 52,348  
+  Total other income (expense)                                                   ( 706,425      $          ( 655,971  
+  Net loss                                        $                               ( 94,755      $          ( 173,244  
+  Basic and diluted loss per common share                                           ( 0.00      $             ( 0.01  
+  Weighted average common shares outstanding                                    24,391,961                24,333,911  
+
+See accompanying notes to consolidated financial statements.
+
+F-3
+
+AMERICANN, INC.
+
+CONSOLIDATED STATEMENTS OF CHANGES IN STOCKHOLDERS' EQUITY
+
+                                                               Additional                                                                    
+                                                               Paid In                         Accumulated                                   
+                                                               Capital                         Deficit                                       
+  Balances, September 30, 2021      24,196,310      2,420      $               25,093,435      $                ( 19,585,445      5,510,410  
+  Stock issued for services         195,651         19                             89,981                                  -         90,000  
+  Extension of warrants             -               -                             374,946                                  -        374,946  
+  Net loss                          -               -                                   -                          ( 173,244      ( 173,244  
+  Balances, September 30, 2022      24,391,961      2,439                      25,558,362                       ( 19,758,689      5,802,112  
+  Net loss                          -               -                                   -                           ( 94,755       ( 94,755  
+  Balances, September 30, 2023      24,391,961      2,439      $               25,558,362      $                ( 19,853,444      5,707,357  
+
+See accompanying notes to consolidated financial statements.
+
+F-4
+
+AMERICANN, INC.
+
+CONSOLIDATED STATEMENTS OF CASH FLOWS
+
+                                                                                       Year Ended September 30,                                          
+                                                                                       2023                                         2022                 
+ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Cash flows from operating activities:                                                                                                                  
+  Net loss                                                                             $                              ( 94,755      $         ( 173,244  
+  Adjustments to reconcile net loss to net cash provided by operating activities:                                                                        
+  Depreciation and amortization                                                                                        455,891                  449,923  
+  Amortization of right of use assets                                                                                   69,242                   68,391  
+  Stock based compensation and warrants revaluation expense                                                                  -                  374,946  
+  Stock issued for services                                                                                                  -                   90,000  
+  Amortization of debt discount                                                                                        162,353                  107,153  
+  Changes in operating assets and liabilities:                                                                                                           
+  Tenant receivable                                                                                                    148,012                  258,854  
+  Tenant receivable - related party                                                                                          -                ( 251,462  
+  Prepaid expenses                                                                                                      39,351                 ( 49,796  
+  Accounts payable and accrued expenses                                                                              ( 105,923                    3,150  
+  Operating lease liability                                                                                           ( 11,286                 ( 10,431  
+  Accounts payable - related party                                                                                    ( 67,500                 ( 15,000  
+  Interest payable                                                                                                    ( 13,278                    ( 230  
+  Other payables                                                                                                       ( 2,247                  ( 3,516  
+  Net cash flows provided by operations                                                                                579,860                  848,738  
+  Cash flows from investing activities:                                                                                                                  
+  Additions to construction in progress                                                                               ( 32,705                ( 245,577  
+  Additions to property and equipment                                                                                ( 246,461                        -  
+  Payments received on notes receivable                                                                                 43,185                   41,564  
+  Advances made on notes receivable                                                                                  ( 400,000                        -  
+  Net cash flows (used in) investing activities                                                                      ( 635,981                ( 204,013  
+  Cash flows from financing activities:                                                                                                                  
+  Principal payments on notes payable                                                                                ( 150,000                        -  
+  Net cash flows (used in) financing activities                                                                      ( 150,000                        -  
+  Net change in cash, cash equivalents, and restricted cash                                                          ( 206,121                  644,725  
+  Cash, cash equivalents, and restricted cash at beginning of period                                                 1,351,094                  706,369  
+  Cash, cash equivalents, and restricted cash at end of period                         $                             1,144,973      $         1,351,094  
+  Supplementary Disclosure of Cash Flow Information:                                                                                                     
+  Cash paid for interest                                                               $                               560,790      $           563,799  
+  Cash paid for income taxes                                                           $                                     -      $                 -  
+
+See accompanying notes to consolidated financial statements.
+
+F-5
+
+AMERICANN, INC.
+
+NOTES TO CONSOLIDATED FINANCIAL STATEMENTS
+
+  NOTE 1.      DESCRIPTION OF BUSINESS AND SIGNIFICANT ACCOUNTING POLICIES  
+ ────────────────────────────────────────────────────────────────────────────
+
+Description of Business
+
+AmeriCann, Inc. ("the Company", “we”, “our”, or "the Issuer") was organized under the laws of the State of Delaware on June 25, 2010. The Company changed its corporate domicile to Colorado in 2022.
+
+On January 17, 2014, a privately held limited liability company acquired approximately93% of the Company's outstanding shares of common stock from several of the Company's shareholders which resulted in a change in control of the Company.
+
+The Company's business plan is to design, develop, lease and operate state-of-the-art cultivation, processing and manufacturing facilities for licensed cannabis businesses throughout the United States.
+
+The Company's activities are subject to significant risks and uncertainties including failure to secure funding to expand its operations.
+
+Certain prior period amounts have been reclassified to conform with current period presentation. These reclassifications have no impact on net loss.
+
+All significant intercompany balances and transactions have been eliminated in the consolidated financial statements.
+
+Summary of Significant Accounting Policies
+
+This summary of significant accounting policies of the Company is presented to assist in understanding the Company’s consolidated financial statements. The consolidated financial statements and notes are representations of the Company’s management, which is responsible for their integrity and objectivity. These accounting policies conform to accounting principles generally accepted in the United States and have been consistently applied in the preparation of the consolidated financial 
+statements.
+
+Principles of Consolidation
+
+The consolidated financial statements include the accounts of AmeriCann, Inc. and its wholly-owned subsidiaries. All significant intercompany balances and transactions have been eliminated in the consolidated financial statements.
+
+Use of Estimates
+
+The preparation of consolidated financial statements in conformity with U.S. generally accepted accounting principles requires management to make estimates and assumptions that affect the reported amounts of assets and liabilities and disclosure of contingent assets and liabilities at the date of the consolidated financial statements and the reported amounts of revenues and expenses during the reporting period. The more significant estimates and assumptions made by management are valuation of 
+equity instruments, deferred tax asset valuation and allowance and collectability of accounts receivable and long-lived assets. Actual results could differ from those estimates as the current economic environment has increased the degree of uncertainty inherent in these estimates and assumptions.
+
+Cash and Cash Equivalents
+
+Cash and cash equivalents include cash on hand, demand deposit accounts and temporary cash investments with maturities of ninety days or less at the date of purchase.
+
+Income Taxes
+
+The Company follows FASB Codification Topic 740-10-25 (ASC 740-10-25) for recording the provision for income taxes. Deferred tax assets and liabilities are computed based upon the difference between the financial statement and income tax basis of assets and liabilities using the enacted marginal tax rate applicable when the related asset or liability is expected to be realized or settled. Deferred income tax expenses or benefits are based on the changes in the asset or liability each period. If 
+available evidence suggests that it is more likely than not that some portion or all of the deferred tax assets will not be realized, a valuation allowance is required to reduce the deferred tax assets to the amount that is more likely than not to be realized. Future changes in such valuation allowance are included in the provision for deferred income taxes in the period of change.
+
+We expect to recognize the financial statement benefit of an uncertain tax position only after considering the probability that a tax authority would sustain the position in an examination. For tax positions meeting a "more-likely-than-not" threshold, the amount to be recognized in the consolidated financial statements will be the benefit expected to be realized upon settlement with the tax authority. For tax positions not meeting the threshold, no financial statement benefit is recognized. As 
+of September 30, 2023 and 2022, we had nouncertain tax positions. We recognize interest and penalties, if any, related to uncertain tax positions as general and administrative expenses. We currently have nofederal or state tax examinations nor have we had any federal or state examinations since our inception. To date, we have not incurred any interest or tax penalties.
+
+For federal tax purposes, our2020through 2022 tax years remain open for examination by the tax authorities under the normal three-year statute of limitations.
+
+Concentration of Credit Risks and Significant Customers
+
+Financial instruments that potentially subject us to concentrations of credit risk consist principally of cash, notes receivable, deposits tenant receivables and notes receivable. We place our cash with high credit quality financial institutions. As of September 30, 2023 and 2022, we had outstanding notes receivable of $400,000and $43,185, respectively and tenant receivables of $103,450and $251,462, respectively, with BASK, Inc. ("BASK").
+
+For the year ended September 30, 2023, all of the Company’s revenue was earned from onecustomer, BASK (which was a related party prior to December 2021, see Note 6).
+
+Financial Instruments and Fair Value of Financial Instruments
+
+We adopted ASC Topic 820, Fair Value Measurement, for assets and liabilities measured at fair value on a recurring basis. ASC Topic 820 establishes a common definition for fair value to be applied to existing US GAAP that requires the use of fair value measurements that establishes a framework for measuring fair value and expands disclosure of fair value measurements.
+
+ASC Topic 820 defines fair value as the price that would be received upon the sale of an asset or paid to transfer a liability in an orderly transaction between market participants at the measurement date. Additionally, ASC Topic 820 requires the use of valuation techniques that maximize the use of observable inputs and minimize the use of unobservable inputs. These inputs are prioritized below:
+
+  Level 1:      Observable inputs such as quoted market prices in active markets for identical assets or liabilities                               
+  Level 2:      Observable market-based inputs or unobservable inputs that are corroborated by market data                                         
+  Level 3:      Unobservable inputs for which there is little or no market data, which require the use of the reporting entity’s own assumptions.  
+
+The carrying value of financial assets and liabilities recorded at fair value is measured on a recurring or nonrecurring basis. Financial assets and liabilities measured on a non-recurring basis are those that are adjusted to fair value when a significant event occurs. We had nofinancial assets or liabilities carried and measured on a nonrecurring basis during the reporting periods. Financial assets and liabilities measured on a recurring basis are those that are adjusted to fair value each time
+a financial statement is prepared. We had nofinancial assets or liabilities carried and measured on a recurring basis during the reporting periods. The carrying value of short-term financial instruments, including cash and cash equivalents, tenant and notes receivable, accounts payable and accrued expenses, and short-term borrowings approximate fair value due to the relatively short period to maturity for these instruments. The long-term borrowings approximate fair value since the related rates 
+of interest approximates current market rates.
+
+Derivative Liabilities
+
+We evaluate stock options, stock warrants or other contracts to determine if those contracts or embedded components of those contracts qualify as derivatives to be separately accounted for under the relevant sections of ASC Topic 815-40, Derivative Instruments and Hedging: Contracts in Entity’s Own Equity. The result of this accounting treatment could be that the fair value of a financial instrument is classified as a derivative instrument and is marked-to-market at each consolidated balance 
+sheet date and recorded as a liability. In the event that the fair value is recorded as a liability, the change in fair value is recorded in the consolidated statement of operations as other income or other expense. Upon conversion or exercise of a derivative instrument, the instrument is marked to fair value at the conversion date and then that fair value is reclassified to equity. Financial instruments that are initially classified as equity that become subject to reclassification under ASC 
+Topic 815-40 are reclassified to a liability account at the fair value of the instrument on the reclassification date. We determined that none of our financial instruments meet the criteria for derivative accounting as of September 30, 2023 and 2022.
+
+Operating leases
+
+Effective October 1, 2019, we adopted Topic 842 using the effective date method. Under this method, periods prior to adoption remain unchanged. We determine if an arrangement is a lease at inception.
+
+Right of Use (“ROU”) assets represent our right to use an underlying asset for the lease term and lease liabilities represent our obligation to make lease payments arising from the lease. Operating lease ROU assets and liabilities are recognized at commencement date based on the present value of lease payments over the lease term. Variable lease payments are not included in the calculation of the right-of-use asset and lease liability due to uncertainty of the payment amount and are recorded as 
+lease expense in the period incurred. As most of our leases do not provide an implicit rate, we use our incremental borrowing rate based on the information available at commencement date in determining the present value of lease payments. We use the implicit rate when readily determinable. Our lease terms may include options to extend or terminate the lease when it is reasonably certain that we will exercise that option. Lease expense for lease payments is recognized on a straight-line basis 
+over the lease term.
+
+Under the available practical expedient, we account for the lease and non-lease components as a single lease component for all classes of underlying assets as both a lessee and lessor. Further, we elected a short-term lease exception policy on all classes of underlying assets, permitting us to not apply the recognition requirements of this standard to short-term leases (i.e. leases with terms of 12 months or less).
+
+Long-Lived Assets
+
+Our long-lived assets consisted of property, plant and equipment and are reviewed for impairment in accordance with the guidance of the Topic ASC Topic 360, Property, Plant, and Equipment. We test for impairment losses on long-lived assets used in operations whenever events or changes in circumstances indicate that the carrying amount of the asset may not be recoverable. Recoverability of an asset to be held and used is measured by a comparison of the carrying amount of an asset to the future 
+undiscounted cash flows expected to be generated by the asset. If such asset is considered to be impaired, the impairment to be recognized is measured by the amount by which the carrying amount of the asset exceeds its fair value. Impairment evaluations involve management's estimates on asset useful lives and future cash flows. Actual useful lives and cash flows could be different from those estimated by management which could have a material effect on our reporting results and financial 
+positions. Fair value is determined through various valuation techniques including discounted cash flow models, quoted market values and third-party independent appraisals, as considered necessary. There werenoimpairment losses recognized for the years ended September 30, 2023 and 2022.
+
+Property, Plant and Equipment
+
+Property, plant and equipment are stated at cost. Depreciation of property, plant and equipment begins in the month following the month when the asset is placed into service and is provided using the straight-line method for financial reporting purposes at rates based on the estimated useful lives of the assets. Estimated useful lives range from threeto twentyyears. Property, plant and equipment consist of:
+
+                                   September 30,                       September 30,                   
+                                                                                                       
+                                   2023                                2022                            
+ ───────────────────────────────────────────────────────────────────────────────────────────────────────
+  Buildings and improvements       $                    7,854,548      $                    7,608,087  
+  Computer equipment                                      349,576                             349,576  
+  Furniture and equipment                                   2,764                               2,764  
+  Total                                                 8,206,888                           7,960,427  
+  Accumulated depreciation                            ( 1,804,357                         ( 1,348,466  
+  Property and equipment, net      $                    6,402,531      $                    6,611,961  
+
+Depreciation expense for the years ended September 30, 2023 and 2022 amounted to $455,891and $449,923, respectively.
+
+Equity Instruments Issued to Non-Employees for Acquiring Goods or Services
+
+Effective October 1, 2019, the Company adopted ASU 2018-07, Compensation - “Stock Compensation (Topic 718): Improvements to Nonemployee Share-based Payment Accounting”, which addresses aspects of the accounting for nonemployee share-based payment transactions. Upon adoption, all of the issuances of stock to non-employees for goods and services are treated in the same matter as share based awards to employees. The adoption did not have an impact on the Company’s financial statements.
+
+Non-Cash Equity Transactions
+
+Shares of equity instruments issued for noncash consideration are recorded at the estimated fair market value of the consideration granted based on the estimated fair market value of the equity instrument, or at the estimated fair market value of the goods or services received, whichever is more readily determinable.
+
+Stock-Based Compensation
+
+The Company accounts for share-based awards to employees in accordance with ASC Topic 718, Stock Compensation Under this guidance, stock compensation expense is measured at the grant date, based on the fair value of the award, and is recognized as an expense over the estimated service period (generally the vesting period) on the straight-line attribute method. Effective October 1, 2019, the Company adopted ASU 2018-07, Compensation - “Stock Compensation (Topic 718): Improvements to Nonemployee 
+Share-based Payment Accounting”, which aligns the accounting for nonemployee share-based payments with accounting of share-based payments to employees.
+
+Related Parties
+
+A party is considered to be related to us if the party directly or indirectly or through one or more intermediaries, controls, is controlled by, or is under common control with us. Related parties also include our principal owners, our management, members of the immediate families of our principal owners and our management and other parties with which we may deal if one party controls or can significantly influence the management or operating policies of the other to an extent that one of the 
+transacting parties might be prevented from fully pursuing its own separate interests. A party which can significantly influence the management or operating policies of the transacting parties, or if it has an ownership interest in one of the transacting parties and can significantly influence the other to an extent that one or more of the transacting parties might be prevented from fully pursuing its own separate interests, is also a related party.
+
+Revenue Recognition
+
+Effective October 1, 2018, we adopted ASU 2014-09, Revenue from Contracts with Customers (Topic 606). Under the new standard, we recognize revenues when the following criteria are met: (i) persuasive evidence of a contract with a customer exists, (ii) identifiable performance obligations under the contract exist, (iii) the transaction price is determinable for each performance obligation, (iv) the transaction price is allocated to each performance obligation, and (v) when the performance 
+obligations are satisfied. Currently, we derive all of our revenues from property leases. Property leases are not within the scope of ASC 606.
+Property lease revenue is earned through annual leases for facilities used in agricultural/manufacturing activities and the Company records revenues on a straight-line basis over the term of these leases. Property lease revenues from these sources are recurring on an annual basis. Unearned property lease revenues were $0at both September 30, 2023 and 2022. The Company also receives a revenue participation fee which is considered a variable payment and thus is recorded in the period earned in 
+accordance with ASC 842.
+
+Advertising Expense
+
+Advertising, promotional and selling expenses consist of sales and marketing expenses, and promotional activity expenses. Expenses are recognized when incurred.
+
+General and Administrative Expense
+
+General and administrative expenses consist of professional service fees, rent and utility expenses, meals, travel and entertainment expenses, and other general and administrative overhead costs. Expenses are recognized when incurred.
+
+Loss per Share
+
+We compute net loss per share in accordance with the ASC Topic 260. The ASC specifies the computation, presentation and disclosure requirements for loss per share for entities with publicly held common stock.
+
+Basic loss per share amounts is computed by dividing the net loss by the weighted average number of common shares outstanding. Shares issuable upon the exercise of equity instruments such as warrants and options were not included in the loss per share calculations for 2023 and 2022 because the inclusion would have been anti-dilutive.
+
+Recently Adopted Accounting Pronouncements
+
+In June 2016, the FASB issued ASU No. 2016-13, Financial Instruments-Credit Losses (Topic 326), which requires entities to measure all expected credit losses for financial assets held at the reporting date based on historical experience, current conditions, and reasonable and supportable forecasts. This replaces the existing incurred loss model and is applicable to the measurement of credit losses on financial assets measured at amortized cost. This may result in the earlier recognition of 
+allowances for losses. The guidance is effective for fiscal years beginning after December 15, 2022, including interim periods within those fiscal years, with early adoption permitted. The Company is currently evaluating the impact of this standard on the financial statements.
+
+Recently Issued Accounting Pronouncements
+
+During the year ended September 30, 2023, there have been no new, or existing, recently issued accounting pronouncements that are of significance, or potential significance, that impact the Company’s consolidated financial statements.
+
+  NOTE 2.      GOING CONCERN  
+ ──────────────────────────────
+
+The accompanying consolidated financial statements have been prepared assuming the Company will continue as a going concern, which contemplates, among other things, the realization of assets and satisfaction of liabilities in the normal course of business. The Company had an accumulated deficit of $19,853,444and $19,758,689at September 30, 2023 and 2022, respectively, and had a net loss of $94,755and $173,244for the years ended September 30, 2023 and 2022, respectively. These matters, among 
+others, raise substantial doubt about the Company’s ability to continue as a going concern. While the Company is attempting to increase operations and generate additional revenues, the Company's cash position may not be significant enough to support the Company's daily operations. Management intends to raise additional funds through the sale of its securities.
+
+Management believes that the actions presently being taken to further implement its business plan and generate additional revenues provide the opportunity for the Company to continue as a going concern. While the Company believes in the viability of its strategy to generate additional revenues and in its ability to raise additional funds, there can be no assurances to that effect. The ability of the Company to continue as a going concern is dependent upon the Company's ability to further 
+implement its business plan and generate additional revenues. The consolidated financial statements do not include any adjustments that might be necessary if the Company is unable to continue as a going concern.
+
+  NOTE 3.      CASH AND CASH EQUIVALENTS AND RESTRICTED CASH  
+ ──────────────────────────────────────────────────────────────
+
+The following table provides a reconciliation of cash, cash equivalents and restricted cash reported within the consolidated balance sheets that sum to the total of the same such amounts in the consolidated statements of cash flows:
+
+                                                                                          September 30,                     September 30,                 
+                                                                                                                                                          
+                                                                                          2023                              2022                          
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Cash and cash equivalents                                                               $                  1,135,006      $                  1,341,127  
+  Restricted cash                                                                                                9,967                             9,967  
+  Total cash, cash equivalents, and restricted cash shown in the cash flow statement      $                  1,144,973      $                  1,351,094  
+
+Amounts included in restricted cash represent those required to be set aside by the Cannabis Control Commission in Massachusetts as well as by a contractual agreement with a lender for the payment of specific construction related expenditures as part of the Company’s property development in Massachusetts.
+
+  NOTE 4.      NOTES RECEIVABLE  
+ ─────────────────────────────────
+
+Notes and other receivables as of September 30, 2023 and 2022, consisted of the following:
+
+                                                                                                                                September 30,                    September 30,                
+                                                                                                                                                                                              
+                                                                                                                                2023                             2022                         
+  Note receivable from BASK, interest rate of 18.0%; monthly principal and interest payments of $ 4,422, maturing in 2023.      $                         -      $                  43,185    
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Note receivable from BASK, interest rate of 12.0%; monthly principal and interest payments of $ 8,898, maturing in 2028.                          400,000                         -         
+                                                                                                                                                    400,000                         43,185    
+  Less: Current portion                                                                                                                            ( 62,116                         ( 43,185  
+                                                                                                                                $                   337,884      $                  -         
+
+  NOTE 5.      NOTES PAYABLE  
+ ──────────────────────────────
+
+On August 2, 2019 the Company secured a $4,000,000investment from an unrelated third party in the form of a loan. The loan was evidenced by a note which bore interest at the rate of11% per year, was originally due and payable on August 2, 2022 and was secured by a first lien on Building 1 at the Massachusetts Cannabis Center (“MCC”).
+
+The note holder also received a warrant which allows the holder to purchase600,000shares of the Company’s common stock at a price of $1.50per share. The warrant will expire on the earlier of (i) August 2, 2024 or (ii) twenty days after written notice of the holder that the daily Volume Weighted Average Price of the Company’s common stock was at least $4.00for twenty consecutive trading days and the average daily volume of trades of the Company’s common stock during the twenty trading days was at
+least150,000shares.
+
+The broker for the loan received a cash commission of $320,000plus warrants to purchase48,000shares of the Company's common stock. The warrants are exercisable at a price of $1.50per share and expire on August 2, 2024. The cash commission and the fair value of the warrants amounting to $52,392were recognized as a discount to the note.
+
+The Company allocated the proceeds between the note and the warrants based on their relative fair values. The relative fair value of the600,000warrants was $562,762which was recognized as additional paid in capital and a corresponding debt discount.
+
+On December 4, 2020, the loan was modified and increased by $500,000and the maturity of the loan was extended to August 1, 2023. All other provisions of the original loan remain the same. The debt modification was deemed not substantial and was accounted for as a debt modification. The broker for the loan received a cash commission of $40,000which was expensed when incurred.
+
+On July 31, 2023, the loan was modified and the maturity of the loan was extended to December 1, 2023. On November 30, 2023, the maturity of the loan was extended to January 31, 2024. All other provisions of the previously modified loan remain the same. The debt modification was deemed not substantial and was accounted for as a debt modification. The broker for the loan received a cash commission of $7,500which was expensed when incurred.
+
+At September 30, 2023, the outstanding principal on this note was $4,500,000and the unamortized debt discount was $0. All debt discounts are being amortized on a straight-line basis over the terms of the note. Amortization expense related to the debt discounts was $162,353and $107,153for the years ended September 30, 2023 and 2022, respectively.
+
+February 2018 Convertible Note Offering
+
+On February 12, 2018 the Company sold convertible notes in the principal amount of $810,000to a group of accredited investors. The notes were unsecured and bore interest at8% per year. On October 12, 2020, the remaining note was extended to mature on June 30, 2022. On December 15, 2021, the remaining note was extended to mature on December 31, 2022. On October 5, 2022, the Company paid $159,140to fully repay the $150,000note including $9,140of interest. At September 30, 2023 and September 30, 
+2022, the outstanding principal on these notes was $0and $150,000, respectively.
+
+  NOTE 6.      RELATED PARTY TRANSACTIONS  
+ ───────────────────────────────────────────
+
+BASK. On April 7, 2016, we signed agreements with BASK. BASK is one of a limited number of organizations that has received a provisional or final registration to cultivate, process and sell medical and adult use cannabis by the Massachusetts Cannabis Control Commission.
+
+Pursuant to the agreements, we agreed to provide BASK with financing for construction and working capital required for BASK’s approved dispensary and cultivation center in Fairhaven, MA.
+
+On August 15, 2018, the Company combined the construction and working capital advances of $129,634and accrued interest of $44,517and setup a new loan with payments over5years with18% interest. At September 30, 2023 and 2022, the outstanding balance on the note receivable was $0and $43,185, respectively.
+
+On July 26, 2019, the Company entered into a15-Year Triple Net lease of Building 1 of the MCC with BASK. The lease commenced on September 1, 2019 and includes an annual base rent of $138,762and a revenue participation fee equivalent to15% of BASK's gross revenues. As of September 30, 2023, the BASK tenant receivable balance was $103,450.
+
+Tim Keogh, our Chief Executive Officer, was a Board Member of BASK between August 2013 and November 2021. Effective December 1, 2021, BASK was no longer classified as a related party.
+
+SCP. On September 30, 2019, we entered into an amended note with Strategic Capital Partners, LLC (“SCP”), in the principal amount of $1,756,646, bearing interest of9% per year and maturing on December 31, 2022. During the year ended September 30, 2022, the maturity of the note was extended to December 31, 2023.
+
+Accrued interest on the note was $0and $4,303at September 30, 2023 and September 30, 2022, respectively.
+
+At September 30, 2023 and 2022, the outstanding principal on this note was $581,646.
+
+During the year ended September 30, 2023, the Company incurred $180,000of consulting expenses with SCP and paid $247,500. As of September 30, 2023, $15,000remains unpaid. During the year ended September 30, 2022 the Company incurred $180,000of consulting expenses with SCP of which $82,500remained outstanding at September 30, 2022.
+
+The Company leases office space from SCP. Lease expense for office space was $30,000for the years ended September 30, 2023 and 2022.
+
+SCP is controlled by Benjamin J. Barton, one of our officers and directors and principal shareholders.
+
+  NOTE 7.      LOSS PER SHARE  
+ ───────────────────────────────
+
+The following table sets forth the computation of basic and diluted net loss per share:
+
+                                                                    Year ended                                               
+                                                                    September 30,                                            
+                                                                    2023                               2022                  
+  Net loss attributable to common stockholders                      $                    ( 94,755      $          ( 173,244  
+ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Basic weighted average outstanding shares of common stock                            24,391,961                24,333,911  
+  Dilutive effects of common share equivalents                                                  -                         -  
+  Dilutive weighted average outstanding shares of common stock                         24,391,961                24,333,911  
+  Basic and diluted net loss per share of common stock              $                      ( 0.00      $             ( 0.01  
+
+As of September 30, 2023, we have excluded1,700,000of stock options and2,148,000of warrants from the computation of diluted net loss per share since the effects are anti-dilutive. As of September 30, 2022, we have excluded1,700,000of stock options and4,026,650of warrants and100,000shares that would be issued from conversion of outstanding convertible notes from the computation of diluted net loss per share since the effects are anti-dilutive.
+
+  NOTE 8.      INCOME TAXES  
+ ─────────────────────────────
+
+Deferred income taxes arise from the temporary differences between financial statement and income tax recognition of net operating losses. These loss carryovers are limited under the Internal Revenue Code should a significant change in ownership occur. The Company accounts for income taxes pursuant to ASC Topic 740. The Company has made an early adoption of ASU 2015-17 Balance Sheet Classification of Deferred Taxes.
+
+Deferred income taxes arise from the temporary differences between financial statement and income tax recognition of net operating losses and other items. Loss carryovers are limited under the Internal Revenue Code should a significant change in ownership occur.
+
+The components of the deferred income tax assets and liabilities arising under ASC Topic 740 were as follows:
+
+                                             September 30,                                              
+                                             2023                                2022                   
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Deferred tax assets                        $                  2,539,487        $         2,651,840    
+  Deferred tax liabilities                                      -                          -            
+  Valuation allowance                                           ( 2,539,487                ( 2,651,840  
+  Net deferred tax assets/(liabilities)                         -                          -            
+
+The types of temporary differences between the tax basis of assets and their financial reporting amounts that give rise to a significant portion of the deferred assets and liabilities are as follows:
+
+                                    September 30,                                                                                              
+                                    2023                                                             2022                                      
+                                    Temporary                         Tax Effect                     Temporary                                 
+                                                                                                                                               
+                                    Difference                                                       Difference                                
+ ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Deferred tax assets                                                                                                                          
+  Net operating loss                $                  94,755         $               29,185         $               173,244        53,550     
+  Tax impact true up                                   -                              -                              -              -          
+  Other temporary differences                          ( 438,313      $               ( 135,000                      ( 721,657      ( 223,064  
+  Net deferred tax assets                              ( 343,558                      ( 105,815                      ( 548,413      ( 169,514  
+  Valuation allowance                                  343,558                        105,815                        548,413        169,514    
+  Total deferred tax asset                             -                              -                              -              -          
+  Deferred tax liabilities                                                                                                                     
+  Total deferred liability                             -                              -                              -              -          
+  Total net deferred tax asset      $                  -              $               -              $               -              -          
+
+Deferred income taxes arise from the temporary differences between financial statement and income tax recognition of net operating losses. These loss carryovers are limited under the Internal Revenue Code should a significant change in ownership occur.
+
+At September 30, 2023 and September 30, 2022, the Company had approximately $11,037,777and $11,383,482respectively, in unused federal net operating loss carryforwards, which will begin to expire principally in the year 2035. A deferred tax (liability)/asset at each date of approximately $2,539,487and $2,651,840resulting from the loss carryforwards and other temporary differences has been offset by a100% valuation allowance. The change in the valuation allowance for the years ended September 30, 
+2023 and September 30, 2022 was approximately $(112,353) and $(92,833).
+
+A reconciliation of the U.S. statutory federal income tax rate to the effective tax rate is as follows:
+
+                                                                            September 30,                            
+                                                                                     2023                            
+ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  U.S. Federal statutory graduated rate                                                          21.00        21.00  
+  State income tax rate, net of federal benefit                                                   9.80         9.91  
+  Total rate                                                                                     30.80        30.91  
+  Less: Net operating loss for which no benefit is currently available                         ( 30.80      ( 30.91  
+  Net effective rate                                                                              0.00         0.00  
+
+The Company’s income tax filings are subject to audit by various taxing authorities. The Company’s open audit periods are September 30, 2020, 2021, and 2022. In evaluating the Company’s provisions and accruals, future taxable income, and reversal of temporary differences, interpretations and tax planning strategies are considered. The Company believes its estimates are appropriate based on current facts and circumstances.
+
+We recorded a valuation allowance against all of our deferred tax assets as of both September 30, 2023, and September 30, 2022. We intend to continue maintaining a full valuation allowance on our deferred tax assets until there is sufficient evidence to support the reversal of all or some portion of these allowances. However, given our current earnings and anticipated future earnings, we believe that there is a reasonable possibility that within the near future, sufficient positive evidence may 
+become available to allow us to reach a conclusion that a significant portion of the valuation allowance will no longer be needed.
+
+  NOTE 9.      EQUITY  
+ ───────────────────────
+
+Preferred Stock
+
+The Company has authorized20,000,000shares of $.0001par value preferred stock. Nopreferred shares were outstanding at September 30, 2023 and 2022.
+
+Common Stock
+
+During the year ended September 30, 2023, we did notissue any stock.
+
+During the year ended September 30, 2022, we issued195,651shares of stock for services valued $90,000.
+
+Stock Options
+
+On August 18, 2017, our board of directors adopted a stock incentive plan (“the plan”) that provides for the grant of Incentive Stock Options, Non-Qualified Stock Options or Stock Bonuses to persons who are employees of the Company, employees of subsidiaries of the Company, directors, officers, and consultants. Under the plan, the Company may grant stock bonuses or options (up to a combined maximum of2,500,000shares or options). Each option allows for the purchase of one share of common stock, 
+subject to an exercise price and vesting schedule to be established by the board of directors at the time of the grant.
+
+In December 2021, the Company extended the expiration date of some stock options and recorded an additional stock option-based compensation expense of $119,346based on the fair value established using the Black Scholes option pricing model.
+
+Options Issuances in 2023
+
+The Company did not issue any options during the year ended September 30, 2023.
+
+Options Issuances in 2022
+
+The Company did notissue any options during the year ended September 30, 2022.
+
+The following table shows the stock option activity for the years ended September 30, 2023 and 2022:
+
+                                                                                                               Weighted                             
+                                                                                       Weighted                Average                              
+                                                                                       Average                 Contractual               Aggregate  
+                                                         Number of                     Exercise                Term                      Intrinsic  
+                                                         Shares                        Price                   (Years)                   Value      
+  Exercisable at September 30, 2022                                     1,700,000      $             1.94                       4.7      $          
+  Outstanding as of September 30, 2023                                  1,700,000      $             1.94                       3.4      $          
+  Vested and expected to vest at September 30, 2023                     1,700,000      $             1.94                       3.4      $          
+  Exercisable at September 30, 2023                                     1,700,000      $             1.94                       3.4      $          
+
+Warrants
+
+In December 2021, the Company extended the expiration date of certain warrants to December 31, 2024 and recorded a warrants revaluation expense based on a Black Sholes model calculation of $255,600.
+
+Warrant Issuances in 2023
+
+The Company did not issue any warrants during the year ended September 30, 2023.
+
+Warrant Issuances in 2022
+
+The Company did not issue any warrants during the year ended September 30, 2022.
+
+The following table shows the warrant activity for the years ended September 30, 2023 and 2022:
+
+                                                                                                    Weighted                              
+                                                                            Weighted                Average                               
+                                                                            Average                 Contractual                Aggregate  
+                                            Number of                       Exercise                Term                       Intrinsic  
+                                            Shares                          Price                   (Years)                    Value      
+  Outstanding as of September 30, 2022                       4,026,650                    1.40                       1.20      $          
+  Expired                                                  ( 1,878,650                    1.48                                            
+  Outstanding as of September 30, 2023                       2,148,000                    1.33                       1.13      $          
+  Exercisable at September 30, 2023                          2,148,000                    1.33                       1.13      $          
+
+  NOTE 10.      COMMITMENTS AND CONTINGENCIES  
+ ───────────────────────────────────────────────
+
+Operating Leases
+
+Land
+
+On October 17, 2016, the Company closed on the acquisition of the52.6-acre parcel of undeveloped land in Freetown, Massachusetts. The property is located approximately 47 miles southeast of Boston. The Company is developing the property as the MCC. Plans for the property may include the construction of sustainable greenhouse cultivation and processing facilities that will be leased or sold to Registered Marijuana Dispensaries under the Massachusetts Medical Marijuana Program.
+
+As part of a simultaneous transaction, the Company assigned the property rights to Massachusetts Medical Properties, LLC (“MMP”) for a nominal fee and entered a lease agreement pursuant to which MMP agreed to lease the property to the Company for an initial term of fifty (50) years. We have the option to extend the term of the lease for four (4) additional ten (10) year periods. The lease is a triple net lease, with the Company paying all real estate taxes, repairs, maintenance and insurance.
+
+The lease payments will be the greater of (a) $30,000per month; (b) $0.38per square foot per month of any structure built on the property; or (c)1.5% of all gross monthly sales of products sold by the Company, any assignee of the Company, or any subtenant of the Company. The lease payments will be adjusted up (but not down) every five (5) years by any increase in the Consumer Price Index.
+
+Effective October 1, 2019, the Company adopted Topic 842 and recorded ROU assets and lease liabilities of $6,980,957and $4,256,869, respectively. As part of the adoption, prepaid land lease balance of $2,724,088was classified as a component of the Company’s ROU assets.
+
+The Company completed the construction of Building 1 on the leased land and on September 1, 2019, BASK, commenced its15-year sublease of Building 1 which includes a base rent plus15% of BASK’s gross revenues. This sublease income is recorded as Rental income and Rental income - related party through November 2021 and as Rental income between December 2021 and through September 2023 on the Company’s consolidated statements of operations.
+
+As of September 30, 2023, the Company’s right-of-use assets were $6,708,843, the Company’s current maturities of operating lease liabilities were $12,204, and the Company’s noncurrent lease liabilities were $4,204,389. During the year ended September 30, 2023, the Company had operating cash flows from operating leases of $341,450.
+
+The table below presents lease related terms and discount rates as of September 30, 2023.
+
+                                             As of                     
+                                                                       
+                                             September 30,             
+                                                                       
+                                             2023                      
+ ───────────────────────────────────────────────────────────────────────
+  Weighted average remaining lease term                                
+  Operating leases                                              43.00  
+  Weighted average discount rate                                       
+  Operating leases                                                7.9  
+
+The reconciliation of the maturities of the operating leases to the lease liabilities recorded in the Consolidated Balance Sheet as of September 30, 2023 are as follows:
+
+  2023                                                       341,500  
+  2024                                                       341,500  
+  2025                                                       341,500  
+  2026                                                       341,500  
+  2027                                                       341,500  
+  Thereafter                                              12,977,000  
+  Total lease payments                                    14,684,500  
+  Less: Interest                                        ( 10,467,907  
+                                                           4,216,593  
+  Less: operating lease liability, current portion          ( 12,204  
+  Operating lease liability, long term                     4,204,389  
+
+Office space
+
+The Company leases its office space located at 1555 Blake St., Unit 502, Denver, CO 80202 for $2,500per month with a lease term of less than 12 months from SCP, a related party. See Note 6.
+
+Aggregate rental expense under all leases totaled $481,375and $475,249for the years ended September 30, 2023 and 2022, respectively.
+
+  NOTE 11.      SUBSEQUENT EVENTS  
+ ───────────────────────────────────
+
+On November 30, 2023, the maturity date of the $4,500,000loan was extended to January 31, 2024 while all other provisions of the note remained the same.
+
+F-16
+
+SIGNATURES
+
+In accordance with Section 13 or 15(d) of the Exchange Act, the Registrant has caused this Report to be signed on its behalf by the undersigned, thereunto duly authorized on the 22nd day of December, 2023.
+
+  AMERICANN, INC.                                              
+  By:                  /s/ Timothy Keogh                       
+                       Timothy Keogh, Chief Executive Officer  
+
+Pursuant to the requirements of the Securities Exchange Act of l934, this Report has been signed below by the following persons on behalf of the Registrant and in the capacities and on the dates indicated.
+
+  Signature                   Title                                                      Date               
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  /s/ Timothy Keogh                                                                                         
+  Timothy Keogh               Chief Executive Officer and a Director                     December 22, 2023  
+  /s/ Benjamin J. Barton                                                                                    
+  Benjamin J. Barton          Chief Financial and Accounting Officer and a Director      December 22, 2023  
+  /s/ J. Tyler Opel                                                                                         
+  J. Tyler Opel               Director                                                   December 22, 2023  
+
+21

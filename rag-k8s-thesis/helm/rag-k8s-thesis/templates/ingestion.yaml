@@ -33,8 +33,29 @@ spec:
               value: {{ .Values.ingestion.env.chunkSize | quote }}
             - name: CHUNK_OVERLAP
               value: {{ .Values.ingestion.env.chunkOverlap | quote }}
+            - name: EMBEDDING_BATCH_SIZE
+              value: {{ .Values.ingestion.env.embeddingBatchSize | quote }}
+            - name: MAX_DOCS
+              value: {{ .Values.ingestion.env.maxDocs | quote }}
+            {{- if .Values.ingestion.dataset.enabled }}
+            - name: DATA_DIR
+              value: {{ .Values.ingestion.dataset.dataDir | quote }}
+            {{- end }}
+          {{- if .Values.ingestion.dataset.enabled }}
+          volumeMounts:
+            - name: sec-rag-dataset
+              mountPath: {{ .Values.ingestion.dataset.mountPath | quote }}
+              readOnly: true
+          {{- end }}
           resources:
             {{- toYaml .Values.ingestion.resources | nindent 12 }}
+      {{- if .Values.ingestion.dataset.enabled }}
+      volumes:
+        - name: sec-rag-dataset
+          hostPath:
+            path: {{ .Values.ingestion.dataset.hostPath | quote }}
+            type: Directory
+      {{- end }}
 {{- end }}
 {{- if and .Values.ingestion.enabled .Values.ingestion.cronjob.enabled }}
 ---
@@ -77,6 +98,27 @@ spec:
                   value: {{ .Values.ingestion.env.chunkSize | quote }}
                 - name: CHUNK_OVERLAP
                   value: {{ .Values.ingestion.env.chunkOverlap | quote }}
+                - name: EMBEDDING_BATCH_SIZE
+                  value: {{ .Values.ingestion.env.embeddingBatchSize | quote }}
+                - name: MAX_DOCS
+                  value: {{ .Values.ingestion.env.maxDocs | quote }}
+                {{- if .Values.ingestion.dataset.enabled }}
+                - name: DATA_DIR
+                  value: {{ .Values.ingestion.dataset.dataDir | quote }}
+                {{- end }}
+              {{- if .Values.ingestion.dataset.enabled }}
+              volumeMounts:
+                - name: sec-rag-dataset
+                  mountPath: {{ .Values.ingestion.dataset.mountPath | quote }}
+                  readOnly: true
+              {{- end }}
               resources:
                 {{- toYaml .Values.ingestion.resources | nindent 16 }}
+          {{- if .Values.ingestion.dataset.enabled }}
+          volumes:
+            - name: sec-rag-dataset
+              hostPath:
+                path: {{ .Values.ingestion.dataset.hostPath | quote }}
+                type: Directory
+          {{- end }}
 {{- end }}
