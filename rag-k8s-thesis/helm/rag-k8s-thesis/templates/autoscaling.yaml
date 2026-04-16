@@ -1,0 +1,49 @@
+{{- if and .Values.backend.enabled .Values.backend.autoscaling.enabled }}
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: rag-backend
+  namespace: {{ include "rag-k8s-thesis.namespace" . }}
+  labels:
+    app.kubernetes.io/name: rag-backend
+    {{- include "rag-k8s-thesis.labels" . | nindent 4 }}
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: rag-backend
+  minReplicas: {{ .Values.backend.autoscaling.minReplicas }}
+  maxReplicas: {{ .Values.backend.autoscaling.maxReplicas }}
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: {{ .Values.backend.autoscaling.targetCPUUtilizationPercentage }}
+---
+{{- end }}
+{{- if and .Values.ollama.enabled .Values.ollama.autoscaling.enabled }}
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: ollama
+  namespace: {{ include "rag-k8s-thesis.namespace" . }}
+  labels:
+    app.kubernetes.io/name: ollama
+    {{- include "rag-k8s-thesis.labels" . | nindent 4 }}
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: ollama
+  minReplicas: {{ .Values.ollama.autoscaling.minReplicas }}
+  maxReplicas: {{ .Values.ollama.autoscaling.maxReplicas }}
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: {{ .Values.ollama.autoscaling.targetCPUUtilizationPercentage }}
+{{- end }}
