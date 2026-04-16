@@ -15,8 +15,8 @@ pipeline = RagPipeline()
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    if settings.warmup_ollama_on_startup:
-        await asyncio.to_thread(pipeline.warmup_ollama)
+    if settings.warmup_llm_on_startup:
+        await asyncio.to_thread(pipeline.warmup_llm)
     yield
 
 

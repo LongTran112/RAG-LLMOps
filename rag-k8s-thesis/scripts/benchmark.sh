@@ -13,6 +13,8 @@ CURL_MAX_TIME="${CURL_MAX_TIME:-1800}"
 CONNECT_TIMEOUT="${CONNECT_TIMEOUT:-10}"
 REQUEST_RETRIES="${REQUEST_RETRIES:-3}"
 RETRY_SLEEP_SECONDS="${RETRY_SLEEP_SECONDS:-5}"
+LLM_PROVIDER="${LLM_PROVIDER:-ollama}"
+LLM_BASE_URL="${LLM_BASE_URL:-http://ollama:11434}"
 # For thesis benchmarks, disable product caps so latency/quality comparisons are not truncated.
 BENCHMARK_PRODUCT_LATENCY_MODE="${BENCHMARK_PRODUCT_LATENCY_MODE:-false}"
 BENCHMARK_OLLAMA_MAX_OUTPUT_TOKENS="${BENCHMARK_OLLAMA_MAX_OUTPUT_TOKENS:-0}"
@@ -120,9 +122,13 @@ ensure_port_forward
 
 for model in "${MODELS[@]}"; do
   echo "[$(date)] Switching model to ${model}" | tee -a "${LOG_FILE}"
-  kubectl exec -n "${NAMESPACE}" deployment/ollama -- ollama pull "${model}" >/dev/null
+  if [ "${LLM_PROVIDER}" = "ollama" ]; then
+    kubectl exec -n "${NAMESPACE}" deployment/ollama -- ollama pull "${model}" >/dev/null
+  fi
   kubectl set env deployment/rag-backend -n "${NAMESPACE}" \
-    OLLAMA_MODEL="${model}" \
+    LLM_PROVIDER="${LLM_PROVIDER}" \
+    LLM_BASE_URL="${LLM_BASE_URL}" \
+    LLM_MODEL="${model}" \
     REQUEST_TIMEOUT_SECONDS="${REQUEST_TIMEOUT_SECONDS:-1800}" \
     PRODUCT_LATENCY_MODE="${BENCHMARK_PRODUCT_LATENCY_MODE}" \
     OLLAMA_MAX_OUTPUT_TOKENS="${BENCHMARK_OLLAMA_MAX_OUTPUT_TOKENS}" \

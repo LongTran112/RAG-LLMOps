@@ -1,0 +1,2 @@
+timestamp,model,prompt_id,repetition,http_code,total_time_s
+2026-04-16T08:42:41,phi3:mini,P1,1,200,38.514860

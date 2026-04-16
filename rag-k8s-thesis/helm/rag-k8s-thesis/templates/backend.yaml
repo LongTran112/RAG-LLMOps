@@ -58,14 +58,16 @@ spec:
               value: {{ .Values.backend.env.ollamaMaxOutputTokens | quote }}
             - name: OLLAMA_TEMPERATURE
               value: {{ .Values.backend.env.ollamaTemperature | quote }}
-            - name: WARMUP_OLLAMA_ON_STARTUP
-              value: {{ .Values.backend.env.warmupOllamaOnStartup | quote }}
+            - name: LLM_PROVIDER
+              value: {{ .Values.backend.env.llmProvider | quote }}
+            - name: LLM_BASE_URL
+              value: {{ .Values.backend.env.llmBaseUrl | quote }}
+            - name: LLM_MODEL
+              value: {{ .Values.backend.env.llmModel | quote }}
+            - name: WARMUP_LLM_ON_STARTUP
+              value: {{ .Values.backend.env.warmupLlmOnStartup | quote }}
             - name: EMBEDDING_MODEL_NAME
               value: {{ .Values.backend.env.embeddingModelName | quote }}
-            - name: OLLAMA_BASE_URL
-              value: http://ollama:{{ .Values.ollama.service.port }}
-            - name: OLLAMA_MODEL
-              value: {{ .Values.backend.env.ollamaModel | quote }}
             - name: REQUEST_TIMEOUT_SECONDS
               value: {{ .Values.backend.env.requestTimeoutSeconds | quote }}
           resources:

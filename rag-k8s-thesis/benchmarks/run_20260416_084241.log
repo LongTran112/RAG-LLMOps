@@ -1,0 +1,7 @@
+[Thu Apr 16 08:42:41 CEST 2026] Starting benchmark run
+[Thu Apr 16 08:42:41 CEST 2026] Result CSV: benchmarks/results_20260416_084241.csv
+[Thu Apr 16 08:42:41 CEST 2026] Benchmark knobs: PRODUCT_LATENCY_MODE=false OLLAMA_MAX_OUTPUT_TOKENS=0 QDRANT_TOP_K=4
+[Thu Apr 16 08:42:43 CEST 2026] Switching model to phi3:mini
+[Thu Apr 16 08:46:46 CEST 2026] model=phi3:mini prompt=P1 rep=1 code=200 time=36.976832s
+[Thu Apr 16 08:46:46 CEST 2026] Benchmark run complete
+[Thu Apr 16 08:46:46 CEST 2026] Output: benchmarks/results_20260416_084241.csv

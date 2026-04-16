@@ -16,20 +16,22 @@ class Settings(BaseSettings):
 
     embedding_model_name: str = "sentence-transformers/all-MiniLM-L6-v2"
 
-    ollama_base_url: str = "http://ollama:11434"
-    ollama_model: str = "qwen2.5:3b"
+    # Inference provider: "ollama" (default) or "vllm" (OpenAI-compatible endpoint).
+    llm_provider: str = "ollama"
+    llm_base_url: str = "http://ollama:11434"
+    llm_model: str = "qwen2.5:3b"
 
     # Large local models (especially on CPU) can take many minutes for a first response.
     request_timeout_seconds: int = 1800
 
     # When true: smaller retrieval budget + capped decoder output (unless max tokens is 0).
     product_latency_mode: bool = True
-    # Max new tokens from Ollama; set 0 to disable the cap (benchmark / quality runs).
+    # Max new tokens from LLM provider; set 0 to disable the cap (benchmark / quality runs).
     ollama_max_output_tokens: int = 256
     ollama_temperature: float = 0.1
 
     # Loads the configured model once at startup to reduce first-user cold latency.
-    warmup_ollama_on_startup: bool = True
+    warmup_llm_on_startup: bool = True
 
     model_config = SettingsConfigDict(env_file=".env", env_prefix="", case_sensitive=False)
 

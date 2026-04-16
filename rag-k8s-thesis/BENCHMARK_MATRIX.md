@@ -24,7 +24,9 @@ switch_model () {
   MODEL="$1"
   kubectl exec -n rag-thesis deployment/ollama -- ollama pull "$MODEL"
   kubectl set env deployment/rag-backend -n rag-thesis \
-    OLLAMA_MODEL="$MODEL" \
+    LLM_PROVIDER="ollama" \
+    LLM_BASE_URL="http://ollama:11434" \
+    LLM_MODEL="$MODEL" \
     REQUEST_TIMEOUT_SECONDS="${REQUEST_TIMEOUT_SECONDS:-1800}"
   kubectl rollout status deployment/rag-backend -n rag-thesis --timeout=1200s
   echo "Switched to model: $MODEL"
@@ -145,3 +147,17 @@ Outputs are written to:
 
 - `benchmarks/results_<timestamp>.csv`
 - `benchmarks/run_<timestamp>.log`
+
+## 11) One-command profile comparison
+
+Run fast-vs-quality comparison for the same model:
+
+```bash
+MODELS_CSV="phi3:mini" PROMPT_IDS_CSV="P1,P2,P3" REPETITIONS=2 ./scripts/benchmark_profiles.sh
+```
+
+Use vLLM endpoint instead of Ollama:
+
+```bash
+LLM_PROVIDER="vllm" LLM_BASE_URL="http://vllm:8000" MODELS_CSV="microsoft/Phi-3-mini-4k-instruct" ./scripts/benchmark_profiles.sh
+```

@@ -57,12 +57,14 @@ spec:
               value: "256"
             - name: OLLAMA_TEMPERATURE
               value: "0.1"
-            - name: WARMUP_OLLAMA_ON_STARTUP
-              value: "true"
-            - name: OLLAMA_BASE_URL
+            - name: LLM_PROVIDER
+              value: ollama
+            - name: LLM_BASE_URL
               value: http://ollama:11434
-            - name: OLLAMA_MODEL
+            - name: LLM_MODEL
               value: qwen2.5:3b
+            - name: WARMUP_LLM_ON_STARTUP
+              value: "true"
             - name: REQUEST_TIMEOUT_SECONDS
               value: "900"
           resources:

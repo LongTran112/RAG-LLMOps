@@ -62,15 +62,17 @@ backend:
     path: /
     pathType: Prefix
   env:
+    llmProvider: ollama
+    llmBaseUrl: http://ollama:11434
+    llmModel: qwen2.5:3b
     qdrantCollection: thesis_docs
     qdrantTopK: 4
     qdrantTopKProduct: 3
     productLatencyMode: true
     ollamaMaxOutputTokens: 256
     ollamaTemperature: 0.1
-    warmupOllamaOnStartup: true
+    warmupLlmOnStartup: true
     embeddingModelName: sentence-transformers/all-MiniLM-L6-v2
-    ollamaModel: qwen2.5:3b
     requestTimeoutSeconds: 900
   resources:
     requests:
