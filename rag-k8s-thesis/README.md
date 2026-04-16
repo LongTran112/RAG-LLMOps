@@ -78,6 +78,52 @@ kubectl apply -f k8s/ingestion/ingestion-job.yaml
 kubectl apply -f k8s/frontend/frontend.yaml
 ```
 
+## GPU nodes for faster inference (cloud)
+
+If you deploy on a cloud Kubernetes cluster with NVIDIA GPU nodes, inference latency can drop significantly versus CPU-only Minikube.
+
+1) Install the NVIDIA device plugin:
+
+```bash
+kubectl apply -f k8s/llm-inference/nvidia-device-plugin.yaml
+kubectl get nodes "-o=custom-columns=NAME:.metadata.name,GPU:.status.allocatable.nvidia\\.com/gpu"
+```
+
+2) Deploy Ollama on GPU nodes:
+
+```bash
+kubectl apply -f k8s/llm-inference/ollama-gpu.yaml
+kubectl rollout status deployment/ollama -n rag-thesis
+```
+
+3) (Optional) Deploy vLLM on GPU nodes:
+
+```bash
+kubectl apply -f k8s/llm-inference/vllm-gpu.yaml
+kubectl rollout status deployment/vllm -n rag-thesis
+```
+
+4) Verify GPU allocation:
+
+```bash
+kubectl describe pod -n rag-thesis -l app.kubernetes.io/name=ollama | rg "nvidia.com/gpu|Node:"
+kubectl exec -n rag-thesis deployment/ollama -- ollama ps
+```
+
+### Helm GPU toggle for Ollama
+
+Set in `helm/rag-k8s-thesis/values.yaml`:
+
+- `ollama.gpu.enabled: true`
+- `ollama.gpu.count: 1`
+- `ollama.gpu.nodeSelector` and `ollama.gpu.tolerations` to match your GPU node pool labels/taints.
+
+Install/upgrade:
+
+```bash
+helm upgrade --install rag-poc ./helm/rag-k8s-thesis --namespace rag-thesis --create-namespace
+```
+
 Optional scheduled ingestion:
 
 ```bash

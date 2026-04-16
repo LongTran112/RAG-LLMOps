@@ -61,8 +61,19 @@ spec:
               value: {{ .Values.ollama.contextLength | quote }}
             - name: OLLAMA_KEEP_ALIVE
               value: {{ .Values.ollama.keepAlive | quote }}
+          {{- if .Values.ollama.gpu.enabled }}
+          resources:
+            limits:
+              nvidia.com/gpu: {{ .Values.ollama.gpu.count | int }}
+              cpu: {{ .Values.ollama.resources.limits.cpu | quote }}
+              memory: {{ .Values.ollama.resources.limits.memory | quote }}
+            requests:
+              cpu: {{ .Values.ollama.resources.requests.cpu | quote }}
+              memory: {{ .Values.ollama.resources.requests.memory | quote }}
+          {{- else }}
           resources:
             {{- toYaml .Values.ollama.resources | nindent 12 }}
+          {{- end }}
           volumeMounts:
             - name: ollama-models
               mountPath: /root/.ollama
@@ -89,4 +100,10 @@ spec:
         - name: ollama-models
           persistentVolumeClaim:
             claimName: ollama-models-pvc
+      {{- if .Values.ollama.gpu.enabled }}
+      nodeSelector:
+        {{- toYaml .Values.ollama.gpu.nodeSelector | nindent 8 }}
+      tolerations:
+        {{- toYaml .Values.ollama.gpu.tolerations | nindent 8 }}
+      {{- end }}
 {{- end }}

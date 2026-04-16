@@ -1,0 +1,5 @@
+timestamp,model,prompt_id,repetition,http_code,total_time_s
+2026-04-16T08:15:17,phi3:mini,P1,1,200,14.397998
+2026-04-16T08:17:36,phi3:mini,P2,1,200,138.810885
+2026-04-16T08:21:07,qwen2.5:3b,P1,1,200,39.425533
+2026-04-16T08:25:27,qwen2.5:3b,P2,1,200,75.156399

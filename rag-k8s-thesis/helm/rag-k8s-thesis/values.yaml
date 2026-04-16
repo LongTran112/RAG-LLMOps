@@ -39,6 +39,15 @@ ollama:
     limits:
       cpu: 2000m
       memory: 10Gi
+  gpu:
+    enabled: false
+    count: 1
+    nodeSelector:
+      accelerator: nvidia
+    tolerations:
+      - key: nvidia.com/gpu
+        operator: Exists
+        effect: NoSchedule
 
 backend:
   enabled: true
