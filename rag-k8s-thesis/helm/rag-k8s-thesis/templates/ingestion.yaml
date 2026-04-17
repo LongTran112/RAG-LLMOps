@@ -41,20 +41,28 @@ spec:
             - name: DATA_DIR
               value: {{ .Values.ingestion.dataset.dataDir | quote }}
             {{- end }}
+            {{- if and .Values.ingestion.dataset.enabled (eq (.Values.ingestion.dataset.source | default "hostPath") "gcs") }}
+            - name: GCS_DATA_URI
+              value: {{ .Values.ingestion.dataset.gcsUri | quote }}
+            {{- end }}
           {{- if .Values.ingestion.dataset.enabled }}
           volumeMounts:
             - name: sec-rag-dataset
               mountPath: {{ .Values.ingestion.dataset.mountPath | quote }}
-              readOnly: true
+              readOnly: {{ ne (.Values.ingestion.dataset.source | default "hostPath") "gcs" }}
           {{- end }}
           resources:
             {{- toYaml .Values.ingestion.resources | nindent 12 }}
       {{- if .Values.ingestion.dataset.enabled }}
       volumes:
         - name: sec-rag-dataset
+          {{- if eq (.Values.ingestion.dataset.source | default "hostPath") "gcs" }}
+          emptyDir: {}
+          {{- else }}
           hostPath:
             path: {{ .Values.ingestion.dataset.hostPath | quote }}
             type: Directory
+          {{- end }}
       {{- end }}
 {{- end }}
 {{- if and .Values.ingestion.enabled .Values.ingestion.cronjob.enabled }}
@@ -106,19 +114,27 @@ spec:
                 - name: DATA_DIR
                   value: {{ .Values.ingestion.dataset.dataDir | quote }}
                 {{- end }}
+                {{- if and .Values.ingestion.dataset.enabled (eq (.Values.ingestion.dataset.source | default "hostPath") "gcs") }}
+                - name: GCS_DATA_URI
+                  value: {{ .Values.ingestion.dataset.gcsUri | quote }}
+                {{- end }}
               {{- if .Values.ingestion.dataset.enabled }}
               volumeMounts:
                 - name: sec-rag-dataset
                   mountPath: {{ .Values.ingestion.dataset.mountPath | quote }}
-                  readOnly: true
+                  readOnly: {{ ne (.Values.ingestion.dataset.source | default "hostPath") "gcs" }}
               {{- end }}
               resources:
                 {{- toYaml .Values.ingestion.resources | nindent 16 }}
           {{- if .Values.ingestion.dataset.enabled }}
           volumes:
             - name: sec-rag-dataset
+              {{- if eq (.Values.ingestion.dataset.source | default "hostPath") "gcs" }}
+              emptyDir: {}
+              {{- else }}
               hostPath:
                 path: {{ .Values.ingestion.dataset.hostPath | quote }}
                 type: Directory
+              {{- end }}
           {{- end }}
 {{- end }}

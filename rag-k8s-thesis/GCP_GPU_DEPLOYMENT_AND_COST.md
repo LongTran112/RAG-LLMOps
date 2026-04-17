@@ -31,6 +31,16 @@ That is why the following steps fail:
 
 ## 2) Fix steps (in order)
 
+### 0. Authentication + project sanity checks
+
+```bash
+gcloud auth login
+gcloud auth application-default login
+gcloud config set project abstract-arc-480317-s4
+gcloud auth list
+gcloud config list project
+```
+
 ### A. Enable billing in Console (required)
 
 Open:
@@ -41,11 +51,19 @@ Link the project to an active billing account.
 
 Wait 2-5 minutes for propagation.
 
+Optional CLI check (after linking billing):
+
+```bash
+gcloud beta billing projects describe abstract-arc-480317-s4
+```
+
 ### B. Re-run setup commands
+
+`./scripts/deploy_gcp_gpu.sh` defaults to **`europe-west3` (Frankfurt)** so the GKE cluster, Artifact Registry, and GPU node pool stay in one region (a US cluster cannot use a EU GPU pool).
 
 ```bash
 PROJECT_ID="abstract-arc-480317-s4"
-REGION="us-central1"
+REGION="europe-west3"
 CLUSTER="rag-thesis-gpu"
 REPO="rag-thesis"
 IMAGE_TAG="gcp-gpu-v1"
@@ -88,6 +106,14 @@ gcloud container node-pools create gpu-pool \
   --node-taints=nvidia.com/gpu=present:NoSchedule
 
 gcloud container clusters get-credentials "$CLUSTER" --region "$REGION"
+
+# Strongly recommended for bursty benchmark traffic:
+gcloud container node-pools update gpu-pool \
+  --cluster "$CLUSTER" \
+  --region "$REGION" \
+  --enable-autoscaling \
+  --min-nodes 1 \
+  --max-nodes 6
 ```
 
 ### C. Deploy app on GKE (Helm, GPU Ollama)
@@ -105,6 +131,14 @@ helm upgrade --install rag-poc ./helm/rag-k8s-thesis \
   --set ollama.gpu.tolerations[0].key=nvidia.com/gpu \
   --set ollama.gpu.tolerations[0].operator=Exists \
   --set ollama.gpu.tolerations[0].effect=NoSchedule \
+  --set backend.autoscaling.enabled=true \
+  --set backend.autoscaling.minReplicas=2 \
+  --set backend.autoscaling.maxReplicas=12 \
+  --set backend.autoscaling.targetCPUUtilizationPercentage=65 \
+  --set ollama.autoscaling.enabled=true \
+  --set ollama.autoscaling.minReplicas=1 \
+  --set ollama.autoscaling.maxReplicas=6 \
+  --set ollama.autoscaling.targetCPUUtilizationPercentage=70 \
   --set backend.env.llmProvider=ollama \
   --set backend.env.llmBaseUrl=http://ollama:11434 \
   --set backend.env.llmModel=phi3:mini
@@ -122,8 +156,15 @@ kubectl apply -f k8s/llm-inference/ollama-gpu-hpa.yaml
 ```bash
 kubectl get nodes -o wide
 kubectl get pods -n rag-thesis -o wide
+kubectl get hpa -n rag-thesis
 kubectl describe pod -n rag-thesis -l app.kubernetes.io/name=ollama | rg "Node:|nvidia.com/gpu"
 kubectl exec -n rag-thesis deployment/ollama -- ollama ps
+```
+
+If `kubectl get hpa` shows `unknown` metrics, install metrics-server:
+
+```bash
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 ```
 
 ## 3) Cost estimate (GCP)
@@ -138,7 +179,7 @@ kubectl exec -n rag-thesis deployment/ollama -- ollama ps
 - Persistent disks for Qdrant + Ollama models
 - Minimal network egress (if mostly in-cluster traffic)
 
-### Rough hourly estimate (us-central1, on-demand style)
+### Rough hourly estimate (europe-west3 or similar EU region, on-demand style)
 
 - CPU pool total: ~`$0.25 - $0.35 / hour`
 - GPU node (g2-standard-8 + L4): ~`$0.90 - $1.20 / hour`
@@ -172,3 +213,9 @@ Estimated total:
 Expected spend range for meaningful results:
 
 - **~`$8 - $20`** total, if you tear down promptly after each run.
+
+
+
+gcloud container clusters describe rag-thesis-gpu \
+  --region europe-west3 \
+  --format="value(status)"

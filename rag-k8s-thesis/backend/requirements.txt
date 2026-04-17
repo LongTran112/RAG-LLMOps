@@ -1,8 +1,3 @@
 fastapi
 uvicorn[standard]
-langchain
-langchain-community
-qdrant-client
-sentence-transformers
 pydantic-settings
-requests

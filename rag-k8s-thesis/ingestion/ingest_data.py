@@ -12,6 +12,7 @@ from qdrant_client import QdrantClient
 from qdrant_client.http.models import Distance, PointStruct, VectorParams
 
 DATA_DIR = Path(os.getenv("DATA_DIR", "/data/sec_rag_dataset_50"))
+GCS_DATA_URI = os.getenv("GCS_DATA_URI", "").strip()  # e.g. gs://my-bucket/sec_rag_dataset_50
 COLLECTION_NAME = os.getenv("QDRANT_COLLECTION", "thesis_docs")
 QDRANT_HOST = os.getenv("QDRANT_HOST", "qdrant")
 QDRANT_PORT = int(os.getenv("QDRANT_PORT", "6333"))
@@ -33,8 +34,45 @@ def iter_batches(items: list, batch_size: int) -> list[list]:
     return [items[idx : idx + batch_size] for idx in range(0, len(items), batch_size)]
 
 
+def download_gcs_prefix_to_dir(gs_uri: str, dest: Path) -> None:
+    """Download objects under gs://bucket/prefix into dest (keeps relative paths)."""
+    from google.cloud import storage
+
+    if not gs_uri.startswith("gs://"):
+        raise ValueError("GCS_DATA_URI must start with gs://")
+    rest = gs_uri[5:]
+    if "/" in rest:
+        bucket_name, prefix = rest.split("/", 1)
+        prefix = prefix.strip("/")
+    else:
+        bucket_name, prefix = rest, ""
+    if prefix:
+        prefix = f"{prefix}/"
+    dest.mkdir(parents=True, exist_ok=True)
+    client = storage.Client()
+    bucket = client.bucket(bucket_name)
+    count = 0
+    for blob in bucket.list_blobs(prefix=prefix if prefix else None):
+        name = blob.name
+        if name.endswith("/"):
+            continue
+        rel = name[len(prefix) :] if prefix else name
+        if not rel:
+            continue
+        local_path = dest / rel
+        local_path.parent.mkdir(parents=True, exist_ok=True)
+        blob.download_to_filename(str(local_path))
+        count += 1
+    if count == 0:
+        raise RuntimeError(f"No objects downloaded from {gs_uri!r} (check bucket IAM and prefix)")
+    print(f"Downloaded {count} files from {gs_uri} -> {dest}")
+
+
 def main() -> None:
     start = perf_counter()
+    if GCS_DATA_URI:
+        print(f"Syncing dataset from {GCS_DATA_URI} into {DATA_DIR}")
+        download_gcs_prefix_to_dir(GCS_DATA_URI, DATA_DIR)
     print(f"Starting ingestion from DATA_DIR={DATA_DIR}")
     loader = DirectoryLoader(str(DATA_DIR), glob="**/*.txt", loader_cls=TextLoader)
     docs = loader.load()

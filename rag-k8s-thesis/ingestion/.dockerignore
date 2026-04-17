@@ -1,0 +1,14 @@
+.git
+.venv
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.pytest_cache
+.mypy_cache
+tests/
+*.md
+# Only the small sample lives in ./data inside the repo; the real dataset is mounted
+# at runtime from GCS or a PVC, so keep uploads to Cloud Build tiny.
+data/

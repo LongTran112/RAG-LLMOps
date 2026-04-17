@@ -97,9 +97,12 @@ ingestion:
   image: rag-k8s-thesis/ingestion:latest
   dataset:
     enabled: true
+    # hostPath = Minikube/local node path. gcs = download from gs://bucket/prefix into emptyDir (needs GKE SA + bucket IAM).
+    source: hostPath
     hostPath: /host/MasterThesis/sec_rag_dataset_50
     mountPath: /data/sec_rag_dataset_50
     dataDir: /data/sec_rag_dataset_50
+    gcsUri: ""
   job:
     enabled: true
     backoffLimit: 2
