@@ -1,0 +1,61 @@
+# Minimal values file for kube-prometheus-stack, sized for a thesis GKE
+# deployment (1 standard node pool + 1 GPU node pool).
+#
+# Install:
+#   helm upgrade --install kps prometheus-community/kube-prometheus-stack \
+#     --namespace monitoring --create-namespace \
+#     -f k8s/observability/kube-prometheus-stack-values.yaml
+
+grafana:
+  adminPassword: "thesis-grafana-admin"
+  service:
+    type: ClusterIP
+  persistence:
+    enabled: true
+    size: 5Gi
+  # Provision the DCGM + RAG dashboards automatically on first boot by
+  # mounting them via the Grafana sidecar. ConfigMaps need the
+  # grafana_dashboard=1 label.
+  sidecar:
+    dashboards:
+      enabled: true
+      label: grafana_dashboard
+      labelValue: "1"
+      searchNamespace: ALL
+
+prometheus:
+  prometheusSpec:
+    retention: 7d
+    resources:
+      requests:
+        cpu: 200m
+        memory: 512Mi
+      limits:
+        cpu: 1
+        memory: 2Gi
+    storageSpec:
+      volumeClaimTemplate:
+        spec:
+          accessModes: ["ReadWriteOnce"]
+          resources:
+            requests:
+              storage: 20Gi
+    # Scrape our custom exporters (DCGM) + any ServiceMonitors we create.
+    serviceMonitorSelectorNilUsesHelmValues: false
+    podMonitorSelectorNilUsesHelmValues: false
+
+alertmanager:
+  enabled: false
+
+# Shrink node-exporter so it doesn't fight Ollama for CPU on the GPU node.
+nodeExporter:
+  enabled: true
+
+kubeStateMetrics:
+  enabled: true
+
+# We don't use thanos/prometheus-adapter for the PoC.
+thanosRuler:
+  enabled: false
+prometheus-adapter:
+  enabled: false

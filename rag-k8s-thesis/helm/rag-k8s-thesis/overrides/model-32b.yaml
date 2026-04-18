@@ -1,0 +1,30 @@
+# Helm overlay for the qwen2.5:32b thesis row.
+#
+# qwen2.5:32b Q4_K_M is ~20 GB. On an nvidia-l4 (24 GB VRAM) this is tight --
+# if Ollama fails to load, redeploy GKE with GPU_MACHINE_TYPE=a2-highgpu-1g
+# (nvidia-a100-40gb) via scripts/deploy_gcp_gpu.sh and rerun only this row.
+
+ollama:
+  modelName: qwen2.5:32b
+  # Smaller context to leave headroom for KV cache on the L4.
+  contextLength: 2048
+  resources:
+    requests:
+      cpu: 3000m
+      memory: 28Gi
+    limits:
+      cpu: 8000m
+      memory: 40Gi
+  # Disable HPA replicaCount scaling for 32B: each replica pins one GPU and
+  # our default cluster only has 1-2 GPUs. Manual scale if more GPUs exist.
+  autoscaling:
+    enabled: false
+  replicaCount: 1
+
+backend:
+  env:
+    llmModel: qwen2.5:32b
+    llmFallbackModel: phi3:mini
+    # Increase request timeout: first-query latency on a 32B model after
+    # cold load can exceed 5 minutes even on an A100.
+    requestTimeoutSeconds: 1800

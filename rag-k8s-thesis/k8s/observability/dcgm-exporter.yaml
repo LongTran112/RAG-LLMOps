@@ -1,0 +1,102 @@
+# NVIDIA DCGM exporter DaemonSet on the GPU node pool.
+#
+# Prereqs:
+#   - NVIDIA device plugin installed (k8s/llm-inference/nvidia-device-plugin.yaml)
+#   - kube-prometheus-stack installed so the ServiceMonitor below is scraped
+#
+# The DaemonSet is pinned to accelerator=nvidia nodes (matches the node label
+# set by scripts/deploy_gcp_gpu.sh) and tolerates the nvidia.com/gpu taint.
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: gpu-operator
+  labels:
+    name: gpu-operator
+---
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: dcgm-exporter
+  namespace: gpu-operator
+  labels:
+    app.kubernetes.io/name: dcgm-exporter
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: dcgm-exporter
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: dcgm-exporter
+    spec:
+      tolerations:
+        - key: nvidia.com/gpu
+          operator: Exists
+          effect: NoSchedule
+      nodeSelector:
+        accelerator: nvidia
+      hostNetwork: true
+      hostPID: true
+      containers:
+        - name: dcgm-exporter
+          image: nvcr.io/nvidia/k8s/dcgm-exporter:3.3.5-3.4.0-ubuntu22.04
+          env:
+            - name: DCGM_EXPORTER_LISTEN
+              value: ":9400"
+            - name: DCGM_EXPORTER_KUBERNETES
+              value: "true"
+          ports:
+            - name: metrics
+              containerPort: 9400
+              hostPort: 9400
+          securityContext:
+            runAsNonRoot: false
+            runAsUser: 0
+            capabilities:
+              add: ["SYS_ADMIN"]
+          resources:
+            requests:
+              cpu: 50m
+              memory: 64Mi
+            limits:
+              cpu: 500m
+              memory: 256Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dcgm-exporter
+  namespace: gpu-operator
+  labels:
+    app.kubernetes.io/name: dcgm-exporter
+spec:
+  type: ClusterIP
+  clusterIP: None
+  selector:
+    app.kubernetes.io/name: dcgm-exporter
+  ports:
+    - name: metrics
+      port: 9400
+      targetPort: 9400
+---
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: dcgm-exporter
+  namespace: gpu-operator
+  labels:
+    app.kubernetes.io/name: dcgm-exporter
+    # kube-prometheus-stack's Prometheus picks up any ServiceMonitor without
+    # the release-specific label when selectorNilUsesHelmValues=false.
+    release: kps
+spec:
+  namespaceSelector:
+    matchNames:
+      - gpu-operator
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: dcgm-exporter
+  endpoints:
+    - port: metrics
+      interval: 15s

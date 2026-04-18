@@ -1,0 +1,28 @@
+# Datasets — too large to track, download separately or pull from GCS.
+sec_rag_dataset_50/
+sec_rag_dataset_*/
+*.sec.txt
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / local tooling
+node_modules/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Local benchmark and deploy logs
+rag-k8s-thesis/benchmarks/run_*.log
+rag-k8s-thesis/benchmarks/results_*.csv
+/tmp/

@@ -24,6 +24,12 @@ spec:
               value: qdrant
             - name: QDRANT_PORT
               value: "6333"
+            - name: QDRANT_COLLECTION
+              value: "thesis_docs_active"
+            - name: QDRANT_COLLECTION_BASE
+              value: "thesis_docs"
+            - name: INGEST_INPLACE
+              value: "false"
             - name: DATA_DIR
               value: /data/sec_rag_dataset_50
             - name: EMBEDDING_BATCH_SIZE

@@ -1,13 +1,28 @@
 from __future__ import annotations
 
 import json
-from typing import Any, Iterator
+import time
+from collections.abc import Iterator
+from typing import Any
 
 import requests
+from app.config import settings
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from qdrant_client import QdrantClient
+from qdrant_client.http import exceptions as qdrant_exceptions
 
-from app.config import settings
+# Sentinel value used on the returned answer string when every LLM attempt has
+# failed (including the configured fallback model). The sources list is still
+# populated so the API stays useful for downstream graders.
+LLM_UNAVAILABLE_MARKER = "[LLM unavailable, returning retrieved context only]"
+
+
+class QdrantUnavailableError(RuntimeError):
+    """Raised when Qdrant is unreachable after retries.
+
+    Translated into HTTP 503 in the FastAPI layer so the client sees a clean
+    'dependency unavailable' signal instead of a 500 / stack trace.
+    """
 
 
 class RagPipeline:
@@ -29,9 +44,15 @@ class RagPipeline:
         base = settings.llm_base_url.rstrip("/")
         return f"{base}{path}"
 
-    def _complete_ollama(self, prompt: str, *, max_tokens_override: int | None = None) -> str:
+    def _complete_ollama(
+        self,
+        prompt: str,
+        *,
+        max_tokens_override: int | None = None,
+        model_override: str | None = None,
+    ) -> str:
         payload: dict[str, Any] = {
-            "model": settings.llm_model,
+            "model": model_override or settings.llm_model,
             "prompt": prompt,
             "stream": False,
             "options": self._generation_options(max_tokens_override=max_tokens_override),
@@ -45,10 +66,16 @@ class RagPipeline:
         body = resp.json()
         return str(body.get("response", ""))
 
-    def _complete_vllm(self, prompt: str, *, max_tokens_override: int | None = None) -> str:
+    def _complete_vllm(
+        self,
+        prompt: str,
+        *,
+        max_tokens_override: int | None = None,
+        model_override: str | None = None,
+    ) -> str:
         cap = max_tokens_override if max_tokens_override is not None else settings.ollama_max_output_tokens
         payload: dict[str, Any] = {
-            "model": settings.llm_model,
+            "model": model_override or settings.llm_model,
             "messages": [{"role": "user", "content": prompt}],
             "temperature": settings.ollama_temperature,
         }
@@ -63,21 +90,124 @@ class RagPipeline:
         body = resp.json()
         return str(body["choices"][0]["message"]["content"])
 
-    def _complete_llm(self, prompt: str, *, max_tokens_override: int | None = None) -> str:
+    def _call_llm_once(
+        self,
+        prompt: str,
+        *,
+        max_tokens_override: int | None = None,
+        model_override: str | None = None,
+    ) -> str:
         provider = settings.llm_provider.lower()
         if provider == "vllm":
-            return self._complete_vllm(prompt, max_tokens_override=max_tokens_override)
-        return self._complete_ollama(prompt, max_tokens_override=max_tokens_override)
+            return self._complete_vllm(
+                prompt,
+                max_tokens_override=max_tokens_override,
+                model_override=model_override,
+            )
+        return self._complete_ollama(
+            prompt,
+            max_tokens_override=max_tokens_override,
+            model_override=model_override,
+        )
+
+    def _complete_llm_with_fallback(
+        self,
+        prompt: str,
+        *,
+        max_tokens_override: int | None = None,
+    ) -> tuple[str, dict[str, Any]]:
+        """Call the LLM with retries + fallback model.
+
+        Returns (answer_text, meta) where meta includes which model answered
+        and how many attempts were used. This is the resilience mechanism the
+        thesis evaluates: if the primary model fails N times, we try the
+        configured fallback; only after that returns do we surface the "LLM
+        unavailable" marker to the caller.
+        """
+        attempts = 0
+        retries = max(0, settings.llm_max_retries)
+        backoff = max(0.0, settings.llm_retry_backoff_seconds)
+
+        primary = settings.llm_model
+        fallback = (settings.llm_fallback_model or "").strip()
+
+        last_exc: Exception | None = None
+        for attempt in range(1, retries + 2):  # retries + initial attempt
+            attempts += 1
+            try:
+                answer = self._call_llm_once(prompt, max_tokens_override=max_tokens_override)
+                return answer, {"model_used": primary, "attempts": attempts, "fallback": False}
+            except Exception as exc:  # noqa: BLE001
+                last_exc = exc
+                if attempt <= retries:
+                    time.sleep(backoff * attempt)  # linear-ish backoff
+
+        # Primary exhausted; try fallback if configured and different.
+        if fallback and fallback != primary:
+            attempts += 1
+            try:
+                answer = self._call_llm_once(
+                    prompt,
+                    max_tokens_override=max_tokens_override,
+                    model_override=fallback,
+                )
+                return answer, {
+                    "model_used": fallback,
+                    "attempts": attempts,
+                    "fallback": True,
+                    "primary_error": str(last_exc) if last_exc else None,
+                }
+            except Exception as exc:  # noqa: BLE001
+                last_exc = exc
+
+        # Everything failed. Return the context-only marker so the API still
+        # serves *something* useful (retrieved sources) and callers can decide
+        # what to do with the degraded response.
+        return LLM_UNAVAILABLE_MARKER, {
+            "model_used": None,
+            "attempts": attempts,
+            "fallback": bool(fallback and fallback != primary),
+            "error": str(last_exc) if last_exc else "unknown",
+        }
+
+    def _retrieve_raw(self, user_query: str) -> tuple[list[Any], float, float]:
+        """Run retrieval and return (points, embed_seconds, search_seconds).
+
+        Splits timings so benchmarks can attribute latency to the embedding
+        step vs. the Qdrant search step. Retries Qdrant once on connection
+        errors; if the second attempt still fails, raises QdrantUnavailableError.
+        """
+        embed_start = time.perf_counter()
+        query_vector = self.embeddings.embed_query(user_query)
+        embed_seconds = time.perf_counter() - embed_start
+
+        last_exc: Exception | None = None
+        for attempt in range(1, settings.qdrant_max_retries + 2):
+            try:
+                search_start = time.perf_counter()
+                search_result = self.qdrant_client.query_points(
+                    collection_name=settings.qdrant_collection,
+                    query=query_vector,
+                    limit=self._retrieval_limit(),
+                    with_payload=True,
+                )
+                search_seconds = time.perf_counter() - search_start
+                return search_result.points, embed_seconds, search_seconds
+            except (
+                qdrant_exceptions.ResponseHandlingException,
+                qdrant_exceptions.UnexpectedResponse,
+                ConnectionError,
+                requests.ConnectionError,
+                requests.Timeout,
+            ) as exc:
+                last_exc = exc
+                if attempt <= settings.qdrant_max_retries:
+                    time.sleep(settings.qdrant_retry_backoff_seconds * attempt)
+
+        raise QdrantUnavailableError(f"Qdrant unreachable after retries: {last_exc}")
 
     def _retrieve(self, user_query: str) -> tuple[list[Any], str]:
-        query_vector = self.embeddings.embed_query(user_query)
-        search_result = self.qdrant_client.query_points(
-            collection_name=settings.qdrant_collection,
-            query=query_vector,
-            limit=self._retrieval_limit(),
-            with_payload=True,
-        )
-        points = search_result.points
+        points, _, _ = self._retrieve_raw(user_query)
         context = "\n\n".join(str((point.payload or {}).get("text", "")) for point in points)
         return points, context
 
@@ -98,6 +228,7 @@ class RagPipeline:
                 "metadata": {
                     "source": (point.payload or {}).get("source"),
                     "chunk_index": (point.payload or {}).get("chunk_index"),
+                    "page": (point.payload or {}).get("page"),
                     "score": point.score,
                 },
             }
@@ -107,7 +238,7 @@ class RagPipeline:
     def warmup_llm(self) -> None:
         """Prime LLM provider/model for lower first-user latency."""
         try:
-            self._complete_llm(
+            self._call_llm_once(
                 "System warmup. Reply with exactly: OK",
                 max_tokens_override=8,
             )
@@ -115,68 +246,131 @@ class RagPipeline:
             # Do not block API startup if the cluster is still pulling models.
             pass
 
+    def retrieve_only(self, user_query: str) -> dict[str, Any]:
+        """Vector-DB path without the LLM.
+
+        Used by the /retrieve endpoint so thesis benchmarks can isolate Qdrant
+        latency (embedding time + search time) from generation latency.
+        """
+        points, embed_seconds, search_seconds = self._retrieve_raw(user_query)
+        return {
+            "sources": self._sources_from_points(points),
+            "timing_ms": {
+                "embedding": round(embed_seconds * 1000.0, 3),
+                "qdrant_search": round(search_seconds * 1000.0, 3),
+                "total_retrieval": round((embed_seconds + search_seconds) * 1000.0, 3),
+            },
+            "collection": settings.qdrant_collection,
+            "top_k": self._retrieval_limit(),
+        }
+
     def query(self, user_query: str) -> dict[str, Any]:
-        points, context = self._retrieve(user_query)
+        retrieve_start = time.perf_counter()
+        points, embed_seconds, search_seconds = self._retrieve_raw(user_query)
+        retrieve_seconds = time.perf_counter() - retrieve_start
+        context = "\n\n".join(str((point.payload or {}).get("text", "")) for point in points)
+
         prompt = self._build_prompt(user_query, context)
-        answer = self._complete_llm(prompt)
-        return {"answer": answer, "sources": self._sources_from_points(points)}
+        gen_start = time.perf_counter()
+        answer, llm_meta = self._complete_llm_with_fallback(prompt)
+        gen_seconds = time.perf_counter() - gen_start
+
+        return {
+            "answer": answer,
+            "sources": self._sources_from_points(points),
+            "llm": llm_meta,
+            "timing_ms": {
+                "embedding": round(embed_seconds * 1000.0, 3),
+                "qdrant_search": round(search_seconds * 1000.0, 3),
+                "retrieval_total": round(retrieve_seconds * 1000.0, 3),
+                "generation": round(gen_seconds * 1000.0, 3),
+            },
+        }
 
     def stream_query_sse(self, user_query: str) -> Iterator[str]:
-        """Server-Sent Events lines: data: {json}\\n\\n with types sources | token | done."""
-        points, context = self._retrieve(user_query)
+        """Server-Sent Events lines: data: {json}\\n\\n with types sources | token | done.
+
+        Emits a final event of type `done` (or `error`) so clients can
+        distinguish a clean end-of-stream from a truncated connection.
+        """
+        try:
+            points, embed_seconds, search_seconds = self._retrieve_raw(user_query)
+        except QdrantUnavailableError as exc:
+            yield f"data: {json.dumps({'type': 'error', 'stage': 'retrieve', 'message': str(exc)})}\n\n"
+            return
+
+        context = "\n\n".join(str((point.payload or {}).get("text", "")) for point in points)
         sources = self._sources_from_points(points)
-        yield f"data: {json.dumps({'type': 'sources', 'sources': sources})}\n\n"
+        yield (
+            "data: "
+            + json.dumps(
+                {
+                    "type": "sources",
+                    "sources": sources,
+                    "timing_ms": {
+                        "embedding": round(embed_seconds * 1000.0, 3),
+                        "qdrant_search": round(search_seconds * 1000.0, 3),
+                    },
+                }
+            )
+            + "\n\n"
+        )
 
         provider = settings.llm_provider.lower()
-        if provider == "vllm":
-            cap = settings.ollama_max_output_tokens
-            payload: dict[str, Any] = {
-                "model": settings.llm_model,
-                "messages": [{"role": "user", "content": self._build_prompt(user_query, context)}],
-                "temperature": settings.ollama_temperature,
-                "stream": True,
-            }
-            if cap and cap > 0:
-                payload["max_tokens"] = cap
-            with requests.post(
-                self._provider_url("/v1/chat/completions"),
-                json=payload,
-                stream=True,
-                timeout=settings.request_timeout_seconds,
-            ) as resp:
-                resp.raise_for_status()
-                for raw in resp.iter_lines(decode_unicode=True):
-                    if not raw or not raw.startswith("data: "):
-                        continue
-                    data_part = raw[6:].strip()
-                    if data_part == "[DONE]":
-                        break
-                    evt = json.loads(data_part)
-                    delta = evt.get("choices", [{}])[0].get("delta", {})
-                    piece = delta.get("content") or ""
-                    if piece:
-                        yield f"data: {json.dumps({'type': 'token', 't': piece})}\n\n"
-        else:
-            payload = {
-                "model": settings.llm_model,
-                "prompt": self._build_prompt(user_query, context),
-                "stream": True,
-                "options": self._generation_options(),
-            }
-            with requests.post(
-                self._provider_url("/api/generate"),
-                json=payload,
-                stream=True,
-                timeout=settings.request_timeout_seconds,
-            ) as resp:
-                resp.raise_for_status()
-                for raw in resp.iter_lines(decode_unicode=True):
-                    if not raw:
-                        continue
-                    data = json.loads(raw)
-                    piece = data.get("response") or ""
-                    if piece:
-                        yield f"data: {json.dumps({'type': 'token', 't': piece})}\n\n"
-                    if data.get("done"):
-                        break
+        try:
+            if provider == "vllm":
+                cap = settings.ollama_max_output_tokens
+                payload: dict[str, Any] = {
+                    "model": settings.llm_model,
+                    "messages": [{"role": "user", "content": self._build_prompt(user_query, context)}],
+                    "temperature": settings.ollama_temperature,
+                    "stream": True,
+                }
+                if cap and cap > 0:
+                    payload["max_tokens"] = cap
+                with requests.post(
+                    self._provider_url("/v1/chat/completions"),
+                    json=payload,
+                    stream=True,
+                    timeout=settings.request_timeout_seconds,
+                ) as resp:
+                    resp.raise_for_status()
+                    for raw in resp.iter_lines(decode_unicode=True):
+                        if not raw or not raw.startswith("data: "):
+                            continue
+                        data_part = raw[6:].strip()
+                        if data_part == "[DONE]":
+                            break
+                        evt = json.loads(data_part)
+                        delta = evt.get("choices", [{}])[0].get("delta", {})
+                        piece = delta.get("content") or ""
+                        if piece:
+                            yield f"data: {json.dumps({'type': 'token', 't': piece})}\n\n"
+            else:
+                payload = {
+                    "model": settings.llm_model,
+                    "prompt": self._build_prompt(user_query, context),
+                    "stream": True,
+                    "options": self._generation_options(),
+                }
+                with requests.post(
+                    self._provider_url("/api/generate"),
+                    json=payload,
+                    stream=True,
+                    timeout=settings.request_timeout_seconds,
+                ) as resp:
+                    resp.raise_for_status()
+                    for raw in resp.iter_lines(decode_unicode=True):
+                        if not raw:
+                            continue
+                        data = json.loads(raw)
+                        piece = data.get("response") or ""
+                        if piece:
+                            yield f"data: {json.dumps({'type': 'token', 't': piece})}\n\n"
+                        if data.get("done"):
+                            break
+        except Exception as exc:  # noqa: BLE001
+            yield f"data: {json.dumps({'type': 'error', 'stage': 'generate', 'message': str(exc)})}\n\n"
+            return
+
         yield f"data: {json.dumps({'type': 'done'})}\n\n"

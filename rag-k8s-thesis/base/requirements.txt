@@ -4,5 +4,6 @@ langchain-text-splitters
 qdrant-client
 sentence-transformers
 pypdf
+pymupdf
 google-cloud-storage
 requests

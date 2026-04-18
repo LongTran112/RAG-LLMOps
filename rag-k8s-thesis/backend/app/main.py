@@ -1,14 +1,11 @@
+import asyncio
 from contextlib import asynccontextmanager
 
-import asyncio
-
+from app.config import settings
+from app.rag_pipeline import QdrantUnavailableError, RagPipeline
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
-
-from app.config import settings
-from app.rag_pipeline import RagPipeline
-
 
 pipeline = RagPipeline()
 
@@ -36,8 +33,26 @@ def healthz() -> dict[str, str]:
 def query_rag(payload: QueryRequest) -> dict:
     try:
         return pipeline.query(payload.query)
+    except QdrantUnavailableError as exc:
+        raise HTTPException(status_code=503, detail=f"Qdrant unavailable: {exc}") from exc
     except Exception as exc:  # noqa: BLE001
         raise HTTPException(status_code=500, detail=f"Query failed: {exc}") from exc
+
+
+@app.post("/retrieve")
+def retrieve_only(payload: QueryRequest) -> dict:
+    """Run only the embedding + Qdrant search steps (no LLM call).
+
+    Thesis benchmarks use this to isolate vector-DB latency from generation
+    latency. Response shape matches /query's `sources` + `timing_ms` keys so
+    downstream tooling can share parsers.
+    """
+    try:
+        return pipeline.retrieve_only(payload.query)
+    except QdrantUnavailableError as exc:
+        raise HTTPException(status_code=503, detail=f"Qdrant unavailable: {exc}") from exc
+    except Exception as exc:  # noqa: BLE001
+        raise HTTPException(status_code=500, detail=f"Retrieve failed: {exc}") from exc
 
 
 @app.post("/query/stream")

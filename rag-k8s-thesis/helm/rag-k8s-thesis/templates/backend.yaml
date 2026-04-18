@@ -64,6 +64,16 @@ spec:
               value: {{ .Values.backend.env.llmBaseUrl | quote }}
             - name: LLM_MODEL
               value: {{ .Values.backend.env.llmModel | quote }}
+            - name: LLM_FALLBACK_MODEL
+              value: {{ .Values.backend.env.llmFallbackModel | quote }}
+            - name: LLM_MAX_RETRIES
+              value: {{ .Values.backend.env.llmMaxRetries | quote }}
+            - name: LLM_RETRY_BACKOFF_SECONDS
+              value: {{ .Values.backend.env.llmRetryBackoffSeconds | quote }}
+            - name: QDRANT_MAX_RETRIES
+              value: {{ .Values.backend.env.qdrantMaxRetries | quote }}
+            - name: QDRANT_RETRY_BACKOFF_SECONDS
+              value: {{ .Values.backend.env.qdrantRetryBackoffSeconds | quote }}
             - name: WARMUP_LLM_ON_STARTUP
               value: {{ .Values.backend.env.warmupLlmOnStartup | quote }}
             - name: EMBEDDING_MODEL_NAME

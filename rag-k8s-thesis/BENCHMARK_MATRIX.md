@@ -40,15 +40,42 @@ switch_model phi3:mini
 switch_model granite3.3:8b
 ```
 
-## 3) Benchmark matrix (recommended)
+## 3) Benchmark matrix (thesis models — 7B / 14B / 32B sweep)
 
-Use the same query set and same cluster resources for all rows.
+Use the same query set and same cluster resources for all rows. The thesis
+explicitly stress-tests the **infrastructure** across increasing parameter
+sizes, not answer quality, so we lock in one model per size class and sweep.
 
-| Model | Expected quality | Expected latency (CPU) | Concurrency set | Repetitions per prompt | Notes |
-|---|---|---|---|---|---|
-| `phi3:mini` | Baseline | Fastest | `1, 3, 5` | 5 | Good for sanity checks |
-| `qwen2.5:3b` | Medium | Medium | `1, 3, 5` | 5 | Good speed/quality balance |
-| `granite3.3:8b` | Higher | Slowest | `1, 2, 3` | 3 | Needs more memory/CPU |
+| Model | Params | Quantization | VRAM needed | Recommended GPU | Concurrency set | Repetitions per prompt | Notes |
+|---|---|---|---|---|---|---|---|
+| `phi3:mini` | 3.8B | Q4 (default Ollama) | ~3 GB | nvidia-l4 (24 GB) | `1, 10, 50, 100` | 3 | Smoke/baseline |
+| `qwen2.5:7b` | 7B | Q4_K_M | ~5 GB | nvidia-l4 (24 GB) | `1, 10, 50, 100` | 3 | Main 7B row |
+| `qwen2.5:14b` | 14B | Q4_K_M | ~10 GB | nvidia-l4 (24 GB) | `1, 10, 50, 100` | 3 | Main 14B row — fits on L4 |
+| `qwen2.5:32b` | 32B | Q4_K_M | ~20 GB | nvidia-l4 (tight); fallback nvidia-a100-40gb | `1, 10, 25, 50` | 3 | 32B Q4 is tight on 24 GB VRAM. If Ollama fails to load, redeploy GKE with `GPU_MACHINE_TYPE=a2-highgpu-1g` and rerun only the 32B row. Record which GPU SKU was actually used in the results CSV. |
+
+Before each row, update Helm values to give Ollama enough headroom:
+
+```bash
+# example for the 14B row on GKE
+helm upgrade --install rag-k8s-thesis ./helm/rag-k8s-thesis \
+  --set ollama.modelName=qwen2.5:14b \
+  --set ollama.contextLength=4096 \
+  --set ollama.resources.limits.memory=20Gi \
+  --set ollama.resources.requests.memory=12Gi
+```
+
+For Cloud Run the equivalent is:
+
+```bash
+gcloud run services update ollama-gpu \
+  --region europe-west3 \
+  --memory 32Gi --cpu 8 \
+  --gpu 1 --gpu-type nvidia-l4
+```
+
+If the 32B model cannot fit L4 VRAM, document the fallback and rerun only
+the 32B row on an A100 node pool (the existing `scripts/deploy_gcp_gpu.sh`
+already exposes `GPU_MACHINE_TYPE` so this is a one-variable change).
 
 ## 4) Prompt set (fixed across all models)
 

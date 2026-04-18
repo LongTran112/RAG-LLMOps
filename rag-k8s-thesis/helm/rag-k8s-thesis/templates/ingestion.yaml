@@ -27,6 +27,10 @@ spec:
               value: {{ .Values.qdrant.service.port | quote }}
             - name: QDRANT_COLLECTION
               value: {{ .Values.ingestion.env.qdrantCollection | quote }}
+            - name: QDRANT_COLLECTION_BASE
+              value: {{ .Values.ingestion.env.qdrantCollectionBase | quote }}
+            - name: INGEST_INPLACE
+              value: {{ .Values.ingestion.env.ingestInplace | quote }}
             - name: EMBEDDING_MODEL_NAME
               value: {{ .Values.ingestion.env.embeddingModelName | quote }}
             - name: CHUNK_SIZE
@@ -37,6 +41,8 @@ spec:
               value: {{ .Values.ingestion.env.embeddingBatchSize | quote }}
             - name: MAX_DOCS
               value: {{ .Values.ingestion.env.maxDocs | quote }}
+            - name: INGESTION_METRICS_CSV
+              value: {{ .Values.ingestion.env.metricsCsv | quote }}
             {{- if .Values.ingestion.dataset.enabled }}
             - name: DATA_DIR
               value: {{ .Values.ingestion.dataset.dataDir | quote }}
@@ -100,6 +106,10 @@ spec:
                   value: {{ .Values.qdrant.service.port | quote }}
                 - name: QDRANT_COLLECTION
                   value: {{ .Values.ingestion.env.qdrantCollection | quote }}
+                - name: QDRANT_COLLECTION_BASE
+                  value: {{ .Values.ingestion.env.qdrantCollectionBase | quote }}
+                - name: INGEST_INPLACE
+                  value: {{ .Values.ingestion.env.ingestInplace | quote }}
                 - name: EMBEDDING_MODEL_NAME
                   value: {{ .Values.ingestion.env.embeddingModelName | quote }}
                 - name: CHUNK_SIZE
@@ -110,6 +120,8 @@ spec:
                   value: {{ .Values.ingestion.env.embeddingBatchSize | quote }}
                 - name: MAX_DOCS
                   value: {{ .Values.ingestion.env.maxDocs | quote }}
+                - name: INGESTION_METRICS_CSV
+                  value: {{ .Values.ingestion.env.metricsCsv | quote }}
                 {{- if .Values.ingestion.dataset.enabled }}
                 - name: DATA_DIR
                   value: {{ .Values.ingestion.dataset.dataDir | quote }}

@@ -1,0 +1,108 @@
+Metadata-Version: 2.4
+Name: stamina
+Version: 26.1.0
+Summary: Production-grade retries made easy.
+Project-URL: Documentation, https://stamina.hynek.me/
+Project-URL: GitHub, https://github.com/hynek/stamina
+Project-URL: Changelog, https://github.com/hynek/stamina/blob/main/CHANGELOG.md
+Project-URL: Funding, https://github.com/sponsors/hynek
+Project-URL: Mastodon, https://mastodon.social/@hynek
+Project-URL: Bluesky, https://bsky.app/profile/hynek.me
+Project-URL: Twitter, https://twitter.com/hynek
+Author-email: Hynek Schlawack <hs@ox.cx>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: reliability,retries,retry
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: Trio
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Requires-Dist: tenacity
+Description-Content-Type: text/markdown
+
+# *stamina*: Production-grade Retries Made Easy
+
+Transient failures are common in distributed systems.
+To make your systems resilient, you need to **retry** failed operations.
+But bad retries can make things *much worse*.
+
+*stamina* is an opinionated wrapper around the great-but-unopinionated [Tenacity](https://tenacity.readthedocs.io/) package.
+Our goal is to be as **ergonomic** as possible, while doing the **right thing by default**, and minimizing the potential for **misuse**.
+It is the result of years of copy-pasting the same configuration over and over again:
+
+- Retry only on certain exceptions – or even a subset of them by introspecting them first using a backoff hook.
+- Exponential **backoff** with **jitter** between retries.
+- Limit the number of retries **and** total time.
+- Automatic **async** support – including [Trio](https://trio.readthedocs.io/).
+- Preserve **type hints** of the decorated callable.
+- Flexible **instrumentation** with [Prometheus](https://github.com/prometheus/client_python), [*structlog*](https://www.structlog.org/), and standard library's `logging` support out-of-the-box.
+- Dedicated support for **testing** that allows to _globally_ deactivate retries, or to limit the number of retries and to remove backoffs.
+
+For example:
+
+```python
+import httpx
+
+import stamina
+
+
+@stamina.retry(on=httpx.HTTPError, attempts=3)
+def do_it(code: int) -> httpx.Response:
+    resp = httpx.get(f"https://httpbin.org/status/{code}")
+    resp.raise_for_status()
+
+    return resp
+```
+
+<!-- end docs index -->
+
+**Async** callables work use the same API and it's possible to retry **arbitrary blocks**, too.
+Check out our [tutorial](https://stamina.hynek.me/en/latest/tutorial.html) for more examples!
+
+Or, if you prefer video, here's a brief introduction into retries and *stamina*:
+[![Watch the video](https://img.youtube.com/vi/BxikFuvaT1Y/maxresdefault.jpg)](https://youtu.be/BxikFuvaT1Y)
+
+
+
+## Release Information
+
+### Changed
+
+- Passing `timeout=0` now raises a warning since it counterintuitively disables all retries.
+  If you explicitly want to disable the timeout, use `timeout=None`.
+
+
+### Fixed
+
+- `_compute_backoff()` no longer raises `OverflowError` when the attempt number exceeds 1024 with a float *wait_exp_base*.
+  The exponential result is now clamped to *wait_max* on overflow.
+  [#137](https://github.com/hynek/stamina/issues/137)
+
+
+---
+
+[Full Changelog →](https://github.com/hynek/stamina/blob/main/CHANGELOG.md)
+
+
+## Credits
+
+*stamina* is written by [Hynek Schlawack](https://hynek.me/) and distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
+The development is kindly supported by my employer [Variomedia AG](https://www.variomedia.de/) and all my amazing [GitHub Sponsors](https://github.com/sponsors/hynek).
+
+This project would not be possible without the years of incredible work that went into [Tenacity](https://tenacity.readthedocs.io/).
+
+
+## *stamina* for Enterprise
+
+Available as part of the [Tidelift Subscription](https://tidelift.com/?utm_source=lifter&utm_medium=referral&utm_campaign=hynek).
+
+The maintainers of *stamina* and thousands of other packages are working with Tidelift to deliver commercial support and maintenance for the open-source packages you use to build your applications.
+Save time, reduce risk, and improve code health, while paying the maintainers of the exact packages you use.

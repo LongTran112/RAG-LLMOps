@@ -46,7 +46,7 @@ spec:
             - name: QDRANT_PORT
               value: "6333"
             - name: QDRANT_COLLECTION
-              value: thesis_docs
+              value: thesis_docs_active
             - name: QDRANT_TOP_K
               value: "4"
             - name: QDRANT_TOP_K_PRODUCT
@@ -63,6 +63,16 @@ spec:
               value: http://ollama:11434
             - name: LLM_MODEL
               value: qwen2.5:3b
+            - name: LLM_FALLBACK_MODEL
+              value: phi3:mini
+            - name: LLM_MAX_RETRIES
+              value: "2"
+            - name: LLM_RETRY_BACKOFF_SECONDS
+              value: "1.5"
+            - name: QDRANT_MAX_RETRIES
+              value: "1"
+            - name: QDRANT_RETRY_BACKOFF_SECONDS
+              value: "0.5"
             - name: WARMUP_LLM_ON_STARTUP
               value: "true"
             - name: REQUEST_TIMEOUT_SECONDS

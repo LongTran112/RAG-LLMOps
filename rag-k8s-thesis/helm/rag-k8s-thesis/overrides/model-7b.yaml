@@ -1,0 +1,21 @@
+# Helm overlay for the qwen2.5:7b thesis row.
+# Apply with:
+#   helm upgrade --install rag-k8s-thesis ./helm/rag-k8s-thesis \
+#     -f helm/rag-k8s-thesis/overrides/model-7b.yaml
+ollama:
+  modelName: qwen2.5:7b
+  contextLength: 4096
+  resources:
+    requests:
+      cpu: 1500m
+      memory: 10Gi
+    limits:
+      cpu: 4000m
+      memory: 16Gi
+
+backend:
+  env:
+    llmModel: qwen2.5:7b
+    # Fallback is kept at phi3:mini so the resilience chain stays meaningful
+    # regardless of which primary we are stressing.
+    llmFallbackModel: phi3:mini

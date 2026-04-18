@@ -1,0 +1,320 @@
+{
+  "_metadata": {
+    "description": "Maps standard concepts to their statement sections for context-aware disambiguation",
+    "version": "2.0.0",
+    "total_concepts": 229
+  },
+  "BalanceSheet": {
+    "Current Assets": [
+      "AccountsReceivableGross",
+      "AllowanceForDoubtfulAccounts",
+      "CashAndMarketableSecurities",
+      "ContractAssets",
+      "DeferredTaxCurrentAssets",
+      "IncomeTaxReceivable",
+      "Inventories",
+      "OtherNonOperatingCurrentAssets",
+      "OtherOperatingCurrentAssets",
+      "PrepaidExpenses",
+      "RestrictedCashCurrent",
+      "RetirementRelatedCurrentAssets",
+      "ShortTermInvestments",
+      "TradeReceivables"
+    ],
+    "Current Liabilities": [
+      "AccruedCompensation",
+      "AccruedIncomeTaxes",
+      "ContractLiabilities",
+      "CurrentPortionOfLongTermDebt",
+      "CustomerAdvances",
+      "DeferredRevenueCurrent",
+      "DeferredTaxCurrentLiabilities",
+      "DividendsPayable",
+      "OperatingLeaseCurrentDebtEquivalent",
+      "OtherNonOperatingCurrentLiabilities",
+      "OtherOperatingCurrentLiabilities",
+      "RetirementRelatedCurrentLiabilities",
+      "SelfInsuranceReserve",
+      "ShortTermDebt",
+      "TaxesPayable",
+      "TotalDeposits",
+      "TradePayables",
+      "UnearnedRevenue"
+    ],
+    "Equity": [
+      "AccumulatedOtherComprehensiveIncome",
+      "AdditionalPaidInCapital",
+      "AllEquityBalance",
+      "AllEquityBalanceIncludingMinorityInterest",
+      "CommonEquity",
+      "MinorityInterestBS",
+      "MinorityInterestBalance",
+      "PreferredStock",
+      "RetainedEarnings",
+      "TemporaryAndMezzanineFinancing",
+      "TreasuryShares"
+    ],
+    "Non-Current Assets": [
+      "AccumulatedAmortizationIntangibles",
+      "AccumulatedDepreciation",
+      "AssetsHeldForSale",
+      "DeferredPolicyAcquisitionCosts",
+      "DeferredTaxNoncurrentAssets",
+      "DefinedBenefitPlanAssets",
+      "Goodwill",
+      "GoodwillAndIntangiblesNet",
+      "GrossPropertyPlantEquipment",
+      "IntangibleAssets",
+      "IntangibleAssetsGross",
+      "InvestmentsEquityMethod",
+      "LoanLossReserve",
+      "LongtermInvestments",
+      "NetLoansAndLeases",
+      "NotesReceivableNonCurrent",
+      "OperatingLeaseRightOfUseAsset",
+      "OtherNonOperatingNonCurrentAssets",
+      "OtherOperatingNonCurrentAssets",
+      "PlantPropertyEquipmentNet",
+      "RealEstateInvestments",
+      "RegulatedAssets",
+      "RestrictedCashNonCurrent",
+      "RetirementRelatedNonCurrentAssets",
+      "SecurityDepositsAsset"
+    ],
+    "Non-Current Liabilities": [
+      "AssetRetirementObligations",
+      "ConvertibleDebtNonCurrent",
+      "DeferredCompensationNonCurrent",
+      "DeferredRevenueNonCurrent",
+      "DeferredTaxNonCurrentLiabilities",
+      "DefinedBenefitPlanObligations",
+      "DefiniteLivedOperatingProvisions(DecommissioningEtc)",
+      "LongTermDebt",
+      "OngoingOperatingProvisions(WarrantiesEtc)",
+      "OperatingLeaseNonCurrentDebtEquivalent",
+      "OtherNonOperatingNonCurrentLiabilities",
+      "OtherOperatingNonCurrentLiabilities",
+      "PensionObligations",
+      "RegulatedLiabilities",
+      "RestructuringProvisions",
+      "RetirementRelatedNonCurrentLiabilities"
+    ],
+    "Totals": [
+      "Assets",
+      "CurrentAssetsTotal",
+      "CurrentLiabilitiesTotal",
+      "Liabilities",
+      "LiabilitiesAndEquity",
+      "NonCurrentAssetsTotal",
+      "NonCurrentLiabilitiesTotal"
+    ]
+  },
+  "IncomeStatement": {
+    "Banking Expenses": [
+      "InterestExpenseDeposits",
+      "NonInterestExpense",
+      "ProvisionForCreditLosses"
+    ],
+    "Banking Revenue": [
+      "NetInterestIncome",
+      "NetInterestIncomeAfterProvision",
+      "NonInterestIncome",
+      "TotalInterestIncomeOperating"
+    ],
+    "Cost of Revenue": [
+      "CostOfGoodsAndServicesSold"
+    ],
+    "Gross Profit": [
+      "GrossProfit"
+    ],
+    "Income Before Tax": [
+      "PretaxIncomeLoss"
+    ],
+    "Income Tax": [
+      "CurrentIncomeTaxExpense",
+      "DeferredIncomeTaxExpense",
+      "IncomeTaxes",
+      "ValuationAllowanceDTA"
+    ],
+    "Insurance Expenses": [
+      "PolicyBenefitsAndClaims"
+    ],
+    "Net Income": [
+      "DiscontinuedOperationsIncome",
+      "ExtraordinaryItemsIncomeExpense(PostTax)",
+      "IncomeLossContinuingOperations",
+      "MinorityInterestIncomeExpense",
+      "NetIncome",
+      "NetIncomeToCommonShareholders",
+      "PreferredDividendExpense",
+      "ProfitLoss",
+      "SpecialItemsIncomeExpense(Pretax)"
+    ],
+    "Non-Operating Items": [
+      "EquityMethodInvestmentIncome",
+      "ForeignCurrencyGainLoss",
+      "GainLossOnDispositions",
+      "GainLossOnInvestmentsIS",
+      "InterestAndDividendIncome",
+      "InterestExpense",
+      "InterestIncome",
+      "LossOnDebtExtinguishment",
+      "NonoperatingIncomeExpense",
+      "OtherExpenseIS",
+      "OtherIncomeIS"
+    ],
+    "Operating Expenses": [
+      "AdvertisingExpense",
+      "AmortizationOfIntangibles",
+      "AssetImpairmentChargesIS",
+      "BadDebtExpense",
+      "CommunicationAndTechnologyExpense",
+      "CostsSubtotal",
+      "DepreciationExpense",
+      "FinanceLeaseExpense",
+      "GoodwillWriteoffs",
+      "LaborExpenses",
+      "MarketingExpenses",
+      "OccupancyExpense",
+      "OperatingLeaseExpense",
+      "OtherOperatingExpense",
+      "PensionExpense",
+      "ProfessionalFees",
+      "ResearchAndDevelopmentExpenses",
+      "RestructuringExpenseBenefit",
+      "SellingGeneralAndAdminExpenses",
+      "StockBasedCompensationExpense",
+      "TotalOperatingExpenses"
+    ],
+    "Operating Income": [
+      "OperatingIncomeLoss"
+    ],
+    "Revenue": [
+      "AdvertisingRevenueIS",
+      "CommissionsRevenue",
+      "ElectricUtilityRevenue",
+      "FinancialServicesRevenue",
+      "FranchiseRevenue",
+      "GovernmentContractsRevenue",
+      "HealthCareRevenue",
+      "LicensingRevenue",
+      "ManagementFeeRevenue",
+      "OilAndGasRevenue",
+      "ProductRevenue",
+      "RentalAndLeasingRevenue",
+      "Revenue",
+      "RoyaltyRevenue",
+      "SubscriptionRevenue",
+      "TechnologyServicesRevenue",
+      "TenantReimbursementsRevenue"
+    ]
+  },
+  "CashFlowStatement": {
+    "Cash Flow Totals": [
+      "CashAndCashEquivalents",
+      "ForeignExchangeEffectOnCash",
+      "NetCashFromFinancingActivities",
+      "NetCashFromInvestingActivities",
+      "NetCashFromOperatingActivities",
+      "NetChangeInCash"
+    ],
+    "Financing Activities": [
+      "CapitalLeasePaymentsCF",
+      "CommonDividendsPaid",
+      "DebtProceeds",
+      "DebtRepayments",
+      "DistributionsToMinorityInterests",
+      "EquityExpenseIncome(BuybackIssued)",
+      "FinanceLeasePayments",
+      "PaymentsOfDebtIssuanceCosts",
+      "StockIssuanceProceeds",
+      "StockRepurchasePayments"
+    ],
+    "Investing Activities": [
+      "AcquisitionsNet",
+      "CapitalExpenses",
+      "DivestitureProceeds",
+      "InvestmentProceeds",
+      "InvestmentPurchases",
+      "ProceedsFromMaturitiesOfInvestments",
+      "ProceedsFromSaleOfPPE",
+      "PurchaseOfIntangibleAssets"
+    ],
+    "Operating Activities": [
+      "DeferredIncomeTaxCF",
+      "DepreciationAmortizationCF",
+      "GainLossOnAssetSalesCF",
+      "ImpairmentChargesCF",
+      "OperatingLeasePayments",
+      "OtherNonCashItemsCF",
+      "ProvisionForDoubtfulAccountsCF",
+      "StockBasedCompensationCF"
+    ],
+    "Working Capital Changes": [
+      "ChangeInAccruedLiabilities",
+      "ChangeInDeferredRevenue",
+      "ChangeInInventory",
+      "ChangeInOtherWorkingCapital",
+      "ChangeInPayables",
+      "ChangeInReceivables"
+    ]
+  },
+  "ComprehensiveIncome": {
+    "Comprehensive Income Totals": [
+      "ComprehensiveIncomeNet"
+    ],
+    "OCI Components": [
+      "AOCIReclassifications",
+      "ForeignCurrencyTranslation",
+      "HedgingGainsLosses",
+      "OtherComprehensiveIncomeLoss",
+      "PensionAndRetirementAdjustments",
+      "UnrealizedGainsLossesSecurities"
+    ]
+  },
+  "StatementOfEquity": {
+    "Equity Changes": [
+      "DividendsEquity",
+      "StockCompensationEquityImpact",
+      "StockIssuancesEquity",
+      "StockRepurchasesEquity"
+    ]
+  },
+  "PerShareData": {
+    "Dividends": [
+      "CommonDividendsPerShare"
+    ],
+    "Earnings Per Share": [
+      "EarningsPerShareBasic",
+      "EarningsPerShareDiluted"
+    ],
+    "Shares Outstanding": [
+      "SharesAverage",
+      "SharesDilutionAdjustment",
+      "SharesFullyDilutedAverage",
+      "SharesIssued",
+      "SharesYearEnd"
+    ],
+    "Valuation Metrics": [
+      "BookValuePerShare"
+    ]
+  },
+  "Commitments": {
+    "Amortization Forecasts": [
+      "ForecastedIntangibleAmortizationAfterYear5",
+      "ForecastedIntangibleAmortizationYear1",
+      "ForecastedIntangibleAmortizationYear2",
+      "ForecastedIntangibleAmortizationYear3",
+      "ForecastedIntangibleAmortizationYear4",
+      "ForecastedIntangibleAmortizationYear5"
+    ],
+    "Operating Lease Commitments": [
+      "OperatingLeaseCommitmentAfterYear5",
+      "OperatingLeaseCommitmentYear1",
+      "OperatingLeaseCommitmentYear2",
+      "OperatingLeaseCommitmentYear3",
+      "OperatingLeaseCommitmentYear4",
+      "OperatingLeaseCommitmentYear5"
+    ]
+  }
+}

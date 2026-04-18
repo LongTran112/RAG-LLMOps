@@ -26,12 +26,23 @@ ollama:
   image: ollama/ollama:latest
   replicaCount: 2
   modelName: qwen2.5:3b
-  storageSize: 30Gi
+  # Increased default to 40Gi so Ollama can persist both qwen2.5:14b (~10GB)
+  # and qwen2.5:32b (~20GB) side by side across the thesis matrix without
+  # hitting disk pressure on GKE GPU nodes.
+  storageSize: 40Gi
   # Helps large-context models fit on constrained nodes (tune up/down for your thesis runs).
+  # Thesis matrix recommendation:
+  #   phi3:mini / qwen2.5:3b  -> 2048
+  #   qwen2.5:7b              -> 4096
+  #   qwen2.5:14b             -> 4096
+  #   qwen2.5:32b (L4 tight)  -> 2048
   contextLength: 2048
   keepAlive: 24h
   service:
     port: 11434
+  # Default request/limits target the 3B model. For the 7B/14B/32B rows,
+  # override with --set ollama.resources.limits.memory=20Gi (see
+  # BENCHMARK_MATRIX.md).
   resources:
     requests:
       cpu: 1000m
@@ -70,7 +81,15 @@ backend:
     llmProvider: ollama
     llmBaseUrl: http://ollama:11434
     llmModel: qwen2.5:3b
-    qdrantCollection: thesis_docs
+    # Resilience: fallback model used if the primary fails after retries.
+    # Set to "" to disable the fallback leg.
+    llmFallbackModel: phi3:mini
+    llmMaxRetries: 2
+    llmRetryBackoffSeconds: "1.5"
+    qdrantMaxRetries: 1
+    qdrantRetryBackoffSeconds: "0.5"
+    # Points at the blue/green alias; see ingest_data.py for swap semantics.
+    qdrantCollection: thesis_docs_active
     qdrantTopK: 4
     qdrantTopKProduct: 3
     productLatencyMode: true
@@ -112,12 +131,21 @@ ingestion:
     failedJobsHistoryLimit: 2
     successfulJobsHistoryLimit: 2
   env:
-    qdrantCollection: thesis_docs
+    # Logical alias the API reads from (see ingest_data.py blue/green logic).
+    qdrantCollection: thesis_docs_active
+    # Prefix used for the dated physical collection (thesis_docs_YYYYMMDD_HHMMSS).
+    qdrantCollectionBase: thesis_docs
+    # When "true", writes directly into the alias (legacy). Default false enables
+    # blue/green: new collection per ingest, atomic alias swap at the end.
+    ingestInplace: "false"
     embeddingModelName: sentence-transformers/all-MiniLM-L6-v2
     chunkSize: "800"
     chunkOverlap: "100"
     embeddingBatchSize: "64"
     maxDocs: "0"
+    # If non-empty, every ingestion run appends one row to this CSV inside the
+    # container (mount a PVC or emptyDir if you want to persist across runs).
+    metricsCsv: ""
   resources:
     requests:
       cpu: 250m
