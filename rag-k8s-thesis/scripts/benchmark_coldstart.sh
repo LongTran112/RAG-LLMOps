@@ -59,10 +59,55 @@ RESULT_FILE="${RESULT_DIR}/coldstart_results_${TIMESTAMP}.csv"
 LOG_FILE="${RESULT_DIR}/coldstart_run_${TIMESTAMP}.log"
 mkdir -p "${RESULT_DIR}"
 
-echo "timestamp,target,repetition,model,scale_up_s,pod_ready_s,health_200_s,query_200_s,total_s,notes" > "${RESULT_FILE}"
+echo "timestamp,target,repetition,model,scale_up_s,pod_ready_s,image_pull_s,boot_s,health_200_s,query_200_s,total_s,notes" > "${RESULT_FILE}"
 log() { echo "[$(date)] $*" | tee -a "${LOG_FILE}"; }
 
 now_ns() { python3 -c 'import time; print(time.monotonic_ns())'; }
+
+# Parse ISO8601 timestamps from kubectl get events and derive image-pull and
+# boot durations for the current Ollama pod. Separating these two phases is a
+# named thesis sub-metric ("container image pull and boot times"): pulls
+# dominate on a fresh node (layer download + model weights), boot dominates
+# once the image is cached. Writes two space-separated numbers (image_pull_s
+# boot_s) to stdout; values are -1 when the events are unavailable (e.g. image
+# was already cached, so no Pulling event was emitted).
+gke_image_pull_and_boot_seconds() {
+  local ns="$1"
+  local label_selector="$2"
+  local pod_ready_s="$3"
+  local pod pull_start pull_end
+  pod="$(kubectl get pod -n "${ns}" -l "${label_selector}" \
+    --sort-by=.metadata.creationTimestamp \
+    -o jsonpath='{.items[-1:].metadata.name}' 2>/dev/null || true)"
+  if [ -z "${pod}" ]; then
+    echo "-1 -1"; return
+  fi
+  pull_start="$(kubectl get events -n "${ns}" \
+    --field-selector "involvedObject.name=${pod},reason=Pulling" \
+    -o jsonpath='{.items[0].firstTimestamp}' 2>/dev/null || true)"
+  pull_end="$(kubectl get events -n "${ns}" \
+    --field-selector "involvedObject.name=${pod},reason=Pulled" \
+    -o jsonpath='{.items[0].firstTimestamp}' 2>/dev/null || true)"
+
+  local image_pull_s boot_s
+  if [ -n "${pull_start}" ] && [ -n "${pull_end}" ]; then
+    image_pull_s="$(python3 -c '
+import sys, datetime as d
+a, b = sys.argv[1:3]
+fmt = lambda s: d.datetime.fromisoformat(s.replace("Z", "+00:00"))
+print(f"{(fmt(b) - fmt(a)).total_seconds():.3f}")
+' "${pull_start}" "${pull_end}" 2>/dev/null || echo -1)"
+  else
+    image_pull_s="-1"
+  fi
+
+  if [ "${image_pull_s}" != "-1" ] && [ "${pod_ready_s}" != "-1" ]; then
+    boot_s="$(awk -v p="${pod_ready_s}" -v i="${image_pull_s}" 'BEGIN{ v=p-i; if (v<0) v=0; printf "%.3f", v }')"
+  else
+    boot_s="-1"
+  fi
+  echo "${image_pull_s} ${boot_s}"
+}
 
 # ---------- GKE path ----------
 gke_cold_start_once() {
@@ -129,14 +174,20 @@ gke_cold_start_once() {
   kill "${pf_pid}" >/dev/null 2>&1 || true
 
   # Durations (seconds)
-  local scale_up_s pod_ready_s health_s query_s total_s
+  local scale_up_s pod_ready_s health_s query_s total_s image_pull_s boot_s
   scale_up_s=$(awk -v a="${t_pod_ready}" -v b="${t0}" 'BEGIN{ if (a==0) print -1; else printf "%.3f", (a-b)/1e9 }')
   pod_ready_s="${scale_up_s}"
   health_s=$(awk -v a="${t_health}" -v b="${t0}" 'BEGIN{ if (a==0) print -1; else printf "%.3f", (a-b)/1e9 }')
   query_s=$(awk -v a="${t_query}" -v b="${t0}" 'BEGIN{ if (a==0) print -1; else printf "%.3f", (a-b)/1e9 }')
   total_s="${query_s}"
-  echo "$(date +%Y-%m-%dT%H:%M:%S),gke,${rep},${MODEL_TAG},${scale_up_s},${pod_ready_s},${health_s},${query_s},${total_s},${notes}" >> "${RESULT_FILE}"
-  log "GKE rep=${rep} pod_ready=${pod_ready_s}s health=${health_s}s query=${query_s}s notes=${notes}"
+
+  # Separate image-pull vs boot (named thesis sub-metric). -1 when unknown
+  # (e.g. image already cached so no Pulling event was emitted).
+  read -r image_pull_s boot_s < <(gke_image_pull_and_boot_seconds \
+    "${NAMESPACE}" "app.kubernetes.io/name=ollama" "${pod_ready_s}")
+
+  echo "$(date +%Y-%m-%dT%H:%M:%S),gke,${rep},${MODEL_TAG},${scale_up_s},${pod_ready_s},${image_pull_s},${boot_s},${health_s},${query_s},${total_s},${notes}" >> "${RESULT_FILE}"
+  log "GKE rep=${rep} pod_ready=${pod_ready_s}s image_pull=${image_pull_s}s boot=${boot_s}s health=${health_s}s query=${query_s}s notes=${notes}"
 }
 
 # ---------- Cloud Run path ----------
@@ -199,10 +250,29 @@ cloudrun_cold_start_once() {
   # Cloud Run doesn't expose pod_ready from the outside; leave -1.
   local scale_up_s="-1"
   local pod_ready_s="-1"
+  local image_pull_s="-1"
+  local boot_s="-1"
   local health_s query_s total_s
   health_s=$(awk -v a="${t_health}" -v b="${t0}" 'BEGIN{ if (a==0) print -1; else printf "%.3f", (a-b)/1e9 }')
   query_s=$(awk -v a="${t_query}" -v b="${t0}" 'BEGIN{ if (a==0) print -1; else printf "%.3f", (a-b)/1e9 }')
   total_s="${query_s}"
+
+  # Cloud Run does not separately expose image-pull vs boot, but it does emit
+  # `run.googleapis.com/container/startup_latencies` as a single bucketed
+  # latency. Pull the most recent mean and store it in image_pull_s (treat it
+  # as "everything before the server starts listening"), leaving boot_s at -1.
+  # Cloud Monitoring API needs a 15m window to have data from the warm-up.
+  local startup_mean
+  startup_mean="$(gcloud monitoring time-series list \
+    --project="${PROJECT_ID}" \
+    --filter="metric.type=\"run.googleapis.com/container/startup_latencies\" AND resource.labels.service_name=\"${CR_OLLAMA_SERVICE}\"" \
+    --interval-end-time="$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+    --interval-start-time="$(python3 -c 'import datetime as d; print((d.datetime.utcnow()-d.timedelta(minutes=15)).strftime("%Y-%m-%dT%H:%M:%SZ"))')" \
+    --format='value(points[0].value.distributionValue.mean)' 2>/dev/null | head -n1 || true)"
+  if [ -n "${startup_mean}" ] && [ "${startup_mean}" != "0" ]; then
+    # Cloud Run reports startupLatencies in milliseconds -> seconds.
+    image_pull_s="$(awk -v m="${startup_mean}" 'BEGIN{ printf "%.3f", m/1000 }')"
+  fi
 
   if [[ "${QUERY_COLD_LOGS}" == "true" ]]; then
     log "CloudRun rep=${rep}: pulling last startup latency log"
@@ -213,8 +283,8 @@ cloudrun_cold_start_once() {
     notes="${notes};startupLog=${sl:0:80}"
   fi
 
-  echo "$(date +%Y-%m-%dT%H:%M:%S),cloudrun,${rep},${MODEL_TAG},${scale_up_s},${pod_ready_s},${health_s},${query_s},${total_s},${notes}" >> "${RESULT_FILE}"
-  log "CloudRun rep=${rep} health=${health_s}s query=${query_s}s notes=${notes}"
+  echo "$(date +%Y-%m-%dT%H:%M:%S),cloudrun,${rep},${MODEL_TAG},${scale_up_s},${pod_ready_s},${image_pull_s},${boot_s},${health_s},${query_s},${total_s},${notes}" >> "${RESULT_FILE}"
+  log "CloudRun rep=${rep} startup=${image_pull_s}s health=${health_s}s query=${query_s}s notes=${notes}"
 }
 
 for rep in $(seq 1 "${REPETITIONS}"); do

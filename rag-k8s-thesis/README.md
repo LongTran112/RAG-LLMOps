@@ -49,7 +49,7 @@ rag-k8s-thesis/
 
 ## Runtime flow
 
-1. `ingestion/ingest_data.py` loads and chunks text files from `DATA_DIR` (default: `/data/sec_rag_dataset_50`).
+1. `ingestion/ingest_data.py` loads and chunks text files from `DATA_DIR` (default: `/data/sec_rag_dataset_100_pdf`).
 2. Chunks are embedded using `all-MiniLM-L6-v2`.
 3. Vectors and metadata are upserted into Qdrant collection `thesis_docs`.
 4. API `/query` retrieves top-k chunks from Qdrant.
@@ -134,15 +134,15 @@ kubectl apply -f k8s/ingestion/ingestion-cronjob.yaml
 
 The ingestion Job/CronJob is configured to mount this host dataset path:
 
-- `/Users/longtran/Projects/MasterThesis/sec_rag_dataset_50`
+- `/Users/longtran/Projects/MasterThesis/sec_rag_dataset_100_pdf`
 
 inside the container at:
 
-- `/data/sec_rag_dataset_50`
+- `/data/sec_rag_dataset_100_pdf`
 
 and sets:
 
-- `DATA_DIR=/data/sec_rag_dataset_50`
+- `DATA_DIR=/data/sec_rag_dataset_100_pdf`
 
 If your dataset path is different, update:
 

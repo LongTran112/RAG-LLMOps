@@ -31,14 +31,14 @@ spec:
             - name: INGEST_INPLACE
               value: "false"
             - name: DATA_DIR
-              value: /data/sec_rag_dataset_50
+              value: /data/sec_rag_dataset_100_pdf
             - name: EMBEDDING_BATCH_SIZE
               value: "64"
             - name: MAX_DOCS
               value: "0"
           volumeMounts:
             - name: sec-rag-dataset
-              mountPath: /data/sec_rag_dataset_50
+              mountPath: /data/sec_rag_dataset_100_pdf
               readOnly: true
           resources:
             requests:
@@ -50,5 +50,5 @@ spec:
       volumes:
         - name: sec-rag-dataset
           hostPath:
-            path: /host/MasterThesis/sec_rag_dataset_50
+            path: /host/MasterThesis/sec_rag_dataset_100_pdf
             type: Directory

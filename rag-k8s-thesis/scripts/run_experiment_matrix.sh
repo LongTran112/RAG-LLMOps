@@ -39,12 +39,32 @@ mkdir -p "${OUT_DIR}"
 log() { echo "[$(date)] $*" | tee -a "${OUT_DIR}/run.log"; }
 
 if [ "${ARCH}" = "gke" ] && [ -z "${BACKEND_URL}" ]; then
-  log "ARCH=gke: starting kubectl port-forward on 127.0.0.1:8000"
-  kubectl port-forward -n "${NAMESPACE}" svc/rag-backend 8000:80 >/dev/null 2>&1 &
-  PF_PID=$!
-  trap 'kill ${PF_PID} >/dev/null 2>&1 || true' EXIT
-  sleep 3
-  BACKEND_URL="http://127.0.0.1:8000"
+  # Prefer a real LB or Ingress URL so the GKE numbers include the same L7 hop
+  # Cloud Run is charged with. Fall back to `kubectl port-forward` only if
+  # neither exists — and log loudly, because port-forward bypasses the LB and
+  # makes the RPS/p95 columns incomparable across architectures.
+  BACKEND_URL=""
+  INGRESS_IP="$(kubectl get ingress rag-backend -n "${NAMESPACE}" \
+    -o jsonpath='{.status.loadBalancer.ingress[0].ip}' 2>/dev/null || true)"
+  LB_IP="$(kubectl get svc rag-backend-lb -n "${NAMESPACE}" \
+    -o jsonpath='{.status.loadBalancer.ingress[0].ip}' 2>/dev/null || true)"
+
+  if [ -n "${INGRESS_IP}" ]; then
+    BACKEND_URL="http://${INGRESS_IP}"
+    log "ARCH=gke: using Ingress URL ${BACKEND_URL} (includes L7 LB hop)"
+  elif [ -n "${LB_IP}" ]; then
+    BACKEND_URL="http://${LB_IP}"
+    log "ARCH=gke: using LoadBalancer URL ${BACKEND_URL} (includes LB hop)"
+  else
+    log "WARN: no Ingress or rag-backend-lb LoadBalancer found; falling back to kubectl port-forward."
+    log "WARN: port-forward skips the LB hop — GKE vs Cloud Run numbers will NOT be directly comparable."
+    log "WARN: apply k8s/backend/backend-lb.yaml (or the Ingress) for fair benchmarks."
+    kubectl port-forward -n "${NAMESPACE}" svc/rag-backend 8000:80 >/dev/null 2>&1 &
+    PF_PID=$!
+    trap 'kill ${PF_PID} >/dev/null 2>&1 || true' EXIT
+    sleep 3
+    BACKEND_URL="http://127.0.0.1:8000"
+  fi
 fi
 
 for model in ${MODELS}; do
@@ -91,6 +111,19 @@ for model in ${MODELS}; do
     if [ -n "${AUDIENCE}" ]; then
       AUTH_TOKEN="$(gcloud auth print-identity-token --audiences="${AUDIENCE}" 2>/dev/null || true)"
     fi
+
+    # GPU-util sampling runs in parallel with k6 so RESULTS.md can report
+    # real p50 / p95 / peak numbers instead of "attach Grafana screenshot".
+    # The rps_sweep.js profile sums to ~360s end-to-end; we give the sampler
+    # that window + 30s buffer.
+    GPU_START_EPOCH="$(date +%s)"
+    GPU_END_EPOCH=$(( GPU_START_EPOCH + 390 ))
+    TARGET="${ARCH}" OUT_DIR="${OUT_DIR}" MODEL_TAG="${model}" \
+      START_EPOCH="${GPU_START_EPOCH}" END_EPOCH="${GPU_END_EPOCH}" \
+      PROJECT_ID="${PROJECT_ID:-}" REGION="${REGION:-europe-west3}" \
+      ./scripts/capture_gpu_util.sh >>"${OUT_DIR}/run.log" 2>&1 &
+    GPU_PID=$!
+
     k6 run \
       -e BASE_URL="${BACKEND_URL}" \
       -e AUTH_TOKEN="${AUTH_TOKEN}" \
@@ -100,6 +133,8 @@ for model in ${MODELS}; do
       --summary-export="${OUT_DIR}/k6_${MODEL_SAFE}_summary.json" \
       --out "csv=${OUT_DIR}/k6_${MODEL_SAFE}_raw.csv" \
       benchmarks/k6/rps_sweep.js || true
+
+    wait "${GPU_PID}" 2>/dev/null || true
   else
     log "[4/5] skipping k6 (SKIP_K6=${SKIP_K6} or k6 not installed)"
   fi

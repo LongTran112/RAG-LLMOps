@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
-# Load sec_rag_dataset_50 (or any folder of .txt files) into Qdrant in the cluster via port-forward.
+# Load sec_rag_dataset_100_pdf (or any folder of .pdf/.txt files) into Qdrant in the cluster via port-forward.
 # Usage:
 #   kubectl config use-context gke_<project>_<region>_rag-thesis-gpu
-#   DATA_DIR=/path/to/sec_rag_dataset_50 ./scripts/ingest_local_to_qdrant.sh
+#   DATA_DIR=/path/to/sec_rag_dataset_100_pdf ./scripts/ingest_local_to_qdrant.sh
 set -euo pipefail
 
 NS="${NS:-rag-thesis}"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
-DATA_DIR="${DATA_DIR:-${REPO_ROOT}/../sec_rag_dataset_50}"
+DATA_DIR="${DATA_DIR:-${REPO_ROOT}/../sec_rag_dataset_100_pdf}"
 
 if [[ ! -d "${DATA_DIR}" ]]; then
   echo "ERROR: DATA_DIR is not a directory: ${DATA_DIR}" >&2

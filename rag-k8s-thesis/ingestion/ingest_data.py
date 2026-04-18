@@ -23,8 +23,8 @@ from qdrant_client.http.models import (
     VectorParams,
 )
 
-DATA_DIR = Path(os.getenv("DATA_DIR", "/data/sec_rag_dataset_50"))
-GCS_DATA_URI = os.getenv("GCS_DATA_URI", "").strip()  # e.g. gs://my-bucket/sec_rag_dataset_50
+DATA_DIR = Path(os.getenv("DATA_DIR", "/data/sec_rag_dataset_100_pdf"))
+GCS_DATA_URI = os.getenv("GCS_DATA_URI", "").strip()  # e.g. gs://my-bucket/sec_rag_dataset_100_pdf
 # Logical collection/alias that the API always reads from. The ingestion job writes
 # to a dated physical collection, then atomically swaps this alias so queries never
 # see a partially-indexed corpus (blue/green vector indexing).

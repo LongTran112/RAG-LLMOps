@@ -31,7 +31,10 @@ metadata:
   labels:
     app.kubernetes.io/name: ollama
 spec:
-  replicas: 1
+  # Do NOT pin `replicas` here -- the HPA
+  # (k8s/llm-inference/ollama-gpu-hpa.yaml) owns this field. GPU pods take
+  # minutes to schedule, so a pinned replica count fighting the HPA is
+  # particularly damaging to the cold-start and cost numbers.
   selector:
     matchLabels:
       app.kubernetes.io/name: ollama

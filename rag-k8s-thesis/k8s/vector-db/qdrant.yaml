@@ -9,9 +9,11 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
+  # Sized for the 100-PDF thesis corpus (~50 k pages → ~150–200 k chunks).
+  # MiniLM-L6 vectors + HNSW graph + payloads comfortably fit in 25 GiB.
   resources:
     requests:
-      storage: 10Gi
+      storage: 25Gi
 ---
 apiVersion: v1
 kind: Service
@@ -56,13 +58,17 @@ spec:
           ports:
             - containerPort: 6333
               name: http
+          # Thesis metric "active RAM footprint of the Vector DB on ~50 k pages"
+          # needs headroom so the kernel does not OOM-kill or swap while we
+          # sample RSS. 4 GiB request / 8 GiB limit keeps the HNSW graph and
+          # 384-dim MiniLM vectors resident for the full 100-PDF corpus.
           resources:
             requests:
-              cpu: "500m"
-              memory: "1Gi"
-            limits:
               cpu: "1"
-              memory: "2Gi"
+              memory: "4Gi"
+            limits:
+              cpu: "2"
+              memory: "8Gi"
           volumeMounts:
             - name: qdrant-storage
               mountPath: /qdrant/storage

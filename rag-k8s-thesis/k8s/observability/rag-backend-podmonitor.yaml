@@ -1,0 +1,34 @@
+# PodMonitor so kube-prometheus-stack scrapes the backend's /metrics endpoint.
+#
+# The backend exposes:
+#   - rag_inflight_requests{endpoint=...}  -> queue-depth gauge for the
+#     "100 users at once" thesis experiment (see backend/app/main.py).
+#   - http_request_duration_seconds / http_requests_total histograms from
+#     prometheus-fastapi-instrumentator (per-endpoint latency + RPS, which
+#     is what RESULTS.md § 3 actually reports).
+#
+# This resource requires kube-prometheus-stack's Prometheus Operator CRDs.
+# Apply after the chart is installed (see k8s/observability/README.md §1).
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: rag-backend
+  namespace: rag-thesis
+  labels:
+    app.kubernetes.io/name: rag-backend
+    app.kubernetes.io/part-of: rag-k8s-thesis
+    # release label matches kube-prometheus-stack's default selector so the
+    # Prometheus instance picks it up without needing extra config.
+    release: kps
+spec:
+  namespaceSelector:
+    matchNames:
+      - rag-thesis
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: rag-backend
+  podMetricsEndpoints:
+    - port: http
+      path: /metrics
+      interval: 5s
+      scrapeTimeout: 3s

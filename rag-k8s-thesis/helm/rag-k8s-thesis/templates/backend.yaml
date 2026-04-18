@@ -24,7 +24,12 @@ metadata:
     app.kubernetes.io/name: rag-backend
     {{- include "rag-k8s-thesis.labels" . | nindent 4 }}
 spec:
+  {{- if not .Values.backend.autoscaling.enabled }}
+  # Only pin replicas when the HPA is disabled. With autoscaling on, the HPA
+  # (hpa.yaml) owns this field and setting it here causes oscillation that
+  # corrupts the RPS / cost-per-1000-requests thesis numbers.
   replicas: {{ .Values.backend.replicaCount }}
+  {{- end }}
   selector:
     matchLabels:
       app.kubernetes.io/name: rag-backend
@@ -33,6 +38,10 @@ spec:
       labels:
         app.kubernetes.io/name: rag-backend
         {{- include "rag-k8s-thesis.labels" . | nindent 8 }}
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: {{ .Values.backend.service.targetPort | quote }}
+        prometheus.io/path: "/metrics"
     spec:
       containers:
         - name: rag-backend

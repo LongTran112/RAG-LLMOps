@@ -1,0 +1,35 @@
+# External LoadBalancer exposing the backend for benchmarking.
+#
+# Why this exists:
+#   - Cloud Run is hit at its public URL (with the full L7 LB hop) by the
+#     benchmark matrix.
+#   - The GKE matrix used to fall back to `kubectl port-forward`, which
+#     bypasses the ingress / L7 LB entirely. That made the GKE vs Cloud Run
+#     p95 and RPS numbers incomparable because the GKE column excluded the
+#     hop Cloud Run was charged with.
+#   - This Service gives a real external IP so the matrix can hit the same
+#     kind of LB hop on both sides.
+#
+# It is separate from the existing Ingress so you can choose: Ingress
+# (GCLB, HTTPS, hostname) for "product-style" numbers, or this LB for a
+# clean Service-level comparison without ingress controller in the middle.
+apiVersion: v1
+kind: Service
+metadata:
+  name: rag-backend-lb
+  namespace: rag-thesis
+  labels:
+    app.kubernetes.io/name: rag-backend
+    app.kubernetes.io/part-of: rag-k8s-thesis
+  annotations:
+    # Use a regional network LB on GCP so latency to europe-west3 clients is
+    # predictable. Remove/replace if you benchmark from outside the region.
+    cloud.google.com/load-balancer-type: "External"
+spec:
+  type: LoadBalancer
+  selector:
+    app.kubernetes.io/name: rag-backend
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8000

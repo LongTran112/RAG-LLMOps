@@ -23,7 +23,10 @@ metadata:
     app.kubernetes.io/name: rag-backend
     app.kubernetes.io/part-of: rag-k8s-thesis
 spec:
-  replicas: 1
+  # Do NOT pin `replicas` here -- the HPA (k8s/backend/backend-hpa.yaml) owns
+  # this field. Re-applying this manifest with a hard-coded replica count
+  # fights the HPA's decision and causes the pod count to oscillate, which
+  # corrupts the RPS / cost-per-1000-requests numbers during benchmarks.
   selector:
     matchLabels:
       app.kubernetes.io/name: rag-backend
@@ -32,6 +35,13 @@ spec:
       labels:
         app.kubernetes.io/name: rag-backend
         app.kubernetes.io/part-of: rag-k8s-thesis
+      annotations:
+        # Makes the pod's /metrics endpoint scrapable by a generic Prometheus
+        # config (our PodMonitor uses the same port + path and works whether
+        # kube-prometheus-stack is installed or not).
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8000"
+        prometheus.io/path: "/metrics"
     spec:
       containers:
         - name: rag-backend
@@ -77,12 +87,15 @@ spec:
               value: "true"
             - name: REQUEST_TIMEOUT_SECONDS
               value: "900"
+          # 8 uvicorn workers (WEB_CONCURRENCY=8) so the GKE vs Cloud Run RPS
+          # comparison is fair at the web-server layer. Backend is I/O-bound
+          # on Ollama/Qdrant so 2 CPUs is enough; bump if you raise workers.
           resources:
             requests:
-              cpu: "500m"
+              cpu: "1"
               memory: "1Gi"
             limits:
-              cpu: "1000m"
+              cpu: "2"
               memory: "3Gi"
           livenessProbe:
             httpGet:

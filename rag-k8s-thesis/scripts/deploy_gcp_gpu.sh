@@ -19,7 +19,7 @@ RECREATE_GPU_POOL="${RECREATE_GPU_POOL:-false}"
 # GPU pool: cap at one node so cluster autoscaler never requests a second GPU VM (quota / scheduling).
 GPU_POOL_MIN_NODES="${GPU_POOL_MIN_NODES:-1}"
 GPU_POOL_MAX_NODES="${GPU_POOL_MAX_NODES:-1}"
-# If set (e.g. gs://my-bucket/sec_rag_dataset_50), ingestion Job downloads from GCS (needs bucket IAM for the GKE node SA).
+# If set (e.g. gs://my-bucket/sec_rag_dataset_100_pdf), ingestion Job downloads from GCS (needs bucket IAM for the GKE node SA).
 # If empty, the one-off ingestion Job is disabled; run ./scripts/ingest_local_to_qdrant.sh from your laptop instead.
 INGESTION_GCS_URI="${INGESTION_GCS_URI:-}"
 # =============================================

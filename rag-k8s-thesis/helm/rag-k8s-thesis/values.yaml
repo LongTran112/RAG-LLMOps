@@ -10,16 +10,19 @@ qdrant:
   enabled: true
   image: qdrant/qdrant:latest
   replicaCount: 1
-  storageSize: 10Gi
+  # Sized for the 100-PDF thesis corpus (~50 k pages → ~150–200 k chunks).
+  storageSize: 25Gi
   service:
     port: 6333
+  # Thesis metric "active RAM footprint on ~50 k pages" needs headroom so the
+  # kernel does not OOM-kill or swap while we sample RSS.
   resources:
     requests:
-      cpu: 500m
-      memory: 1Gi
-    limits:
       cpu: "1"
-      memory: 2Gi
+      memory: 4Gi
+    limits:
+      cpu: "2"
+      memory: 8Gi
 
 ollama:
   enabled: true
@@ -98,12 +101,14 @@ backend:
     warmupLlmOnStartup: true
     embeddingModelName: sentence-transformers/all-MiniLM-L6-v2
     requestTimeoutSeconds: 900
+  # 8 uvicorn workers (WEB_CONCURRENCY=8, set in backend/Dockerfile) so the
+  # GKE vs Cloud Run RPS comparison is fair at the web-server layer.
   resources:
     requests:
-      cpu: 500m
+      cpu: "1"
       memory: 1Gi
     limits:
-      cpu: 1000m
+      cpu: "2"
       memory: 3Gi
   autoscaling:
     enabled: true
@@ -118,9 +123,9 @@ ingestion:
     enabled: true
     # hostPath = Minikube/local node path. gcs = download from gs://bucket/prefix into emptyDir (needs GKE SA + bucket IAM).
     source: hostPath
-    hostPath: /host/MasterThesis/sec_rag_dataset_50
-    mountPath: /data/sec_rag_dataset_50
-    dataDir: /data/sec_rag_dataset_50
+    hostPath: /host/MasterThesis/sec_rag_dataset_100_pdf
+    mountPath: /data/sec_rag_dataset_100_pdf
+    dataDir: /data/sec_rag_dataset_100_pdf
     gcsUri: ""
   job:
     enabled: true
