@@ -5,7 +5,6 @@ from typing import Any
 
 import requests
 import streamlit as st
-from langchain_core.runnables import RunnableLambda
 
 BACKEND_URL = os.getenv("RAG_BACKEND_URL", "http://127.0.0.1:8000").rstrip("/")
 QUERY_TIMEOUT = int(os.getenv("RAG_QUERY_TIMEOUT_SECONDS", "900"))
@@ -52,12 +51,6 @@ def stream_rag_tokens(question: str, answer_mode: str) -> Iterator[str]:
             if evt.get("type") == "done":
                 break
 
-
-def _invoke_rag_chain(payload: dict[str, str]) -> dict[str, Any]:
-    return call_rag_backend(payload["query"], payload["answer_mode"])
-
-
-rag_chain = RunnableLambda(_invoke_rag_chain)
 
 st.set_page_config(page_title="RAG Thesis Tester", page_icon=":robot_face:", layout="wide")
 st.title("RAG Thesis Frontend Tester")
@@ -114,7 +107,7 @@ if st.button("Run Query", type="primary"):
                         st.json(source.get("metadata", {}))
             else:
                 with st.spinner("Querying RAG backend..."):
-                    result = rag_chain.invoke({"query": query, "answer_mode": answer_mode})
+                    result = call_rag_backend(query, answer_mode)
                 st.subheader("Answer")
                 st.write(result.get("answer", "No answer returned."))
                 st.subheader("Sources")
