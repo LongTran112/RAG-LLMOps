@@ -44,6 +44,13 @@ def stream_rag_tokens(question: str, answer_mode: str) -> Iterator[str]:
             if evt.get("type") == "sources":
                 st.session_state["rag_last_sources"] = evt.get("sources", [])
                 continue
+            if evt.get("type") == "thinking":
+                t = evt.get("t") or ""
+                if t:
+                    st.session_state["rag_last_thinking"] = (
+                        st.session_state.get("rag_last_thinking", "") + t
+                    )
+                continue
             if evt.get("type") == "token":
                 t = evt.get("t") or ""
                 if t:
@@ -52,78 +59,181 @@ def stream_rag_tokens(question: str, answer_mode: str) -> Iterator[str]:
                 break
 
 
+def render_sources(sources: list[dict[str, Any]]) -> None:
+    if not sources:
+        st.caption("No sources returned.")
+        return
+    with st.expander(f"Sources ({len(sources)})", expanded=False):
+        for idx, source in enumerate(sources, start=1):
+            metadata = source.get("metadata", {}) or {}
+            preview = source.get("content_preview", "") or ""
+            st.markdown(f"**{idx}. {metadata.get('source', 'Unknown source')}**")
+            cols = st.columns(3)
+            cols[0].caption(f"Page: {metadata.get('page', '-')}")
+            cols[1].caption(f"Chunk: {metadata.get('chunk_index', '-')}")
+            cols[2].caption(f"Score: {metadata.get('score', '-')}")
+            st.markdown(f"> {preview}")
+            st.divider()
+
+
+def summarize_thinking(thinking: str, max_chars: int = 220) -> str:
+    text = " ".join(thinking.strip().split())
+    if not text:
+        return ""
+    if len(text) <= max_chars:
+        return text
+    return f"{text[:max_chars].rstrip()}..."
+
+
+def render_thinking_collapsed(thinking: str) -> None:
+    summary = summarize_thinking(thinking)
+    if not summary:
+        return
+    st.markdown(
+        (
+            "<div style='opacity:0.65; font-size:0.92rem; "
+            "border-left:3px solid #9aa0a6; padding-left:10px; margin:6px 0;'>"
+            f"<strong>Thinking</strong>: {summary}"
+            "</div>"
+        ),
+        unsafe_allow_html=True,
+    )
+    with st.expander("View full thinking", expanded=False):
+        st.text(thinking)
+
+
+def run_query(
+    question: str, answer_mode: str, use_stream: bool
+) -> tuple[str, list[dict[str, Any]], dict[str, Any] | None, str]:
+    if use_stream:
+        st.session_state.pop("rag_last_sources", None)
+        st.session_state.pop("rag_last_thinking", None)
+        chunks: list[str] = []
+        for piece in stream_rag_tokens(question, answer_mode):
+            chunks.append(piece)
+            yield (
+                "".join(chunks),
+                st.session_state.get("rag_last_sources") or [],
+                None,
+                st.session_state.get("rag_last_thinking", ""),
+            )
+        return
+    result = call_rag_backend(question, answer_mode)
+    answer = result.get("answer", "No answer returned.")
+    sources = result.get("sources", []) or []
+    llm_meta = result.get("llm")
+    yield (answer, sources, llm_meta, "")
+
+
 st.set_page_config(page_title="RAG Thesis Tester", page_icon=":robot_face:", layout="wide")
-st.title("RAG Thesis Frontend Tester")
-st.caption("LangChain-powered UI for querying your FastAPI RAG backend.")
+st.title("RAG Thesis Chat")
+st.caption("Chat-style interface for your FastAPI RAG backend.")
 st.code(f"Backend: {BACKEND_URL}", language="text")
 
-use_stream = st.checkbox(
-    "Stream answer (recommended for interactive use)",
-    value=True,
-    help="Shows tokens as they arrive from Ollama for lower perceived latency.",
-)
+if "messages" not in st.session_state:
+    st.session_state["messages"] = []
 
-answer_profile = st.selectbox(
-    "Answer profile",
-    options=["Fast", "Complex"],
-    index=0,
-    help=(
-        "Fast uses the currently deployed fast model (phi3:mini or granite3.3:8b). "
-        "Complex uses the reasoning model (deepseek-r1:8b)."
-    ),
-)
+control_col1, control_col2 = st.columns([2, 1])
+with control_col1:
+    answer_profile = st.radio(
+        "Mode",
+        options=["Fast", "Complex"],
+        horizontal=True,
+        help=(
+            "Fast uses deployed fast model (phi3/granite). "
+            "Complex uses reasoning model (deepseek-r1:8b)."
+        ),
+    )
+with control_col2:
+    use_stream = st.toggle("Stream", value=True, help="Stream answer tokens like ChatGPT/Gemini.")
+
 answer_mode = "complex" if answer_profile == "Complex" else "fast"
 
-query = st.text_area(
-    "Ask a question",
-    value="What is this thesis PoC about?",
-    height=120,
-)
+for message in st.session_state["messages"]:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
+        if message["role"] == "assistant":
+            mode_label = "Complex" if message.get("answer_mode") == "complex" else "Fast"
+            st.caption(f"Mode: {mode_label}")
+            thinking = message.get("thinking", "")
+            if thinking:
+                render_thinking_collapsed(thinking)
+            render_sources(message.get("sources", []))
+            llm_meta = message.get("llm")
+            if llm_meta:
+                st.caption(
+                    f"Model used: {llm_meta.get('model_used', '-')} | "
+                    f"Fallback: {llm_meta.get('fallback', False)} | "
+                    f"Attempts: {llm_meta.get('attempts', '-')}"
+                )
 
-if st.button("Run Query", type="primary"):
-    if not query.strip():
-        st.warning("Please enter a question.")
-    else:
+if prompt := st.chat_input("Ask about the SEC filings dataset..."):
+    st.session_state["messages"].append({"role": "user", "content": prompt})
+    with st.chat_message("user"):
+        st.markdown(prompt)
+
+    with st.chat_message("assistant"):
+        thinking_header = st.empty()
+        thinking_placeholder = st.empty()
+        answer_placeholder = st.empty()
+        final_answer = ""
+        final_sources: list[dict[str, Any]] = []
+        final_llm_meta: dict[str, Any] | None = None
+        final_thinking = ""
         try:
-            if use_stream:
-                st.session_state.pop("rag_last_sources", None)
-                st.caption("Streaming answer from the backend (first tokens may take a moment on CPU).")
-                st.subheader("Answer")
-                if hasattr(st, "write_stream"):
-                    st.write_stream(stream_rag_tokens(query, answer_mode))
-                else:
-                    buf: list[str] = []
-                    for piece in stream_rag_tokens(query, answer_mode):
-                        buf.append(piece)
-                    st.write("".join(buf))
-                sources = st.session_state.get("rag_last_sources") or []
-                st.subheader("Sources")
-                if not sources:
-                    st.info("No sources were returned.")
-                else:
-                    for idx, source in enumerate(sources, start=1):
-                        st.markdown(f"**Source {idx}**")
-                        st.write(source.get("content_preview", ""))
-                        st.json(source.get("metadata", {}))
-            else:
-                with st.spinner("Querying RAG backend..."):
-                    result = call_rag_backend(query, answer_mode)
-                st.subheader("Answer")
-                st.write(result.get("answer", "No answer returned."))
-                st.subheader("Sources")
-                sources = result.get("sources", [])
-                if not sources:
-                    st.info("No sources were returned.")
-                else:
-                    for idx, source in enumerate(sources, start=1):
-                        st.markdown(f"**Source {idx}**")
-                        st.write(source.get("content_preview", ""))
-                        st.json(source.get("metadata", {}))
+            with st.spinner("Thinking..."):
+                for answer, sources, llm_meta, thinking in run_query(prompt, answer_mode, use_stream):
+                    final_answer = answer
+                    final_sources = sources
+                    final_llm_meta = llm_meta
+                    final_thinking = thinking
+                    if answer_mode == "complex":
+                        if final_answer:
+                            # As soon as answer starts, collapse and gray out thinking.
+                            thinking_header.empty()
+                            with thinking_placeholder.container():
+                                render_thinking_collapsed(final_thinking)
+                        else:
+                            thinking_header.caption("Thinking process (live)")
+                            if final_thinking:
+                                # Keep this readable during generation; show the most recent window.
+                                thinking_placeholder.code(final_thinking[-3000:])
+                            else:
+                                thinking_placeholder.code("...")
+                    if final_answer:
+                        answer_placeholder.markdown(final_answer)
+                    elif answer_mode != "complex":
+                        answer_placeholder.markdown("...")
+            render_sources(final_sources)
+            mode_label = "Complex" if answer_mode == "complex" else "Fast"
+            st.caption(f"Mode: {mode_label}")
+            if final_llm_meta:
+                st.caption(
+                    f"Model used: {final_llm_meta.get('model_used', '-')} | "
+                    f"Fallback: {final_llm_meta.get('fallback', False)} | "
+                    f"Attempts: {final_llm_meta.get('attempts', '-')}"
+                )
+            st.session_state["messages"].append(
+                {
+                    "role": "assistant",
+                    "content": final_answer or "No answer returned.",
+                    "sources": final_sources,
+                    "answer_mode": answer_mode,
+                    "llm": final_llm_meta,
+                    "thinking": final_thinking,
+                }
+            )
         except requests.HTTPError as exc:
-            st.error(f"Backend returned HTTP error: {exc}")
+            st.error(f"Backend HTTP error: {exc}")
             try:
                 st.json(exc.response.json())
             except Exception:
                 st.text(exc.response.text)
+            st.session_state["messages"].append(
+                {"role": "assistant", "content": f"Backend HTTP error: {exc}", "sources": [], "answer_mode": answer_mode}
+            )
         except Exception as exc:  # noqa: BLE001
             st.error(f"Query failed: {exc}")
+            st.session_state["messages"].append(
+                {"role": "assistant", "content": f"Query failed: {exc}", "sources": [], "answer_mode": answer_mode}
+            )

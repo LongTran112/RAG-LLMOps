@@ -391,6 +391,9 @@ class RagPipeline:
                         if not raw:
                             continue
                         data = json.loads(raw)
+                        thinking_piece = data.get("thinking") or ""
+                        if thinking_piece:
+                            yield f"data: {json.dumps({'type': 'thinking', 't': thinking_piece})}\n\n"
                         piece = data.get("response") or ""
                         if piece:
                             yield f"data: {json.dumps({'type': 'token', 't': piece})}\n\n"
