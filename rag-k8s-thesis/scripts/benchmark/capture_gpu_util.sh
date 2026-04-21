@@ -12,12 +12,12 @@
 #   Cloud Run:  Cloud Monitoring metric run.googleapis.com/container/gpu/utilizations
 #
 # Usage:
-#   TARGET=gke  OUT_DIR=benchmarks/gke_20260420   MODEL_TAG=qwen2.5:7b \
-#     DURATION_SECONDS=330 ./scripts/capture_gpu_util.sh
+#   TARGET=gke  OUT_DIR=benchmarks/gke_20260420   MODEL_TAG=granite3.3:8b \
+#     DURATION_SECONDS=330 ./scripts/benchmark/capture_gpu_util.sh
 #
 #   TARGET=cloudrun PROJECT_ID=... REGION=europe-west3 \
-#     CR_OLLAMA_SERVICE=ollama-gpu OUT_DIR=... MODEL_TAG=qwen2.5:7b \
-#     DURATION_SECONDS=330 ./scripts/capture_gpu_util.sh
+#     CR_OLLAMA_SERVICE=ollama-gpu OUT_DIR=... MODEL_TAG=deepseek-r1:8b \
+#     DURATION_SECONDS=330 ./scripts/benchmark/capture_gpu_util.sh
 #
 # Honors an explicit START_EPOCH + END_EPOCH pair if you already captured
 # the window; otherwise samples for DURATION_SECONDS starting now.

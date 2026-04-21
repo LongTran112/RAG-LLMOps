@@ -2,17 +2,17 @@
 # Runs the full thesis benchmark matrix against ONE architecture (gke | cloudrun)
 # for a given set of models. Writes all result CSVs to benchmarks/<arch>_<ts>/.
 #
-# Usage:
-#   ARCH=gke MODELS="phi3:mini qwen2.5:7b qwen2.5:14b qwen2.5:32b" \
-#     ./scripts/run_experiment_matrix.sh
+# Usage (from repo root):
+#   ARCH=gke MODELS="phi3:mini granite3.3:8b deepseek-r1:8b" \
+#     ./scripts/benchmark/run_experiment_matrix.sh
 #
 #   ARCH=cloudrun BACKEND_URL=https://rag-backend-xxx.a.run.app \
-#     MODELS="phi3:mini qwen2.5:7b" \
-#     ./scripts/run_experiment_matrix.sh
+#     MODELS="phi3:mini granite3.3:8b deepseek-r1:8b" \
+#     ./scripts/benchmark/run_experiment_matrix.sh
 #
-# Assumes the target environment is already deployed (scripts/deploy_gcp_gpu.sh
-# or scripts/deploy_gcp_cloudrun.sh, plus ingestion run against the shared
-# Qdrant). This script orchestrates:
+# Assumes the target environment is already deployed
+# (scripts/deploy/deploy_gcp_gpu.sh or scripts/deploy/deploy_gcp_cloudrun.sh,
+# plus ingestion run against the shared Qdrant). This script orchestrates:
 #   1. retrieval-only latency (/retrieve) via benchmark_retrieval.py
 #   2. TTFT + token-per-second via benchmark_stream.py
 #   3. full /query sync latency via benchmark.sh
@@ -21,8 +21,15 @@
 # per model.
 set -euo pipefail
 
+# All sibling benchmark helpers live next to this script. Resolving through
+# BASH_SOURCE means the matrix runs identically whether called from repo
+# root, from scripts/, or via an absolute path.
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
+cd "${REPO_ROOT}"
+
 ARCH="${ARCH:-gke}"
-MODELS="${MODELS:-phi3:mini qwen2.5:7b qwen2.5:14b qwen2.5:32b}"
+MODELS="${MODELS:-phi3:mini granite3.3:8b deepseek-r1:8b}"
 NAMESPACE="${NAMESPACE:-rag-thesis}"
 BACKEND_URL="${BACKEND_URL:-}"
 AUDIENCE="${AUDIENCE:-}"
@@ -83,7 +90,7 @@ for model in ${MODELS}; do
   fi
 
   log "[1/5] retrieval latency"
-  python3 scripts/benchmark_retrieval.py \
+  python3 "${SCRIPT_DIR}/benchmark_retrieval.py" \
     --base-url "${BACKEND_URL}" \
     --audience "${AUDIENCE}" \
     --prompts "${PROMPTS}" --repetitions 10 \
@@ -91,7 +98,7 @@ for model in ${MODELS}; do
     ${ARCH:+--sample-qdrant-rss} || true
 
   log "[2/5] streaming TTFT"
-  python3 scripts/benchmark_stream.py \
+  python3 "${SCRIPT_DIR}/benchmark_stream.py" \
     --base-url "${BACKEND_URL}" \
     --audience "${AUDIENCE}" \
     --models "${model}" --prompts "${PROMPTS}" --repetitions "${REPETITIONS}" \
@@ -102,7 +109,7 @@ for model in ${MODELS}; do
     PROMPT_IDS_CSV="${PROMPTS}" \
     REPETITIONS="${REPETITIONS}" \
     RESULT_DIR="${OUT_DIR}" \
-    ./scripts/benchmark.sh || true
+    "${SCRIPT_DIR}/benchmark.sh" || true
 
   if [ "${SKIP_K6}" != "true" ] && command -v k6 >/dev/null 2>&1; then
     log "[4/5] k6 ramp 1->${MAX_VUS} VUs"
@@ -121,7 +128,7 @@ for model in ${MODELS}; do
     TARGET="${ARCH}" OUT_DIR="${OUT_DIR}" MODEL_TAG="${model}" \
       START_EPOCH="${GPU_START_EPOCH}" END_EPOCH="${GPU_END_EPOCH}" \
       PROJECT_ID="${PROJECT_ID:-}" REGION="${REGION:-europe-west3}" \
-      ./scripts/capture_gpu_util.sh >>"${OUT_DIR}/run.log" 2>&1 &
+      "${SCRIPT_DIR}/capture_gpu_util.sh" >>"${OUT_DIR}/run.log" 2>&1 &
     GPU_PID=$!
 
     k6 run \
@@ -147,7 +154,7 @@ for model in ${MODELS}; do
       REPETITIONS=2 \
       CR_BACKEND_URL="${BACKEND_URL}" \
       CR_AUDIENCE="${AUDIENCE}" \
-      ./scripts/benchmark_coldstart.sh || true
+      "${SCRIPT_DIR}/benchmark_coldstart.sh" || true
   else
     log "[5/5] skipping cold-start (SKIP_COLDSTART=true)"
   fi

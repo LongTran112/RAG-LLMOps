@@ -8,12 +8,12 @@
 #
 # Usage:
 #   REPO_URL=https://github.com/<you>/<repo>.git REPO_REF=main \
-#     ./scripts/install_argocd.sh
+#     ./scripts/deploy/install_argocd.sh
 #
 # To measure "time-to-sync" for the thesis operational-complexity metric:
 #   1. Bump a value in helm/rag-k8s-thesis/values.yaml
 #   2. git commit && git push
-#   3. ./scripts/measure_argocd_sync.sh
+#   3. ./scripts/resilience/measure_argocd_sync.sh
 set -euo pipefail
 
 NAMESPACE="${ARGOCD_NAMESPACE:-argocd}"
@@ -63,6 +63,6 @@ Port-forward the UI:
 
 The Application object is now tracking ${REPO_URL}#${REPO_REF} (path: ${APP_PATH}).
 Pushing a commit that changes values.yaml should trigger an auto-sync within
-~3 minutes (default ArgoCD poll). Use scripts/measure_argocd_sync.sh to record
+~3 minutes (default ArgoCD poll). Use scripts/resilience/measure_argocd_sync.sh to record
 the exact time-to-sync.
 EOF

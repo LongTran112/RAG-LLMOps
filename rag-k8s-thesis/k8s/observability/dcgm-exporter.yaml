@@ -5,7 +5,7 @@
 #   - kube-prometheus-stack installed so the ServiceMonitor below is scraped
 #
 # The DaemonSet is pinned to accelerator=nvidia nodes (matches the node label
-# set by scripts/deploy_gcp_gpu.sh) and tolerates the nvidia.com/gpu taint.
+# set by scripts/deploy/deploy_gcp_gpu.sh) and tolerates the nvidia.com/gpu taint.
 
 apiVersion: v1
 kind: Namespace

@@ -59,7 +59,7 @@ gcloud beta billing projects describe abstract-arc-480317-s4
 
 ### B. Re-run setup commands
 
-`./scripts/deploy_gcp_gpu.sh` defaults to **`europe-west3` (Frankfurt)** so the GKE cluster, Artifact Registry, and GPU node pool stay in one region (a US cluster cannot use a EU GPU pool).
+`./scripts/deploy/deploy_gcp_gpu.sh` defaults to **`europe-west3` (Frankfurt)** so the GKE cluster, Artifact Registry, and GPU node pool stay in one region (a US cluster cannot use a EU GPU pool).
 
 ```bash
 PROJECT_ID="abstract-arc-480317-s4"
@@ -141,7 +141,9 @@ helm upgrade --install rag-poc ./helm/rag-k8s-thesis \
   --set ollama.autoscaling.targetCPUUtilizationPercentage=70 \
   --set backend.env.llmProvider=ollama \
   --set backend.env.llmBaseUrl=http://ollama:11434 \
-  --set backend.env.llmModel=phi3:mini
+  --set ollama.modelName=granite3.3:8b \
+  --set backend.env.llmModel=granite3.3:8b \
+  --set backend.env.llmFallbackModel=phi3:mini
 ```
 
 ### D. Apply raw HPA manifests (if you deploy with `kubectl apply` instead of Helm)
@@ -202,7 +204,8 @@ Estimated total:
   - `gcloud container clusters delete "$CLUSTER" --region "$REGION"`
 - Keep images in Artifact Registry; recreate cluster only when needed.
 - Use shorter benchmark windows and stop idle GPU nodes.
-- Start with `phi3:mini` and low repetition counts for smoke tests.
+- Start with `phi3:mini` and low repetition counts for smoke tests, then run the
+  full thesis trio: `phi3:mini`, `granite3.3:8b`, `deepseek-r1:8b`.
 
 ## 4) Recommended benchmark budget plan
 

@@ -6,15 +6,16 @@
 #
 #   1. raw Kubernetes YAML    (k8s/)
 #   2. Helm chart             (helm/rag-k8s-thesis/)
-#   3. Cloud Run bash IaC     (scripts/deploy_gcp_cloudrun.sh +
-#                              scripts/teardown_gcp_cloudrun.sh)
+#   3. Cloud Run bash IaC     (scripts/deploy/deploy_gcp_cloudrun.sh +
+#                              scripts/teardown/teardown_gcp_cloudrun.sh)
 #
 # Prefers `tokei` (much faster, better language detection) and falls back to
 # `cloc` if tokei is missing. Output is both human-readable (stdout) and
 # machine-readable (CSV under benchmarks/).
 set -euo pipefail
 
-REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+# Script lives at scripts/reports/loc_report.sh -- repo root is two levels up.
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "${REPO_ROOT}"
 
 RESULT_DIR="benchmarks"
@@ -66,10 +67,10 @@ RAW_K8S_LOC="$(count_loc "k8s" k8s/backend k8s/frontend k8s/llm-inference k8s/ve
 HELM_LOC="$(count_loc "helm" helm/rag-k8s-thesis)"
 
 # Bucket 3: Cloud Run bash IaC. Thesis-relevant scripts only.
-CR_LOC="$(count_loc "cloudrun" scripts/deploy_gcp_cloudrun.sh scripts/teardown_gcp_cloudrun.sh)"
+CR_LOC="$(count_loc "cloudrun" scripts/deploy/deploy_gcp_cloudrun.sh scripts/teardown/teardown_gcp_cloudrun.sh)"
 
 # Bonus: GKE bash IaC (for cross-checking with raw k8s + Helm numbers).
-GKE_BASH_LOC="$(count_loc "gke-bash" scripts/deploy_gcp_gpu.sh scripts/teardown_gcp_gpu.sh)"
+GKE_BASH_LOC="$(count_loc "gke-bash" scripts/deploy/deploy_gcp_gpu.sh scripts/teardown/teardown_gcp_gpu.sh)"
 
 printf "%-24s %10s\n" "bucket" "code_loc"
 printf "%-24s %10s\n" "------------------------" "----------"

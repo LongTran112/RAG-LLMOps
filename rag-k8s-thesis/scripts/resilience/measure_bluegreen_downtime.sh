@@ -24,7 +24,7 @@
 #
 # Usage:
 #   kubectl port-forward -n rag-thesis svc/rag-backend 8000:80 &
-#   BASE_URL=http://127.0.0.1:8000 ./scripts/measure_bluegreen_downtime.sh
+#   BASE_URL=http://127.0.0.1:8000 ./scripts/resilience/measure_bluegreen_downtime.sh
 # =============================================================================
 
 set -euo pipefail

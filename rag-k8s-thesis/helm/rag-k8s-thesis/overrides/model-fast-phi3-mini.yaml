@@ -1,0 +1,16 @@
+# Helm overlay for the fast baseline model row.
+ollama:
+  modelName: phi3:mini
+  contextLength: 2048
+  resources:
+    requests:
+      cpu: 1000m
+      memory: 6Gi
+    limits:
+      cpu: 2000m
+      memory: 10Gi
+
+backend:
+  env:
+    llmModel: phi3:mini
+    llmFallbackModel: phi3:mini

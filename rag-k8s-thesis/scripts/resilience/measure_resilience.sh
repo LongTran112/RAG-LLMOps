@@ -21,7 +21,7 @@
 #
 # Usage:
 #   kubectl port-forward -n rag-thesis svc/rag-backend 8000:80 &
-#   BASE_URL=http://127.0.0.1:8000 ./scripts/measure_resilience.sh
+#   BASE_URL=http://127.0.0.1:8000 ./scripts/resilience/measure_resilience.sh
 #
 # Overridable env:
 #   BASE_URL           (default http://127.0.0.1:8000)
@@ -59,9 +59,9 @@ require jq
 # Discover the currently-configured primary LLM so we can restore it later.
 PRIMARY_MODEL="${PRIMARY_MODEL:-$(kubectl get deploy "${BACKEND_DEPLOY}" -n "${NAMESPACE}" \
   -o jsonpath='{.spec.template.spec.containers[0].env[?(@.name=="LLM_MODEL")].value}' \
-  2>/dev/null || echo "qwen2.5:3b")}"
+  2>/dev/null || echo "granite3.3:8b")}"
 if [ -z "${PRIMARY_MODEL}" ]; then
-  PRIMARY_MODEL="qwen2.5:3b"
+  PRIMARY_MODEL="granite3.3:8b"
 fi
 echo "[info] primary model to restore at exit: ${PRIMARY_MODEL}"
 

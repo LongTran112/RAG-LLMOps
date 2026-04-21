@@ -4,7 +4,7 @@ This file is the single document that holds the outcome of the full
 experiment matrix defined in the thesis. The raw CSVs live alongside this
 file under `benchmarks/`.
 
-The experiment runner is `scripts/run_experiment_matrix.sh`; see the
+The experiment runner is `scripts/benchmark/run_experiment_matrix.sh`; see the
 [Runbook](#runbook) section at the bottom for the exact commands used.
 
 > **Status placeholder**: rows marked `TBD` are filled in by running the
@@ -37,7 +37,7 @@ Source: `ingest_data.py` emits one row per run into `ingestion_metrics.csv`
 
 | Run date | Docs/pages | Chunks | Embed + upsert (s) | Alias swap (s) | Total (s) | Notes |
 |---|---|---|---|---|---|---|
-| `TBD` | TBD | TBD | TBD | TBD | TBD | qwen2.5:3b baseline |
+| `TBD` | TBD | TBD | TBD | TBD | TBD | granite3.3:8b default baseline |
 
 Zero-downtime verification (blue/green swap under load):
 
@@ -76,27 +76,24 @@ All numbers measured at model-warmed steady state with 3 reps per prompt
 | Model | GKE p50 | GKE p95 | Cloud Run p50 | Cloud Run p95 |
 |---|---|---|---|---|
 | `phi3:mini`    | TBD | TBD | TBD | TBD |
-| `qwen2.5:7b`   | TBD | TBD | TBD | TBD |
-| `qwen2.5:14b`  | TBD | TBD | TBD | TBD |
-| `qwen2.5:32b`  | TBD | TBD | TBD | TBD |
+| `granite3.3:8b` | TBD | TBD | TBD | TBD |
+| `deepseek-r1:8b` | TBD | TBD | TBD | TBD |
 
 ### 3.2 End-to-end `/query` latency (s)
 
 | Model | GKE p50 | GKE p95 | Cloud Run p50 | Cloud Run p95 |
 |---|---|---|---|---|
 | `phi3:mini`    | TBD | TBD | TBD | TBD |
-| `qwen2.5:7b`   | TBD | TBD | TBD | TBD |
-| `qwen2.5:14b`  | TBD | TBD | TBD | TBD |
-| `qwen2.5:32b`  | TBD | TBD | TBD | TBD |
+| `granite3.3:8b` | TBD | TBD | TBD | TBD |
+| `deepseek-r1:8b` | TBD | TBD | TBD | TBD |
 
 ### 3.3 Max sustained RPS at 100 concurrent users (k6)
 
 | Model | GKE RPS | GKE p95 query (ms) | GKE error % | Cloud Run RPS | Cloud Run p95 | Cloud Run error % |
 |---|---|---|---|---|---|---|
 | `phi3:mini`    | TBD | TBD | TBD | TBD | TBD | TBD |
-| `qwen2.5:7b`   | TBD | TBD | TBD | TBD | TBD | TBD |
-| `qwen2.5:14b`  | TBD | TBD | TBD | TBD | TBD | TBD |
-| `qwen2.5:32b`  | TBD | TBD | TBD | TBD | TBD | TBD |
+| `granite3.3:8b` | TBD | TBD | TBD | TBD | TBD | TBD |
+| `deepseek-r1:8b` | TBD | TBD | TBD | TBD | TBD | TBD |
 
 Attach Grafana screenshots (`k8s/observability/grafana_dashboard_rag.json`)
 for GPU utilization + backend RPS/p95 during each row.
@@ -106,9 +103,8 @@ for GPU utilization + backend RPS/p95 during each row.
 | Model | GKE pod_ready | GKE first /query | Cloud Run healthz | Cloud Run first /query |
 |---|---|---|---|---|
 | `phi3:mini`    | TBD | TBD | TBD | TBD |
-| `qwen2.5:7b`   | TBD | TBD | TBD | TBD |
-| `qwen2.5:14b`  | TBD | TBD | TBD | TBD |
-| `qwen2.5:32b`  | TBD | TBD | TBD | TBD |
+| `granite3.3:8b` | TBD | TBD | TBD | TBD |
+| `deepseek-r1:8b` | TBD | TBD | TBD | TBD |
 
 Raw CSV: `benchmarks/<arch>_<ts>/coldstart_results_*.csv`.
 
@@ -116,19 +112,17 @@ Raw CSV: `benchmarks/<arch>_<ts>/coldstart_results_*.csv`.
 
 ## 4. Cost efficiency
 
-Query: `scripts/cost_per_1k_requests.sql` against the BigQuery billing
+Query: `scripts/reports/cost_per_1k_requests.sql` against the BigQuery billing
 export, over the exact benchmark window per model.
 
 | Architecture | Model | Idle $/hr | Active $/hr | Active $ / 1k requests |
 |---|---|---|---|---|
 | GKE       | phi3:mini    | TBD | TBD | TBD |
-| GKE       | qwen2.5:7b   | TBD | TBD | TBD |
-| GKE       | qwen2.5:14b  | TBD | TBD | TBD |
-| GKE       | qwen2.5:32b  | TBD | TBD | TBD |
+| GKE       | granite3.3:8b | TBD | TBD | TBD |
+| GKE       | deepseek-r1:8b | TBD | TBD | TBD |
 | Cloud Run | phi3:mini    | TBD | TBD | TBD |
-| Cloud Run | qwen2.5:7b   | TBD | TBD | TBD |
-| Cloud Run | qwen2.5:14b  | TBD | TBD | TBD |
-| Cloud Run | qwen2.5:32b  | TBD | TBD | TBD |
+| Cloud Run | granite3.3:8b | TBD | TBD | TBD |
+| Cloud Run | deepseek-r1:8b | TBD | TBD | TBD |
 
 Observation hypothesis (to confirm/refute with data):
 
@@ -166,15 +160,15 @@ Observation hypothesis (to confirm/refute with data):
 |---|---|
 | Raw Kubernetes YAML LoC (`k8s/`) | TBD |
 | Helm chart LoC (`helm/rag-k8s-thesis/`) | TBD |
-| Cloud Run bash IaC LoC (`scripts/deploy_gcp_cloudrun.sh` + teardown) | TBD |
-| GKE bash IaC LoC (`scripts/deploy_gcp_gpu.sh` + teardown) | TBD |
+| Cloud Run bash IaC LoC (`scripts/deploy/deploy_gcp_cloudrun.sh` + teardown) | TBD |
+| GKE bash IaC LoC (`scripts/deploy/deploy_gcp_gpu.sh` + teardown) | TBD |
 | CI pipeline duration median (5 runs) | TBD |
 | ArgoCD time-to-sync median (5 config commits) | TBD |
 
 Generate the LoC row with:
 
 ```bash
-./scripts/loc_report.sh
+./scripts/reports/loc_report.sh
 ```
 
 Capture CI durations:
@@ -192,23 +186,23 @@ Numbers in this document must be regenerated end-to-end, not hand-edited.
 
 ```bash
 # 1. Deploy
-PROJECT_ID=... REGION=europe-west3 ./scripts/deploy_gcp_gpu.sh
-PROJECT_ID=... REGION=europe-west3 ./scripts/deploy_gcp_cloudrun.sh
+PROJECT_ID=... REGION=europe-west3 ./scripts/deploy/deploy_gcp_gpu.sh
+PROJECT_ID=... REGION=europe-west3 ./scripts/deploy/deploy_gcp_cloudrun.sh
 
 # 2. Populate Qdrant (blue/green)
 # -- produces a dated collection, then flips alias `thesis_docs_active`
 kubectl -n rag-thesis create job --from=cronjob/rag-ingestion-nightly ingest-${TS}
 
 # 3. Run the matrix on GKE
-ARCH=gke ./scripts/run_experiment_matrix.sh
+ARCH=gke ./scripts/benchmark/run_experiment_matrix.sh
 
 # 4. Run the matrix on Cloud Run
 BACKEND_URL=$(gcloud run services describe rag-backend --region europe-west3 --format='value(status.url)')
 ARCH=cloudrun BACKEND_URL="${BACKEND_URL}" AUDIENCE="${BACKEND_URL}" \
-  ./scripts/run_experiment_matrix.sh
+  ./scripts/benchmark/run_experiment_matrix.sh
 
 # 5. Cost + LoC + CI/CD
-./scripts/loc_report.sh
+./scripts/reports/loc_report.sh
 # Run cost query in BigQuery console, paste results into section 4.
 
 # 6. Grafana + Cloud Monitoring screenshots

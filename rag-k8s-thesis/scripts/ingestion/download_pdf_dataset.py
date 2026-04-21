@@ -17,9 +17,9 @@ Strategy:
      produce fewer pages at our font size.
 
 Usage:
-    python scripts/download_pdf_dataset.py                # defaults: 100 docs
-    TARGET_DOCS=25 MIN_PAGES=50 python scripts/download_pdf_dataset.py
-    OUTPUT_DIR=sec_rag_dataset_100_pdf python scripts/download_pdf_dataset.py
+    python scripts/ingestion/download_pdf_dataset.py                # defaults: 100 docs
+    TARGET_DOCS=25 MIN_PAGES=50 python scripts/ingestion/download_pdf_dataset.py
+    OUTPUT_DIR=sec_rag_dataset_100_pdf python scripts/ingestion/download_pdf_dataset.py
 
 Upload to GCS for in-cluster ingestion:
     gsutil -m rsync -r sec_rag_dataset_100_pdf \\

@@ -10,7 +10,7 @@ CLUSTER="${CLUSTER:-rag-thesis-gpu}"
 REPO="${REPO:-rag-thesis}"
 IMAGE_TAG="${IMAGE_TAG:-gcp-gpu-v2}"
 # Space-separated zones to try, in order (L4 + g2 often hits GCE_STOCKOUT in one zone but not another).
-# Override with: GPU_POOL_ZONES="europe-west3-b" ./scripts/deploy_gcp_gpu.sh
+# Override with: GPU_POOL_ZONES="europe-west3-b" ./scripts/deploy/deploy_gcp_gpu.sh
 # Or legacy single zone: GPU_ZONE=europe-west3-a (only that zone is tried).
 GPU_POOL_ZONES="${GPU_POOL_ZONES:-europe-west3-a europe-west3-b europe-west3-c}"
 GPU_ZONE="${GPU_ZONE:-}"
@@ -20,7 +20,7 @@ RECREATE_GPU_POOL="${RECREATE_GPU_POOL:-false}"
 GPU_POOL_MIN_NODES="${GPU_POOL_MIN_NODES:-1}"
 GPU_POOL_MAX_NODES="${GPU_POOL_MAX_NODES:-1}"
 # If set (e.g. gs://my-bucket/sec_rag_dataset_100_pdf), ingestion Job downloads from GCS (needs bucket IAM for the GKE node SA).
-# If empty, the one-off ingestion Job is disabled; run ./scripts/ingest_local_to_qdrant.sh from your laptop instead.
+# If empty, the one-off ingestion Job is disabled; run ./scripts/ingestion/ingest_local_to_qdrant.sh from your laptop instead.
 INGESTION_GCS_URI="${INGESTION_GCS_URI:-}"
 # =============================================
 
@@ -147,8 +147,9 @@ gcloud artifacts repositories create "${REPO}" \
   --description="RAG thesis images" || true
 
 echo "==> Build and push images via Google Cloud Build (no local docker push)"
+# Script lives at scripts/deploy/deploy_gcp_gpu.sh -- repo root is two up.
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+REPO_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 cd "${REPO_ROOT}"
 
 BASE_TAG="${BASE_TAG:-v1}"
@@ -286,7 +287,7 @@ if [[ -n "${INGESTION_GCS_URI}" ]]; then
     --set "ingestion.dataset.gcsUri=${INGESTION_GCS_URI}"
   )
 else
-  echo "==> Ingestion: skipping in-cluster Job (no INGESTION_GCS_URI). Run ./scripts/ingest_local_to_qdrant.sh to create thesis_docs."
+  echo "==> Ingestion: skipping in-cluster Job (no INGESTION_GCS_URI). Run ./scripts/ingestion/ingest_local_to_qdrant.sh to create thesis_docs."
   HELM_INGEST+=(
     --set ingestion.job.enabled=false
     --set ingestion.dataset.enabled=false
@@ -314,7 +315,9 @@ helm upgrade --install rag-poc ./helm/rag-k8s-thesis \
   --set ollama.autoscaling.targetCPUUtilizationPercentage=70 \
   --set backend.env.llmProvider=ollama \
   --set backend.env.llmBaseUrl=http://ollama:11434 \
-  --set backend.env.llmModel=phi3:mini \
+  --set ollama.modelName=granite3.3:8b \
+  --set backend.env.llmModel=granite3.3:8b \
+  --set backend.env.llmFallbackModel=phi3:mini \
   "${HELM_INGEST[@]}"
 
 echo "==> Verify"

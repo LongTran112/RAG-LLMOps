@@ -40,28 +40,32 @@ switch_model phi3:mini
 switch_model granite3.3:8b
 ```
 
-## 3) Benchmark matrix (thesis models — 7B / 14B / 32B sweep)
+## 3) Benchmark matrix (reasoning-vs-fast scope)
 
-Use the same query set and same cluster resources for all rows. The thesis
-explicitly stress-tests the **infrastructure** across increasing parameter
-sizes, not answer quality, so we lock in one model per size class and sweep.
+Use the same query set and same cluster resources for all rows. The thesis now
+focuses on comparing one reasoning model versus two fast-answer models under
+the same RAG pipeline and deployment architectures.
 
-| Model | Params | Quantization | VRAM needed | Recommended GPU | Concurrency set | Repetitions per prompt | Notes |
+| Model | Role | Quantization | VRAM needed | Recommended GPU | Concurrency set | Repetitions per prompt | Notes |
 |---|---|---|---|---|---|---|---|
-| `phi3:mini` | 3.8B | Q4 (default Ollama) | ~3 GB | nvidia-l4 (24 GB) | `1, 10, 50, 100` | 3 | Smoke/baseline |
-| `qwen2.5:7b` | 7B | Q4_K_M | ~5 GB | nvidia-l4 (24 GB) | `1, 10, 50, 100` | 3 | Main 7B row |
-| `qwen2.5:14b` | 14B | Q4_K_M | ~10 GB | nvidia-l4 (24 GB) | `1, 10, 50, 100` | 3 | Main 14B row — fits on L4 |
-| `qwen2.5:32b` | 32B | Q4_K_M | ~20 GB | nvidia-l4 (tight); fallback nvidia-a100-40gb | `1, 10, 25, 50` | 3 | 32B Q4 is tight on 24 GB VRAM. If Ollama fails to load, redeploy GKE with `GPU_MACHINE_TYPE=a2-highgpu-1g` and rerun only the 32B row. Record which GPU SKU was actually used in the results CSV. |
+| `phi3:mini` | Fast | Q4 (default Ollama) | ~3 GB | nvidia-l4 (24 GB) | `1, 10, 50, 100` | 3 | Fast baseline and fallback model |
+| `granite3.3:8b` | Fast | Q4 (default Ollama) | ~8-10 GB | nvidia-l4 (24 GB) | `1, 10, 50, 100` | 3 | Main fast-answer row |
+| `deepseek-r1:8b` | Reasoning | Q4 (default Ollama) | ~10-12 GB | nvidia-l4 (24 GB) | `1, 10, 25, 50` | 3 | Reasoning-focused row; keep higher timeout |
 
-Before each row, update Helm values to give Ollama enough headroom:
+Before each row, apply the model-specific Helm override:
 
 ```bash
-# example for the 14B row on GKE
+# fast baseline
 helm upgrade --install rag-k8s-thesis ./helm/rag-k8s-thesis \
-  --set ollama.modelName=qwen2.5:14b \
-  --set ollama.contextLength=4096 \
-  --set ollama.resources.limits.memory=20Gi \
-  --set ollama.resources.requests.memory=12Gi
+  -f helm/rag-k8s-thesis/overrides/model-fast-phi3-mini.yaml
+
+# fast 8B
+helm upgrade --install rag-k8s-thesis ./helm/rag-k8s-thesis \
+  -f helm/rag-k8s-thesis/overrides/model-fast-granite3.3-8b.yaml
+
+# reasoning 8B
+helm upgrade --install rag-k8s-thesis ./helm/rag-k8s-thesis \
+  -f helm/rag-k8s-thesis/overrides/model-reasoning-deepseek-r1-8b.yaml
 ```
 
 For Cloud Run the equivalent is:
@@ -72,10 +76,6 @@ gcloud run services update ollama-gpu \
   --memory 32Gi --cpu 8 \
   --gpu 1 --gpu-type nvidia-l4
 ```
-
-If the 32B model cannot fit L4 VRAM, document the fallback and rerun only
-the 32B row on an A100 node pool (the existing `scripts/deploy_gcp_gpu.sh`
-already exposes `GPU_MACHINE_TYPE` so this is a one-variable change).
 
 ## 4) Prompt set (fixed across all models)
 
@@ -151,15 +151,15 @@ Record one row per run:
 Use the included script:
 
 ```bash
-chmod +x scripts/benchmark.sh
-./scripts/benchmark.sh
+chmod +x scripts/benchmark/benchmark.sh
+./scripts/benchmark/benchmark.sh
 ```
 
 Useful overrides:
 
 ```bash
-MODELS_CSV="phi3:mini,qwen2.5:3b" REPETITIONS=2 PROMPT_IDS_CSV="P1,P2" ./scripts/benchmark.sh
-REQUEST_TIMEOUT_SECONDS=1800 CURL_MAX_TIME=1800 MODELS_CSV="granite3.3:8b" PROMPT_IDS_CSV="P1" ./scripts/benchmark.sh
+MODELS_CSV="phi3:mini,granite3.3:8b,deepseek-r1:8b" REPETITIONS=2 PROMPT_IDS_CSV="P1,P2" ./scripts/benchmark/benchmark.sh
+REQUEST_TIMEOUT_SECONDS=1800 CURL_MAX_TIME=1800 MODELS_CSV="granite3.3:8b" PROMPT_IDS_CSV="P1" ./scripts/benchmark/benchmark.sh
 ```
 
 The script defaults to **benchmark mode** (disables product latency caps) via:
@@ -180,11 +180,11 @@ Outputs are written to:
 Run fast-vs-quality comparison for the same model:
 
 ```bash
-MODELS_CSV="phi3:mini" PROMPT_IDS_CSV="P1,P2,P3" REPETITIONS=2 ./scripts/benchmark_profiles.sh
+MODELS_CSV="phi3:mini,granite3.3:8b,deepseek-r1:8b" PROMPT_IDS_CSV="P1,P2,P3" REPETITIONS=2 ./scripts/benchmark/benchmark_profiles.sh
 ```
 
 Use vLLM endpoint instead of Ollama:
 
 ```bash
-LLM_PROVIDER="vllm" LLM_BASE_URL="http://vllm:8000" MODELS_CSV="microsoft/Phi-3-mini-4k-instruct" ./scripts/benchmark_profiles.sh
+LLM_PROVIDER="vllm" LLM_BASE_URL="http://vllm:8000" MODELS_CSV="microsoft/Phi-3-mini-4k-instruct" ./scripts/benchmark/benchmark_profiles.sh
 ```

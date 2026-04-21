@@ -9,7 +9,7 @@
 #
 # Run once per project. After billing export is active, results start flowing
 # into `rag_thesis_billing.gcp_billing_export_resource_v1_<BILLING_ACCOUNT>`
-# within 24 hours; use `scripts/cost_per_1k_requests.sql` to query it.
+# within 24 hours; use `scripts/reports/cost_per_1k_requests.sql` to query it.
 set -euo pipefail
 
 PROJECT_ID="${PROJECT_ID:-abstract-arc-480317-s4}"
@@ -38,5 +38,5 @@ echo "        Project:  ${PROJECT_ID}"
 echo "        Dataset:  ${DATASET}"
 echo "  4. Save. Data will start appearing within 24h."
 echo
-echo "Then in scripts/cost_per_1k_requests.sql replace the REPLACE_ME placeholders"
+echo "Then in scripts/reports/cost_per_1k_requests.sql replace the REPLACE_ME placeholders"
 echo "with the auto-generated table name (gcp_billing_export_resource_v1_<id>)."

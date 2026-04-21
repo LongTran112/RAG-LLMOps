@@ -63,8 +63,8 @@ edit.
 
 ### 1.1 Cold-start does not separate image-pull time from boot time
 
-- **Current state.** [`scripts/benchmark_coldstart.sh`](scripts/benchmark_coldstart.sh) captures `scale_up_s`, `pod_ready_s`, `health_200_s`, `query_200_s`, `total_s` (CSV header line 62). There is no column for container image pull vs container boot — pod-ready already folds both together.
-- **Why it matters.** Your scope explicitly names "Cold Start Latency (container image pull and boot times)" as a measured sub-metric. Image pull dominates for a fresh node (often 60-120 s for the `ollama/ollama` image + model weights if `postStart` pulls them), and boot time dominates after the image is cached. A single `pod_ready` number hides the trade-off between the two architectures (Cloud Run's GCS-Fuse model cache in [`scripts/deploy_gcp_cloudrun.sh`](scripts/deploy_gcp_cloudrun.sh) lines 157-197 vs. GKE's PVC in [`k8s/llm-inference/ollama-gpu.yaml`](k8s/llm-inference/ollama-gpu.yaml)).
+- **Current state.** [`scripts/benchmark/benchmark_coldstart.sh`](scripts/benchmark/benchmark_coldstart.sh) captures `scale_up_s`, `pod_ready_s`, `health_200_s`, `query_200_s`, `total_s` (CSV header line 62). There is no column for container image pull vs container boot — pod-ready already folds both together.
+- **Why it matters.** Your scope explicitly names "Cold Start Latency (container image pull and boot times)" as a measured sub-metric. Image pull dominates for a fresh node (often 60-120 s for the `ollama/ollama` image + model weights if `postStart` pulls them), and boot time dominates after the image is cached. A single `pod_ready` number hides the trade-off between the two architectures (Cloud Run's GCS-Fuse model cache in [`scripts/deploy/deploy_gcp_cloudrun.sh`](scripts/deploy/deploy_gcp_cloudrun.sh) lines 157-197 vs. GKE's PVC in [`k8s/llm-inference/ollama-gpu.yaml`](k8s/llm-inference/ollama-gpu.yaml)).
 - **Proposed change.** Parse Kubernetes events between the scale-up and the ready condition and derive two new CSV columns (`image_pull_s`, `boot_s`). For Cloud Run, pull `run.googleapis.com/container/startup_latencies` — already referenced in [`k8s/observability/README.md`](k8s/observability/README.md) § 4 but not yet wired into the CSV.
   ```bash
   # GKE path, after the pod is ready, before writing the CSV row
@@ -94,7 +94,7 @@ edit.
 ### 1.2 GKE vs Cloud Run RPS comparison is unfair at the web-server layer
 
 - **Current state.**
-  - Cloud Run pins backend concurrency to 8: [`scripts/deploy_gcp_cloudrun.sh`](scripts/deploy_gcp_cloudrun.sh) line 57 `BACKEND_CONCURRENCY="${BACKEND_CONCURRENCY:-8}"` and line 225.
+  - Cloud Run pins backend concurrency to 8: [`scripts/deploy/deploy_gcp_cloudrun.sh`](scripts/deploy/deploy_gcp_cloudrun.sh) line 57 `BACKEND_CONCURRENCY="${BACKEND_CONCURRENCY:-8}"` and line 225.
   - On GKE, [`backend/Dockerfile`](backend/Dockerfile) launches a single uvicorn worker (no `--workers`, no `WEB_CONCURRENCY`), and the `/query` handler in [`backend/app/main.py`](backend/app/main.py) is a synchronous `def` that calls a blocking `requests.post(...)` inside [`backend/app/rag_pipeline.py`](backend/app/rag_pipeline.py) lines 60-66 and 84-91.
 - **Why it matters.** FastAPI runs sync endpoints in a threadpool, but only one uvicorn worker means per-process Python concurrency is limited to the threadpool size (default 40) and single-core CPU. Against Cloud Run's 8-concurrency-per-instance × up-to-10-instances setup, the GKE backend will look artificially slow for RPS and p95 at high VU counts — even though the actual LLM/Qdrant bottleneck is identical. That contaminates the "max RPS" and "how the system queues" numbers.
 - **Proposed change — pick one of three, document the choice in `RESULTS.md`:**
@@ -110,13 +110,13 @@ edit.
 
 ### 1.3 Matrix hits GKE via `kubectl port-forward`, Cloud Run via public URL
 
-- **Current state.** [`scripts/run_experiment_matrix.sh`](scripts/run_experiment_matrix.sh) lines 41-48 fall back to `kubectl port-forward -n rag-thesis svc/rag-backend 8000:80` when `BACKEND_URL` is empty. The Cloud Run path uses the real service URL (lines 58-62 and the `BACKEND_URL` override used in `RESULTS.md` runbook).
+- **Current state.** [`scripts/benchmark/run_experiment_matrix.sh`](scripts/benchmark/run_experiment_matrix.sh) lines 41-48 fall back to `kubectl port-forward -n rag-thesis svc/rag-backend 8000:80` when `BACKEND_URL` is empty. The Cloud Run path uses the real service URL (lines 58-62 and the `BACKEND_URL` override used in `RESULTS.md` runbook).
 - **Why it matters.** `kubectl port-forward` bypasses the GKE Ingress / L7 load balancer entirely, so GKE numbers exclude the LB hop that Cloud Run numbers include. Ingress adds 5-30 ms p95 at high RPS on GCLB — small for huge models, non-trivial for `phi3:mini`.
 - **Proposed change.** Expose the backend through the existing Ingress ([`k8s/backend/backend.yaml`](k8s/backend/backend.yaml) lines 100-119) or a LoadBalancer Service, and run the matrix against that URL:
   ```bash
   # once, after the ingress has a public IP
   BACKEND_URL="http://$(kubectl get ingress rag-backend -n rag-thesis -o jsonpath='{.status.loadBalancer.ingress[0].ip}')"
-  ARCH=gke BACKEND_URL="${BACKEND_URL}" ./scripts/run_experiment_matrix.sh
+  ARCH=gke BACKEND_URL="${BACKEND_URL}" ./scripts/benchmark/run_experiment_matrix.sh
   ```
   Document this in `RESULTS.md` § "Environment" so reviewers can see that both columns include the LB hop.
 
@@ -161,7 +161,7 @@ edit.
 
 ### 2.2 No metric captures "how the system queues" when 100 users hit at once
 
-- **Current state.** Ollama serializes generation (default `OLLAMA_NUM_PARALLEL=1`, explicitly set in [`scripts/deploy_gcp_cloudrun.sh`](scripts/deploy_gcp_cloudrun.sh) line 197 and implicitly in [`k8s/llm-inference/ollama-gpu.yaml`](k8s/llm-inference/ollama-gpu.yaml)). Cloud Run pins Ollama to `--concurrency=1`. So with 100 concurrent users, ~99 are queued somewhere — but nothing measures the queue depth or wait time.
+- **Current state.** Ollama serializes generation (default `OLLAMA_NUM_PARALLEL=1`, explicitly set in [`scripts/deploy/deploy_gcp_cloudrun.sh`](scripts/deploy/deploy_gcp_cloudrun.sh) line 197 and implicitly in [`k8s/llm-inference/ollama-gpu.yaml`](k8s/llm-inference/ollama-gpu.yaml)). Cloud Run pins Ollama to `--concurrency=1`. So with 100 concurrent users, ~99 are queued somewhere — but nothing measures the queue depth or wait time.
 - **Why it matters.** Your scope explicitly calls out "evaluating how the system queues or scales when 100 users request an answer at the exact same time". Today the matrix only shows end-to-end p95 latency; you cannot tell whether time was spent in the LB queue, the uvicorn threadpool, or the Ollama serializer. That makes the GKE vs Cloud Run scaling story weaker in the thesis.
 - **Proposed change — add a single in-flight gauge to the backend and export it at `/metrics`:**
   1. Add `prometheus-fastapi-instrumentator==6.*` to [`backend/requirements.txt`](backend/requirements.txt).
@@ -199,12 +199,12 @@ edit.
 
 ### 3.2 Retrieval-only latency — already isolated
 
-- **Current state.** [`backend/app/main.py`](backend/app/main.py) `POST /retrieve` (lines 42-55) and [`backend/app/rag_pipeline.py`](backend/app/rag_pipeline.py) `retrieve_only` return `timing_ms.embedding`, `timing_ms.qdrant_search`, `timing_ms.total_retrieval`. `scripts/benchmark_retrieval.py` consumes it, and `run_experiment_matrix.sh` step [1/5] drives it.
+- **Current state.** [`backend/app/main.py`](backend/app/main.py) `POST /retrieve` (lines 42-55) and [`backend/app/rag_pipeline.py`](backend/app/rag_pipeline.py) `retrieve_only` return `timing_ms.embedding`, `timing_ms.qdrant_search`, `timing_ms.total_retrieval`. `scripts/benchmark/benchmark_retrieval.py` consumes it, and `run_experiment_matrix.sh` step [1/5] drives it.
 - **Status.** Satisfied. No code change needed.
 
 ### 3.3 Active RAM footprint — tied to item 0.2 (Qdrant limits)
 
-- **Current state.** `benchmark_retrieval.py` accepts `--sample-qdrant-rss` (see [`scripts/run_experiment_matrix.sh`](scripts/run_experiment_matrix.sh) line 71). But the Qdrant pod's `limits.memory: 2Gi` will artificially cap and distort the measured RSS for the 100-PDF corpus.
+- **Current state.** `benchmark_retrieval.py` accepts `--sample-qdrant-rss` (see [`scripts/benchmark/run_experiment_matrix.sh`](scripts/benchmark/run_experiment_matrix.sh) line 71). But the Qdrant pod's `limits.memory: 2Gi` will artificially cap and distort the measured RSS for the 100-PDF corpus.
 - **Why it matters.** The thesis names "active RAM footprint of the Vector DB (Qdrant) when hosting massive ~50,000-page dataset" as a specific metric. If Qdrant is OOM-killed or swapping, the number is meaningless.
 - **Proposed change.** Fix 0.2 first, then sample RSS via `--sample-qdrant-rss` during the retrieval-latency pass. The headline RAM number goes into `RESULTS.md` § 2.
 
@@ -223,7 +223,7 @@ edit.
 
 - **Current state.** [`benchmarks/RESULTS.md`](benchmarks/RESULTS.md) § 5 lists four scenarios with `TBD` downtime. Nothing in `scripts/` automates them.
 - **Why it matters.** The thesis will be evaluated on whether the claims about resilience are reproducible. Manual `kubectl scale` during writing is fine, but leaving no script means next time you re-run the matrix the numbers have to be regenerated by hand.
-- **Proposed change — a small, explicit script, e.g. `scripts/measure_resilience.sh`:**
+- **Proposed change — a small, explicit script, e.g. `scripts/resilience/measure_resilience.sh`:**
   ```bash
   #!/usr/bin/env bash
   set -euo pipefail
@@ -252,7 +252,7 @@ edit.
   kubectl set env -n rag-thesis deployment/rag-backend LLM_MODEL=bogus:tag
   kubectl rollout status -n rag-thesis deployment/rag-backend --timeout=300s
   probe primary_bad
-  kubectl set env -n rag-thesis deployment/rag-backend LLM_MODEL=qwen2.5:3b
+  kubectl set env -n rag-thesis deployment/rag-backend LLM_MODEL=granite3.3:8b
   kubectl rollout status -n rag-thesis deployment/rag-backend --timeout=300s
   # C) Ollama scaled to 0 -> LLM_UNAVAILABLE_MARKER, still sources
   kubectl scale -n rag-thesis deploy/ollama --replicas=0
@@ -285,7 +285,7 @@ edit.
 
 - **Current state.** [`benchmarks/RESULTS.md`](benchmarks/RESULTS.md) § 1 has a zero-downtime verification block as comments only; `non-2xx count` and `alias swap p95` are `TBD`.
 - **Why it matters.** "Evaluating Zero-Downtime updates" is one of the six thesis metrics. A single scripted run that fires traffic while the alias swaps is the difference between a claim and evidence.
-- **Proposed change — `scripts/measure_bluegreen_downtime.sh`:**
+- **Proposed change — `scripts/resilience/measure_bluegreen_downtime.sh`:**
   ```bash
   #!/usr/bin/env bash
   set -euo pipefail
@@ -319,7 +319,7 @@ edit.
 
 ### 6.1 LoC metric — already instrumented
 
-- **Current state.** [`scripts/loc_report.sh`](scripts/loc_report.sh) exists and is referenced from [`benchmarks/RESULTS.md`](benchmarks/RESULTS.md) § 6.
+- **Current state.** [`scripts/reports/loc_report.sh`](scripts/reports/loc_report.sh) exists and is referenced from [`benchmarks/RESULTS.md`](benchmarks/RESULTS.md) § 6.
 - **Status.** Satisfied.
 
 ### 6.2 CI build-duration metric — already instrumented
@@ -360,14 +360,14 @@ edit.
 |---|---|---|---|
 | 0.1 | Scope | Point defaults at `sec_rag_dataset_100_pdf` | `ingestion/ingest_data.py`, `helm/rag-k8s-thesis/values.yaml`, `k8s/ingestion/*`, `README.md` |
 | 0.2 | Scope | Raise Qdrant PVC to 25 GiB, memory limit to 8 GiB | `k8s/vector-db/qdrant.yaml`, `helm/rag-k8s-thesis/values.yaml` |
-| 1.1 | Inference Perf | Split cold-start into `image_pull_s` + `boot_s` | `scripts/benchmark_coldstart.sh` |
+| 1.1 | Inference Perf | Split cold-start into `image_pull_s` + `boot_s` | `scripts/benchmark/benchmark_coldstart.sh` |
 | 1.2 | Inference Perf | Match GKE backend concurrency to Cloud Run (workers/async) | `backend/Dockerfile`, `backend/app/main.py`, `backend/app/rag_pipeline.py` |
-| 1.3 | Inference Perf | Route GKE matrix through Ingress, not `port-forward` | `scripts/run_experiment_matrix.sh`, `k8s/backend/backend.yaml` |
-| 2.1 | Cost / Util | Pull GPU-util time-series into CSV during k6 | `scripts/run_experiment_matrix.sh` |
+| 1.3 | Inference Perf | Route GKE matrix through Ingress, not `port-forward` | `scripts/benchmark/run_experiment_matrix.sh`, `k8s/backend/backend.yaml` |
+| 2.1 | Cost / Util | Pull GPU-util time-series into CSV during k6 | `scripts/benchmark/run_experiment_matrix.sh` |
 | 2.2 | Cost / Util | Expose `rag_inflight_requests` at `/metrics` | `backend/app/main.py`, `backend/requirements.txt` |
-| 3.3 | Vector DB | Depends on 0.2; then sample RSS via existing flag | `scripts/benchmark_retrieval.py` (no change) |
-| 4.2 | Resilience | `scripts/measure_resilience.sh` automation | new script |
-| 5.2 | Update | `scripts/measure_bluegreen_downtime.sh` automation | new script |
+| 3.3 | Vector DB | Depends on 0.2; then sample RSS via existing flag | `scripts/benchmark/benchmark_retrieval.py` (no change) |
+| 4.2 | Resilience | `scripts/resilience/measure_resilience.sh` automation | new script |
+| 5.2 | Update | `scripts/resilience/measure_bluegreen_downtime.sh` automation | new script |
 | 6.3 | Ops Complexity | Let the HPA own replicas | `k8s/backend/backend.yaml`, `k8s/llm-inference/ollama-gpu.yaml`, `helm/rag-k8s-thesis/templates/*.yaml` |
 
 Items flagged as **already satisfied**: 3.1, 3.2, 4.1, 5.1, 6.1, 6.2.

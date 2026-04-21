@@ -28,24 +28,17 @@ ollama:
   enabled: true
   image: ollama/ollama:latest
   replicaCount: 2
-  modelName: qwen2.5:3b
-  # Increased default to 40Gi so Ollama can persist both qwen2.5:14b (~10GB)
-  # and qwen2.5:32b (~20GB) side by side across the thesis matrix without
-  # hitting disk pressure on GKE GPU nodes.
+  modelName: granite3.3:8b
+  # Keep enough disk to persist the full thesis trio across benchmark runs:
+  # deepseek-r1:8b (reasoning), granite3.3:8b (fast), phi3:mini (fallback).
   storageSize: 40Gi
-  # Helps large-context models fit on constrained nodes (tune up/down for your thesis runs).
-  # Thesis matrix recommendation:
-  #   phi3:mini / qwen2.5:3b  -> 2048
-  #   qwen2.5:7b              -> 4096
-  #   qwen2.5:14b             -> 4096
-  #   qwen2.5:32b (L4 tight)  -> 2048
-  contextLength: 2048
+  # Default to 4k context for the 8B fast/reasoning model set.
+  contextLength: 4096
   keepAlive: 24h
   service:
     port: 11434
-  # Default request/limits target the 3B model. For the 7B/14B/32B rows,
-  # override with --set ollama.resources.limits.memory=20Gi (see
-  # BENCHMARK_MATRIX.md).
+  # Default request/limits target 8B-class models. Use model-specific overrides
+  # in helm/rag-k8s-thesis/overrides for exact benchmark rows.
   resources:
     requests:
       cpu: 1000m
@@ -83,7 +76,7 @@ backend:
   env:
     llmProvider: ollama
     llmBaseUrl: http://ollama:11434
-    llmModel: qwen2.5:3b
+    llmModel: granite3.3:8b
     # Resilience: fallback model used if the primary fails after retries.
     # Set to "" to disable the fallback leg.
     llmFallbackModel: phi3:mini

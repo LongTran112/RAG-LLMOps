@@ -11,7 +11,7 @@
 # Usage (from a clean tree):
 #   git commit -am "bump ollama.contextLength"
 #   git push
-#   ./scripts/measure_argocd_sync.sh
+#   ./scripts/resilience/measure_argocd_sync.sh
 #
 # Optional env:
 #   APP_NAME=rag-k8s-thesis

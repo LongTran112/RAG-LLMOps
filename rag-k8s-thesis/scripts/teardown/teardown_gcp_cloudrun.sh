@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Tear down everything provisioned by scripts/deploy_gcp_cloudrun.sh.
+# Tear down everything provisioned by scripts/deploy/deploy_gcp_cloudrun.sh.
 # Does NOT touch Artifact Registry (shared with the GKE deploy) unless
 # DELETE_ARTIFACT_REPO=true.
 

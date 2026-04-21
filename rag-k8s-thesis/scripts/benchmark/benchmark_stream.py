@@ -15,17 +15,17 @@ benchmark matrix.
 Usage examples:
 
   # GKE via kubectl port-forward (start it yourself first):
-  ./scripts/benchmark_stream.py \\
+  ./scripts/benchmark/benchmark_stream.py \\
       --base-url http://127.0.0.1:8000 \\
-      --models phi3:mini,qwen2.5:3b \\
+      --models phi3:mini,granite3.3:8b,deepseek-r1:8b \\
       --prompts P1,P2 --repetitions 3
 
   # Cloud Run public backend:
-  ./scripts/benchmark_stream.py \\
+  ./scripts/benchmark/benchmark_stream.py \\
       --base-url https://rag-backend-xxxx.a.run.app
 
   # Cloud Run private backend (uses gcloud for an ID token):
-  ./scripts/benchmark_stream.py \\
+  ./scripts/benchmark/benchmark_stream.py \\
       --base-url https://rag-backend-xxxx.a.run.app \\
       --audience https://rag-backend-xxxx.a.run.app
 
@@ -178,7 +178,7 @@ def parse_args() -> argparse.Namespace:
                    help="Backend base URL (default: http://127.0.0.1:8000)")
     p.add_argument("--audience", default="",
                    help="If set, gcloud prints an ID token for this audience (Cloud Run private services)")
-    p.add_argument("--models", default="phi3:mini",
+    p.add_argument("--models", default="phi3:mini,granite3.3:8b,deepseek-r1:8b",
                    help="Comma-separated list of models")
     p.add_argument("--prompts", default="P1,P2,P3",
                    help="Comma-separated prompt IDs from P1..P5")

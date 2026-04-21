@@ -10,7 +10,7 @@ The endpoint returns server-side timings in ms; we additionally measure
 end-to-end client latency so Helm/Cloud Run network overhead can be compared.
 
 Example:
-  ./scripts/benchmark_retrieval.py --base-url http://127.0.0.1:8000 \\
+  ./scripts/benchmark/benchmark_retrieval.py --base-url http://127.0.0.1:8000 \\
       --prompts P1,P2,P3,P4,P5 --repetitions 20 \\
       --sample-qdrant-rss --namespace rag-thesis
 """

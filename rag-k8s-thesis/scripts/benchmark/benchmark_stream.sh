@@ -4,7 +4,7 @@
 # Streaming benchmark: measures Time-To-First-Token (TTFT) per request via the
 # backend's /query/stream SSE endpoint. Writes a CSV with per-run TTFT and
 # total stream duration alongside the existing model/prompt/repetition shape
-# from scripts/benchmark.sh.
+# from scripts/benchmark/benchmark.sh.
 #
 # How TTFT is defined here:
 #   start:          monotonic clock just before the POST is sent
@@ -32,7 +32,7 @@ BACKEND_URL_OVERRIDE="${BACKEND_URL_OVERRIDE:-}"
 AUTH_ID_TOKEN_AUDIENCE="${AUTH_ID_TOKEN_AUDIENCE:-}"
 
 REPETITIONS="${REPETITIONS:-3}"
-MODELS_CSV="${MODELS_CSV:-phi3:mini,qwen2.5:3b}"
+MODELS_CSV="${MODELS_CSV:-phi3:mini,granite3.3:8b,deepseek-r1:8b}"
 PROMPT_IDS_CSV="${PROMPT_IDS_CSV:-P1,P2,P3}"
 CURL_MAX_TIME="${CURL_MAX_TIME:-1800}"
 CONNECT_TIMEOUT="${CONNECT_TIMEOUT:-10}"
@@ -174,7 +174,7 @@ token_count = 0
 # monotonic delta between consecutive reads of the file's size. Practically
 # this yields resolution good enough for thesis figures (ms-level).
 
-# In practice, for higher-fidelity TTFT prefer scripts/benchmark_stream.py
+# In practice, for higher-fidelity TTFT prefer scripts/benchmark/benchmark_stream.py
 # (pure Python client).  This bash wrapper still gives correct total-time
 # and a useful TTFT approximation.
 

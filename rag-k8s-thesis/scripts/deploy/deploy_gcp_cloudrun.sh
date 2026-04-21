@@ -4,7 +4,7 @@ set -euo pipefail
 # =============================================================================
 # Cloud Run (serverless) deployment for the RAG thesis.
 #
-# Companion to scripts/deploy_gcp_gpu.sh. Reuses the same Artifact Registry
+# Companion to scripts/deploy/deploy_gcp_gpu.sh. Reuses the same Artifact Registry
 # images, but deploys on:
 #
 #   - Cloud Run with GPU (nvidia-l4) for ollama-gpu  (min-instances=0 for true
@@ -63,7 +63,8 @@ FRONTEND_MAX_INSTANCES="${FRONTEND_MAX_INSTANCES:-3}"
 FRONTEND_CPU="${FRONTEND_CPU:-1}"
 FRONTEND_MEMORY="${FRONTEND_MEMORY:-1Gi}"
 
-LLM_MODEL="${LLM_MODEL:-phi3:mini}"
+LLM_MODEL="${LLM_MODEL:-granite3.3:8b}"
+PRELOAD_MODELS_CSV="${PRELOAD_MODELS_CSV:-phi3:mini,granite3.3:8b,deepseek-r1:8b}"
 
 # =============================================================================
 
@@ -203,13 +204,19 @@ echo "==> ${OLLAMA_SERVICE} URL: ${OLLAMA_URL}"
 
 # ---------- 5) Pull the model into the GCS cache (one-off) ------------------
 
-echo "==> Pulling ${LLM_MODEL} into the Ollama GCS cache (one-off, may take several minutes)"
+echo "==> Preloading model cache: ${PRELOAD_MODELS_CSV}"
 OLLAMA_ID_TOKEN="$(gcloud auth print-identity-token --audiences="${OLLAMA_URL}")"
-curl -sS -X POST "${OLLAMA_URL}/api/pull" \
-  -H "Authorization: Bearer ${OLLAMA_ID_TOKEN}" \
-  -H "Content-Type: application/json" \
-  -d "{\"model\":\"${LLM_MODEL}\",\"stream\":false}" \
-  --max-time 1800 | tail -n 5 || echo "WARN: model pull call failed (can rerun later)"
+IFS=',' read -r -a PRELOAD_MODELS <<< "${PRELOAD_MODELS_CSV}"
+for preload_model in "${PRELOAD_MODELS[@]}"; do
+  preload_model="$(echo "${preload_model}" | xargs)"
+  [ -z "${preload_model}" ] && continue
+  echo "==> Pulling ${preload_model} into Ollama cache (one-off, may take several minutes)"
+  curl -sS -X POST "${OLLAMA_URL}/api/pull" \
+    -H "Authorization: Bearer ${OLLAMA_ID_TOKEN}" \
+    -H "Content-Type: application/json" \
+    -d "{\"model\":\"${preload_model}\",\"stream\":false}" \
+    --max-time 1800 | tail -n 5 || echo "WARN: model pull call failed for ${preload_model} (can rerun later)"
+done
 
 # ---------- 6) Backend on Cloud Run -----------------------------------------
 
@@ -289,6 +296,6 @@ Smoke test:
     -d '{"query":"What is SEC filing?"}'
 
 Remember: Qdrant must be populated. If this is a fresh Qdrant VM, run
-scripts/ingest_local_to_qdrant.sh (or the in-cluster ingestion Job pointing at
+scripts/ingestion/ingest_local_to_qdrant.sh (or the in-cluster ingestion Job pointing at
 the same QDRANT_HOST=${QDRANT_INTERNAL_IP}) before querying.
 EOF

@@ -78,7 +78,7 @@ spec:
                   - /bin/sh
                   - -c
                   - |
-                    ollama pull qwen2.5:3b || true
+                    ollama pull granite3.3:8b || true
           livenessProbe:
             httpGet:
               path: /api/tags

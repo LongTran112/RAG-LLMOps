@@ -80,7 +80,8 @@ spec:
                   - -c
                   - |
                     ollama pull phi3:mini || true
-                    ollama pull qwen2.5:3b || true
+                    ollama pull granite3.3:8b || true
+                    ollama pull deepseek-r1:8b || true
           livenessProbe:
             httpGet:
               path: /api/tags

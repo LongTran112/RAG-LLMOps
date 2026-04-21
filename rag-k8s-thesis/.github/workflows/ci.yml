@@ -6,7 +6,7 @@ name: CI
 #   - records total workflow duration (from the timestamps GitHub exposes)
 #
 # We DO NOT run the Ollama/Qdrant integration tests here because they need
-# GPUs + a live cluster; those are driven by scripts/benchmark*.sh when the
+# GPUs + a live cluster; those are driven by scripts/benchmark/*.sh when the
 # GKE or Cloud Run environment is up.
 #
 # The thesis "CI/CD build execution time" metric is read directly from the
@@ -69,23 +69,23 @@ jobs:
         working-directory: rag-k8s-thesis
         run: helm template rag-poc helm/rag-k8s-thesis >/dev/null
 
-      - name: helm template (7B overlay)
+      - name: helm template (fast phi3:mini overlay)
         working-directory: rag-k8s-thesis
         run: |
           helm template rag-poc helm/rag-k8s-thesis \
-            -f helm/rag-k8s-thesis/overrides/model-7b.yaml >/dev/null
+            -f helm/rag-k8s-thesis/overrides/model-fast-phi3-mini.yaml >/dev/null
 
-      - name: helm template (14B overlay)
+      - name: helm template (fast granite3.3:8b overlay)
         working-directory: rag-k8s-thesis
         run: |
           helm template rag-poc helm/rag-k8s-thesis \
-            -f helm/rag-k8s-thesis/overrides/model-14b.yaml >/dev/null
+            -f helm/rag-k8s-thesis/overrides/model-fast-granite3.3-8b.yaml >/dev/null
 
-      - name: helm template (32B overlay)
+      - name: helm template (reasoning deepseek-r1:8b overlay)
         working-directory: rag-k8s-thesis
         run: |
           helm template rag-poc helm/rag-k8s-thesis \
-            -f helm/rag-k8s-thesis/overrides/model-32b.yaml >/dev/null
+            -f helm/rag-k8s-thesis/overrides/model-reasoning-deepseek-r1-8b.yaml >/dev/null
 
   shellcheck:
     name: shellcheck
@@ -100,5 +100,8 @@ jobs:
         working-directory: rag-k8s-thesis
         run: |
           # Keep informational notices enabled (-S info) since scripts run in
-          # production-like conditions.
-          shellcheck -S warning scripts/*.sh || true
+          # production-like conditions. `find` recurses into the organized
+          # subfolders (deploy/, teardown/, benchmark/, ...), which a bare
+          # scripts/*.sh glob would miss.
+          find scripts -type f -name '*.sh' -print0 \
+            | xargs -0 shellcheck -S warning || true
