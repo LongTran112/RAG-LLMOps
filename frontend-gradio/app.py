@@ -76,7 +76,18 @@ def _run_chat(
         return
 
     answer_mode = "complex" if mode_label == "Complex" else "fast"
-    question = history[-2]["content"]
+    question = ""
+    for msg in reversed(history):
+        if msg.get("role") == "user":
+            question = (msg.get("content") or "").strip()
+            break
+    if len(question) < 3:
+        history[-1] = {
+            "role": "assistant",
+            "content": "Query must be at least 3 characters.",
+        }
+        yield history
+        return
 
     answer = ""
     thinking = ""
@@ -106,7 +117,10 @@ def _run_chat(
                 detail = exc.response.json()
             except Exception:
                 detail = exc.response.text
-            history[-1] = {"role": "assistant", "content": f"Backend HTTP error: {detail}"}
+            history[-1] = {
+                "role": "assistant",
+                "content": f"Backend HTTP error ({exc.response.status_code}): {detail}",
+            }
             yield history
             return
         except Exception as exc:  # noqa: BLE001
@@ -154,7 +168,10 @@ def _run_chat(
             detail = exc.response.json()
         except Exception:
             detail = exc.response.text
-        history[-1] = {"role": "assistant", "content": f"Backend HTTP error: {detail}"}
+        history[-1] = {
+            "role": "assistant",
+            "content": f"Backend HTTP error ({exc.response.status_code}): {detail}",
+        }
         yield history
     except Exception as exc:  # noqa: BLE001
         history[-1] = {"role": "assistant", "content": f"Query failed: {exc}"}
