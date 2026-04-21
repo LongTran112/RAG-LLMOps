@@ -1,5 +1,7 @@
 import json
 import os
+import re
+from html import escape
 from collections.abc import Generator
 from pathlib import Path
 from typing import Any
@@ -22,12 +24,37 @@ def _render_response(answer: str, thinking: str, sources: list[dict[str, Any]], 
     parts: list[str] = []
 
     if thinking:
+        normalized = thinking.replace("\r\n", "\n")
+        # Collapse extra blank lines and trailing spaces to keep the block compact.
+        normalized = re.sub(r"[ \t]+\n", "\n", normalized)
+        normalized = re.sub(r"\n{3,}", "\n\n", normalized)
+        normalized = normalized.strip()
+        # Strict compact mode: flatten line breaks/tabs to single spaces.
+        compact_text = re.sub(r"\s+", " ", normalized).strip()
         if done:
-            parts.append(f"<details><summary>View full thinking</summary><pre>{thinking}</pre></details>")
+            compact_thinking = escape(compact_text)
+            parts.append(
+                (
+                    "<details><summary>View full thinking</summary>"
+                    "<div style='white-space:normal; line-height:1.15; font-size:0.82em; margin-top:6px;"
+                    "padding:6px 8px; border:1px solid #3a3a3a; border-radius:8px; "
+                    "max-height:220px; overflow:auto; opacity:0.82;'>"
+                    f"{compact_thinking}"
+                    "</div></details>"
+                )
+            )
         else:
-            tail = thinking[-3500:]
-            parts.append("<div style='opacity:0.65'><b>Thinking (live)</b></div>")
-            parts.append(f"<pre>{tail}</pre>")
+            tail = escape(compact_text[-2000:])
+            parts.append("<div style='opacity:0.65; font-size:0.82em; margin-bottom:4px;'><b>Thinking (live)</b></div>")
+            parts.append(
+                (
+                    "<div style='white-space:normal; line-height:1.12; font-size:0.8em; "
+                    "padding:6px 8px; border:1px solid #3a3a3a; border-radius:8px; "
+                    "max-height:160px; overflow:auto; opacity:0.78;'>"
+                    f"{tail}"
+                    "</div>"
+                )
+            )
 
     if answer:
         parts.append(answer)
