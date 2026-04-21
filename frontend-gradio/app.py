@@ -29,14 +29,16 @@ def _render_response(answer: str, thinking: str, sources: list[dict[str, Any]], 
         normalized = re.sub(r"[ \t]+\n", "\n", normalized)
         normalized = re.sub(r"\n{3,}", "\n\n", normalized)
         normalized = normalized.strip()
-        # Strict compact mode: flatten line breaks/tabs to single spaces.
-        compact_text = re.sub(r"\s+", " ", normalized).strip()
+        # Keep line breaks, but remove empty-line gaps and keep spacing compact.
+        compact_lines = [re.sub(r"[ \t]+", " ", line).strip() for line in normalized.split("\n")]
+        compact_lines = [line for line in compact_lines if line]
+        compact_text = "\n".join(compact_lines)
         if done:
             compact_thinking = escape(compact_text)
             parts.append(
                 (
                     "<details><summary>View full thinking</summary>"
-                    "<div style='white-space:normal; line-height:1.15; font-size:0.82em; margin-top:6px;"
+                    "<div style='white-space:pre-line; line-height:1.15; font-size:0.82em; margin-top:6px;"
                     "padding:6px 8px; border:1px solid #3a3a3a; border-radius:8px; "
                     "max-height:220px; overflow:auto; opacity:0.82;'>"
                     f"{compact_thinking}"
@@ -48,7 +50,7 @@ def _render_response(answer: str, thinking: str, sources: list[dict[str, Any]], 
             parts.append("<div style='opacity:0.65; font-size:0.82em; margin-bottom:4px;'><b>Thinking (live)</b></div>")
             parts.append(
                 (
-                    "<div style='white-space:normal; line-height:1.12; font-size:0.8em; "
+                    "<div style='white-space:pre-line; line-height:1.12; font-size:0.8em; "
                     "padding:6px 8px; border:1px solid #3a3a3a; border-radius:8px; "
                     "max-height:160px; overflow:auto; opacity:0.78;'>"
                     f"{tail}"
