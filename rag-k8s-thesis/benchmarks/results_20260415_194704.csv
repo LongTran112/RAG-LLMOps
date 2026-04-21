@@ -1,5 +1,0 @@
-timestamp,model,prompt_id,repetition,http_code,total_time_s
-2026-04-15T19:48:33,phi3:mini,P1,1,200,43.572997
-2026-04-15T19:49:13,phi3:mini,P1,2,200,40.039246
-2026-04-15T19:49:46,phi3:mini,P1,3,200,32.374704
-2026-04-15T19:54:28,phi3:mini,P2,1,200,282.489944

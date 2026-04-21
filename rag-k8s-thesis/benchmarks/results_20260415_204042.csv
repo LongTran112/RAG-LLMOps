@@ -1,3 +1,0 @@
-timestamp,model,prompt_id,repetition,http_code,total_time_s
-2026-04-15T20:44:32,qwen2.5:3b,P1,1,200,200.726496
-2026-04-15T20:45:27,granite3.3:8b,P1,1,000,0.017865

@@ -23,6 +23,6 @@ node_modules/
 .vscode/
 
 # Local benchmark and deploy logs
-rag-k8s-thesis/benchmarks/run_*.log
-rag-k8s-thesis/benchmarks/results_*.csv
+benchmarks/run_*.log
+benchmarks/results_*.csv
 /tmp/
