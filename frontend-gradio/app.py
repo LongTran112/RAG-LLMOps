@@ -55,6 +55,22 @@ def _render_response(answer: str, thinking: str, sources: list[dict[str, Any]], 
     return "\n\n".join(parts)
 
 
+def _content_to_text(content: Any) -> str:
+    if isinstance(content, str):
+        return content
+    if isinstance(content, list):
+        parts: list[str] = []
+        for item in content:
+            if isinstance(item, str):
+                parts.append(item)
+            elif isinstance(item, dict):
+                value = item.get("text") or item.get("content") or ""
+                if isinstance(value, str):
+                    parts.append(value)
+        return "\n".join(p for p in parts if p)
+    return ""
+
+
 def _add_user_message(
     message: str, history: list[dict[str, str]]
 ) -> tuple[str, list[dict[str, str]]]:
@@ -79,7 +95,7 @@ def _run_chat(
     question = ""
     for msg in reversed(history):
         if msg.get("role") == "user":
-            question = (msg.get("content") or "").strip()
+            question = _content_to_text(msg.get("content")).strip()
             break
     if len(question) < 3:
         history[-1] = {
