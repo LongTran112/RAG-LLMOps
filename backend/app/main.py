@@ -4,6 +4,7 @@ from contextlib import asynccontextmanager
 from app.config import settings
 from app.rag_pipeline import QdrantUnavailableError, RagPipeline
 from fastapi import FastAPI, HTTPException, Request
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from prometheus_client import Gauge
 from prometheus_fastapi_instrumentator import Instrumentator
@@ -31,6 +32,21 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title=settings.app_name, lifespan=lifespan)
+
+# Local frontend development (Next.js/Streamlit) needs browser CORS preflight
+# support for POST + streaming endpoints.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "http://localhost:8501",
+        "http://127.0.0.1:8501",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.middleware("http")
