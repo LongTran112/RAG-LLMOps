@@ -43,6 +43,12 @@ type Message = {
 const BACKEND_URL =
   process.env.NEXT_PUBLIC_RAG_BACKEND_URL?.replace(/\/$/, "") ?? "http://127.0.0.1:8000";
 
+const getSourceName = (sourcePath?: string) => {
+  if (!sourcePath) return "Unknown source";
+  const parts = sourcePath.split("/");
+  return parts[parts.length - 1] || sourcePath;
+};
+
 export default function Home() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
@@ -245,7 +251,7 @@ export default function Home() {
                 {msg.sources.map((source, index) => (
                   <div className="sourceCard" key={`${msg.id}-source-${index}`}>
                     <div className="sourceTitle">
-                      {source.metadata?.source || "Unknown source"}
+                      {getSourceName(source.metadata?.source)}
                     </div>
                     <div className="sourceMeta">
                       <span>Page: {source.metadata?.page ?? "-"}</span>

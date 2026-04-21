@@ -67,7 +67,9 @@ def render_sources(sources: list[dict[str, Any]]) -> None:
         for idx, source in enumerate(sources, start=1):
             metadata = source.get("metadata", {}) or {}
             preview = source.get("content_preview", "") or ""
-            st.markdown(f"**{idx}. {metadata.get('source', 'Unknown source')}**")
+            source_path = str(metadata.get("source", "") or "")
+            source_name = os.path.basename(source_path) if source_path else "Unknown source"
+            st.markdown(f"**{idx}. {source_name}**")
             cols = st.columns(3)
             cols[0].caption(f"Page: {metadata.get('page', '-')}")
             cols[1].caption(f"Chunk: {metadata.get('chunk_index', '-')}")
