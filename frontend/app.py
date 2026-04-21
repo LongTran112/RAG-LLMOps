@@ -12,10 +12,10 @@ QUERY_TIMEOUT = int(os.getenv("RAG_QUERY_TIMEOUT_SECONDS", "900"))
 STREAM_TIMEOUT = int(os.getenv("RAG_STREAM_TIMEOUT_SECONDS", "900"))
 
 
-def call_rag_backend(question: str) -> dict[str, Any]:
+def call_rag_backend(question: str, answer_mode: str) -> dict[str, Any]:
     response = requests.post(
         f"{BACKEND_URL}/query",
-        json={"query": question},
+        json={"query": question, "answer_mode": answer_mode},
         timeout=QUERY_TIMEOUT,
     )
     response.raise_for_status()
@@ -28,10 +28,10 @@ def _parse_sse_line(line: str) -> dict[str, Any] | None:
     return json.loads(line[6:])
 
 
-def stream_rag_tokens(question: str) -> Iterator[str]:
+def stream_rag_tokens(question: str, answer_mode: str) -> Iterator[str]:
     with requests.post(
         f"{BACKEND_URL}/query/stream",
-        json={"query": question},
+        json={"query": question, "answer_mode": answer_mode},
         stream=True,
         timeout=STREAM_TIMEOUT,
     ) as response:
@@ -53,7 +53,11 @@ def stream_rag_tokens(question: str) -> Iterator[str]:
                 break
 
 
-rag_chain = RunnableLambda(call_rag_backend)
+def _invoke_rag_chain(payload: dict[str, str]) -> dict[str, Any]:
+    return call_rag_backend(payload["query"], payload["answer_mode"])
+
+
+rag_chain = RunnableLambda(_invoke_rag_chain)
 
 st.set_page_config(page_title="RAG Thesis Tester", page_icon=":robot_face:", layout="wide")
 st.title("RAG Thesis Frontend Tester")
@@ -65,6 +69,17 @@ use_stream = st.checkbox(
     value=True,
     help="Shows tokens as they arrive from Ollama for lower perceived latency.",
 )
+
+answer_profile = st.selectbox(
+    "Answer profile",
+    options=["Fast", "Complex"],
+    index=0,
+    help=(
+        "Fast uses the currently deployed fast model (phi3:mini or granite3.3:8b). "
+        "Complex uses the reasoning model (deepseek-r1:8b)."
+    ),
+)
+answer_mode = "complex" if answer_profile == "Complex" else "fast"
 
 query = st.text_area(
     "Ask a question",
@@ -82,10 +97,10 @@ if st.button("Run Query", type="primary"):
                 st.caption("Streaming answer from the backend (first tokens may take a moment on CPU).")
                 st.subheader("Answer")
                 if hasattr(st, "write_stream"):
-                    st.write_stream(stream_rag_tokens(query))
+                    st.write_stream(stream_rag_tokens(query, answer_mode))
                 else:
                     buf: list[str] = []
-                    for piece in stream_rag_tokens(query):
+                    for piece in stream_rag_tokens(query, answer_mode):
                         buf.append(piece)
                     st.write("".join(buf))
                 sources = st.session_state.get("rag_last_sources") or []
@@ -99,7 +114,7 @@ if st.button("Run Query", type="primary"):
                         st.json(source.get("metadata", {}))
             else:
                 with st.spinner("Querying RAG backend..."):
-                    result = rag_chain.invoke(query)
+                    result = rag_chain.invoke({"query": query, "answer_mode": answer_mode})
                 st.subheader("Answer")
                 st.write(result.get("answer", "No answer returned."))
                 st.subheader("Sources")

@@ -44,6 +44,11 @@ class RagPipeline:
         base = settings.llm_base_url.rstrip("/")
         return f"{base}{path}"
 
+    def _resolve_primary_model(self, answer_mode: str | None) -> str:
+        if (answer_mode or "").lower() == "complex":
+            return settings.llm_reasoning_model
+        return settings.llm_model
+
     def _complete_ollama(
         self,
         prompt: str,
@@ -115,6 +120,7 @@ class RagPipeline:
         prompt: str,
         *,
         max_tokens_override: int | None = None,
+        answer_mode: str | None = None,
     ) -> tuple[str, dict[str, Any]]:
         """Call the LLM with retries + fallback model.
 
@@ -128,14 +134,18 @@ class RagPipeline:
         retries = max(0, settings.llm_max_retries)
         backoff = max(0.0, settings.llm_retry_backoff_seconds)
 
-        primary = settings.llm_model
+        primary = self._resolve_primary_model(answer_mode)
         fallback = (settings.llm_fallback_model or "").strip()
 
         last_exc: Exception | None = None
         for attempt in range(1, retries + 2):  # retries + initial attempt
             attempts += 1
             try:
-                answer = self._call_llm_once(prompt, max_tokens_override=max_tokens_override)
+                answer = self._call_llm_once(
+                    prompt,
+                    max_tokens_override=max_tokens_override,
+                    model_override=primary,
+                )
                 return answer, {"model_used": primary, "attempts": attempts, "fallback": False}
             except Exception as exc:  # noqa: BLE001
                 last_exc = exc
@@ -264,7 +274,7 @@ class RagPipeline:
             "top_k": self._retrieval_limit(),
         }
 
-    def query(self, user_query: str) -> dict[str, Any]:
+    def query(self, user_query: str, *, answer_mode: str | None = None) -> dict[str, Any]:
         retrieve_start = time.perf_counter()
         points, embed_seconds, search_seconds = self._retrieve_raw(user_query)
         retrieve_seconds = time.perf_counter() - retrieve_start
@@ -272,7 +282,7 @@ class RagPipeline:
 
         prompt = self._build_prompt(user_query, context)
         gen_start = time.perf_counter()
-        answer, llm_meta = self._complete_llm_with_fallback(prompt)
+        answer, llm_meta = self._complete_llm_with_fallback(prompt, answer_mode=answer_mode)
         gen_seconds = time.perf_counter() - gen_start
 
         return {
@@ -287,7 +297,7 @@ class RagPipeline:
             },
         }
 
-    def stream_query_sse(self, user_query: str) -> Iterator[str]:
+    def stream_query_sse(self, user_query: str, *, answer_mode: str | None = None) -> Iterator[str]:
         """Server-Sent Events lines: data: {json}\\n\\n with types sources | token | done.
 
         Emits a final event of type `done` (or `error`) so clients can
@@ -317,11 +327,12 @@ class RagPipeline:
         )
 
         provider = settings.llm_provider.lower()
+        selected_model = self._resolve_primary_model(answer_mode)
         try:
             if provider == "vllm":
                 cap = settings.ollama_max_output_tokens
                 payload: dict[str, Any] = {
-                    "model": settings.llm_model,
+                    "model": selected_model,
                     "messages": [{"role": "user", "content": self._build_prompt(user_query, context)}],
                     "temperature": settings.ollama_temperature,
                     "stream": True,
@@ -348,7 +359,7 @@ class RagPipeline:
                             yield f"data: {json.dumps({'type': 'token', 't': piece})}\n\n"
             else:
                 payload = {
-                    "model": settings.llm_model,
+                    "model": selected_model,
                     "prompt": self._build_prompt(user_query, context),
                     "stream": True,
                     "options": self._generation_options(),

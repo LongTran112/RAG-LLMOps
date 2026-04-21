@@ -23,6 +23,8 @@ class Settings(BaseSettings):
     llm_provider: str = "ollama"
     llm_base_url: str = "http://ollama:11434"
     llm_model: str = "granite3.3:8b"
+    # Complex/reasoning answer mode target model (used when requested by UI/API).
+    llm_reasoning_model: str = "deepseek-r1:8b"
     # Resilience: if the primary model fails after retries, try this smaller
     # model once. Empty string disables the fallback leg.
     llm_fallback_model: str = "phi3:mini"

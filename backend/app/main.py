@@ -57,6 +57,9 @@ Instrumentator(
 
 class QueryRequest(BaseModel):
     query: str = Field(min_length=3, max_length=4000)
+    # "fast" -> configured primary model (granite/phi3 depending on deploy).
+    # "complex" -> reasoning model (deepseek-r1:8b by default).
+    answer_mode: str = Field(default="fast", pattern="^(fast|complex)$")
 
 
 @app.get("/healthz")
@@ -67,7 +70,7 @@ def healthz() -> dict[str, str]:
 @app.post("/query")
 def query_rag(payload: QueryRequest) -> dict:
     try:
-        return pipeline.query(payload.query)
+        return pipeline.query(payload.query, answer_mode=payload.answer_mode)
     except QdrantUnavailableError as exc:
         raise HTTPException(status_code=503, detail=f"Qdrant unavailable: {exc}") from exc
     except Exception as exc:  # noqa: BLE001
@@ -93,7 +96,7 @@ def retrieve_only(payload: QueryRequest) -> dict:
 @app.post("/query/stream")
 def query_rag_stream(payload: QueryRequest) -> StreamingResponse:
     def event_iter():
-        yield from pipeline.stream_query_sse(payload.query)
+        yield from pipeline.stream_query_sse(payload.query, answer_mode=payload.answer_mode)
 
     return StreamingResponse(
         event_iter(),
