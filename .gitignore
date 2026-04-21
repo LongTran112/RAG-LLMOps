@@ -5,6 +5,7 @@ sec_rag_dataset_*/
 
 # Python
 .venv/
+.venv-dataset/
 venv/
 __pycache__/
 *.pyc
