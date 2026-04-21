@@ -23,10 +23,6 @@ def _render_response(answer: str, thinking: str, sources: list[dict[str, Any]], 
 
     if thinking:
         if done:
-            summary = " ".join(thinking.strip().split())
-            if len(summary) > 240:
-                summary = summary[:240].rstrip() + "..."
-            parts.append(f"<div style='opacity:0.65'><b>Thinking</b>: {summary}</div>")
             parts.append(f"<details><summary>View full thinking</summary><pre>{thinking}</pre></details>")
         else:
             tail = thinking[-3500:]
@@ -47,12 +43,17 @@ def _render_response(answer: str, thinking: str, sources: list[dict[str, Any]], 
             chunk = meta.get("chunk_index", "-")
             score = meta.get("score", "-")
             preview = source.get("content_preview", "") or ""
+            preview_line = " ".join(preview.strip().split())
+            if len(preview_line) > 220:
+                preview_line = preview_line[:220].rstrip()
+            if not preview_line.endswith("..."):
+                preview_line = f"{preview_line}..."
             source_blocks.append(
                 (
                     "<div style='margin:8px 0; padding:8px; border:1px solid #3a3a3a; border-radius:8px;'>"
                     f"<div><b>{idx}. {name}</b></div>"
                     f"<div style='opacity:0.75; font-size:0.9em;'>Page: {page} | Chunk: {chunk} | Score: {score}</div>"
-                    f"<div style='margin-top:6px; white-space:normal; line-height:1.45;'>{preview}</div>"
+                    f"<div style='margin-top:6px; white-space:normal; line-height:1.45;'>{preview_line}</div>"
                     "</div>"
                 )
             )

@@ -67,6 +67,11 @@ def render_sources(sources: list[dict[str, Any]]) -> None:
         for idx, source in enumerate(sources, start=1):
             metadata = source.get("metadata", {}) or {}
             preview = source.get("content_preview", "") or ""
+            preview_line = " ".join(preview.strip().split())
+            if len(preview_line) > 220:
+                preview_line = preview_line[:220].rstrip()
+            if not preview_line.endswith("..."):
+                preview_line = f"{preview_line}..."
             source_path = str(metadata.get("source", "") or "")
             source_name = os.path.basename(source_path) if source_path else "Unknown source"
             st.markdown(f"**{idx}. {source_name}**")
@@ -74,7 +79,7 @@ def render_sources(sources: list[dict[str, Any]]) -> None:
             cols[0].caption(f"Page: {metadata.get('page', '-')}")
             cols[1].caption(f"Chunk: {metadata.get('chunk_index', '-')}")
             cols[2].caption(f"Score: {metadata.get('score', '-')}")
-            st.markdown(f"> {preview}")
+            st.markdown(f"> {preview_line}")
             st.divider()
 
 
@@ -88,18 +93,8 @@ def summarize_thinking(thinking: str, max_chars: int = 220) -> str:
 
 
 def render_thinking_collapsed(thinking: str) -> None:
-    summary = summarize_thinking(thinking)
-    if not summary:
+    if not thinking.strip():
         return
-    st.markdown(
-        (
-            "<div style='opacity:0.65; font-size:0.92rem; "
-            "border-left:3px solid #9aa0a6; padding-left:10px; margin:6px 0;'>"
-            f"<strong>Thinking</strong>: {summary}"
-            "</div>"
-        ),
-        unsafe_allow_html=True,
-    )
     with st.expander("View full thinking", expanded=False):
         st.text(thinking)
 
