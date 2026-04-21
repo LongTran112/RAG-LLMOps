@@ -39,8 +39,7 @@ def _render_response(answer: str, thinking: str, sources: list[dict[str, Any]], 
         parts.append("...")
 
     if done and sources:
-        parts.append("")
-        parts.append(f"**Sources ({len(sources)})**")
+        source_blocks: list[str] = []
         for idx, source in enumerate(sources, start=1):
             meta = source.get("metadata", {}) or {}
             name = _source_filename(meta.get("source"))
@@ -48,9 +47,22 @@ def _render_response(answer: str, thinking: str, sources: list[dict[str, Any]], 
             chunk = meta.get("chunk_index", "-")
             score = meta.get("score", "-")
             preview = source.get("content_preview", "") or ""
-            parts.append(f"{idx}. **{name}** (page {page}, chunk {chunk}, score {score})")
-            if preview:
-                parts.append(f"> {preview}")
+            source_blocks.append(
+                (
+                    "<div style='margin:8px 0; padding:8px; border:1px solid #3a3a3a; border-radius:8px;'>"
+                    f"<div><b>{idx}. {name}</b></div>"
+                    f"<div style='opacity:0.75; font-size:0.9em;'>Page: {page} | Chunk: {chunk} | Score: {score}</div>"
+                    f"<div style='margin-top:6px; white-space:normal; line-height:1.45;'>{preview}</div>"
+                    "</div>"
+                )
+            )
+        parts.append(
+            (
+                f"<details><summary><b>Sources ({len(sources)})</b></summary>"
+                + "".join(source_blocks)
+                + "</details>"
+            )
+        )
 
     return "\n\n".join(parts)
 
