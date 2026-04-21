@@ -49,6 +49,15 @@ class RagPipeline:
             return settings.llm_reasoning_model
         return settings.llm_model
 
+    def _max_tokens_for_mode(self, answer_mode: str | None) -> int | None:
+        # Reasoning models (e.g., deepseek-r1) may emit long "thinking" traces
+        # before final answer tokens. If we keep a tight num_predict cap,
+        # streaming can terminate after thinking with no user-visible answer.
+        # Disable token cap for complex mode so response tokens can arrive.
+        if (answer_mode or "").lower() == "complex":
+            return 0
+        return None
+
     def _complete_ollama(
         self,
         prompt: str,
@@ -282,7 +291,11 @@ class RagPipeline:
 
         prompt = self._build_prompt(user_query, context)
         gen_start = time.perf_counter()
-        answer, llm_meta = self._complete_llm_with_fallback(prompt, answer_mode=answer_mode)
+        answer, llm_meta = self._complete_llm_with_fallback(
+            prompt,
+            max_tokens_override=self._max_tokens_for_mode(answer_mode),
+            answer_mode=answer_mode,
+        )
         gen_seconds = time.perf_counter() - gen_start
 
         return {
@@ -330,7 +343,8 @@ class RagPipeline:
         selected_model = self._resolve_primary_model(answer_mode)
         try:
             if provider == "vllm":
-                cap = settings.ollama_max_output_tokens
+                cap_override = self._max_tokens_for_mode(answer_mode)
+                cap = cap_override if cap_override is not None else settings.ollama_max_output_tokens
                 payload: dict[str, Any] = {
                     "model": selected_model,
                     "messages": [{"role": "user", "content": self._build_prompt(user_query, context)}],
@@ -362,7 +376,9 @@ class RagPipeline:
                     "model": selected_model,
                     "prompt": self._build_prompt(user_query, context),
                     "stream": True,
-                    "options": self._generation_options(),
+                    "options": self._generation_options(
+                        max_tokens_override=self._max_tokens_for_mode(answer_mode)
+                    ),
                 }
                 with requests.post(
                     self._provider_url("/api/generate"),
