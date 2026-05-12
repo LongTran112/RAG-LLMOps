@@ -33,20 +33,20 @@ spec:
             - name: DATA_DIR
               value: /data/sec_rag_dataset_100_pdf
             - name: EMBEDDING_BATCH_SIZE
-              value: "64"
+              value: "8"
             - name: MAX_DOCS
-              value: "0"
+              value: "1500"
           volumeMounts:
             - name: sec-rag-dataset
               mountPath: /data/sec_rag_dataset_100_pdf
               readOnly: true
           resources:
             requests:
-              cpu: "250m"
-              memory: "512Mi"
+              cpu: "500m"
+              memory: "2Gi"
             limits:
-              cpu: "1000m"
-              memory: "1Gi"
+              cpu: "2000m"
+              memory: "4Gi"
       volumes:
         - name: sec-rag-dataset
           hostPath:
