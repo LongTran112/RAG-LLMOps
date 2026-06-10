@@ -1,0 +1,40 @@
+# Backend + Weaviate only (fits this repo layout).
+# Ollama defaults to the host machine via host.docker.internal (Docker Desktop Mac/Windows).
+# On Linux Docker Engine, install/use host-gateway or add an ollama service and point OLLAMA_BASE_URL.
+
+services:
+  backend-go:
+    build:
+      context: ./backend-go
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      WEAVIATE_HOST: weaviate:8080
+      WEAVIATE_SCHEME: http
+      OLLAMA_BASE_URL: http://host.docker.internal:11434
+      EMBEDDING_MODEL: all-minilm
+      PRIMARY_MODEL: llama3
+      REASONING_MODEL: deepseek-r1
+      HTTP_LISTEN_ADDR: ":8000"
+    depends_on:
+      - weaviate
+
+  weaviate:
+    image: cr.weaviate.io/semitechnologies/weaviate:1.24.4
+    # Host port 8090 avoids clashes with another service bound to 8080 (common IDE/proxy/tools).
+    # Inside the Compose network the API stays http://weaviate:8080 (see backend-go env above).
+    ports:
+      - "8090:8080"
+    environment:
+      QUERY_DEFAULTS_LIMIT: "25"
+      AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: "true"
+      PERSISTENCE_DATA_PATH: "/var/lib/weaviate"
+      DEFAULT_VECTORIZER_MODULE: "none"
+      ENABLE_MODULES: ""
+      CLUSTER_HOSTNAME: "node1"
+    volumes:
+      - weaviate_data:/var/lib/weaviate
+
+volumes:
+  weaviate_data:
